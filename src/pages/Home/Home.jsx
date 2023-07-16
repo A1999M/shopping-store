@@ -6,10 +6,12 @@ import "./home.scss";
 
 export default function Home() {
   useLayoutEffect(() => {
-    const locomotiveScroll = new LocomotiveScroll({
+    const locoScroll = new LocomotiveScroll({
       lenisOptions: {
         wrapper: window,
         content: document.documentElement,
+        lerp: 0.1,
+        duration: 1.2,
         orientation: "vertical",
         gestureOrientation: "vertical",
         smoothWheel: true,
@@ -19,6 +21,7 @@ export default function Home() {
         normalizeWheel: true,
       },
     });
+    locoScroll.start();
   });
 
   return (
