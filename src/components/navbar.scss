@@ -1,0 +1,17 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin-top: 5px;
+  .navItems {
+    font-size: 20px;
+    color: #000;
+    margin: 0 1rem;
+    text-transform: capitalize;
+  }
+  .leftItem {
+    margin-right: auto;
+    color: #ff6000;
+  }
+}
