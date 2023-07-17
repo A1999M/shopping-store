@@ -1,0 +1,143 @@
+$hover-color: #044b61;
+$ff: "Philosopher", sans-serif;
+$btn-bgc: #000;
+$text-color: #000;
+$btn-color: #fff;
+
+.titleTrendCollection {
+  color: $text-color;
+  font-size: 45px;
+  font-family: $ff;
+  text-transform: uppercase;
+  text-align: center;
+}
+.descCollection {
+  color: $text-color;
+  font-size: 16px;
+  font-family: $ff;
+  text-transform: capitalize;
+  margin-top: 2rem;
+  opacity: 0.7;
+  text-align: center;
+}
+.wrapperTrendCollectionCategory {
+  margin-top: 2.5rem;
+  text-align: center;
+  .sellerTCollection {
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, 0);
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 10px 30px;
+    background-color: #fff;
+    margin: 0 1rem;
+    transition: all 0.35s;
+    &:hover {
+      border-color: rgba(0, 0, 0, 1);
+    }
+  }
+  .arrivalsTCollection {
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, 0);
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 10px 30px;
+    background-color: #fff;
+    margin: 0 1rem;
+    transition: all 0.35s;
+    &:hover {
+      border-color: rgba(0, 0, 0, 1);
+    }
+  }
+  .topTCollection {
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, 0);
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 10px 30px;
+    background-color: #fff;
+    margin: 0 1rem;
+    transition: all 0.35s;
+    &:hover {
+      border-color: rgba(0, 0, 0, 1);
+    }
+  }
+}
+
+.wrapperCartCollection {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+  background-position: inherit;
+  min-width: 339px;
+  min-height: 50vh;
+  cursor: pointer;
+  overflow: hidden;
+  filter: grayscale(0);
+  .wrapperInfoCart {
+    position: absolute;
+    bottom: 0rem;
+    background-color: #fff;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    padding: 0 15px;
+    height: 0%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    .proCollectionName {
+      color: $text-color;
+      font-size: 19px;
+      margin-top: 23px;
+      font-family: $ff;
+      text-transform: capitalize;
+    }
+    .priceAndRate {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 23px;
+      .proCollectionPrice {
+        font-weight: 700;
+        color: $text-color;
+        font-family: sans-serif;
+      }
+      .ratesCollection {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .wrapperCollectionBtns {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 30px;
+      .addTocartCollection {
+        border: 0px;
+        background-color: $btn-bgc;
+        color: $btn-color;
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 15px;
+        font-family: $ff;
+        text-transform: uppercase;
+        transform-origin: 0% 0%;
+      }
+      .moreDetailsCollection {
+        @extend .addTocartCollection;
+      }
+    }
+  }
+  .overLayCollection {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #ffffff8d;
+    mix-blend-mode: color;
+    opacity: 0;
+  }
+}

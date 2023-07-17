@@ -2,6 +2,7 @@ import React, { useLayoutEffect } from "react";
 import LocomotiveScroll from "locomotive-scroll";
 import Header from "../../components/Header";
 import NavBar from "../../components/NavBar";
+import TrendCollection from "./TrendCollection";
 import "./home.scss";
 
 export default function Home() {
@@ -16,7 +17,7 @@ export default function Home() {
         gestureOrientation: "vertical",
         smoothWheel: true,
         smoothTouch: false,
-        wheelMultiplier: 0.7,
+        wheelMultiplier: 0.8,
         touchMultiplier: 2,
         normalizeWheel: true,
       },
@@ -28,6 +29,7 @@ export default function Home() {
     <>
       <NavBar />
       <Header />
+      <TrendCollection />
     </>
   );
 }
