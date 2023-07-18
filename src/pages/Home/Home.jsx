@@ -1,6 +1,8 @@
 import React, { useLayoutEffect } from "react";
 import LocomotiveScroll from "locomotive-scroll";
 import Header from "../../components/Header";
+import SpecialPrice from "./SpecialPrice";
+import Offers from "./Offers";
 import NavBar from "../../components/NavBar";
 import TrendCollection from "./TrendCollection";
 import "./home.scss";
@@ -30,6 +32,8 @@ export default function Home() {
       <NavBar />
       <Header />
       <TrendCollection />
+      <Offers />
+      {/* <SpecialPrice /> */}
     </>
   );
 }

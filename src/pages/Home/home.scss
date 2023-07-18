@@ -4,6 +4,7 @@ $btn-bgc: #000;
 $text-color: #000;
 $btn-color: #fff;
 
+// trends collection styles
 .titleTrendCollection {
   color: $text-color;
   font-size: 45px;
@@ -139,5 +140,127 @@ $btn-color: #fff;
     background-color: #ffffff8d;
     mix-blend-mode: color;
     opacity: 0;
+  }
+}
+
+// special price section styles
+.specialPriceContainer {
+  margin-top: 10rem;
+  .wrapperSpecial {
+    background-image: url(https://pandora-fashi.myshopify.com/cdn/shop/files/parallax.png?v=1681799785);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 85vh;
+  }
+}
+
+// offers section styles
+.offersContainer {
+  margin-top: 5rem;
+  .titleOffers {
+    font-size: 40px;
+    color: #000;
+    text-transform: capitalize;
+    text-align: center;
+  }
+  .descOffers {
+    font-size: 16px;
+    color: #000;
+    text-transform: capitalize;
+    margin-top: 20px;
+    text-align: center;
+    opacity: 0.7;
+  }
+  .wrapperLeftOffer {
+    width: 100%;
+    height: 50vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(https://pandora-fashi.myshopify.com/cdn/shop/files/offer-bg-1.png?v=1681792772&width=750);
+    .titleLeftOffer {
+      color: #000;
+      text-transform: capitalize;
+      font-size: 40px;
+      margin-left: 3vw;
+      padding-top: 25%;
+      opacity: 0;
+      clip-path: inset(100% 0% 0% 0%);
+      transform: translateY(40px);
+    }
+    .descLeftOffer {
+      color: #000;
+      text-transform: capitalize;
+      margin-left: 3vw;
+      opacity: 0.7;
+      font-size: 17px;
+      margin-top: 20px;
+      font-family: sans-serif;
+      opacity: 0;
+      clip-path: inset(100% 0% 0% 0%);
+      transform: translateY(40px);
+    }
+    .shopLeftOffer {
+      transform-origin: 0% 0%;
+      color: #fff;
+      text-transform: uppercase;
+      background-color: #000;
+      border: none;
+      outline: none;
+      margin-left: 3vw;
+      font-size: 15px;
+      margin-top: 12px;
+      display: inline-block;
+      padding: 15px 25px;
+      font-family: sans-serif;
+      font-weight: 500;
+      clip-path: inset(100% 0% 0% 0%);
+      opacity: 0;
+    }
+  }
+  .wrapperRightOffer {
+    @extend .wrapperLeftOffer;
+    background-image: url(https://pandora-fashi.myshopify.com/cdn/shop/files/offer-bg-2.png?v=1681792780&width=750);
+    .titleRightOffer {
+      color: #000;
+      text-transform: capitalize;
+      font-size: 40px;
+      margin-left: 3vw;
+      padding-top: 25%;
+      opacity: 0;
+      clip-path: inset(100% 0% 0% 0%);
+      transform: translateY(20px);
+    }
+    .descRightOffer {
+      color: #000;
+      text-transform: capitalize;
+      margin-left: 3vw;
+      opacity: 0.7;
+      font-size: 17px;
+      margin-top: 20px;
+      font-family: sans-serif;
+      opacity: 0;
+      clip-path: inset(100% 0% 0% 0%);
+      transform: translateY(20px);
+    }
+    .shopRightOffer {
+      transform-origin: 0% 0%;
+      color: #fff;
+      text-transform: uppercase;
+      background-color: #000;
+      border: none;
+      outline: none;
+      margin-left: 3vw;
+      font-size: 15px;
+      margin-top: 12px;
+      display: inline-block;
+      padding: 15px 25px;
+      font-family: sans-serif;
+      font-weight: 500;
+      opacity: 0;
+      clip-path: inset(100% 0% 0% 0%);
+    }
   }
 }
