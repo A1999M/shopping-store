@@ -69,7 +69,7 @@ export default function TrendCollection() {
           >
             {trendItems &&
               trendItems.map((item) => {
-                return <TrendCollectionItem item={item} />;
+                return <TrendCollectionItem key={item.id} item={item} />;
               })}
           </motion.div>
         )}
@@ -85,7 +85,7 @@ export default function TrendCollection() {
             {menItems &&
               menItems.map((item, index) => {
                 if (index < 4) {
-                  return <TrendCollectionItem item={item} />;
+                  return <TrendCollectionItem key={item.id} item={item} />;
                 } else {
                   return null;
                 }
@@ -104,7 +104,7 @@ export default function TrendCollection() {
             {menItems &&
               womenItems.map((item, index) => {
                 if (index < 4) {
-                  return <TrendCollectionItem item={item} />;
+                  return <TrendCollectionItem key={item.id} item={item} />;
                 } else {
                   return null;
                 }

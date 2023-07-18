@@ -58,14 +58,14 @@ export default function Offers() {
     let tl1 = gsap.timeline({
       scrollTrigger: {
         trigger: leftOfferRef.current,
-        start: "center 30%",
+        start: "center 60%",
         end: "bottom 0%",
       },
     });
     let tl2 = gsap.timeline({
       scrollTrigger: {
         trigger: rightOfferRef.current,
-        start: "center 30%",
+        start: "center 60%",
         end: "bottom 0%",
       },
     });

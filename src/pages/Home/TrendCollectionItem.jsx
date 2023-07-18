@@ -3,8 +3,6 @@ import { gsap } from "gsap";
 import Star from "../../components/Star";
 
 export default function TrendCollectionItem({ item }) {
-  console.log(item);
-
   let cartInfoRef = useRef();
 
   useLayoutEffect(() => {

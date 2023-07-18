@@ -1,7 +1,8 @@
 import React, { useLayoutEffect } from "react";
 import LocomotiveScroll from "locomotive-scroll";
 import Header from "../../components/Header";
-import SpecialPrice from "./SpecialPrice";
+// import SpecialPrice from "./SpecialPrice";
+import VideoOffer from "./VideoOffer";
 import Offers from "./Offers";
 import NavBar from "../../components/NavBar";
 import TrendCollection from "./TrendCollection";
@@ -33,6 +34,7 @@ export default function Home() {
       <Header />
       <TrendCollection />
       <Offers />
+      <VideoOffer />
       {/* <SpecialPrice /> */}
     </>
   );
