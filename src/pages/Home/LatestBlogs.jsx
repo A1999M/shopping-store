@@ -34,11 +34,6 @@ export default function LatestBlogs() {
               <BlogItems blogItems={bItems[2]} />
             </>
           )}
-          <div className="col-12">
-            <button className="blogViewAllBtn">
-              view all <span>&#8594;</span>{" "}
-            </button>
-          </div>
         </div>
       </div>
     </>

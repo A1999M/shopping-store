@@ -6,6 +6,7 @@ import VideoOffer from "./VideoOffer";
 import LatestBlogs from "./LatestBlogs";
 import Features from "./Features";
 import Offers from "./Offers";
+import BestProducts from "./BestProducts";
 import NavBar from "../../components/NavBar";
 import TrendCollection from "./TrendCollection";
 import "./home.scss";
@@ -28,6 +29,9 @@ export default function Home() {
       },
     });
     locoScroll.start();
+    return () => {
+      locoScroll.destroy();
+    };
   });
 
   return (
@@ -37,6 +41,11 @@ export default function Home() {
       <TrendCollection />
       <Offers />
       <VideoOffer />
+      <LatestBlogs />
+      <Features />
+      <BestProducts />
+      <LatestBlogs />
+      <Features />
       <LatestBlogs />
       <Features />
     </>
