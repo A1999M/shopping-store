@@ -4,6 +4,7 @@ import Header from "../../components/Header";
 // import SpecialPrice from "./SpecialPrice";
 import VideoOffer from "./VideoOffer";
 import LatestBlogs from "./LatestBlogs";
+import Features from "./Features";
 import Offers from "./Offers";
 import NavBar from "../../components/NavBar";
 import TrendCollection from "./TrendCollection";
@@ -37,7 +38,7 @@ export default function Home() {
       <Offers />
       <VideoOffer />
       <LatestBlogs />
-      {/* <SpecialPrice /> */}
+      <Features />
     </>
   );
 }
