@@ -47,11 +47,11 @@ export default function Offers() {
     gsap.registerPlugin(ScrollTrigger);
 
     gsap.set(leftOfferRef.current, {
-      clipPath: "inset(0% 0% 100% 0%)",
+      clipPath: "inset(100% 0% 0% 0%)",
       backgroundSize: "125%",
     });
     gsap.set(rightOfferRef.current, {
-      clipPath: "inset(0% 0% 100% 0%)",
+      clipPath: "inset(100% 0% 0% 0%)",
       backgroundSize: "125%",
     });
 
@@ -60,6 +60,7 @@ export default function Offers() {
         trigger: leftOfferRef.current,
         start: "center 60%",
         end: "bottom 0%",
+        id: "trigger1",
       },
     });
     let tl2 = gsap.timeline({
@@ -67,6 +68,7 @@ export default function Offers() {
         trigger: rightOfferRef.current,
         start: "center 60%",
         end: "bottom 0%",
+        id: "trigger2",
       },
     });
 
@@ -148,6 +150,11 @@ export default function Offers() {
       },
       "<0.25"
     );
+
+    return () => {
+      ScrollTrigger.getById("trigger1").kill();
+      ScrollTrigger.getById("trigger2").kill();
+    };
   });
 
   return (

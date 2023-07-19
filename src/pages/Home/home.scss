@@ -17,7 +17,7 @@ $btn-color: #fff;
   font-size: 16px;
   font-family: $ff;
   text-transform: capitalize;
-  margin-top: 2rem;
+  margin-top: 20px;
   opacity: 0.7;
   text-align: center;
 }
@@ -158,9 +158,9 @@ $btn-color: #fff;
 
 // offers section styles
 .offersContainer {
-  margin-top: 5rem;
+  margin-top: 7rem;
   .titleOffers {
-    font-size: 40px;
+    font-size: 45px;
     color: #000;
     text-transform: capitalize;
     text-align: center;
@@ -169,7 +169,7 @@ $btn-color: #fff;
     font-size: 16px;
     color: #000;
     text-transform: capitalize;
-    margin-top: 20px;
+    margin-top: 25px;
     text-align: center;
     opacity: 0.7;
   }
@@ -262,5 +262,81 @@ $btn-color: #fff;
       opacity: 0;
       clip-path: inset(100% 0% 0% 0%);
     }
+  }
+}
+
+// blog items section styles
+.titleBlog {
+  text-align: center;
+  font-size: 45px;
+}
+.descBlog {
+  text-align: center;
+  font-size: 16px;
+  opacity: 0.7;
+  margin-top: 20px;
+  text-transform: capitalize;
+}
+.wrapperBlogItem {
+  overflow: hidden;
+  border-radius: 30px;
+  position: relative;
+  height: fit-content;
+  padding-bottom: 2rem;
+  box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  .wrpperBlogImg {
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+  }
+  .wrapperBodyBlog {
+    padding: 0 1rem;
+    .titleBlogItem {
+      font-size: 23px;
+      text-transform: capitalize;
+      margin-top: 22px;
+    }
+    .descBlogItem {
+      font-size: 16px;
+      text-transform: capitalize;
+      margin-top: 16px;
+      line-height: 24px;
+      opacity: 0.7;
+    }
+    .blogReadMore {
+      font-size: 14px;
+      text-decoration: none;
+      color: #fff;
+      background-color: #000;
+      text-transform: uppercase;
+      display: block;
+      margin-left: auto;
+      padding: 10px 20px;
+      margin-top: 20px;
+      width: fit-content;
+      transform-origin: 0% 0%;
+    }
+  }
+}
+.blogViewAllBtn {
+  border: 0;
+  outline: 0;
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 15px 25px;
+  display: block;
+  font-size: 14px;
+  width: fit-content;
+  font-family: sans-serif;
+  margin: 0 auto;
+  margin-top: 30px;
+  font-weight: 500;
+  transform-origin: 0% 0%;
+  span {
+    font-size: 18px;
+    font-weight: bold;
   }
 }

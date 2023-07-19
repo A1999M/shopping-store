@@ -13,7 +13,16 @@ export default function TrendCollection() {
 
   useEffect(() => {
     if (menItems && womenItems) {
-      let trends = [menItems[0], womenItems[2], womenItems[3], womenItems[8]];
+      let trends = [
+        menItems[0],
+        womenItems[2],
+        menItems[6],
+        womenItems[3],
+        womenItems[8],
+        menItems[3],
+        womenItems[11],
+        menItems[5],
+      ];
       setTrendItems(trends);
     }
   }, []);
@@ -65,7 +74,7 @@ export default function TrendCollection() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 30 }}
             transition={{ type: "tween", duration: 0.6 }}
-            className="row mt-5"
+            className="row"
           >
             {trendItems &&
               trendItems.map((item) => {
@@ -80,11 +89,11 @@ export default function TrendCollection() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 30 }}
             transition={{ type: "tween", duration: 0.6 }}
-            className="row mt-5"
+            className="row"
           >
             {menItems &&
               menItems.map((item, index) => {
-                if (index < 4) {
+                if (index < 8) {
                   return <TrendCollectionItem key={item.id} item={item} />;
                 } else {
                   return null;
@@ -99,11 +108,11 @@ export default function TrendCollection() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 30 }}
             transition={{ type: "tween", duration: 0.6 }}
-            className="row mt-5"
+            className="row"
           >
-            {menItems &&
+            {womenItems &&
               womenItems.map((item, index) => {
-                if (index < 4) {
+                if (index < 8) {
                   return <TrendCollectionItem key={item.id} item={item} />;
                 } else {
                   return null;

@@ -8,7 +8,11 @@ export default function Header() {
         <div className="row px-0">
           <div className="col-12 p-0">
             <div className="wrapperHeader">
-              <div className="wrapperHeroHeaderFeatures">
+              <div
+                data-scroll
+                data-scroll-speed="0.3"
+                className="wrapperHeroHeaderFeatures"
+              >
                 <p className="titleHeroHeader">TRENDS IN FASHION</p>
                 <p className="offerHeroHeader">
                   20% DISCOUNT IN ALL WOMEN'S FASHION...

@@ -408,5 +408,42 @@
            "publishedAt": "2022-10-17T17:24:34.613Z",
            "createdBy": null,
            "updatedBy": null
-         }]
+         }] ,
+         "blogItems": [
+          {
+            "id": 1,
+            "littleSrc": "https://pandora-fashi.myshopify.com/cdn/shop/articles/blog-1.png?v=1681795335",
+            "src": "https://pandora-fashi.myshopify.com/cdn/shop/articles/blog-1.png?v=1681795335",
+            "title": "Nullam Ultricies Ligula Velit Quis Vehicula",
+            "description": "Nam tempus turpis at metus scelerisque placerat nulla deumantos sollicitudin felis. Pellentesque diam dolor, elementum et lobortis at, mollis ut risus. Sedcuman des faucibus sullamcorper mattis fusce molestie elit a lorem tempus scelerisque blandit est cursus. Quisque volutpat orci ut metus malesuada in interdumos lectus anmos scelerisque lorem. Praesent deu odio des nisios dullamcorper sultricies. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus"
+          },
+          {
+            "id": 2,
+            "littleSrc": "https://pandora-fashi.myshopify.com/cdn/shop/articles/blog-2_bd7deb71-4826-4b19-a122-32f7d0c670cd.png?v=1681795351&width=720",
+            "src": "https://pandora-fashi.myshopify.com/cdn/shop/articles/blog-2_bd7deb71-4826-4b19-a122-32f7d0c670cd.png?v=1681795351",
+            "title": "Nullam Ultricies Ligula Velit Quis Vehicula",
+            "description": "Nam tempus turpis at metus scelerisque placerat nulla deumantos sollicitudin felis. Pellentesque diam dolor, elementum et lobortis at, mollis ut risus. Sedcuman des faucibus sullamcorper mattis fusce molestie elit a lorem tempus scelerisque blandit est cursus. Quisque volutpat orci ut metus malesuada in interdumos lectus anmos scelerisque lorem. Praesent deu odio des nisios dullamcorper sultricies. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus"
+          },
+          {
+            "id": 3,
+            "littleSrc": "https://pandora-fashi.myshopify.com/cdn/shop/articles/blog-3.png?v=1681795366&width=720",
+            "src": "https://pandora-fashi.myshopify.com/cdn/shop/articles/blog-3.png?v=1681795366",
+            "title": "Nullam Ultricies Ligula Velit Quis Vehicula",
+            "description": "Nam tempus turpis at metus scelerisque placerat nulla deumantos sollicitudin felis. Pellentesque diam dolor, elementum et lobortis at, mollis ut risus. Sedcuman des faucibus sullamcorper mattis fusce molestie elit a lorem tempus scelerisque blandit est cursus. Quisque volutpat orci ut metus malesuada in interdumos lectus anmos scelerisque lorem. Praesent deu odio des nisios dullamcorper sultricies. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus"
+          },
+          {
+            "id": 4,
+            "littleSrc": "https://pandora-fashi.myshopify.com/cdn/shop/articles/fashion_blog-7.jpg?v=1660641740&width=720",
+            "src": "https://pandora-fashi.myshopify.com/cdn/shop/articles/fashion_blog-7.jpg?v=1660641740",
+            "title": "Nullam Ultricies Ligula Velit Quis Vehicula",
+            "description": "Nam tempus turpis at metus scelerisque placerat nulla deumantos sollicitudin felis. Pellentesque diam dolor, elementum et lobortis at, mollis ut risus. Sedcuman des faucibus sullamcorper mattis fusce molestie elit a lorem tempus scelerisque blandit est cursus. Quisque volutpat orci ut metus malesuada in interdumos lectus anmos scelerisque lorem. Praesent deu odio des nisios dullamcorper sultricies. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus"
+          },
+          {
+            "id": 5,
+            "littleSrc": "https://pandora-fashi.myshopify.com/cdn/shop/articles/fashion_blog-5.jpg?v=1660289023&width=720",
+            "src": "https://pandora-fashi.myshopify.com/cdn/shop/articles/fashion_blog-5.jpg?v=1660289023",
+            "title": "Nullam Ultricies Ligula Velit Quis Vehicula",
+            "description": "Nam tempus turpis at metus scelerisque placerat nulla deumantos sollicitudin felis. Pellentesque diam dolor, elementum et lobortis at, mollis ut risus. Sedcuman des faucibus sullamcorper mattis fusce molestie elit a lorem tempus scelerisque blandit est cursus. Quisque volutpat orci ut metus malesuada in interdumos lectus anmos scelerisque lorem. Praesent deu odio des nisios dullamcorper sultricies. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus"
+          }
+         ]
       }

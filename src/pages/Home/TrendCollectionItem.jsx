@@ -176,7 +176,7 @@ export default function TrendCollectionItem({ item }) {
 
   return (
     <>
-      <div className="col-3">
+      <div className="col-3 mt-5">
         <div
           onMouseEnter={handlerHoverCart}
           onMouseLeave={handlerMouseLeave}
