@@ -10,3 +10,4 @@ export { default as FeatureItems } from "./FeatureItems";
 export { default as BestProducts } from "./BestProducts";
 export { default as BestProItems } from "./BestProItems";
 export { default as CustomerReview } from "./CustomerReview";
+export { default as Faqs } from "./Faqs";
