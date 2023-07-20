@@ -15,7 +15,7 @@ export default function BestProItems({ item }) {
   return (
     <div
       style={{ width: "20vw", marginRight: "4.5rem" }}
-      className="mt-3rem horizontalElement"
+      className="horizontalElement"
     >
       <div className="wrapperBestProItem">
         <div className="wrapperImgBestProItem">

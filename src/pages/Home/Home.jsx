@@ -9,6 +9,7 @@ import Offers from "./Offers";
 import BestProducts from "./BestProducts";
 import NavBar from "../../components/NavBar";
 import TrendCollection from "./TrendCollection";
+import CustomerReview from "./CustomerReview";
 import "./home.scss";
 
 export default function Home() {
@@ -28,10 +29,6 @@ export default function Home() {
         normalizeWheel: true,
       },
     });
-    locoScroll.start();
-    return () => {
-      locoScroll.destroy();
-    };
   });
 
   return (
@@ -44,10 +41,8 @@ export default function Home() {
       <LatestBlogs />
       <Features />
       <BestProducts />
-      <LatestBlogs />
-      <Features />
-      <LatestBlogs />
-      <Features />
+      <CustomerReview />
+      <TrendCollection />
     </>
   );
 }

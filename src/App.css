@@ -35,3 +35,15 @@ body {
 .mt-7rem {
   margin-top: 7rem;
 }
+.mb3rem {
+  margin-bottom: 3rem;
+}
+.swiper-slide {
+  padding-bottom: 4rem !important;
+}
+.swiper-pagination {
+  top: 13.5rem !important;
+}
+.swiper-pagination-bullet-active {
+  background: #000 !important;
+}

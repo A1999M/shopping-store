@@ -440,3 +440,70 @@ $btn-color: #fff;
     }
   }
 }
+
+// start customer reviews section styles
+.custoremReview {
+  margin-top: 7rem;
+  .bgCustomerReview {
+    background-image: url(https://pandora-fashi.myshopify.com/cdn/shop/files/review-bg.png?v=1681792909&width=1780);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 2rem;
+    .wrapperCReviews {
+      .titleReviews {
+        font-size: 45px;
+        text-transform: uppercase;
+        margin-top: 40px;
+        text-align: center;
+      }
+      .descReviews {
+        font-size: 16px;
+        text-transform: capitalize;
+        font-family: sans-serif;
+        margin-top: 25px;
+        text-align: center;
+        opacity: 0.6;
+        margin-bottom: 3rem;
+      }
+    }
+    .cWrapperSlider {
+      .firstReview {
+        position: relative;
+        font-size: 16px;
+        margin: 0 auto;
+        text-transform: capitalize;
+        opacity: 0.6;
+        width: 70%;
+        text-align: center;
+        font-family: sans-serif;
+        line-height: 28px;
+        &::after {
+          position: absolute;
+          bottom: -10px;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-color: #000;
+          width: 55px;
+          height: 2px;
+          content: "";
+        }
+      }
+      .customerName {
+        font-size: 18px;
+        margin-top: 2.4rem;
+        text-transform: capitalize;
+        text-align: center;
+        font-weight: 700;
+      }
+      .customerJob {
+        font-size: 15px;
+        margin-top: 10px;
+        text-transform: capitalize;
+        opacity: 0.6;
+        font-family: sans-serif;
+        text-align: center;
+      }
+    }
+  }
+}

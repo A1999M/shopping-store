@@ -1,4 +1,4 @@
-import { useContext, useLayoutEffect, useRef } from "react";
+import { useContext, useEffect, useLayoutEffect, useRef } from "react";
 import items from "../../context/items";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
@@ -6,9 +6,10 @@ import BestProItems from "./BestProItems";
 
 export default function BestProducts() {
   let scopeRef = useRef();
+  let wrapperBestPro = useRef();
   let { menItems, womenItems } = useContext(items);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
     let horizontalElement = gsap.utils.toArray(".horizontalElement");
@@ -18,7 +19,7 @@ export default function BestProducts() {
         xPercent: -100 * (horizontalElement.length - 1),
         ease: "none",
         scrollTrigger: {
-          trigger: document.querySelector(".wrapperBestProducts"),
+          trigger: wrapperBestPro.current,
           start: "center center",
           end: "+=1500",
           pin: true,
@@ -61,13 +62,13 @@ export default function BestProducts() {
         ref={scopeRef}
         className="container-fluid bestProducts overflow-hidden px-5"
       >
-        <div className="row">
+        <div className="row mb3rem">
           <div className="col-12">
             <p className="titleBestProducts">BEST PRODUCTS</p>
             <p className="descBestProducts">Our most popular products</p>
           </div>
         </div>
-        <div className="wrapperBestProducts">
+        <div ref={wrapperBestPro} className="wrapperBestProducts">
           {bestProducts &&
             bestProducts.map((pro, index) => {
               return <BestProItems key={index} item={pro} />;

@@ -151,10 +151,10 @@ export default function Offers() {
       "<0.25"
     );
 
-    return () => {
-      ScrollTrigger.getById("trigger1").kill();
-      ScrollTrigger.getById("trigger2").kill();
-    };
+    // return () => {
+    //   ScrollTrigger.getById("trigger1").kill();
+    //   ScrollTrigger.getById("trigger2").kill();
+    // };
   });
 
   return (
