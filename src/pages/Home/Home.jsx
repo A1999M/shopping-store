@@ -10,6 +10,7 @@ import BestProducts from "./BestProducts";
 import NavBar from "../../components/NavBar";
 import TrendCollection from "./TrendCollection";
 import Faqs from "./Faqs";
+import Footer from "../../components/Footer";
 import CustomerReview from "./CustomerReview";
 import "./home.scss";
 
@@ -39,12 +40,12 @@ export default function Home() {
       <TrendCollection />
       <Offers />
       <VideoOffer />
-      <LatestBlogs />
-      <Features />
       <BestProducts />
+      <LatestBlogs />
       <CustomerReview />
       <Faqs />
-      <Faqs />
+      <Features />
+      <Footer />
     </>
   );
 }
