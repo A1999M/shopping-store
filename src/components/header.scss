@@ -1,15 +1,16 @@
 .heroHeader {
+  margin-top: 1.5rem;
   .wrapperHeader {
     background-image: url("https://pandora-fashi.myshopify.com/cdn/shop/files/banner-1.png?v=1681792583&width=1780");
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: center;
+    background-position: top;
     width: 100vw;
     height: 100vh;
     position: relative;
     .wrapperHeroHeaderFeatures {
       position: absolute;
-      top: 35%;
+      top: 25%;
       background-color: #fff;
       padding: 2rem;
       left: 8%;

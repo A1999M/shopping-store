@@ -58,7 +58,7 @@ export default function Offers() {
     let tl1 = gsap.timeline({
       scrollTrigger: {
         trigger: leftOfferRef.current,
-        start: "center 60%",
+        start: "center 75%",
         end: "bottom 0%",
         id: "trigger1",
       },
@@ -66,7 +66,7 @@ export default function Offers() {
     let tl2 = gsap.timeline({
       scrollTrigger: {
         trigger: rightOfferRef.current,
-        start: "center 60%",
+        start: "center 75%",
         end: "bottom 0%",
         id: "trigger2",
       },
@@ -166,7 +166,7 @@ export default function Offers() {
             <p className="descOffers">UNBOX YOUR HAPPINESS WITH PANDORA</p>
           </div>
         </div>
-        <div className="row mt-2rem">
+        <div className="row mt-3rem">
           <div className="col-6">
             <div
               onMouseEnter={handlerLImageHoverEnter}

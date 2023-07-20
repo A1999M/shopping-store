@@ -31,7 +31,7 @@ export default function Features() {
 
   return (
     <>
-      <div className="container-fluid features mt-6rem">
+      <div className="container-fluid features px-5 mt-7rem">
         <div className="row">
           {featureItemsArray.map((item, index) => {
             return (

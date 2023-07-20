@@ -444,13 +444,16 @@ $btn-color: #fff;
 // start customer reviews section styles
 .custoremReview {
   margin-top: 7rem;
+  padding: 0;
   .bgCustomerReview {
     background-image: url(https://pandora-fashi.myshopify.com/cdn/shop/files/review-bg.png?v=1681792909&width=1780);
-    background-size: 90%;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
     padding-top: 2rem;
+    overflow-x: hidden;
     .wrapperCReviews {
+      overflow: hidden;
       .titleReviews {
         font-size: 45px;
         text-transform: uppercase;
@@ -468,16 +471,17 @@ $btn-color: #fff;
       }
     }
     .cWrapperSlider {
+      overflow-x: hidden;
       .firstReview {
         position: relative;
-        font-size: 16px;
+        font-size: 15px;
         margin: 0 auto;
         text-transform: capitalize;
         opacity: 0.6;
         width: 70%;
         text-align: center;
         font-family: sans-serif;
-        line-height: 28px;
+        line-height: 26px;
         &::after {
           position: absolute;
           bottom: -10px;

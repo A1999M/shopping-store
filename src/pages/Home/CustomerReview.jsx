@@ -8,7 +8,7 @@ import "swiper/css/scrollbar";
 export default function CustomerReview() {
   return (
     <>
-      <div className="container-fluid custoremReview">
+      <div className="container custoremReview">
         <div className="row bgCustomerReview">
           <div className="col-12">
             <div className="wrapperCReviews">
