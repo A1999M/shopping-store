@@ -47,6 +47,10 @@
         font-family: "Philosopher", sans-serif;
         margin-bottom: 15px;
       }
+      transition: all 0.3s;
+      &:hover {
+        color: #a9a4a4;
+      }
     }
   }
   // quick section styles
@@ -98,6 +102,10 @@
       font-size: 17px;
       font-family: sans-serif;
       margin-top: 15px;
+      transition: all 0.3s;
+      &:hover {
+        background-color: #a9a4a4;
+      }
     }
   }
 }

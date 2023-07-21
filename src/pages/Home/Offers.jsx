@@ -1,10 +1,13 @@
-import React, { useLayoutEffect, useRef } from "react";
+import React, { useEffect, useLayoutEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 
 export default function Offers() {
+  let scopeRef = useRef();
   let leftOfferRef = useRef();
   let rightOfferRef = useRef();
+  let titleRef = useRef();
+  let descRef = useRef();
 
   let titleLeftOffer = useRef();
   let descLeftOffer = useRef();
@@ -13,6 +16,159 @@ export default function Offers() {
   let titleLRightOffer = useRef();
   let descLRightOffer = useRef();
   let btnLRightOffer = useRef();
+
+  useEffect(() => {
+    let ctx = gsap.context(() => {
+      gsap.registerPlugin(ScrollTrigger);
+
+      gsap.set(leftOfferRef.current, {
+        clipPath: "inset(100% 0% 0% 0%)",
+        backgroundSize: "125%",
+      });
+      gsap.set(rightOfferRef.current, {
+        clipPath: "inset(100% 0% 0% 0%)",
+        backgroundSize: "125%",
+      });
+      gsap.set(titleRef.current, {
+        opacity: 0,
+        clipPath: "inset(0% 0% 100% 0%)",
+        y: 30,
+      });
+      gsap.set(descRef.current, {
+        opacity: 0,
+        clipPath: "inset(0% 0% 100% 0%)",
+        y: 30,
+      });
+
+      let revealTl = gsap.timeline({
+        scrollTrigger: {
+          trigger: titleRef.current,
+          endTrigger: decodeURI.current,
+          start: "center 80%",
+          end: "end 0%",
+        },
+      });
+
+      revealTl.to(titleRef.current, {
+        opacity: 1,
+        clipPath: "inset(0% 0% 0% 0%)",
+        y: 0,
+        duration: 1,
+        ease: "Expo.easeOut",
+      });
+      revealTl.to(
+        descRef.current,
+        {
+          opacity: 1,
+          clipPath: "inset(0% 0% 0% 0%)",
+          y: 0,
+          duration: 1,
+          ease: "Expo.easeOut",
+        },
+        "<0.3"
+      );
+
+      let tl1 = gsap.timeline({
+        scrollTrigger: {
+          trigger: leftOfferRef.current,
+          start: "center 85%",
+          end: "bottom 0%",
+          id: "trigger1",
+        },
+      });
+      let tl2 = gsap.timeline({
+        scrollTrigger: {
+          trigger: rightOfferRef.current,
+          start: "center 85%",
+          end: "bottom 0%",
+          id: "trigger2",
+        },
+      });
+
+      tl1.to(leftOfferRef.current, {
+        clipPath: "inset(0% 0% 0% 0%)",
+        backgroundSize: "100%",
+        duration: 2,
+        ease: "Expo.easeOut",
+      });
+      tl1.to(
+        titleLeftOffer.current,
+        {
+          opacity: 1,
+          clipPath: "inset(0% 0% 0% 0%)",
+          y: 0,
+          duration: 1,
+          ease: "Expo.easeOut",
+        },
+        "<0.4"
+      );
+      tl1.to(
+        descLeftOffer.current,
+        {
+          opacity: 1,
+          clipPath: "inset(0% 0% 0% 0%)",
+          y: 0,
+          duration: 1,
+          ease: "Expo.easeOut",
+        },
+        "<0.1"
+      );
+      tl1.to(
+        btnLeftOffer.current,
+        {
+          opacity: 1,
+          clipPath: "inset(0% 0% 0% 0%)",
+          duration: 0.8,
+          ease: "Expo.easeOut",
+        },
+        "<0.25"
+      );
+
+      tl2.to(rightOfferRef.current, {
+        clipPath: "inset(0% 0% 0% 0%)",
+        backgroundSize: "100%",
+        duration: 2,
+        ease: "Expo.easeOut",
+        delay: 0.4,
+      });
+      tl2.to(
+        titleLRightOffer.current,
+        {
+          opacity: 1,
+          clipPath: "inset(0% 0% 0% 0%)",
+          y: 0,
+          duration: 1,
+          ease: "Expo.easeOut",
+        },
+        "<0.4"
+      );
+      tl2.to(
+        descLRightOffer.current,
+        {
+          opacity: 1,
+          clipPath: "inset(0% 0% 0% 0%)",
+          y: 0,
+          duration: 1,
+          ease: "Expo.easeOut",
+        },
+        "<0.1"
+      );
+      tl2.to(
+        btnLRightOffer.current,
+        {
+          opacity: 1,
+          clipPath: "inset(0% 0% 0% 0%)",
+          duration: 0.8,
+          ease: "Expo.easeOut",
+        },
+        "<0.25"
+      );
+    }, scopeRef);
+
+    return () => {
+      ctx.revert();
+    };
+  });
 
   let handlerLImageHoverEnter = () => {
     gsap.to(document.querySelector(".wrapperLeftOffer"), {
@@ -43,127 +199,17 @@ export default function Offers() {
     });
   };
 
-  useLayoutEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-
-    gsap.set(leftOfferRef.current, {
-      clipPath: "inset(100% 0% 0% 0%)",
-      backgroundSize: "125%",
-    });
-    gsap.set(rightOfferRef.current, {
-      clipPath: "inset(100% 0% 0% 0%)",
-      backgroundSize: "125%",
-    });
-
-    let tl1 = gsap.timeline({
-      scrollTrigger: {
-        trigger: leftOfferRef.current,
-        start: "center 75%",
-        end: "bottom 0%",
-        id: "trigger1",
-      },
-    });
-    let tl2 = gsap.timeline({
-      scrollTrigger: {
-        trigger: rightOfferRef.current,
-        start: "center 75%",
-        end: "bottom 0%",
-        id: "trigger2",
-      },
-    });
-
-    tl1.to(leftOfferRef.current, {
-      clipPath: "inset(0% 0% 0% 0%)",
-      backgroundSize: "100%",
-      duration: 2,
-      ease: "Expo.easeOut",
-    });
-    tl1.to(
-      titleLeftOffer.current,
-      {
-        opacity: 1,
-        clipPath: "inset(0% 0% 0% 0%)",
-        y: 0,
-        duration: 1,
-        ease: "Expo.easeOut",
-      },
-      "<0.4"
-    );
-    tl1.to(
-      descLeftOffer.current,
-      {
-        opacity: 1,
-        clipPath: "inset(0% 0% 0% 0%)",
-        y: 0,
-        duration: 1,
-        ease: "Expo.easeOut",
-      },
-      "<0.1"
-    );
-    tl1.to(
-      btnLeftOffer.current,
-      {
-        opacity: 1,
-        clipPath: "inset(0% 0% 0% 0%)",
-        duration: 0.8,
-        ease: "Expo.easeOut",
-      },
-      "<0.25"
-    );
-
-    tl2.to(rightOfferRef.current, {
-      clipPath: "inset(0% 0% 0% 0%)",
-      backgroundSize: "100%",
-      duration: 2,
-      ease: "Expo.easeOut",
-      delay: 0.4,
-    });
-    tl2.to(
-      titleLRightOffer.current,
-      {
-        opacity: 1,
-        clipPath: "inset(0% 0% 0% 0%)",
-        y: 0,
-        duration: 1,
-        ease: "Expo.easeOut",
-      },
-      "<0.4"
-    );
-    tl2.to(
-      descLRightOffer.current,
-      {
-        opacity: 1,
-        clipPath: "inset(0% 0% 0% 0%)",
-        y: 0,
-        duration: 1,
-        ease: "Expo.easeOut",
-      },
-      "<0.1"
-    );
-    tl2.to(
-      btnLRightOffer.current,
-      {
-        opacity: 1,
-        clipPath: "inset(0% 0% 0% 0%)",
-        duration: 0.8,
-        ease: "Expo.easeOut",
-      },
-      "<0.25"
-    );
-
-    // return () => {
-    //   ScrollTrigger.getById("trigger1").kill();
-    //   ScrollTrigger.getById("trigger2").kill();
-    // };
-  });
-
   return (
     <>
-      <div className="container-fluid px-5 offersContainer">
+      <div ref={scopeRef} className="container-fluid px-5 offersContainer">
         <div className="row">
           <div className="col-12">
-            <p className="titleOffers">EXCLUSIVE OFFER!</p>
-            <p className="descOffers">UNBOX YOUR HAPPINESS WITH PANDORA</p>
+            <p ref={titleRef} className="titleOffers">
+              EXCLUSIVE OFFER!
+            </p>
+            <p ref={descRef} className="descOffers">
+              UNBOX YOUR HAPPINESS WITH PANDORA
+            </p>
           </div>
         </div>
         <div className="row mt-3rem">

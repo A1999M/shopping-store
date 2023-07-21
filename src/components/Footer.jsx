@@ -1,13 +1,90 @@
+import { useEffect, useRef } from "react";
 import TwitterLogo from "../svg/TwitterLogo";
 import FaceBookLogo from "../svg/FaceBookLogo";
 import InstagramLogo from "../svg/InstagramLogo";
 import PinterestLogo from "../svg/PinterestLogo";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/all";
 import "./footer.scss";
 
 export default function Footer() {
+  let scopeRef = useRef();
+
+  let handleClick = () => {
+    document.querySelector("#newsLeterEmil").value = "";
+  };
+
+  useEffect(() => {
+    let ctx = gsap.context(() => {
+      gsap.registerPlugin(ScrollTrigger);
+      gsap.set(document.querySelector(".wrapperFooterSocials"), {
+        opacity: 0,
+        y: 30,
+      });
+      gsap.set(document.querySelector(".wrapperCateguryFooter"), {
+        opacity: 0,
+        y: 30,
+      });
+      gsap.set(document.querySelector(".wrapperQuickLinks"), {
+        opacity: 0,
+        y: 30,
+      });
+      gsap.set(document.querySelector(".wrapperNewsLeter"), {
+        opacity: 0,
+        y: 30,
+      });
+
+      let tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".wrapperFooterSocials",
+          start: "center 80%",
+          end: "bottom 0%",
+        },
+      });
+      tl.to(document.querySelector(".wrapperFooterSocials"), {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: "Expo.easeOut",
+      });
+      tl.to(
+        document.querySelector(".wrapperCateguryFooter"),
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          ease: "Expo.easeOut",
+        },
+        "<0.15"
+      );
+      tl.to(
+        document.querySelector(".wrapperQuickLinks"),
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          ease: "Expo.easeOut",
+        },
+        "<0.15"
+      );
+      tl.to(
+        document.querySelector(".wrapperNewsLeter"),
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          ease: "Expo.easeOut",
+        },
+        "<0.15"
+      );
+    }, scopeRef);
+
+    return () => ctx.revert();
+  });
+
   return (
     <>
-      <div className="container-fluid px-5 footer">
+      <div ref={scopeRef} className="container-fluid px-5 footer">
         <div className="row">
           {/*  */}
           <div className="col-3">
@@ -68,6 +145,7 @@ export default function Footer() {
                 name="btnNewsLeter"
                 id="btnNewsLeter"
                 value={"Subscribe"}
+                onClick={handleClick}
               />
             </div>
           </div>

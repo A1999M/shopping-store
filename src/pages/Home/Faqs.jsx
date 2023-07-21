@@ -1,9 +1,38 @@
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/all";
 import Accordion from "react-bootstrap/Accordion";
 
 export default function Faqs() {
+  let scopeRef = useRef();
+
+  useEffect(() => {
+    let ctx = gsap.context(() => {
+      gsap.registerPlugin(ScrollTrigger);
+      gsap.set(".faqsTitle", {
+        opacity: 0,
+        clipPath: "inset(0% 0% 100% 0%)",
+        y: 30,
+      });
+      gsap.to(".faqsTitle", {
+        opacity: 1,
+        clipPath: "inset(0% 0% 0% 0%)",
+        y: 0,
+        duration: 1,
+        ease: "Expo.easeOut",
+        scrollTrigger: {
+          trigger: ".faqsTitle",
+          start: "center 80%",
+          end: "bottom 0%",
+        },
+      });
+    });
+    return () => ctx.revert();
+  }, []);
+
   return (
     <>
-      <div className="container-fluid faqs">
+      <div ref={scopeRef} className="container-fluid faqs">
         <div className="row justify-content-center">
           <div className="col-12">
             <p className="faqsTitle">Faqs</p>

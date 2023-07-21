@@ -1,46 +1,86 @@
-import { useRef, useLayoutEffect } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import Star from "../../components/Star";
+import { motion } from "framer-motion";
 
-export default function TrendCollectionItem({ item }) {
-  let cartInfoRef = useRef();
+export default function TrendCollectionItem({ item, index }) {
+  let targetHover = useRef(null);
+  let [show, setShow] = useState(false);
 
   useLayoutEffect(() => {
-    gsap.set(document.querySelector(".proCollectionName"), {
-      opacity: 0,
-      y: 30,
-      clipPath: "inset(100% 0% 0% 0%)",
-    });
-    gsap.set(document.querySelector(".proCollectionPrice"), {
-      opacity: 0,
-      y: 20,
-      clipPath: "inset(100% 0% 0% 0%)",
-    });
-    gsap.set(document.querySelector(".addTocartCollection"), {
-      opacity: 0,
-      y: 20,
-      clipPath: "inset(100% 0% 0% 0%)",
-    });
-    gsap.set(document.querySelector(".moreDetailsCollection"), {
-      opacity: 0,
-      y: 20,
-      clipPath: "inset(100% 0% 0% 0%)",
-    });
-    gsap.set(document.querySelector(".ratesCollection"), {
-      opacity: 0,
-      clipPath: "inset(0% 100% 0% 0%)",
+    let allWrappers = gsap.utils.toArray(".wrapperCartCollection");
+
+    allWrappers.forEach((wrapper) => {
+      let proName = wrapper.querySelector(".proCollectionName");
+      let proPrice = wrapper.querySelector(".proCollectionPrice");
+      let addBtns = wrapper.querySelector(".addTocartCollection");
+      let moreDetail = wrapper.querySelector(".moreDetailsCollection");
+      let rate = wrapper.querySelector(".ratesCollection");
+
+      gsap.set(proName, {
+        opacity: 0,
+        y: 30,
+        clipPath: "inset(100% 0% 0% 0%)",
+      });
+      gsap.set(proPrice, {
+        opacity: 0,
+        y: 20,
+        clipPath: "inset(100% 0% 0% 0%)",
+      });
+      gsap.set(addBtns, {
+        opacity: 0,
+        y: 20,
+        clipPath: "inset(100% 0% 0% 0%)",
+      });
+      gsap.set(moreDetail, {
+        opacity: 0,
+        y: 20,
+        clipPath: "inset(100% 0% 0% 0%)",
+      });
+      gsap.set(rate, {
+        opacity: 0,
+        clipPath: "inset(0% 100% 0% 0%)",
+      });
     });
   }, []);
 
-  let handlerHoverCart = () => {
+  let handleShow = () => {
+    setShow(true);
+  };
+
+  let cartVariants = {
+    initial: {
+      opacity: 0,
+    },
+    animate: {
+      opacity: 1,
+      transition: {
+        type: "tween",
+        duration: 0.5,
+        ease: "easeOut",
+        delay: index * 0.1,
+      },
+    },
+  };
+
+  let handlerHoverCart = (e) => {
+    let targetElmIndex = e.target.getAttribute("data-index");
     let tl = gsap.timeline();
-    tl.to(document.querySelector(".overLayCollection"), {
+
+    let targetWrapper = document.querySelectorAll(".wrapperCartCollection")[
+      targetElmIndex
+    ];
+    targetWrapper.setAttribute("data-hover", "true");
+
+    targetHover.current = targetWrapper;
+
+    tl.to(targetWrapper.querySelector(".overLayCollection"), {
       opacity: 1,
       duration: 1,
       ease: "Expo.easeOut",
     });
     tl.to(
-      cartInfoRef.current,
+      targetWrapper.querySelector(".wrapperInfoCart"),
       {
         height: "45%",
         duration: 1,
@@ -49,7 +89,7 @@ export default function TrendCollectionItem({ item }) {
       "<0.1"
     );
     tl.to(
-      document.querySelector(".proCollectionName"),
+      targetWrapper.querySelector(".proCollectionName"),
       {
         opacity: 1,
         y: 0,
@@ -60,7 +100,7 @@ export default function TrendCollectionItem({ item }) {
       "<0.2"
     );
     tl.to(
-      document.querySelector(".proCollectionPrice"),
+      targetWrapper.querySelector(".proCollectionPrice"),
       {
         y: 0,
         opacity: 1,
@@ -71,7 +111,7 @@ export default function TrendCollectionItem({ item }) {
       "<0.15"
     );
     tl.to(
-      document.querySelector(".addTocartCollection"),
+      targetWrapper.querySelector(".addTocartCollection"),
       {
         opacity: 1,
         y: 0,
@@ -82,7 +122,7 @@ export default function TrendCollectionItem({ item }) {
       "<0.1"
     );
     tl.to(
-      document.querySelector(".moreDetailsCollection"),
+      targetWrapper.querySelector(".moreDetailsCollection"),
       {
         opacity: 1,
         y: 0,
@@ -93,7 +133,7 @@ export default function TrendCollectionItem({ item }) {
       "<0.1"
     );
     tl.to(
-      document.querySelector(".ratesCollection"),
+      targetWrapper.querySelector(".ratesCollection"),
       {
         opacity: 1,
         clipPath: "inset(0% 0% 0% 0%)",
@@ -105,7 +145,8 @@ export default function TrendCollectionItem({ item }) {
   };
   let handlerMouseLeave = () => {
     let tl = gsap.timeline();
-    tl.to(document.querySelector(".moreDetailsCollection"), {
+
+    tl.to(targetHover.current.querySelector(".moreDetailsCollection"), {
       opacity: 0,
       y: 20,
       clipPath: "inset(100% 0% 0% 0%)",
@@ -113,7 +154,7 @@ export default function TrendCollectionItem({ item }) {
       ease: "Expo.easeOut",
     });
     tl.to(
-      document.querySelector(".addTocartCollection"),
+      targetHover.current.querySelector(".addTocartCollection"),
       {
         opacity: 0,
         y: 20,
@@ -124,7 +165,7 @@ export default function TrendCollectionItem({ item }) {
       "<0.1"
     );
     tl.to(
-      document.querySelector(".ratesCollection"),
+      targetHover.current.querySelector(".ratesCollection"),
       {
         opacity: 0,
         duration: 0.5,
@@ -133,7 +174,7 @@ export default function TrendCollectionItem({ item }) {
       "<0.03"
     );
     tl.to(
-      document.querySelector(".proCollectionPrice"),
+      targetHover.current.querySelector(".proCollectionPrice"),
       {
         opacity: 0,
         y: 20,
@@ -144,7 +185,7 @@ export default function TrendCollectionItem({ item }) {
       "<0.1"
     );
     tl.to(
-      document.querySelector(".proCollectionName"),
+      targetHover.current.querySelector(".proCollectionName"),
       {
         opacity: 0,
         y: 30,
@@ -155,7 +196,7 @@ export default function TrendCollectionItem({ item }) {
       "<0.1"
     );
     tl.to(
-      cartInfoRef.current,
+      targetHover.current.querySelector(".wrapperInfoCart"),
       {
         height: "0%",
         duration: 1.5,
@@ -164,7 +205,7 @@ export default function TrendCollectionItem({ item }) {
       "<0.1"
     );
     tl.to(
-      document.querySelector(".overLayCollection"),
+      targetHover.current.querySelector(".overLayCollection"),
       {
         opacity: 0,
         duration: 1,
@@ -176,14 +217,21 @@ export default function TrendCollectionItem({ item }) {
 
   return (
     <>
-      <div className="col-3 mt-5">
+      <motion.div
+        variants={cartVariants}
+        onViewportEnter={handleShow}
+        viewport={{ once: true, amount: 0.5 }}
+        initial="initial"
+        animate={show ? "animate" : "initial"}
+        className="col-3 mt-5"
+      >
         <div
           onMouseEnter={handlerHoverCart}
           onMouseLeave={handlerMouseLeave}
           className="wrapperCartCollection"
           style={{ backgroundImage: `url(${item.image1})` }}
         >
-          <div ref={cartInfoRef} className="wrapperInfoCart">
+          <div className="wrapperInfoCart">
             <p className="proCollectionName">{item.name}</p>
             {/*  */}
             <div className="priceAndRate">
@@ -202,9 +250,9 @@ export default function TrendCollectionItem({ item }) {
               <button className="moreDetailsCollection">more details</button>
             </div>
           </div>
-          <div className="overLayCollection"></div>
+          <div data-index={index} className="overLayCollection"></div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }

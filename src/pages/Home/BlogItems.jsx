@@ -1,12 +1,35 @@
 import { Link } from "react-router-dom";
-import { useRef } from "react";
+import { useRef, useState } from "react";
+import { motion } from "framer-motion";
 import { gsap } from "gsap";
 
-export default function BlogItems({ blogItems }) {
+export default function BlogItems({ blogItems, index }) {
+  let [onView, setOnView] = useState(false);
   let imageRef = useRef();
   let titleRef = useRef();
   let descRef = useRef();
   let btnRef = useRef();
+
+  let blogVariants = {
+    initial: {
+      opacity: 0,
+    },
+    animate: {
+      opacity: 1,
+      transition: {
+        type: "tween",
+        duration: 0.8,
+        ease: "easeOut",
+        delay: index * 0.1,
+      },
+    },
+  };
+
+  let enterBlog = () => {
+    if (!onView) {
+      setOnView(true);
+    }
+  };
 
   let hover = () => {
     gsap.to(imageRef.current, {
@@ -50,7 +73,14 @@ export default function BlogItems({ blogItems }) {
 
   return (
     <>
-      <div className="col-4">
+      <motion.div
+        variants={blogVariants}
+        onViewportEnter={enterBlog}
+        viewport={{ once: true, amount: 0.5 }}
+        initial="initial"
+        animate={onView ? "animate" : "initial"}
+        className="col-4"
+      >
         <div
           onMouseEnter={hover}
           onMouseLeave={leave}
@@ -81,7 +111,7 @@ export default function BlogItems({ blogItems }) {
             </Link>
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }

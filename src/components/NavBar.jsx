@@ -2,6 +2,7 @@ import { useRef } from "react";
 import BasketSvg from "../svg/BasketSvg";
 import UserSvg from "../svg/UserSvg";
 import { gsap } from "gsap";
+import { motion } from "framer-motion";
 import SearchSvg from "../svg/SearchSvg";
 import "./navbar.scss";
 
@@ -25,7 +26,13 @@ export default function NavBar() {
     <>
       <div className="container-fluid px-5">
         <div className="row">
-          <div className="navbar">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ type: "tween", duration: 0.6 }}
+            className="navbar"
+          >
             <div ref={borderRef} className="NavbarLeftSection">
               <input
                 onFocus={handleFocus}
@@ -47,7 +54,7 @@ export default function NavBar() {
               <UserSvg />
               <BasketSvg />
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </>
