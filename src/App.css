@@ -1,1 +1,70 @@
 @import url(./reset.css);
+@import url(./locomotive-scroll.css);
+@import url("https://fonts.cdnfonts.com/css/philosopher");
+
+body {
+  overflow-x: hidden;
+  font-family: "Philosopher", sans-serif;
+  user-select: none;
+  scrollbar-width: thin;
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #484848;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: #48484800;
+  }
+}
+.mt-2rem {
+  margin-top: 2rem;
+}
+.mt-3rem {
+  margin-top: 3rem;
+}
+.mt-4rem {
+  margin-top: 4rem;
+}
+.mt-5rem {
+  margin-top: 5rem;
+}
+.mt-6rem {
+  margin-top: 6rem;
+}
+.mt-7rem {
+  margin-top: 7rem;
+}
+.mb3rem {
+  margin-bottom: 3rem;
+}
+.swiper-slide {
+  padding-bottom: 4rem !important;
+}
+.swiper-pagination {
+  top: 14.5rem !important;
+}
+.swiper-pagination-bullet-active {
+  background: #000 !important;
+}
+
+.accordion-item {
+  background-color: transparent;
+  outline: none;
+  border-left: 0;
+  border-right: 0;
+  .accordion-button {
+    background-color: transparent !important;
+    border: 0 !important;
+    outline: none !important;
+    box-shadow: 0 0 0 0 #00000000 !important;
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+.accordion-body {
+  font-size: 14px;
+  line-height: 22px;
+  opacity: 0.8;
+  font-family: sans-serif;
+}

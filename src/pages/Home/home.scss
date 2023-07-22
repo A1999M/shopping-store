@@ -1,0 +1,511 @@
+$hover-color: #044b61;
+$ff: "Philosopher", sans-serif;
+$btn-bgc: #000;
+$text-color: #000;
+$btn-color: #fff;
+
+// trends collection styles
+.titleTrendCollection {
+  color: $text-color;
+  font-size: 45px;
+  font-family: $ff;
+  text-transform: uppercase;
+  text-align: center;
+}
+.descCollection {
+  color: $text-color;
+  font-size: 16px;
+  font-family: $ff;
+  text-transform: capitalize;
+  margin-top: 20px;
+  opacity: 0.7;
+  text-align: center;
+}
+.wrapperTrendCollectionCategory {
+  margin-top: 2.5rem;
+  text-align: center;
+  .sellerTCollection {
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, 0);
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 10px 30px;
+    background-color: #fff;
+    margin: 0 1rem;
+  }
+  .arrivalsTCollection {
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, 0);
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 10px 30px;
+    background-color: #fff;
+    margin: 0 1rem;
+  }
+  .topTCollection {
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, 0);
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 10px 30px;
+    background-color: #fff;
+    margin: 0 1rem;
+  }
+}
+
+.wrapperCartCollection {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+  background-position: inherit;
+  min-width: 339px;
+  min-height: 50vh;
+  cursor: pointer;
+  overflow: hidden;
+  filter: grayscale(0);
+  .wrapperInfoCart {
+    position: absolute;
+    bottom: 0rem;
+    background-color: #fff;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    padding: 0 15px;
+    height: 0%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    .proCollectionName {
+      color: $text-color;
+      font-size: 19px;
+      margin-top: 23px;
+      font-family: $ff;
+      text-transform: capitalize;
+    }
+    .priceAndRate {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 23px;
+      .proCollectionPrice {
+        font-weight: 700;
+        color: $text-color;
+        font-family: sans-serif;
+      }
+      .ratesCollection {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .wrapperCollectionBtns {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 30px;
+      .addTocartCollection {
+        border: 0px;
+        background-color: $btn-bgc;
+        color: $btn-color;
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 15px;
+        font-family: $ff;
+        text-transform: uppercase;
+        transform-origin: 0% 0%;
+      }
+      .moreDetailsCollection {
+        @extend .addTocartCollection;
+      }
+    }
+  }
+  .overLayCollection {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #ffffff8d;
+    mix-blend-mode: color;
+    opacity: 0;
+  }
+}
+
+// special price section styles
+.specialPriceContainer {
+  margin-top: 10rem;
+  .wrapperSpecial {
+    background-image: url(https://pandora-fashi.myshopify.com/cdn/shop/files/parallax.png?v=1681799785);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 85vh;
+  }
+}
+
+// offers section styles
+.offersContainer {
+  margin-top: 7rem;
+  .titleOffers {
+    font-size: 45px;
+    color: #000;
+    text-transform: capitalize;
+    text-align: center;
+  }
+  .descOffers {
+    font-size: 16px;
+    color: #000;
+    text-transform: capitalize;
+    margin-top: 25px;
+    text-align: center;
+    opacity: 0.7;
+  }
+  .wrapperLeftOffer {
+    width: 100%;
+    height: 50vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(https://pandora-fashi.myshopify.com/cdn/shop/files/offer-bg-1.png?v=1681792772&width=750);
+    .titleLeftOffer {
+      color: #000;
+      text-transform: capitalize;
+      font-size: 40px;
+      margin-left: 3vw;
+      padding-top: 25%;
+      opacity: 0;
+      clip-path: inset(100% 0% 0% 0%);
+      transform: translateY(40px);
+    }
+    .descLeftOffer {
+      color: #000;
+      text-transform: capitalize;
+      margin-left: 3vw;
+      opacity: 0.7;
+      font-size: 17px;
+      margin-top: 20px;
+      font-family: sans-serif;
+      opacity: 0;
+      clip-path: inset(100% 0% 0% 0%);
+      transform: translateY(40px);
+    }
+    .shopLeftOffer {
+      transform-origin: 0% 0%;
+      color: #fff;
+      text-transform: uppercase;
+      background-color: #000;
+      border: none;
+      outline: none;
+      margin-left: 3vw;
+      font-size: 15px;
+      margin-top: 12px;
+      display: inline-block;
+      padding: 15px 25px;
+      font-family: sans-serif;
+      font-weight: 500;
+      clip-path: inset(100% 0% 0% 0%);
+      opacity: 0;
+    }
+  }
+  .wrapperRightOffer {
+    @extend .wrapperLeftOffer;
+    background-image: url(https://pandora-fashi.myshopify.com/cdn/shop/files/offer-bg-2.png?v=1681792780&width=750);
+    .titleRightOffer {
+      color: #000;
+      text-transform: capitalize;
+      font-size: 40px;
+      margin-left: 3vw;
+      padding-top: 25%;
+      opacity: 0;
+      clip-path: inset(100% 0% 0% 0%);
+      transform: translateY(20px);
+    }
+    .descRightOffer {
+      color: #000;
+      text-transform: capitalize;
+      margin-left: 3vw;
+      opacity: 0.7;
+      font-size: 17px;
+      margin-top: 20px;
+      font-family: sans-serif;
+      opacity: 0;
+      clip-path: inset(100% 0% 0% 0%);
+      transform: translateY(20px);
+    }
+    .shopRightOffer {
+      transform-origin: 0% 0%;
+      color: #fff;
+      text-transform: uppercase;
+      background-color: #000;
+      border: none;
+      outline: none;
+      margin-left: 3vw;
+      font-size: 15px;
+      margin-top: 12px;
+      display: inline-block;
+      padding: 15px 25px;
+      font-family: sans-serif;
+      font-weight: 500;
+      opacity: 0;
+      clip-path: inset(100% 0% 0% 0%);
+    }
+  }
+}
+
+// blog items section styles
+.titleBlog {
+  text-align: center;
+  font-size: 45px;
+}
+.descBlog {
+  text-align: center;
+  font-size: 16px;
+  opacity: 0.7;
+  margin-top: 20px;
+  text-transform: capitalize;
+}
+.wrapperBlogItem {
+  overflow: hidden;
+  border-radius: 30px;
+  position: relative;
+  height: fit-content;
+  padding-bottom: 2rem;
+  box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  .wrpperBlogImg {
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+  }
+  .wrapperBodyBlog {
+    padding: 0 1rem;
+    .titleBlogItem {
+      font-size: 23px;
+      text-transform: capitalize;
+      margin-top: 22px;
+    }
+    .descBlogItem {
+      font-size: 16px;
+      text-transform: capitalize;
+      margin-top: 16px;
+      line-height: 24px;
+      opacity: 0.7;
+    }
+    .blogReadMore {
+      font-size: 14px;
+      text-decoration: none;
+      color: #fff;
+      background-color: #000;
+      text-transform: uppercase;
+      display: block;
+      margin-left: auto;
+      padding: 10px 20px;
+      margin-top: 20px;
+      width: fit-content;
+      transform-origin: 0% 0%;
+    }
+  }
+}
+
+// features section styles
+.wrapperFeatureItem {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  .wrapperImg {
+    img {
+      display: block;
+      margin: auto;
+    }
+  }
+  .wrapperDescFItems {
+    margin-left: 4px;
+    .featureItemTitle {
+      font-size: 18px;
+      color: #000;
+      font-weight: bold;
+      text-transform: capitalize;
+    }
+    .featureItemDesc {
+      font-size: 14px;
+      color: #000;
+      opacity: 0.7;
+      text-transform: capitalize;
+      font-family: sans-serif;
+      width: 80%;
+      margin-top: 12px;
+      line-height: 20px;
+    }
+  }
+}
+
+// start best products section style
+.bestProducts {
+  margin-top: 7rem;
+  .titleBestProducts {
+    font-size: 45px;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .descBestProducts {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+    text-transform: capitalize;
+  }
+
+  .wrapperBestProducts {
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: fit-content;
+    justify-content: flex-start;
+    .wrapperBestProItem {
+      width: 100%;
+      overflow: hidden;
+      text-align: center;
+      margin: 0 auto;
+      padding-bottom: 20px;
+      box-shadow: 0 0 0px 0px #00000040;
+      transition: all 0.35s;
+      .wrapperImgBestProItem {
+        overflow: hidden;
+        width: 100%;
+        height: 380px;
+        img.imgBestProItem {
+          width: 100%;
+          transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+          filter: grayscale(0) brightness(1);
+        }
+      }
+
+      .rateBestProItem {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      .namePro {
+        font-size: 17px;
+        font-weight: bold;
+        text-transform: capitalize;
+        margin-top: 12px;
+        line-height: 20px;
+      }
+      .pricePro {
+        font-size: 16px;
+        text-transform: capitalize;
+        margin-top: 14px;
+        font-family: sans-serif;
+      }
+      .bestProBtn {
+        color: #fff;
+        background-color: #000;
+        text-transform: uppercase;
+        display: block;
+        padding: 10px 20px;
+        font-size: 15px;
+        font-family: sans-serif;
+        width: fit-content;
+        margin: 0 auto;
+        margin-top: 15px;
+        transition: all 0.3s;
+        opacity: 0;
+      }
+      &:hover {
+        box-shadow: 0 0 20px 1px #00000040;
+        .bestProBtn {
+          opacity: 1;
+        }
+        .imgBestProItem {
+          filter: grayscale(1) brightness(0.9);
+        }
+      }
+    }
+  }
+}
+
+// start customer reviews section styles
+.custoremReview {
+  margin-top: 7rem;
+  padding: 0;
+  .bgCustomerReview {
+    background-image: url(https://pandora-fashi.myshopify.com/cdn/shop/files/review-bg.png?v=1681792909&width=1780);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 2rem;
+    overflow-x: hidden;
+    .wrapperCReviews {
+      overflow: hidden;
+      .titleReviews {
+        font-size: 45px;
+        text-transform: uppercase;
+        margin-top: 40px;
+        text-align: center;
+      }
+      .descReviews {
+        font-size: 16px;
+        text-transform: capitalize;
+        font-family: sans-serif;
+        margin-top: 25px;
+        text-align: center;
+        opacity: 0.6;
+        margin-bottom: 3rem;
+      }
+    }
+    .cWrapperSlider {
+      overflow-x: hidden;
+      .firstReview {
+        position: relative;
+        font-size: 15px;
+        margin: 0 auto;
+        text-transform: capitalize;
+        opacity: 0.6;
+        width: 70%;
+        text-align: center;
+        font-family: sans-serif;
+        line-height: 26px;
+        &::after {
+          position: absolute;
+          bottom: -10px;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-color: #000;
+          width: 55px;
+          height: 2px;
+          content: "";
+        }
+      }
+      .customerName {
+        font-size: 18px;
+        margin-top: 2.4rem;
+        text-transform: capitalize;
+        text-align: center;
+        font-weight: 700;
+      }
+      .customerJob {
+        font-size: 15px;
+        margin-top: 10px;
+        text-transform: capitalize;
+        opacity: 0.6;
+        font-family: sans-serif;
+        text-align: center;
+      }
+    }
+  }
+}
+
+// faqs section styles
+.faqs {
+  margin-top: 5rem;
+  padding: 0 5rem;
+  .faqsTitle {
+    font-size: 45px;
+    text-align: center;
+  }
+}
