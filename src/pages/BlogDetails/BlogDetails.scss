@@ -1,0 +1,92 @@
+.blogDetails {
+  padding: 0 3rem;
+  .headerBlogDetail {
+    .titleBlogDetail {
+      font-size: 32px;
+      margin-top: 2.5rem;
+    }
+    .currentData {
+      font-size: 14px;
+      font-family: sans-serif;
+      margin-top: 14px;
+      font-weight: 500;
+    }
+    .imageBlogDetails {
+      margin-top: -2.5rem;
+      width: 100%;
+      clip-path: inset(10% 0% 10% 0%);
+      display: block;
+    }
+  }
+  .bodyBlogDetail {
+    .descBlogDetail {
+      margin-top: -2rem;
+      font-size: 16px;
+      line-height: 23px;
+      font-family: sans-serif;
+      color: #797979;
+    }
+    .unorderedListBlogDetail {
+      margin-top: 45px;
+      .titleUnOrder {
+        font-size: 17px;
+        color: #000;
+        font-weight: 700;
+      }
+      ul.unorderBlogDetails {
+        list-style-type: disc;
+        margin-top: 30px;
+        margin-left: 40px;
+        li.unorderBlogDetailsItems {
+          margin: 8px 0;
+          font-size: 15px;
+          font-family: sans-serif;
+          color: #797979;
+        }
+      }
+    }
+    .orderedListBlogDetail {
+      margin-top: 30px;
+      .titleOrder {
+        font-size: 17px;
+        color: #000;
+        font-weight: 700;
+      }
+      ol.orderBlogDetails {
+        margin-top: 30px;
+        margin-left: 40px;
+        li {
+          margin: 8px 0;
+          font-size: 15px;
+          font-family: sans-serif;
+          color: #797979;
+        }
+      }
+    }
+    .blogDetailsBackBtn {
+      text-decoration: none;
+      color: #797979;
+      display: block;
+      font-size: 20px;
+      width: fit-content;
+      font-weight: 700;
+      margin: 3rem auto;
+      text-transform: capitalize;
+      span.backIconBlogDetils {
+        transition: all 0.3s;
+        display: inline-block;
+        margin-right: 5px;
+        font-weight: 700;
+        font-size: 20px;
+        transform: translateX(0px);
+        transition: all 0.3s;
+      }
+      &:hover {
+        color: #044b61;
+        .backIconBlogDetils {
+          transform: translateX(-8px);
+        }
+      }
+    }
+  }
+}

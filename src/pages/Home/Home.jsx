@@ -1,54 +1,67 @@
-import React, { useLayoutEffect, useRef } from "react";
-import LocomotiveScroll from "locomotive-scroll";
+import { useEffect } from "react";
 import Header from "../../components/Header";
-// import SpecialPrice from "./SpecialPrice";
+import LocomotiveScroll from "locomotive-scroll";
 import VideoOffer from "./VideoOffer";
 import LatestBlogs from "./LatestBlogs";
 import Features from "./Features";
 import Offers from "./Offers";
 import BestProducts from "./BestProducts";
-import NavBar from "../../components/NavBar";
 import TrendCollection from "./TrendCollection";
 import Faqs from "./Faqs";
 import Footer from "../../components/Footer";
 import CustomerReview from "./CustomerReview";
+import { motion, AnimatePresence } from "framer-motion";
 import "./home.scss";
 
 export default function Home() {
-  let activeLoco = useRef(true);
-  useLayoutEffect(() => {
-    if (activeLoco.current) {
-      activeLoco.current = false;
-      const locoScroll = new LocomotiveScroll({
-        lenisOptions: {
-          wrapper: window,
-          content: document.documentElement,
-          lerp: 0.1,
-          duration: 1.2,
-          orientation: "vertical",
-          gestureOrientation: "vertical",
-          smoothWheel: true,
-          smoothTouch: false,
-          wheelMultiplier: 0.8,
-          touchMultiplier: 2,
-          normalizeWheel: true,
-        },
+  useEffect(() => {
+    document.documentElement.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant",
+    });
+
+    return () => {
+      document.documentElement.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "instant",
       });
-    }
+    };
   }, []);
 
   return (
-    <>
-      <Header />
-      <TrendCollection />
-      <Offers />
-      <VideoOffer />
-      <BestProducts />
-      <LatestBlogs />
-      <CustomerReview />
-      <Faqs />
-      <Features />
-      <Footer />
-    </>
+    <AnimatePresence mode="wait" initial="true">
+      <motion.div
+        initial={{
+          opacity: 0,
+          y: 30,
+        }}
+        animate={{
+          opacity: 1,
+          y: 0,
+        }}
+        exit={{
+          opacity: 0,
+          y: 30,
+        }}
+        transition={{
+          type: "tween",
+          duration: 0.5,
+          ease: "easeOut",
+        }}
+      >
+        <Header />
+        <TrendCollection />
+        <Offers />
+        <VideoOffer />
+        <BestProducts />
+        <LatestBlogs />
+        <CustomerReview />
+        <Faqs />
+        <Features />
+        <Footer />
+      </motion.div>
+    </AnimatePresence>
   );
 }

@@ -1,4 +1,5 @@
 import { useLayoutEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import { gsap } from "gsap";
 import Star from "../../components/Star";
 import { motion } from "framer-motion";
@@ -247,7 +248,12 @@ export default function TrendCollectionItem({ item, index }) {
             {/*  */}
             <div className="wrapperCollectionBtns">
               <button className="addTocartCollection">add to card</button>
-              <button className="moreDetailsCollection">more details</button>
+              <Link
+                to={`/posts/:postId=${item.id}`}
+                className="moreDetailsCollection"
+              >
+                more details
+              </Link>
             </div>
           </div>
           <div data-index={index} className="overLayCollection"></div>

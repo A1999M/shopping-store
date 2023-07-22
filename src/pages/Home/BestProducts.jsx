@@ -61,7 +61,7 @@ export default function BestProducts() {
         ease: "none",
         scrollTrigger: {
           trigger: wrapperBestPro.current,
-          start: "center center",
+          start: "center 55%",
           end: "+=1500",
           pin: true,
           id: "horizontalTrigger",
