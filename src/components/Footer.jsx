@@ -80,7 +80,7 @@ export default function Footer() {
     }, scopeRef);
 
     return () => ctx.revert();
-  });
+  }, []);
 
   return (
     <>

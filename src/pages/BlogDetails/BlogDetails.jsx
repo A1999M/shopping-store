@@ -132,7 +132,7 @@ export default function BlogDetails() {
         behavior: "instant",
       });
     };
-  });
+  }, []);
 
   useLayoutEffect(() => {
     fetch(`http://localhost:8000/blogItems/?id=${blogId}`)

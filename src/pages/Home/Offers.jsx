@@ -168,7 +168,7 @@ export default function Offers() {
     return () => {
       ctx.revert();
     };
-  });
+  }, []);
 
   let handlerLImageHoverEnter = () => {
     gsap.to(document.querySelector(".wrapperLeftOffer"), {
