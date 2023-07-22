@@ -20,6 +20,14 @@ export default function Home() {
       left: 0,
       behavior: "instant",
     });
+
+    return () => {
+      document.documentElement.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "instant",
+      });
+    };
   }, []);
 
   return (

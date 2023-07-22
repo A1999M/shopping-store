@@ -14,21 +14,7 @@ export default function App() {
   let location = useLocation();
 
   useLayoutEffect(() => {
-    const locoScroll = new LocomotiveScroll({
-      lenisOptions: {
-        wrapper: window,
-        content: document.documentElement,
-        lerp: 0.1,
-        duration: 1.2,
-        orientation: "vertical",
-        gestureOrientation: "vertical",
-        smoothWheel: true,
-        smoothTouch: false,
-        wheelMultiplier: 0.8,
-        touchMultiplier: 2,
-        normalizeWheel: true,
-      },
-    });
+    const locoScroll = new LocomotiveScroll();
   });
 
   useEffect(() => {
