@@ -48,6 +48,11 @@ export default function BlogDetails() {
         clipPath: "inset(0% 0% 100% 0%)",
         y: 30,
       });
+      gsap.set(".blogDetailsBackBtn", {
+        opacity: 0,
+        clipPath: "inset(0% 0% 100% 0%)",
+        y: 30,
+      });
 
       let tl = gsap.timeline({
         scrollTrigger: {
@@ -106,6 +111,17 @@ export default function BlogDetails() {
           "<0.1"
         );
       });
+      tl2.to(
+        ".blogDetailsBackBtn",
+        {
+          opacity: 1,
+          clipPath: "inset(0% 0% 0% 0%)",
+          y: 0,
+          duration: 1,
+          ease: "Expo.easeOut",
+        },
+        "<0.2"
+      );
     }, scopeRef);
 
     return () => {
@@ -178,10 +194,7 @@ export default function BlogDetails() {
               </div>
             </div>
             <div className="row blogDetails">
-              <div className="col-2">
-                <p className="categury">categury</p>
-              </div>
-              <div className="col-10">
+              <div className="col-12">
                 {/* header blog */}
                 <div className="headerBlogDetail">
                   <p className="titleBlogDetail">{currentBlog.title}</p>
