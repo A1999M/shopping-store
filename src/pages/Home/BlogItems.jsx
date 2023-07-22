@@ -105,7 +105,7 @@ export default function BlogItems({ blogItems, index }) {
               onMouseLeave={leaveBtn}
               ref={btnRef}
               className="blogReadMore"
-              to="/blog/:id=1"
+              to={`/blog/${blogItems.id}`}
             >
               read more
             </Link>

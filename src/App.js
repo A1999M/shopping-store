@@ -1,6 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useLayoutEffect, useState } from "react";
 import Home from "./pages/Home";
-import { Routes, Route } from "react-router-dom";
+import LocomotiveScroll from "locomotive-scroll";
+import BlogDetails from "./pages/BlogDetails";
+import { Routes, Route, useLocation } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import items from "./context/items";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -9,6 +11,25 @@ import "./App.css";
 export default function App() {
   const [menItems, setMenItems] = useState();
   const [womenItems, setWomenItems] = useState();
+  let location = useLocation();
+
+  useLayoutEffect(() => {
+    const locoScroll = new LocomotiveScroll({
+      lenisOptions: {
+        wrapper: window,
+        content: document.documentElement,
+        lerp: 0.1,
+        duration: 1.2,
+        orientation: "vertical",
+        gestureOrientation: "vertical",
+        smoothWheel: true,
+        smoothTouch: false,
+        wheelMultiplier: 0.8,
+        touchMultiplier: 2,
+        normalizeWheel: true,
+      },
+    });
+  });
 
   useEffect(() => {
     // fetch men items
@@ -50,8 +71,9 @@ export default function App() {
             setWomenItems,
           }}
         >
-          <Routes>
+          <Routes location={location} key={location.pathname}>
             <Route path="/" element={<Home />} />
+            <Route path="/blog/:blogId" element={<BlogDetails />} />
           </Routes>
         </items.Provider>
       )}
