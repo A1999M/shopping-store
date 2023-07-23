@@ -2,6 +2,7 @@ import React, { useEffect, useLayoutEffect, useState } from "react";
 import Home from "./pages/Home";
 import LocomotiveScroll from "locomotive-scroll";
 import BlogDetails from "./pages/BlogDetails";
+import ProductionDetails from "./pages/ProductionDetails";
 import { Routes, Route, useLocation } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import items from "./context/items";
@@ -60,6 +61,7 @@ export default function App() {
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<Home />} />
             <Route path="/blog/:blogId" element={<BlogDetails />} />
+            <Route path="/posts/:productId" element={<ProductionDetails />} />
           </Routes>
         </items.Provider>
       )}

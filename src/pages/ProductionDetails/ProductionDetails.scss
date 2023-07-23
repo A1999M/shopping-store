@@ -1,0 +1,184 @@
+// @use "../../variables" as *;
+$hover-color: #044b61;
+$ff: "Philosopher", sans-serif;
+$btn-bgc: #000;
+$text-color: #000;
+$btn-color: #fff;
+
+.imageSectionProDetails {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  .wrapperAllImagePro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 3rem;
+    width: 15%;
+    img {
+      display: inline-block;
+      margin-top: -1.5rem;
+      width: 100%;
+      clip-path: inset(15% 0% 15% 0%);
+    }
+  }
+  .mainImgProDetail {
+    width: 65%;
+    margin-left: 5rem;
+  }
+}
+
+.wrapperDetailChoosenPro {
+  .nameChoosenPro {
+    font-size: 25px;
+    margin-top: 1rem;
+  }
+  .priceChoosenPro {
+    margin-top: 19px;
+    font-family: sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+    color: #797979;
+  }
+}
+.featuresProdetails {
+  margin-top: 40px;
+  border-bottom: 1px solid #a4a4a498;
+  padding-bottom: 20px;
+  list-style-type: disc;
+  list-style-position: inside;
+  .featuresProdetailItems {
+    margin: 0.6rem 0;
+    font-size: 15px;
+    font-family: sans-serif;
+    text-transform: capitalize;
+  }
+}
+
+.stockPro {
+  font-family: sans-serif;
+  font-size: 15px;
+  text-transform: capitalize;
+  margin-top: 20px;
+  color: #044b61;
+}
+
+.sizePro {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-family: sans-serif;
+  margin-top: 25px;
+  font-weight: 700;
+}
+.wrapperDifferentSizes {
+  margin-top: 13px;
+  .sizes {
+    font-size: 15px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 10px;
+    border: 1px solid #a5a5a5;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 8px 15px;
+    transition: all 0.35s;
+  }
+}
+.wrapperAddToCartProDetails {
+  margin-top: 45px;
+  display: flex;
+  align-items: center;
+  .wrapperCountBtns {
+    width: fit-content;
+    border: 1px solid #a4a4a4;
+    border-radius: 30px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    .increment {
+      display: inline-block;
+      font-size: 25px;
+      margin-right: 50px;
+      cursor: pointer;
+    }
+    .decrement {
+      display: inline-block;
+      font-size: 25px;
+      margin-left: 50px;
+      cursor: pointer;
+    }
+    .choosenProCount {
+      font-family: sans-serif;
+      font-weight: 700;
+    }
+  }
+  .choosenProAddToCart {
+    display: inline-block;
+    background-color: #000;
+    border: none;
+    outline: none;
+    padding: 15px 30px;
+    font-size: 17px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+    text-transform: capitalize;
+    margin-left: 2rem;
+    border-radius: 30px;
+  }
+}
+.wrapperGuarantee {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(164, 164, 164, 0.5960784314);
+  .Guarantee {
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #a4a4a4;
+    margin-right: 4rem;
+    p.GuaranteeDesc {
+      width: 50%;
+      font-size: 15px;
+      text-transform: capitalize;
+      margin-left: 10px;
+      line-height: 17px;
+      font-family: sans-serif;
+      font-weight: 700;
+    }
+  }
+  .Warranty {
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #a4a4a4;
+    margin-right: 4rem;
+    p.WarrantyDesc {
+      width: 50%;
+      font-size: 15px;
+      text-transform: capitalize;
+      margin-left: 10px;
+      line-height: 17px;
+      font-family: sans-serif;
+      font-weight: 700;
+    }
+  }
+  .Gift {
+    display: flex;
+    align-items: center;
+    margin-right: 4rem;
+    p.GiftDesc {
+      width: 50%;
+      font-size: 15px;
+      text-transform: capitalize;
+      margin-left: 10px;
+      line-height: 17px;
+      font-family: sans-serif;
+      font-weight: 700;
+    }
+  }
+}

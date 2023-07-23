@@ -248,10 +248,7 @@ export default function TrendCollectionItem({ item, index }) {
             {/*  */}
             <div className="wrapperCollectionBtns">
               <button className="addTocartCollection">add to card</button>
-              <Link
-                to={`/posts/:postId=${item.id}`}
-                className="moreDetailsCollection"
-              >
+              <Link to={`/posts/${item.id}`} className="moreDetailsCollection">
                 more details
               </Link>
             </div>

@@ -9,7 +9,9 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <AnimatePresence mode="wait" initial="true">
+        <App />
+      </AnimatePresence>
     </BrowserRouter>
   </React.StrictMode>
 );
