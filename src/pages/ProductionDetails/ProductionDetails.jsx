@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ProTabs from "./ProTabs";
+import RelatedProducts from "./RelatedProducts";
 import "./ProductionDetails.scss";
 
 export default function ProductionDetails() {
@@ -25,7 +26,6 @@ export default function ProductionDetails() {
         })
         .then((data) => {
           setChoosenProduct(data[0]);
-          console.log(data);
         })
         .catch((err) => {
           console.warn(err);
@@ -243,6 +243,11 @@ export default function ProductionDetails() {
           <div className="row mt-5rem">
             <div className="col-12">
               <ProTabs />
+            </div>
+          </div>
+          <div className="row mt-7rem">
+            <div className="col-12">
+              <RelatedProducts productId={productId} />
             </div>
           </div>
         </div>
