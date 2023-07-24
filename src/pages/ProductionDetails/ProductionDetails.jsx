@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import ProTabs from "./ProTabs";
 import "./ProductionDetails.scss";
 
 export default function ProductionDetails() {
@@ -46,7 +47,7 @@ export default function ProductionDetails() {
   return (
     <>
       {choosenProduct && (
-        <div className="container-fluid mt-5">
+        <div className="container-fluid mt-5 zxasss">
           <div className="row">
             <div className="col-5">
               <div className="imageSectionProDetails">
@@ -237,6 +238,11 @@ export default function ProductionDetails() {
                   <p className="GiftDesc">Free Signature Gift Box</p>
                 </div>
               </div>
+            </div>
+          </div>
+          <div className="row mt-5rem">
+            <div className="col-12">
+              <ProTabs />
             </div>
           </div>
         </div>

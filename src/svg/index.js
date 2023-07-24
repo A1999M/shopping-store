@@ -5,3 +5,4 @@ export { default as PinterestLogo } from "./PinterestLogo";
 export { default as BasketSvg } from "./BasketSvg";
 export { default as SearchSvg } from "./SearchSvg";
 export { default as UserSvg } from "./UserSvg";
+export { default as AvatarSvg } from "./AvatarSvg";
