@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ProTabs from "./ProTabs";
 import RelatedProducts from "./RelatedProducts";
+import Footer from "../../components/Footer";
 import "./ProductionDetails.scss";
 
 export default function ProductionDetails() {
@@ -249,6 +250,9 @@ export default function ProductionDetails() {
             <div className="col-12">
               <RelatedProducts productId={productId} />
             </div>
+          </div>
+          <div className="row">
+            <Footer />
           </div>
         </div>
       )}
