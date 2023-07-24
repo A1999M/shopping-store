@@ -21,6 +21,9 @@ $btn-color: #fff;
       margin-top: -1.5rem;
       width: 100%;
       clip-path: inset(15% 0% 15% 0%);
+      border: 1px solid #000;
+      border-color: #00000000;
+      transition: all 0.35s;
     }
   }
   .mainImgProDetail {

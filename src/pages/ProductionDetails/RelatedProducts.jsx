@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 export default function RelatedProducts({ productId }) {
-  let [relatedPros, setRelatedPros] = useState();
+  let [relatedPros, setRelatedPros] = useState(null);
 
   useEffect(() => {
     if (productId <= 13) {
