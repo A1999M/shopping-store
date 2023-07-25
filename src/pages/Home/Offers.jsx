@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 
@@ -168,7 +168,7 @@ export default function Offers() {
     return () => {
       ctx.revert();
     };
-  });
+  }, []);
 
   let handlerLImageHoverEnter = () => {
     gsap.to(document.querySelector(".wrapperLeftOffer"), {

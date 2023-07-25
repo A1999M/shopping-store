@@ -79,7 +79,7 @@ export default function BestProducts() {
     return () => {
       ctx.revert();
     };
-  });
+  }, []);
 
   let bestProducts = [
     menItems[5],

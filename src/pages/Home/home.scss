@@ -115,6 +115,7 @@ $btn-color: #fff;
       }
       .moreDetailsCollection {
         @extend .addTocartCollection;
+        text-decoration: none;
       }
     }
   }

@@ -5,7 +5,6 @@ import { gsap } from "gsap";
 import { motion } from "framer-motion";
 import SearchSvg from "../svg/SearchSvg";
 import "./navbar.scss";
-import { Link } from "react-router-dom";
 
 export default function NavBar() {
   let borderRef = useRef();

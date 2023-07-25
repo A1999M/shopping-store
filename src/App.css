@@ -35,6 +35,9 @@ body {
 .mt-7rem {
   margin-top: 7rem;
 }
+.mt-8rem {
+  margin-top: 8rem;
+}
 .mb3rem {
   margin-bottom: 3rem;
 }
@@ -67,4 +70,25 @@ body {
   line-height: 22px;
   opacity: 0.8;
   font-family: sans-serif;
+}
+
+.swiper-button-prev {
+  left: -1.5rem;
+  padding: 41px;
+  top: 13rem;
+  border: 2px solid #000;
+  transform: scale(0.4);
+  color: #000;
+  border-radius: 50%;
+  font-weight: bold;
+}
+.swiper-button-next {
+  right: -1.5rem;
+  font-weight: bold;
+  top: 13rem;
+  padding: 41px;
+  border: 2px solid #000;
+  transform: scale(0.4);
+  border-radius: 50%;
+  color: #000;
 }

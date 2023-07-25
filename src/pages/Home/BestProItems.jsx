@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import Star from "../../components/Star";
 
 export default function BestProItems({ item }) {
@@ -87,22 +88,24 @@ export default function BestProItems({ item }) {
         >
           $ {item.price}.00
         </motion.p>
-        <motion.button
-          initial={{ opacity: 0 }}
-          animate={inView ? { opacity: 1 } : { opacity: 0 }}
-          onViewportEnter={handlerEnterView}
-          onViewportLeave={handlerLeaveView}
-          viewport={{ once: false, amount: "all" }}
-          transition={{
-            type: "tween",
-            duration: 0.7,
-            ease: "easeOut",
-            delay: 0.4,
-          }}
-          className="bestProBtn"
-        >
-          buy now
-        </motion.button>
+        <Link to={`/posts/${item.id}`}>
+          <motion.button
+            initial={{ opacity: 0 }}
+            animate={inView ? { opacity: 1 } : { opacity: 0 }}
+            onViewportEnter={handlerEnterView}
+            onViewportLeave={handlerLeaveView}
+            viewport={{ once: false, amount: "all" }}
+            transition={{
+              type: "tween",
+              duration: 0.7,
+              ease: "easeOut",
+              delay: 0.4,
+            }}
+            className="bestProBtn"
+          >
+            more details
+          </motion.button>
+        </Link>
       </div>
     </div>
   );
