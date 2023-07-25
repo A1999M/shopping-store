@@ -1,12 +1,21 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { useParams } from "react-router-dom";
 import ProTabs from "./ProTabs";
 import RelatedProducts from "./RelatedProducts";
 import Footer from "../../components/Footer";
+import { gsap } from "gsap";
 import { AnimatePresence, motion } from "framer-motion";
+import Zoom from "react-img-zoom";
 import "./ProductionDetails.scss";
 
 export default function ProductionDetails() {
+  let proNameRef = useRef(null);
+  let stockProRef = useRef(null);
+  let sizeProRef = useRef(null);
+  let proPriceRef = useRef(null);
+  let countBtnRef = useRef(null);
+  let addBtn = useRef(null);
+
   let [countPro, setCountPro] = useState(1);
   let [whichImg, setWhichImg] = useState({
     image1: true,
@@ -23,6 +32,123 @@ export default function ProductionDetails() {
   });
   let { productId } = useParams();
   const [choosenProduct, setChoosenProduct] = useState();
+
+  useLayoutEffect(() => {
+    let ctx = gsap.context(() => {
+      let tl = gsap.timeline();
+
+      let featuresPro = gsap.utils.toArray(".featuresProdetailItems");
+      let differentSizes = gsap.utils.toArray(".sizes");
+
+      tl.to(proNameRef.current, {
+        opacity: 1,
+        clipPath: "inset(0% 0% 0% 0%)",
+        y: 0,
+        duration: 0.5,
+        ease: "Expo.easeOut",
+        delay: 0.4,
+      });
+      tl.to(
+        proPriceRef.current,
+        {
+          opacity: 1,
+          clipPath: "inset(0% 0% 0% 0%)",
+          y: 0,
+          duration: 0.5,
+          ease: "Expo.easeOut",
+        },
+        "<0.1"
+      );
+      featuresPro.map((pro) => {
+        tl.to(
+          pro,
+          {
+            opacity: 1,
+            clipPath: "inset(0% 0% 0% 0%)",
+            y: 0,
+            duration: 0.7,
+            ease: "Expo.easeOut",
+          },
+          "<0.13"
+        );
+      });
+      tl.to(
+        ".featuresProdetails",
+        {
+          borderColor: "#a4a4a498",
+          duration: 0.5,
+          ease: "Power4.easeOut",
+        },
+        "<0.2"
+      );
+      tl.to(
+        stockProRef.current,
+        {
+          opacity: 1,
+          y: 0,
+          clipPath: "inset(0% 0% 0% 0%)",
+          duration: 0.5,
+          ease: "Expo.easeOut",
+        },
+        "<0.05"
+      );
+      tl.to(
+        sizeProRef.current,
+        {
+          opacity: 1,
+          y: 0,
+          clipPath: "inset(0% 0% 0% 0%)",
+          duration: 0.5,
+          ease: "Expo.easeOut",
+        },
+        "<0.25"
+      );
+      differentSizes.map((size) => {
+        tl.to(
+          size,
+          {
+            scale: 1,
+            duration: 1.5,
+            ease: "Elastic.easeOut",
+          },
+          "<0.1"
+        );
+      });
+      tl.to(
+        countBtnRef.current,
+        {
+          opacity: 1,
+          duration: 0.5,
+          ease: "Expo.eseOut",
+        },
+        "<0.2"
+      );
+      tl.to(
+        addBtn.current,
+        {
+          scale: 1,
+          duration: 0.3,
+          ease: "Back.easeOut",
+        },
+        "<0.2"
+      );
+      tl.to(
+        ".wrapperGuarantee",
+        {
+          opacity: 1,
+          duration: 0.5,
+          ease: "Power4.eseOut",
+        },
+        "<0.25"
+      );
+
+      //
+    });
+
+    return () => {
+      ctx.kill();
+    };
+  });
 
   useEffect(() => {
     if (productId <= 13) {
@@ -83,11 +209,28 @@ export default function ProductionDetails() {
     });
   };
 
+  let hoverAdTocart = () => {
+    gsap.to(addBtn.current, {
+      backgroundColor: "#fff",
+      color: "#000",
+      duration: 0.5,
+      ease: "Power4.easeOut",
+    });
+  };
+  let hoverLeaveAdTocart = () => {
+    gsap.to(addBtn.current, {
+      backgroundColor: "#000",
+      color: "#fff",
+      duration: 0.5,
+      ease: "Power4.easeOut",
+    });
+  };
+
   return (
     <>
       {choosenProduct && (
         <AnimatePresence mode="wait">
-          <div className="container-fluid mt-5 zxasss">
+          <div className="container-fluid mt-5">
             <div className="row">
               <div className="col-5">
                 <div className="imageSectionProDetails">
@@ -177,8 +320,12 @@ export default function ProductionDetails() {
               </div>
               <div className="col-7">
                 <div className="wrapperDetailChoosenPro">
-                  <p className="nameChoosenPro">{choosenProduct.name}</p>
-                  <p className="priceChoosenPro">${choosenProduct.price}.00</p>
+                  <p ref={proNameRef} className="nameChoosenPro">
+                    {choosenProduct.name}
+                  </p>
+                  <p ref={proPriceRef} className="priceChoosenPro">
+                    ${choosenProduct.price}.00
+                  </p>
                 </div>
                 <ul className="featuresProdetails">
                   <li className="featuresProdetailItems">100% Quality</li>
@@ -189,8 +336,12 @@ export default function ProductionDetails() {
                     Free Shipping Over $5
                   </li>
                 </ul>
-                <p className="stockPro">{productId * 7} in stock</p>
-                <p className="sizePro">size:</p>
+                <p ref={stockProRef} className="stockPro">
+                  {productId * 7} in stock
+                </p>
+                <p ref={sizeProRef} className="sizePro">
+                  size:
+                </p>
                 <div className="wrapperDifferentSizes">
                   <span
                     onClick={() =>
@@ -289,7 +440,7 @@ export default function ProductionDetails() {
                   </span>
                 </div>
                 <div className="wrapperAddToCartProDetails">
-                  <div className="wrapperCountBtns">
+                  <div ref={countBtnRef} className="wrapperCountBtns">
                     <span
                       style={
                         countPro == productId * 7
@@ -326,7 +477,14 @@ export default function ProductionDetails() {
                       &#x2212;
                     </span>
                   </div>
-                  <button className="choosenProAddToCart">Add to cart</button>
+                  <button
+                    onMouseLeave={hoverLeaveAdTocart}
+                    onMouseEnter={hoverAdTocart}
+                    ref={addBtn}
+                    className="choosenProAddToCart"
+                  >
+                    Add to cart
+                  </button>
                 </div>
                 <div className="wrapperGuarantee">
                   <div className="Guarantee">

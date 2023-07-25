@@ -36,6 +36,9 @@ $btn-color: #fff;
   .nameChoosenPro {
     font-size: 25px;
     margin-top: 1rem;
+    opacity: 0;
+    transform: translateY(40px);
+    clip-path: inset(0% 0% 100% 0%);
   }
   .priceChoosenPro {
     margin-top: 19px;
@@ -43,11 +46,14 @@ $btn-color: #fff;
     font-size: 19px;
     font-weight: bold;
     color: #797979;
+    opacity: 0;
+    transform: translateY(40px);
+    clip-path: inset(0% 0% 100% 0%);
   }
 }
 .featuresProdetails {
   margin-top: 40px;
-  border-bottom: 1px solid #a4a4a498;
+  border-bottom: 1px solid #00000000;
   padding-bottom: 20px;
   list-style-type: disc;
   list-style-position: inside;
@@ -56,6 +62,9 @@ $btn-color: #fff;
     font-size: 15px;
     font-family: sans-serif;
     text-transform: capitalize;
+    opacity: 0;
+    transform: translateY(40px);
+    clip-path: inset(0% 0% 100% 0%);
   }
 }
 
@@ -65,6 +74,9 @@ $btn-color: #fff;
   text-transform: capitalize;
   margin-top: 20px;
   color: #044b61;
+  opacity: 0;
+  transform: translateY(40px);
+  clip-path: inset(0% 0% 100% 0%);
 }
 
 .sizePro {
@@ -73,10 +85,14 @@ $btn-color: #fff;
   font-family: sans-serif;
   margin-top: 25px;
   font-weight: 700;
+  opacity: 0;
+  transform: translateY(40px);
+  clip-path: inset(0% 0% 100% 0%);
 }
 .wrapperDifferentSizes {
   margin-top: 13px;
   .sizes {
+    transform: scale(0);
     font-size: 15px;
     font-family: sans-serif;
     text-transform: uppercase;
@@ -86,7 +102,7 @@ $btn-color: #fff;
     border-radius: 20px;
     cursor: pointer;
     padding: 8px 15px;
-    transition: all 0.35s;
+    // transition: all 0.35s;
   }
 }
 .wrapperAddToCartProDetails {
@@ -94,6 +110,7 @@ $btn-color: #fff;
   display: flex;
   align-items: center;
   .wrapperCountBtns {
+    opacity: 0;
     width: fit-content;
     border: 1px solid #a4a4a4;
     border-radius: 30px;
@@ -118,9 +135,10 @@ $btn-color: #fff;
     }
   }
   .choosenProAddToCart {
+    border: 1px solid #000;
+    transform: scale(0);
     display: inline-block;
     background-color: #000;
-    border: none;
     outline: none;
     padding: 15px 30px;
     font-size: 17px;
@@ -134,6 +152,7 @@ $btn-color: #fff;
   }
 }
 .wrapperGuarantee {
+  opacity: 0;
   display: flex;
   align-items: center;
   justify-content: flex-start;
