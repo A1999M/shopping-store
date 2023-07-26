@@ -46,7 +46,7 @@ export default function ProductionDetails() {
         y: 0,
         duration: 0.5,
         ease: "Expo.easeOut",
-        delay: 0.4,
+        delay: 0.35,
       });
       tl.to(
         proPriceRef.current,
@@ -69,7 +69,7 @@ export default function ProductionDetails() {
             duration: 0.7,
             ease: "Expo.easeOut",
           },
-          "<0.13"
+          "<0.12"
         );
       });
       tl.to(

@@ -1,6 +1,10 @@
-import React from "react";
+import { useContext } from "react";
+import { useNavigate } from "react-router-dom";
+import items from "../context/items";
 
 export default function BasketSvg() {
+  let navigate = useNavigate();
+
   return (
     <>
       <svg
@@ -10,6 +14,9 @@ export default function BasketSvg() {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         className="navBasketIcon"
+        onClick={() => {
+          navigate("/shopping-cart");
+        }}
       >
         <path
           d="M3.5 4.5H5.05848C5.7542 4.5 6.10206 4.5 6.36395 4.68876C6.62584 4.87752 6.73584 5.20753 6.95585 5.86754L7.5 7.5"
