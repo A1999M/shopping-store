@@ -21,7 +21,7 @@ export default function CartItems() {
 
   return (
     <>
-      <div className="row cartItems">
+      <div className="row px-5 cartItems">
         <div className="col-5">
           <div className="wrapperCartDetails">
             <div className="wrapperCartImg">
