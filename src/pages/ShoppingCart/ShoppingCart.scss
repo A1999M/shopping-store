@@ -1,0 +1,237 @@
+.cartDetailTitles {
+  margin-top: 5rem !important;
+  .titleProCartDetails {
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  .titleTotalPrice {
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  .titleQuantity {
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  .titlePrice2 {
+    @extend .titleQuantity;
+  }
+}
+// cart items style
+.cartItems {
+  margin-top: 2rem !important;
+  border-top: 1px solid #dddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translateX(100px);
+
+  // product details
+  .wrapperCartDetails {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .wrapperCartImg {
+      overflow: hidden;
+      width: 15%;
+      img {
+        width: 100%;
+      }
+    }
+    .wrapperMoreAboutCart {
+      display: flex;
+      align-items: flex-start;
+      margin-left: 17px;
+      flex-direction: column;
+      .cartItemName {
+        font-size: 17px;
+        font-family: sans-serif;
+        // margin-top: 25px;
+      }
+      .shoppingCartItemBtns2 {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 18px;
+        .removeBtn {
+          font-size: 25px;
+          cursor: pointer;
+        }
+        .cartCountBtns {
+          width: fit-content;
+          border: 1px solid #a4a4a4;
+          border-radius: 30px;
+          padding: 6px 12px;
+          display: flex;
+          align-items: center;
+          .increment {
+            display: inline-block;
+            font-size: 20px;
+            margin-right: 50px;
+            cursor: pointer;
+          }
+          .choosenProCount {
+            font-family: sans-serif;
+            font-weight: 700;
+            font-size: 15px;
+          }
+          .decrement {
+            display: inline-block;
+            font-size: 20px;
+            margin-left: 50px;
+            cursor: pointer;
+          }
+        }
+      }
+      .wrapperDeliveryFeatures {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 25px;
+        .shippingDiscuont {
+          font-size: 15px;
+          background-color: #ffd700;
+          color: #000000;
+          font-family: sans-serif;
+          display: inline-block;
+          padding: 5px 20px;
+          margin-right: 20px;
+        }
+        .merchantDiscuont {
+          font-size: 15px;
+          background-color: #e2f6fb;
+          color: #000;
+          font-family: sans-serif;
+          display: inline-block;
+          padding: 5px 20px;
+        }
+      }
+    }
+  }
+  // quantity styles
+  .wrapperQuantityBtns {
+    display: flex;
+    align-items: center;
+    .cartCountBtns {
+      width: fit-content;
+      border: 1px solid #a4a4a4;
+      border-radius: 30px;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      .increment {
+        display: inline-block;
+        font-size: 21px;
+        margin-right: 50px;
+        cursor: pointer;
+      }
+      .choosenProCount {
+        font-family: sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+      }
+      .decrement {
+        display: inline-block;
+        font-size: 21px;
+        margin-left: 50px;
+        cursor: pointer;
+      }
+    }
+    .removeBtn {
+      background-color: #ffd700;
+      border-radius: 50%;
+      padding: 10px;
+      margin-left: 15px;
+      cursor: pointer;
+      transition: all 0.35s;
+      &:hover {
+        background-color: #ffa200;
+      }
+    }
+  }
+  // total price
+  .totalPriceCart {
+    font-weight: bold;
+    font-size: 18px;
+    color: #044b61;
+    font-family: sans-serif;
+  }
+  .cartItemPrice {
+    font-size: 18px;
+    font-weight: bold;
+    color: #044b61;
+    font-family: sans-serif;
+  }
+}
+
+// chack out shopping cart
+.checkOutShoppingCart {
+  padding: 20px;
+  margin-right: 9rem;
+  .wrapperSubTotalPrice {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .shoppingCartTotalPriceTitle {
+      text-transform: capitalize;
+      font-size: 20px;
+      color: #000;
+      font-family: sans-serif;
+      color: #898989;
+    }
+    .shoppingCartTotalPrice {
+      font-family: sans-serif;
+      font-size: 19px;
+      font-weight: bold;
+      margin-left: 3rem;
+    }
+  }
+  .taxesShippingTitle {
+    text-align: end;
+    font-size: 15px;
+    color: #000;
+    text-transform: capitalize;
+    margin-top: 35px;
+  }
+  .shoppingCartCheckOutBtn {
+    color: #fff;
+    background-color: #000;
+    padding: 15px 0;
+    font-size: 14px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: 1px solid #000;
+    margin-top: 35px;
+    width: 100%;
+    display: block;
+    transition: all 0.35s;
+    box-shadow: 0 0 20px 1px rgb(000, 000, 000, 0);
+    &:hover {
+      background-color: #fff;
+      color: #000;
+      box-shadow: 0 0 20px 1px rgb(000, 000, 000, 0.1);
+    }
+  }
+}
+.orderSpecialTitle {
+  margin-bottom: 10px;
+  color: #a4a4a4;
+  text-transform: capitalize;
+  font-family: sans-serif;
+  font-size: 16px;
+  margin-top: 20px;
+}
+.orderSpecial {
+  resize: none;
+  outline: none;
+  transition: all 0.35s;
+  padding: 7px 10px;
+  font-size: 17px;
+  line-height: 22px;
+  text-transform: capitalize;
+}

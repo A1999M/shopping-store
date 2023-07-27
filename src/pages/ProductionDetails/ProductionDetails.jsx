@@ -5,7 +5,6 @@ import RelatedProducts from "./RelatedProducts";
 import Footer from "../../components/Footer";
 import { gsap } from "gsap";
 import { AnimatePresence, motion } from "framer-motion";
-import Zoom from "react-img-zoom";
 import "./ProductionDetails.scss";
 
 export default function ProductionDetails() {
@@ -37,6 +36,17 @@ export default function ProductionDetails() {
     let ctx = gsap.context(() => {
       let tl = gsap.timeline();
 
+      let littleImages = gsap.utils.toArray(".littleImages");
+
+      littleImages.forEach((img) => {
+        gsap.to(img, {
+          opacity: 1,
+          duration: 1,
+          stagger: 0.3,
+          ease: "Expo.easeOut",
+        });
+      });
+
       let featuresPro = gsap.utils.toArray(".featuresProdetailItems");
       let differentSizes = gsap.utils.toArray(".sizes");
 
@@ -46,7 +56,7 @@ export default function ProductionDetails() {
         y: 0,
         duration: 0.5,
         ease: "Expo.easeOut",
-        delay: 0.4,
+        delay: 0.35,
       });
       tl.to(
         proPriceRef.current,
@@ -69,7 +79,7 @@ export default function ProductionDetails() {
             duration: 0.7,
             ease: "Expo.easeOut",
           },
-          "<0.13"
+          "<0.12"
         );
       });
       tl.to(
@@ -242,10 +252,12 @@ export default function ProductionDetails() {
                           : { borderColor: "rgb(0 ,0 ,0 , 0)" }
                       }
                       src={choosenProduct.image1}
+                      className="littleImages"
                       onClick={changeImage1}
                       alt={choosenProduct.title}
                     />
                     <img
+                      className="littleImages"
                       style={
                         whichImg.image2
                           ? { borderColor: "#000" }
@@ -256,6 +268,7 @@ export default function ProductionDetails() {
                       alt={choosenProduct.title}
                     />
                     <img
+                      className="littleImages"
                       style={
                         whichImg.image3
                           ? { borderColor: "#000" }
@@ -266,6 +279,7 @@ export default function ProductionDetails() {
                       alt={choosenProduct.title}
                     />
                     <img
+                      className="littleImages"
                       style={
                         whichImg.image4
                           ? { borderColor: "#000" }

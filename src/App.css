@@ -6,7 +6,6 @@ body {
   overflow-x: hidden;
   font-family: "Philosopher", sans-serif;
   user-select: none;
-  scrollbar-width: thin;
   &::-webkit-scrollbar {
     width: 5px;
   }
@@ -91,4 +90,8 @@ body {
   transform: scale(0.4);
   border-radius: 50%;
   color: #000;
+}
+.offcanvas.offcanvas-start.show {
+  right: 0 !important;
+  left: 100% !important;
 }
