@@ -13,10 +13,19 @@ import "./App.css";
 export default function App() {
   const [menItems, setMenItems] = useState();
   const [womenItems, setWomenItems] = useState();
+  const [cartCountShow, setCartCountShow] = useState(0);
   let [show, setShow] = useState(false);
   let location = useLocation();
 
   useLayoutEffect(() => {
+    let cartItems = JSON.parse(localStorage.getItem("userCart"));
+
+    if (!cartItems) {
+      setCartCountShow(0);
+    } else {
+      setCartCountShow(cartItems.length);
+    }
+
     let locoScroll = new LocomotiveScroll();
   }, [show]);
 
@@ -57,6 +66,8 @@ export default function App() {
             setWomenItems,
             show,
             setShow,
+            cartCountShow,
+            setCartCountShow,
           }}
         >
           <NavBar />

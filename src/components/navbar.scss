@@ -39,13 +39,28 @@
     }
   }
   .NavbarRightSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     .navUserIcon {
       margin: 0 5px;
       cursor: pointer;
     }
-    .navBasketIcon {
-      margin: 0 5px;
-      cursor: pointer;
+    .wrapperUserBasket {
+      position: relative;
+      .counterCartItems {
+        position: absolute;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        padding-top: 5px;
+        top: 7px;
+        right: -20px;
+        background-color: purple;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        color: #fff;
+      }
     }
   }
 }

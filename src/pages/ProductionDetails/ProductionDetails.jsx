@@ -1,13 +1,25 @@
-import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import {
+  useEffect,
+  useLayoutEffect,
+  useRef,
+  useState,
+  useContext,
+} from "react";
 import { useParams } from "react-router-dom";
 import ProTabs from "./ProTabs";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import RelatedProducts from "./RelatedProducts";
+import items from "../../context/items";
 import Footer from "../../components/Footer";
 import { gsap } from "gsap";
 import { AnimatePresence, motion } from "framer-motion";
 import "./ProductionDetails.scss";
 
+let userCartItems = [];
+
 export default function ProductionDetails() {
+  let { cartCountShow, setCartCountShow } = useContext(items);
   let proNameRef = useRef(null);
   let stockProRef = useRef(null);
   let sizeProRef = useRef(null);
@@ -236,8 +248,59 @@ export default function ProductionDetails() {
     });
   };
 
+  let handleAddToCart = () => {
+    let userCart = JSON.parse(localStorage.getItem("userCart"));
+
+    if (userCart) {
+      let isExist = userCart.some((item) => {
+        return item.id == productId;
+      });
+      if (!isExist) {
+        let newItem = {
+          id: choosenProduct.id,
+          name: choosenProduct.name,
+          price: choosenProduct.price,
+          count: countPro,
+          totalPrice: choosenProduct.price * countPro,
+          imageSrc: choosenProduct.image1,
+        };
+        userCartItems.push(newItem);
+        localStorage.setItem("userCart", JSON.stringify(userCartItems));
+        toast.success("Successfully Added To Cart");
+        setCartCountShow((cartCountShow) => cartCountShow + 1);
+      } else {
+        toast.info("The product has been updated");
+      }
+    } else {
+      let newItem = {
+        id: choosenProduct.id,
+        name: choosenProduct.name,
+        price: choosenProduct.price,
+        count: countPro,
+        totalPrice: choosenProduct.price * countPro,
+        imageSrc: choosenProduct.image1,
+      };
+      userCartItems.push(newItem);
+      localStorage.setItem("userCart", JSON.stringify(userCartItems));
+      setCartCountShow(1);
+      toast.success("Successfully Added To Cart");
+    }
+  };
+
   return (
     <>
+      <ToastContainer
+        position="top-right"
+        autoClose={1500}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
       {choosenProduct && (
         <AnimatePresence mode="wait">
           <div className="container-fluid mt-5">
@@ -463,9 +526,9 @@ export default function ProductionDetails() {
                       }
                       onClick={() => {
                         if (countPro == productId * 7) {
-                          setCountPro(productId * 7);
+                          setCountPro((countPro) => countPro * 7);
                         } else {
-                          setCountPro(countPro + 1);
+                          setCountPro((countPro) => countPro + 1);
                         }
                       }}
                       className="increment"
@@ -483,7 +546,7 @@ export default function ProductionDetails() {
                         if (countPro <= 1) {
                           setCountPro(1);
                         } else {
-                          setCountPro(countPro - 1);
+                          setCountPro((countPro) => countPro - 1);
                         }
                       }}
                       className="decrement"
@@ -495,6 +558,7 @@ export default function ProductionDetails() {
                     onMouseLeave={hoverLeaveAdTocart}
                     onMouseEnter={hoverAdTocart}
                     ref={addBtn}
+                    onClick={handleAddToCart}
                     className="choosenProAddToCart"
                   >
                     Add to cart
