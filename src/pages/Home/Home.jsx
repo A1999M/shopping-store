@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useLayoutEffect } from "react";
 import Header from "../../components/Header";
 import VideoOffer from "./VideoOffer";
 import LatestBlogs from "./LatestBlogs";
@@ -13,7 +13,7 @@ import { motion } from "framer-motion";
 import "./home.scss";
 
 export default function Home() {
-  useEffect(() => {
+  useLayoutEffect(() => {
     document.documentElement.scrollTo({
       top: 0,
       left: 0,
@@ -30,23 +30,9 @@ export default function Home() {
 
   return (
     <motion.div
-      initial={{
-        opacity: 0,
-        y: 30,
-      }}
-      animate={{
-        opacity: 1,
-        y: 0,
-      }}
-      exit={{
-        opacity: 0,
-        y: 30,
-      }}
-      transition={{
-        type: "tween",
-        duration: 0.5,
-        ease: "easeOut",
-      }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
     >
       <Header />
       <TrendCollection />

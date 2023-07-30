@@ -2,6 +2,7 @@ import { useEffect, useLayoutEffect, useState } from "react";
 import Home from "./pages/Home";
 import LocomotiveScroll from "locomotive-scroll";
 import BlogDetails from "./pages/BlogDetails";
+import { AnimatePresence } from "framer-motion";
 import ProductionDetails from "./pages/ProductionDetails";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { ShoppingCart } from "./pages/ShoppingCart";
@@ -71,12 +72,14 @@ export default function App() {
           }}
         >
           <NavBar />
-          <Routes location={location} key={location.pathname}>
-            <Route path="/" element={<Home />} />
-            <Route path="/blog/:blogId" element={<BlogDetails />} />
-            <Route path="/posts/:productId" element={<ProductionDetails />} />
-            <Route path="/shopping-cart" element={<ShoppingCart />} />
-          </Routes>
+          <AnimatePresence mode="wait">
+            <Routes location={location} key={location.key}>
+              <Route path="/" element={<Home />} />
+              <Route path="/blog/:blogId" element={<BlogDetails />} />
+              <Route path="/posts/:productId" element={<ProductionDetails />} />
+              <Route path="/shopping-cart" element={<ShoppingCart />} />
+            </Routes>
+          </AnimatePresence>
         </items.Provider>
       )}
     </>
