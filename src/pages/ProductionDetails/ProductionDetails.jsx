@@ -5,21 +5,20 @@ import {
   useState,
   useContext,
 } from "react";
-import { useParams } from "react-router-dom";
+import { json, useParams } from "react-router-dom";
 import ProTabs from "./ProTabs";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import RelatedProducts from "./RelatedProducts";
-import items from "../../context/items";
+import { useDispatch } from "react-redux";
+import { cartActions } from "../../store/cartSlice";
 import Footer from "../../components/Footer";
 import { gsap } from "gsap";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import "./ProductionDetails.scss";
 
-let userCartItems = [];
-
 export default function ProductionDetails() {
-  let { cartCountShow, setCartCountShow } = useContext(items);
+  let dispatch = useDispatch();
   let proNameRef = useRef(null);
   let stockProRef = useRef(null);
   let sizeProRef = useRef(null);
@@ -168,6 +167,9 @@ export default function ProductionDetails() {
     });
 
     return () => {
+      dispatch(
+        cartActions.setCartItems(JSON.parse(localStorage.getItem("userCart")))
+      );
       ctx.kill();
     };
   });
@@ -249,29 +251,8 @@ export default function ProductionDetails() {
   };
 
   let handleAddToCart = () => {
-    let userCart = JSON.parse(localStorage.getItem("userCart"));
-
-    if (userCart) {
-      let isExist = userCart.some((item) => {
-        return item.id == productId;
-      });
-      if (!isExist) {
-        let newItem = {
-          id: choosenProduct.id,
-          name: choosenProduct.name,
-          price: choosenProduct.price,
-          count: countPro,
-          totalPrice: choosenProduct.price * countPro,
-          imageSrc: choosenProduct.image1,
-        };
-        userCartItems.push(newItem);
-        localStorage.setItem("userCart", JSON.stringify(userCartItems));
-        toast.success("Successfully Added To Cart");
-        setCartCountShow((cartCountShow) => cartCountShow + 1);
-      } else {
-        toast.info("The product has been updated");
-      }
-    } else {
+    if (JSON.parse(localStorage.getItem("userCart")) == null) {
+      let basket = [];
       let newItem = {
         id: choosenProduct.id,
         name: choosenProduct.name,
@@ -280,10 +261,32 @@ export default function ProductionDetails() {
         totalPrice: choosenProduct.price * countPro,
         imageSrc: choosenProduct.image1,
       };
-      userCartItems.push(newItem);
-      localStorage.setItem("userCart", JSON.stringify(userCartItems));
-      setCartCountShow(1);
+      basket.push(newItem);
+      localStorage.setItem("userCart", JSON.stringify(basket));
+      dispatch(cartActions.setCartItems(basket));
       toast.success("Successfully Added To Cart");
+    } else {
+      let currentLocal = JSON.parse(localStorage.getItem("userCart"));
+      let isExist = currentLocal.some((item) => {
+        return item.id == choosenProduct.id;
+      });
+      if (isExist) {
+        toast.info("The product has been updated");
+      } else {
+        let basket = [...currentLocal];
+        let newItem = {
+          id: choosenProduct.id,
+          name: choosenProduct.name,
+          price: choosenProduct.price,
+          count: countPro,
+          totalPrice: choosenProduct.price * countPro,
+          imageSrc: choosenProduct.image1,
+        };
+        basket.push(newItem);
+        localStorage.setItem("userCart", JSON.stringify(basket));
+        dispatch(cartActions.setCartItems(basket));
+        toast.success("Successfully Added To Cart");
+      }
     }
   };
 

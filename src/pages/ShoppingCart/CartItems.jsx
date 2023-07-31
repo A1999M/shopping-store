@@ -1,8 +1,12 @@
 import { gsap } from "gsap";
-import "./ShoppingCart.scss";
+import { useDispatch } from "react-redux";
+import { motion } from "framer-motion";
+import { cartActions } from "../../store/cartSlice";
 import { useLayoutEffect } from "react";
+import "./ShoppingCart.scss";
 
 export default function CartItems({ item }) {
+  let dispatch = useDispatch();
   useLayoutEffect(() => {
     let elms = document.querySelectorAll(".cartItems");
 
@@ -17,11 +21,15 @@ export default function CartItems({ item }) {
         });
       });
     }
-  });
+  }, []);
 
   return (
     <>
-      <div className="row px-5 cartItems">
+      <motion.div
+        initial="false"
+        exit={{ opacity: 0, x: -100 }}
+        className="row px-5 cartItems"
+      >
         <div className="col-5">
           <div className="wrapperCartDetails">
             <div className="wrapperCartImg">
@@ -42,17 +50,43 @@ export default function CartItems({ item }) {
         <div className="col-3">
           <div className="wrapperQuantityBtns">
             <div class="cartCountBtns">
-              <span class="increment">+</span>
+              <span
+                onClick={() => dispatch(cartActions.increment(item.id))}
+                class="increment"
+              >
+                +
+              </span>
               <span class="choosenProCount">{item.count}</span>
-              <span class="decrement">−</span>
+              <span
+                onClick={() => {
+                  if (item.count >= 2) {
+                    dispatch(cartActions.decrement(item.id));
+                  }
+                }}
+                style={
+                  item.count == 1
+                    ? { cursor: "no-drop" }
+                    : { cursor: "pointer" }
+                }
+                class="decrement"
+              >
+                −
+              </span>
             </div>
-            <span class="material-symbols-outlined removeBtn">delete</span>
+            <span
+              onClick={() => {
+                dispatch(cartActions.removeCartItems(item.id));
+              }}
+              class="material-symbols-outlined removeBtn"
+            >
+              delete
+            </span>
           </div>
         </div>
         <div className="col-2">
           <p className="totalPriceCart">${item.totalPrice}.00</p>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }

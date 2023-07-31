@@ -1,22 +1,20 @@
-import { useRef, useLayoutEffect, useEffect, useState } from "react";
+import { useRef, useLayoutEffect, useEffect } from "react";
 import CartItems from "./CartItems";
+import { useSelector } from "react-redux";
 import { gsap } from "gsap";
 import { motion } from "framer-motion";
 import "./ShoppingCart.scss";
 
 function ShoppingCart() {
+  let allBasketItems = useSelector((state) => state.shoppingCart.basket);
   let scopeRef = useRef();
-  let [userBasket, setUserBasket] = useState();
 
-  useEffect(() => {
-    let userCart = JSON.parse(localStorage.getItem("userCart"));
+  var productTotalPrice = 0;
+  allBasketItems.forEach((item) => {
+    productTotalPrice = item.totalPrice + productTotalPrice;
+  });
 
-    if (!userCart) {
-      setUserBasket(null);
-    } else {
-      setUserBasket(userCart);
-    }
-  }, []);
+  console.log(productTotalPrice);
 
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
@@ -64,24 +62,34 @@ function ShoppingCart() {
         "<0.2"
       );
     }, scopeRef);
-    return () => ctx.revert();
+    return () => {
+      ctx.revert();
+    };
+  }, []);
+
+  useEffect(() => {
+    return () => {
+      localStorage.removeItem("userCart");
+      localStorage.setItem("userCart", JSON.stringify(allBasketItems));
+    };
   });
 
   return (
     <>
       <motion.div
+        layout
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
       >
-        {userBasket ? (
+        {allBasketItems ? (
           <div ref={scopeRef} className="container-fluid">
             {/* header  */}
-            <div className="row">
+            <div className="row px-5">
               <div className="col-12">
                 <div className="shoppingCartContainer">
                   <div className="headerShoppingCart">
-                    <p className="titleHeaderCart">your cart</p>
+                    <p className="titleHeaderCart">your shopping cart</p>
                   </div>
                 </div>
               </div>
@@ -101,7 +109,7 @@ function ShoppingCart() {
                 <p className="titleTotalPrice">total</p>
               </div>
             </div>
-            {userBasket.map((item, index) => {
+            {allBasketItems.map((item, index) => {
               return <CartItems key={index} item={item} />;
             })}
             {/* footer of cart  */}
@@ -121,7 +129,9 @@ function ShoppingCart() {
                 <div className="checkOutShoppingCart">
                   <div className="wrapperSubTotalPrice">
                     <p className="shoppingCartTotalPriceTitle">total Price</p>
-                    <p className="shoppingCartTotalPrice">$1520.00</p>
+                    <p className="shoppingCartTotalPrice">
+                      ${productTotalPrice}
+                    </p>
                   </div>
                   <p className="taxesShippingTitle">
                     taxes and shipping calculated at checkout

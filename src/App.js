@@ -5,6 +5,8 @@ import BlogDetails from "./pages/BlogDetails";
 import { AnimatePresence } from "framer-motion";
 import ProductionDetails from "./pages/ProductionDetails";
 import { Routes, Route, useLocation } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { cartActions } from "./store/cartSlice";
 import { ShoppingCart } from "./pages/ShoppingCart";
 import NavBar from "./components/NavBar";
 import items from "./context/items";
@@ -13,6 +15,7 @@ import "./App.css";
 
 export default function App() {
   const [menItems, setMenItems] = useState();
+  let dispatch = useDispatch();
   const [womenItems, setWomenItems] = useState();
   const [cartCountShow, setCartCountShow] = useState(0);
   let [show, setShow] = useState(false);
@@ -25,6 +28,7 @@ export default function App() {
       setCartCountShow(0);
     } else {
       setCartCountShow(cartItems.length);
+      dispatch(cartActions.setCartItems(cartItems));
     }
 
     let locoScroll = new LocomotiveScroll();

@@ -1,15 +1,14 @@
 import { useNavigate } from "react-router-dom";
-import items from "../context/items";
-import { useContext } from "react";
+import { useSelector } from "react-redux";
 
 export default function BasketSvg() {
-  let { cartCountShow } = useContext(items);
+  let basket = useSelector((state) => state.shoppingCart.basket);
   let navigate = useNavigate();
 
   return (
     <>
       <div className="wrapperUserBasket">
-        <div className="counterCartItems">{cartCountShow}</div>
+        <div className="counterCartItems">{basket ? basket.length : 0}</div>
         <svg
           width="35px"
           height="35px"
