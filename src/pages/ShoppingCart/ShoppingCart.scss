@@ -229,9 +229,22 @@
 .orderSpecial {
   resize: none;
   outline: none;
+  border: 1px solid #cfcfcf;
   transition: all 0.35s;
   padding: 7px 10px;
   font-size: 17px;
   line-height: 22px;
   text-transform: capitalize;
+}
+
+.shoppingCartContainer {
+  .headerShoppingCart {
+    .titleHeaderCart {
+      margin-top: 3rem;
+      font-size: 35px;
+      font-weight: 700;
+      text-transform: capitalize;
+      text-align: center;
+    }
+  }
 }

@@ -12,7 +12,7 @@ export default function BlogDetails() {
   let { blogId } = useParams();
   let [currentBlog, setCurrenBlog] = useState();
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     document.documentElement.scrollTo({
       top: 0,
       left: 0,
@@ -134,7 +134,7 @@ export default function BlogDetails() {
     };
   }, []);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     fetch(`http://localhost:8000/blogItems/?id=${blogId}`)
       .then((res) => {
         return res.json();
@@ -147,36 +147,6 @@ export default function BlogDetails() {
       });
   }, [blogId]);
 
-  let variants = {
-    hidden: {
-      opacity: 0,
-      y: 50,
-      transition: {
-        type: "tween",
-        duration: 0.5,
-        ease: "easeOut",
-      },
-    },
-    animate: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        type: "tween",
-        duration: 0.5,
-        ease: "easeOut",
-      },
-    },
-    exit: {
-      opacity: 0,
-      y: 50,
-      transition: {
-        type: "tween",
-        duration: 0.5,
-        ease: "easeOut",
-      },
-    },
-  };
-
   let descInView = () => {
     setInViewDesc(true);
   };
@@ -185,11 +155,10 @@ export default function BlogDetails() {
     <>
       {currentBlog && (
         <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
           ref={scopeRef}
-          variants={variants}
-          initial="hidden"
-          animate="animate"
-          exit="exit"
           className="container-fluid"
         >
           <div className="row">

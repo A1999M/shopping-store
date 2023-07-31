@@ -1,13 +1,24 @@
-import { useEffect, useLayoutEffect, useRef, useState } from "react";
-import { useParams } from "react-router-dom";
+import {
+  useEffect,
+  useLayoutEffect,
+  useRef,
+  useState,
+  useContext,
+} from "react";
+import { json, useParams } from "react-router-dom";
 import ProTabs from "./ProTabs";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import RelatedProducts from "./RelatedProducts";
+import { useDispatch } from "react-redux";
+import { cartActions } from "../../store/cartSlice";
 import Footer from "../../components/Footer";
 import { gsap } from "gsap";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import "./ProductionDetails.scss";
 
 export default function ProductionDetails() {
+  let dispatch = useDispatch();
   let proNameRef = useRef(null);
   let stockProRef = useRef(null);
   let sizeProRef = useRef(null);
@@ -236,310 +247,376 @@ export default function ProductionDetails() {
     });
   };
 
+  let handleAddToCart = () => {
+    if (JSON.parse(localStorage.getItem("userCart")) == null) {
+      let basket = [];
+      let newItem = {
+        id: choosenProduct.id,
+        name: choosenProduct.name,
+        price: choosenProduct.price,
+        count: countPro,
+        totalPrice: choosenProduct.price * countPro,
+        imageSrc: choosenProduct.image1,
+      };
+      basket.push(newItem);
+      localStorage.setItem("userCart", JSON.stringify(basket));
+      dispatch(cartActions.setCartItems(basket));
+      toast.success("Successfully Added To Cart");
+    } else {
+      let currentLocal = JSON.parse(localStorage.getItem("userCart"));
+      let isExist = currentLocal.some((item) => {
+        return item.id == choosenProduct.id;
+      });
+      if (isExist) {
+        toast.info("The product has been updated");
+      } else {
+        let basket = [...currentLocal];
+        let newItem = {
+          id: choosenProduct.id,
+          name: choosenProduct.name,
+          price: choosenProduct.price,
+          count: countPro,
+          totalPrice: choosenProduct.price * countPro,
+          imageSrc: choosenProduct.image1,
+        };
+        basket.push(newItem);
+        localStorage.setItem("userCart", JSON.stringify(basket));
+        dispatch(cartActions.setCartItems(basket));
+        toast.success("Successfully Added To Cart");
+      }
+    }
+  };
+
   return (
     <>
+      <ToastContainer
+        position="top-right"
+        autoClose={1500}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
       {choosenProduct && (
-        <AnimatePresence mode="wait">
-          <div className="container-fluid mt-5">
-            <div className="row">
-              <div className="col-5">
-                <div className="imageSectionProDetails">
-                  <div className="wrapperAllImagePro">
-                    <img
-                      style={
-                        whichImg.image1
-                          ? { borderColor: "#000" }
-                          : { borderColor: "rgb(0 ,0 ,0 , 0)" }
-                      }
-                      src={choosenProduct.image1}
-                      className="littleImages"
-                      onClick={changeImage1}
-                      alt={choosenProduct.title}
-                    />
-                    <img
-                      className="littleImages"
-                      style={
-                        whichImg.image2
-                          ? { borderColor: "#000" }
-                          : { borderColor: "rgb(0 ,0 ,0 , 0)" }
-                      }
-                      src={choosenProduct.image2}
-                      onClick={changeImage2}
-                      alt={choosenProduct.title}
-                    />
-                    <img
-                      className="littleImages"
-                      style={
-                        whichImg.image3
-                          ? { borderColor: "#000" }
-                          : { borderColor: "rgb(0 ,0 ,0 , 0)" }
-                      }
-                      src={choosenProduct.image3}
-                      onClick={changeImage3}
-                      alt={choosenProduct.title}
-                    />
-                    <img
-                      className="littleImages"
-                      style={
-                        whichImg.image4
-                          ? { borderColor: "#000" }
-                          : { borderColor: "rgb(0 ,0 ,0 , 0)" }
-                      }
-                      src={choosenProduct.image4}
-                      onClick={changeImage4}
-                      alt={choosenProduct.title}
-                    />
-                  </div>
-                  {whichImg.image1 ? (
-                    <motion.img
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      exit={{ opacity: 0 }}
-                      src={choosenProduct.image1}
-                      alt={choosenProduct.title}
-                      className="mainImgProDetail"
-                    />
-                  ) : null}
-                  {whichImg.image2 ? (
-                    <motion.img
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      exit={{ opacity: 0 }}
-                      src={choosenProduct.image2}
-                      alt={choosenProduct.title}
-                      className="mainImgProDetail"
-                    />
-                  ) : null}
-                  {whichImg.image3 ? (
-                    <motion.img
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      exit={{ opacity: 0 }}
-                      src={choosenProduct.image3}
-                      alt={choosenProduct.title}
-                      className="mainImgProDetail"
-                    />
-                  ) : null}
-                  {whichImg.image4 ? (
-                    <motion.img
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      exit={{ opacity: 0 }}
-                      src={choosenProduct.image4}
-                      alt={choosenProduct.title}
-                      className="mainImgProDetail"
-                    />
-                  ) : null}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          className="container-fluid mt-5"
+        >
+          <div className="row">
+            <div className="col-5">
+              <div className="imageSectionProDetails">
+                <div className="wrapperAllImagePro">
+                  <motion.img
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    style={
+                      whichImg.image1
+                        ? { borderColor: "#000" }
+                        : { borderColor: "rgb(0 ,0 ,0 , 0)" }
+                    }
+                    src={choosenProduct.image1}
+                    className="littleImages"
+                    onClick={changeImage1}
+                    alt={choosenProduct.title}
+                  />
+                  <motion.img
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    style={
+                      whichImg.image2
+                        ? { borderColor: "#000" }
+                        : { borderColor: "rgb(0 ,0 ,0 , 0)" }
+                    }
+                    src={choosenProduct.image2}
+                    className="littleImages"
+                    onClick={changeImage2}
+                    alt={choosenProduct.title}
+                  />
+                  <motion.img
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    style={
+                      whichImg.image3
+                        ? { borderColor: "#000" }
+                        : { borderColor: "rgb(0 ,0 ,0 , 0)" }
+                    }
+                    src={choosenProduct.image3}
+                    className="littleImages"
+                    onClick={changeImage3}
+                    alt={choosenProduct.title}
+                  />
+                  <motion.img
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    style={
+                      whichImg.image4
+                        ? { borderColor: "#000" }
+                        : { borderColor: "rgb(0 ,0 ,0 , 0)" }
+                    }
+                    src={choosenProduct.image4}
+                    className="littleImages"
+                    onClick={changeImage4}
+                    alt={choosenProduct.title}
+                  />
                 </div>
+                {whichImg.image1 ? (
+                  <motion.img
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    src={choosenProduct.image1}
+                    alt={choosenProduct.title}
+                    className="mainImgProDetail"
+                  />
+                ) : null}
+                {whichImg.image2 ? (
+                  <motion.img
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    src={choosenProduct.image2}
+                    alt={choosenProduct.title}
+                    className="mainImgProDetail"
+                  />
+                ) : null}
+                {whichImg.image3 ? (
+                  <motion.img
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    src={choosenProduct.image3}
+                    alt={choosenProduct.title}
+                    className="mainImgProDetail"
+                  />
+                ) : null}
+                {whichImg.image4 ? (
+                  <motion.img
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    src={choosenProduct.image4}
+                    alt={choosenProduct.title}
+                    className="mainImgProDetail"
+                  />
+                ) : null}
               </div>
-              <div className="col-7">
-                <div className="wrapperDetailChoosenPro">
-                  <p ref={proNameRef} className="nameChoosenPro">
-                    {choosenProduct.name}
-                  </p>
-                  <p ref={proPriceRef} className="priceChoosenPro">
-                    ${choosenProduct.price}.00
-                  </p>
-                </div>
-                <ul className="featuresProdetails">
-                  <li className="featuresProdetailItems">100% Quality</li>
-                  <li className="featuresProdetailItems">
-                    Increases Resistance
-                  </li>
-                  <li className="featuresProdetailItems">
-                    Free Shipping Over $5
-                  </li>
-                </ul>
-                <p ref={stockProRef} className="stockPro">
-                  {productId * 7} in stock
+            </div>
+            <div className="col-7">
+              <div className="wrapperDetailChoosenPro">
+                <p ref={proNameRef} className="nameChoosenPro">
+                  {choosenProduct.name}
                 </p>
-                <p ref={sizeProRef} className="sizePro">
-                  size:
+                <p ref={proPriceRef} className="priceChoosenPro">
+                  ${choosenProduct.price}.00
                 </p>
-                <div className="wrapperDifferentSizes">
+              </div>
+              <ul className="featuresProdetails">
+                <li className="featuresProdetailItems">100% Quality</li>
+                <li className="featuresProdetailItems">Increases Resistance</li>
+                <li className="featuresProdetailItems">
+                  Free Shipping Over $5
+                </li>
+              </ul>
+              <p ref={stockProRef} className="stockPro">
+                {productId * 7} in stock
+              </p>
+              <p ref={sizeProRef} className="sizePro">
+                size:
+              </p>
+              <div className="wrapperDifferentSizes">
+                <span
+                  onClick={() =>
+                    setSizePro({
+                      s: true,
+                      m: false,
+                      l: false,
+                      xl: false,
+                      xxl: false,
+                    })
+                  }
+                  style={
+                    sizePro.s
+                      ? { color: "#fff", backgroundColor: "#000" }
+                      : { color: "#000", backgroundColor: "#00000000" }
+                  }
+                  className="sizes"
+                >
+                  s
+                </span>
+                <span
+                  onClick={() =>
+                    setSizePro({
+                      s: false,
+                      m: true,
+                      l: false,
+                      xl: false,
+                      xxl: false,
+                    })
+                  }
+                  style={
+                    sizePro.m
+                      ? { color: "#fff", backgroundColor: "#000" }
+                      : { color: "#000", backgroundColor: "#00000000" }
+                  }
+                  className="sizes"
+                >
+                  m
+                </span>
+                <span
+                  onClick={() =>
+                    setSizePro({
+                      s: false,
+                      m: false,
+                      l: true,
+                      xl: false,
+                      xxl: false,
+                    })
+                  }
+                  style={
+                    sizePro.l
+                      ? { color: "#fff", backgroundColor: "#000" }
+                      : { color: "#000", backgroundColor: "#00000000" }
+                  }
+                  className="sizes"
+                >
+                  l
+                </span>
+                <span
+                  onClick={() =>
+                    setSizePro({
+                      s: false,
+                      m: false,
+                      l: false,
+                      xl: true,
+                      xxl: false,
+                    })
+                  }
+                  style={
+                    sizePro.xl
+                      ? { color: "#fff", backgroundColor: "#000" }
+                      : { color: "#000", backgroundColor: "#00000000" }
+                  }
+                  className="sizes"
+                >
+                  xl
+                </span>
+                <span
+                  onClick={() =>
+                    setSizePro({
+                      s: false,
+                      m: false,
+                      l: false,
+                      xl: false,
+                      xxl: true,
+                    })
+                  }
+                  style={
+                    sizePro.xxl
+                      ? { color: "#fff", backgroundColor: "#000" }
+                      : { color: "#000", backgroundColor: "#00000000" }
+                  }
+                  className="sizes"
+                >
+                  xxl
+                </span>
+              </div>
+              <div className="wrapperAddToCartProDetails">
+                <div ref={countBtnRef} className="wrapperCountBtns">
                   <span
-                    onClick={() =>
-                      setSizePro({
-                        s: true,
-                        m: false,
-                        l: false,
-                        xl: false,
-                        xxl: false,
-                      })
-                    }
                     style={
-                      sizePro.s
-                        ? { color: "#fff", backgroundColor: "#000" }
-                        : { color: "#000", backgroundColor: "#00000000" }
+                      countPro == productId * 7
+                        ? { cursor: "no-drop" }
+                        : { cursor: "pointer" }
                     }
-                    className="sizes"
-                  >
-                    s
-                  </span>
-                  <span
-                    onClick={() =>
-                      setSizePro({
-                        s: false,
-                        m: true,
-                        l: false,
-                        xl: false,
-                        xxl: false,
-                      })
-                    }
-                    style={
-                      sizePro.m
-                        ? { color: "#fff", backgroundColor: "#000" }
-                        : { color: "#000", backgroundColor: "#00000000" }
-                    }
-                    className="sizes"
-                  >
-                    m
-                  </span>
-                  <span
-                    onClick={() =>
-                      setSizePro({
-                        s: false,
-                        m: false,
-                        l: true,
-                        xl: false,
-                        xxl: false,
-                      })
-                    }
-                    style={
-                      sizePro.l
-                        ? { color: "#fff", backgroundColor: "#000" }
-                        : { color: "#000", backgroundColor: "#00000000" }
-                    }
-                    className="sizes"
-                  >
-                    l
-                  </span>
-                  <span
-                    onClick={() =>
-                      setSizePro({
-                        s: false,
-                        m: false,
-                        l: false,
-                        xl: true,
-                        xxl: false,
-                      })
-                    }
-                    style={
-                      sizePro.xl
-                        ? { color: "#fff", backgroundColor: "#000" }
-                        : { color: "#000", backgroundColor: "#00000000" }
-                    }
-                    className="sizes"
-                  >
-                    xl
-                  </span>
-                  <span
-                    onClick={() =>
-                      setSizePro({
-                        s: false,
-                        m: false,
-                        l: false,
-                        xl: false,
-                        xxl: true,
-                      })
-                    }
-                    style={
-                      sizePro.xxl
-                        ? { color: "#fff", backgroundColor: "#000" }
-                        : { color: "#000", backgroundColor: "#00000000" }
-                    }
-                    className="sizes"
-                  >
-                    xxl
-                  </span>
-                </div>
-                <div className="wrapperAddToCartProDetails">
-                  <div ref={countBtnRef} className="wrapperCountBtns">
-                    <span
-                      style={
-                        countPro == productId * 7
-                          ? { cursor: "no-drop" }
-                          : { cursor: "pointer" }
+                    onClick={() => {
+                      if (countPro == productId * 7) {
+                        setCountPro((countPro) => countPro * 7);
+                      } else {
+                        setCountPro((countPro) => countPro + 1);
                       }
-                      onClick={() => {
-                        if (countPro == productId * 7) {
-                          setCountPro(productId * 7);
-                        } else {
-                          setCountPro(countPro + 1);
-                        }
-                      }}
-                      className="increment"
-                    >
-                      &#x002B;
-                    </span>
-                    <span className="choosenProCount">{countPro}</span>
-                    <span
-                      style={
-                        countPro == 1
-                          ? { cursor: "no-drop" }
-                          : { cursor: "pointer" }
-                      }
-                      onClick={() => {
-                        if (countPro <= 1) {
-                          setCountPro(1);
-                        } else {
-                          setCountPro(countPro - 1);
-                        }
-                      }}
-                      className="decrement"
-                    >
-                      &#x2212;
-                    </span>
-                  </div>
-                  <button
-                    onMouseLeave={hoverLeaveAdTocart}
-                    onMouseEnter={hoverAdTocart}
-                    ref={addBtn}
-                    className="choosenProAddToCart"
+                    }}
+                    className="increment"
                   >
-                    Add to cart
-                  </button>
+                    &#x002B;
+                  </span>
+                  <span className="choosenProCount">{countPro}</span>
+                  <span
+                    style={
+                      countPro == 1
+                        ? { cursor: "no-drop" }
+                        : { cursor: "pointer" }
+                    }
+                    onClick={() => {
+                      if (countPro <= 1) {
+                        setCountPro(1);
+                      } else {
+                        setCountPro((countPro) => countPro - 1);
+                      }
+                    }}
+                    className="decrement"
+                  >
+                    &#x2212;
+                  </span>
                 </div>
-                <div className="wrapperGuarantee">
-                  <div className="Guarantee">
-                    <img
-                      src="https://pandora-fashi.myshopify.com/cdn/shop/files/money-back_40x.png?v=1660800486"
-                      alt="Guarantee image"
-                    />
-                    <p className="GuaranteeDesc">Money Back Guarantee</p>
-                  </div>
-                  <div className="Warranty">
-                    <img
-                      src="https://pandora-fashi.myshopify.com/cdn/shop/files/icon-warranty_40x.png?v=1660800492"
-                      alt="Warranty image"
-                    />
-                    <p className="WarrantyDesc">Life Time Warranty</p>
-                  </div>
-                  <div className="Gift">
-                    <img
-                      src="https://pandora-fashi.myshopify.com/cdn/shop/files/gift-box_40x.png?v=1660800501"
-                      alt="Gift image"
-                    />
-                    <p className="GiftDesc">Free Signature Gift Box</p>
-                  </div>
+                <button
+                  onMouseLeave={hoverLeaveAdTocart}
+                  onMouseEnter={hoverAdTocart}
+                  ref={addBtn}
+                  onClick={handleAddToCart}
+                  className="choosenProAddToCart"
+                >
+                  Add to cart
+                </button>
+              </div>
+              <div className="wrapperGuarantee">
+                <div className="Guarantee">
+                  <img
+                    src="https://pandora-fashi.myshopify.com/cdn/shop/files/money-back_40x.png?v=1660800486"
+                    alt="Guarantee image"
+                  />
+                  <p className="GuaranteeDesc">Money Back Guarantee</p>
+                </div>
+                <div className="Warranty">
+                  <img
+                    src="https://pandora-fashi.myshopify.com/cdn/shop/files/icon-warranty_40x.png?v=1660800492"
+                    alt="Warranty image"
+                  />
+                  <p className="WarrantyDesc">Life Time Warranty</p>
+                </div>
+                <div className="Gift">
+                  <img
+                    src="https://pandora-fashi.myshopify.com/cdn/shop/files/gift-box_40x.png?v=1660800501"
+                    alt="Gift image"
+                  />
+                  <p className="GiftDesc">Free Signature Gift Box</p>
                 </div>
               </div>
-            </div>
-            <div className="row mt-5rem">
-              <div className="col-12">
-                <ProTabs />
-              </div>
-            </div>
-            <div className="row mt-7rem">
-              <div className="col-12">
-                <RelatedProducts productId={productId} />
-              </div>
-            </div>
-            <div className="row">
-              <Footer />
             </div>
           </div>
-        </AnimatePresence>
+          <div className="row mt-5rem">
+            <div className="col-12">
+              <ProTabs />
+            </div>
+          </div>
+          <div className="row mt-7rem">
+            <div className="col-12">
+              <RelatedProducts productId={productId} />
+            </div>
+          </div>
+          <div className="row">
+            <Footer />
+          </div>
+        </motion.div>
       )}
     </>
   );

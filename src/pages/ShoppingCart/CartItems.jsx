@@ -1,8 +1,12 @@
 import { gsap } from "gsap";
-import "./ShoppingCart.scss";
+import { useDispatch } from "react-redux";
+import { motion } from "framer-motion";
+import { cartActions } from "../../store/cartSlice";
 import { useLayoutEffect } from "react";
+import "./ShoppingCart.scss";
 
-export default function CartItems() {
+export default function CartItems({ item }) {
+  let dispatch = useDispatch();
   useLayoutEffect(() => {
     let elms = document.querySelectorAll(".cartItems");
 
@@ -17,21 +21,22 @@ export default function CartItems() {
         });
       });
     }
-  });
+  }, []);
 
   return (
     <>
-      <div className="row px-5 cartItems">
+      <motion.div
+        initial="false"
+        exit={{ opacity: 0, x: -100 }}
+        className="row px-5 cartItems"
+      >
         <div className="col-5">
           <div className="wrapperCartDetails">
             <div className="wrapperCartImg">
-              <img
-                src="https://pandora-fashi.myshopify.com/cdn/shop/products/yoga_hoodie1.jpg?v=1660552869&width=990"
-                alt="Men Regular Fit Yoga hoodie"
-              />
+              <img src={item.imageSrc} alt={item.name} />
             </div>
             <div className="wrapperMoreAboutCart">
-              <p className="cartItemName">Men Regular Fit Yoga hoodie</p>
+              <p className="cartItemName">{item.name}</p>
               <div className="wrapperDeliveryFeatures">
                 <span className="shippingDiscuont">35% shipping discount</span>
                 <span className="merchantDiscuont">25% merchant discount</span>
@@ -40,22 +45,48 @@ export default function CartItems() {
           </div>
         </div>
         <div className="col-2">
-          <p className="cartItemPrice">$690.00</p>
+          <p className="cartItemPrice">${item.price}.00</p>
         </div>
         <div className="col-3">
           <div className="wrapperQuantityBtns">
             <div class="cartCountBtns">
-              <span class="increment">+</span>
-              <span class="choosenProCount">1</span>
-              <span class="decrement">−</span>
+              <span
+                onClick={() => dispatch(cartActions.increment(item.id))}
+                class="increment"
+              >
+                +
+              </span>
+              <span class="choosenProCount">{item.count}</span>
+              <span
+                onClick={() => {
+                  if (item.count >= 2) {
+                    dispatch(cartActions.decrement(item.id));
+                  }
+                }}
+                style={
+                  item.count == 1
+                    ? { cursor: "no-drop" }
+                    : { cursor: "pointer" }
+                }
+                class="decrement"
+              >
+                −
+              </span>
             </div>
-            <span class="material-symbols-outlined removeBtn">delete</span>
+            <span
+              onClick={() => {
+                dispatch(cartActions.removeCartItems(item.id));
+              }}
+              class="material-symbols-outlined removeBtn"
+            >
+              delete
+            </span>
           </div>
         </div>
         <div className="col-2">
-          <p className="totalPriceCart">$651.00</p>
+          <p className="totalPriceCart">${item.totalPrice}.00</p>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }
