@@ -14,8 +14,6 @@ function ShoppingCart() {
     productTotalPrice = item.totalPrice + productTotalPrice;
   });
 
-  console.log(productTotalPrice);
-
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
       let tl = gsap.timeline();
@@ -86,7 +84,7 @@ function ShoppingCart() {
           <div ref={scopeRef} className="container-fluid">
             {/* header  */}
             <div className="row px-5">
-              <div className="col-12">
+              <div className="col-12 px-0">
                 <div className="shoppingCartContainer">
                   <div className="headerShoppingCart">
                     <p className="titleHeaderCart">your shopping cart</p>

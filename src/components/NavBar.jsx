@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { useRef } from "react";
 import BasketSvg from "../svg/BasketSvg";
 import UserSvg from "../svg/UserSvg";
 import { gsap } from "gsap";

@@ -167,9 +167,6 @@ export default function ProductionDetails() {
     });
 
     return () => {
-      dispatch(
-        cartActions.setCartItems(JSON.parse(localStorage.getItem("userCart")))
-      );
       ctx.kill();
     };
   });

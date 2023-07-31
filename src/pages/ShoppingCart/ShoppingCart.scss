@@ -1,5 +1,5 @@
 .cartDetailTitles {
-  margin-top: 4rem !important;
+  margin-top: 5rem !important;
   .titleProCartDetails {
     font-size: 20px;
     margin-bottom: 15px;
@@ -240,10 +240,11 @@
 .shoppingCartContainer {
   .headerShoppingCart {
     .titleHeaderCart {
-      margin-top: 4rem;
+      margin-top: 3rem;
       font-size: 35px;
       font-weight: 700;
       text-transform: capitalize;
+      text-align: center;
     }
   }
 }

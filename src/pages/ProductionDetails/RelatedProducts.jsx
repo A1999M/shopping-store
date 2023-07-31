@@ -31,7 +31,10 @@ export default function RelatedProducts({ productId }) {
           return res.json();
         })
         .then((data) => {
-          setRelatedPros(data[0]);
+          let filteredPros = data.filter((item) => {
+            return item.id != productId;
+          });
+          setRelatedPros(filteredPros);
         })
         .catch((err) => {
           console.warn(err);
