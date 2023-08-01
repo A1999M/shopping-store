@@ -1,4 +1,5 @@
 import { useRef, useLayoutEffect, useEffect } from "react";
+import { Link } from "react-router-dom";
 import CartItems from "./CartItems";
 import { useSelector } from "react-redux";
 import { gsap } from "gsap";
@@ -134,7 +135,12 @@ function ShoppingCart() {
                   <p className="taxesShippingTitle">
                     taxes and shipping calculated at checkout
                   </p>
-                  <button className="shoppingCartCheckOutBtn">check out</button>
+                  <Link
+                    to="/addInformation"
+                    className="shoppingCartCheckOutBtn"
+                  >
+                    check out
+                  </Link>
                 </div>
               </div>
             </div>

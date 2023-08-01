@@ -1,6 +1,8 @@
 import { useEffect, useLayoutEffect, useState } from "react";
 import Home from "./pages/Home";
 import LocomotiveScroll from "locomotive-scroll";
+import AddInformation from "./pages/AddInformation";
+import Payment from "./pages/Payment";
 import BlogDetails from "./pages/BlogDetails";
 import { AnimatePresence } from "framer-motion";
 import ProductionDetails from "./pages/ProductionDetails";
@@ -82,6 +84,8 @@ export default function App() {
               <Route path="/blog/:blogId" element={<BlogDetails />} />
               <Route path="/posts/:productId" element={<ProductionDetails />} />
               <Route path="/shopping-cart" element={<ShoppingCart />} />
+              <Route path="/addInformation" element={<AddInformation />} />
+              <Route path="/payment" element={<Payment />} />
             </Routes>
           </AnimatePresence>
         </items.Provider>
