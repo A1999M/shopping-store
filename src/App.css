@@ -40,6 +40,9 @@ body {
 .mb3rem {
   margin-bottom: 3rem;
 }
+.mb6rem {
+  margin-bottom: 6rem;
+}
 .swiper-slide {
   padding-bottom: 4rem !important;
 }
@@ -94,4 +97,7 @@ body {
 .offcanvas.offcanvas-start.show {
   right: 0 !important;
   left: 100% !important;
+}
+.nav.nav-tabs.nav-fill {
+  /* visibility: hidden; */
 }
