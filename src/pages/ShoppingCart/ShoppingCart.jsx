@@ -135,10 +135,7 @@ function ShoppingCart() {
                   <p className="taxesShippingTitle">
                     taxes and shipping calculated at checkout
                   </p>
-                  <Link
-                    to="/addInformation"
-                    className="shoppingCartCheckOutBtn"
-                  >
+                  <Link to="/payment" className="shoppingCartCheckOutBtn">
                     check out
                   </Link>
                 </div>

@@ -6,7 +6,7 @@ import StepLabel from "@mui/material/StepLabel";
 export default function PaymentStepper({ activeNumber }) {
   return (
     <>
-      <Stepper activeStep={activeNumber}>
+      <Stepper style={{ marginTop: "25px" }} activeStep={activeNumber}>
         {/*  */}
         <Step>
           <StepLabel>Billing Information</StepLabel>
@@ -14,6 +14,10 @@ export default function PaymentStepper({ activeNumber }) {
         {/*  */}
         <Step>
           <StepLabel>contact Info</StepLabel>
+        </Step>
+        {/*  */}
+        <Step>
+          <StepLabel>Payment</StepLabel>
         </Step>
         {/*  */}
       </Stepper>
