@@ -5,6 +5,7 @@ import InstagramLogo from "../svg/InstagramLogo";
 import PinterestLogo from "../svg/PinterestLogo";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import { motion } from "framer-motion";
 import "./footer.scss";
 
 export default function Footer() {
@@ -84,7 +85,11 @@ export default function Footer() {
 
   return (
     <>
-      <div ref={scopeRef} className="container-fluid px-5 footer">
+      <motion.div
+        exit={{ opacity: 0 }}
+        ref={scopeRef}
+        className="container-fluid px-5 footer"
+      >
         <div className="row">
           {/*  */}
           <div className="col-3">
@@ -150,7 +155,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }

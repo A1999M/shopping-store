@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import BasketSvg from "../svg/BasketSvg";
-import UserSvg from "../svg/UserSvg";
+import HomeSvg from "../svg/HomeSvg";
 import { gsap } from "gsap";
 import { motion } from "framer-motion";
 import SearchSvg from "../svg/SearchSvg";
@@ -51,7 +51,7 @@ export default function NavBar() {
               />
             </div>
             <div className="NavbarRightSection">
-              <UserSvg />
+              <HomeSvg />
               <BasketSvg />
             </div>
           </motion.div>

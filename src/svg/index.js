@@ -8,3 +8,4 @@ export { default as UserSvg } from "./UserSvg";
 export { default as AvatarSvg } from "./AvatarSvg";
 export { default as CartCounter } from "./CartCounter";
 export { default as PayModalSvg } from "./PayModalSvg";
+export { default as HomeSvg } from "./HomeSvg";

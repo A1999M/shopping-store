@@ -1,10 +1,14 @@
 import { useLayoutEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { cartActions } from "../../store/cartSlice";
+import { toast } from "react-toastify";
 import { gsap } from "gsap";
 import Star from "../../components/Star";
 import { motion } from "framer-motion";
 
 export default function TrendCollectionItem({ item, index }) {
+  let dispatch = useDispatch();
   let targetHover = useRef(null);
   let [show, setShow] = useState(false);
 
@@ -216,6 +220,46 @@ export default function TrendCollectionItem({ item, index }) {
     );
   };
 
+  let handleAddToCart = (choosenProduct) => {
+    if (JSON.parse(localStorage.getItem("userCart")) == null) {
+      let basket = [];
+      let newItem = {
+        id: choosenProduct.id,
+        name: choosenProduct.name,
+        price: choosenProduct.price,
+        count: 1,
+        totalPrice: choosenProduct.price * 1,
+        imageSrc: choosenProduct.image1,
+      };
+      basket.push(newItem);
+      localStorage.setItem("userCart", JSON.stringify(basket));
+      dispatch(cartActions.setCartItems(basket));
+      toast.success("Successfully Added To Cart");
+    } else {
+      let currentLocal = JSON.parse(localStorage.getItem("userCart"));
+      let isExist = currentLocal.some((item) => {
+        return item.id == choosenProduct.id;
+      });
+      if (isExist) {
+        toast.info("The product has been updated");
+      } else {
+        let basket = [...currentLocal];
+        let newItem = {
+          id: choosenProduct.id,
+          name: choosenProduct.name,
+          price: choosenProduct.price,
+          count: 1,
+          totalPrice: choosenProduct.price * 1,
+          imageSrc: choosenProduct.image1,
+        };
+        basket.push(newItem);
+        localStorage.setItem("userCart", JSON.stringify(basket));
+        dispatch(cartActions.setCartItems(basket));
+        toast.success("Successfully Added To Cart");
+      }
+    }
+  };
+
   return (
     <>
       <motion.div
@@ -247,7 +291,12 @@ export default function TrendCollectionItem({ item, index }) {
             </div>
             {/*  */}
             <div className="wrapperCollectionBtns">
-              <button className="addTocartCollection">add to card</button>
+              <button
+                onClick={() => handleAddToCart(item)}
+                className="addTocartCollection"
+              >
+                add to card
+              </button>
               <Link to={`/posts/${item.id}`} className="moreDetailsCollection">
                 more details
               </Link>

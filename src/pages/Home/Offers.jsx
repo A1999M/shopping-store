@@ -18,9 +18,9 @@ export default function Offers() {
   let btnLRightOffer = useRef();
 
   useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    ScrollTrigger.refresh();
     let ctx = gsap.context(() => {
-      gsap.registerPlugin(ScrollTrigger);
-
       gsap.set(leftOfferRef.current, {
         clipPath: "inset(100% 0% 0% 0%)",
         backgroundSize: "125%",
@@ -167,6 +167,7 @@ export default function Offers() {
 
     return () => {
       ctx.revert();
+      ScrollTrigger.refresh();
     };
   }, []);
 

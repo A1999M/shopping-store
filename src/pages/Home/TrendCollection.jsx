@@ -1,8 +1,9 @@
 import { useState, useContext, useEffect, useRef } from "react";
 import items from "../../context/items";
 import TrendCollectionItem from "./TrendCollectionItem";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { gsap } from "gsap";
+import { ToastContainer } from "react-toastify";
 import { ScrollTrigger } from "gsap/all";
 import "./home.scss";
 
@@ -17,8 +18,9 @@ export default function TrendCollection() {
   const [topTrebding, setTopTrending] = useState(false);
 
   useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    ScrollTrigger.refresh();
     let ctx = gsap.context(() => {
-      gsap.registerPlugin(ScrollTrigger);
       gsap.set(document.querySelector(".titleTrendCollection"), {
         opacity: 0,
         y: 30,
@@ -122,6 +124,7 @@ export default function TrendCollection() {
 
     return () => {
       ctx.revert();
+      ScrollTrigger.refresh();
     };
   }, []);
 
@@ -194,6 +197,18 @@ export default function TrendCollection() {
 
   return (
     <>
+      <ToastContainer
+        position="top-right"
+        autoClose={1500}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
       <div className="container-fluid px-5">
         <div className="row">
           <div className="col-12">
@@ -250,38 +265,17 @@ export default function TrendCollection() {
           </div>
         </div>
         {/* better seller section */}
-        {bestSeller && (
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 30 }}
-            transition={{ type: "tween", duration: 0.6 }}
-            className="row"
-          >
-            {trendItems &&
-              trendItems.map((item, index) => {
-                return (
-                  <TrendCollectionItem
-                    index={index}
-                    key={item.id}
-                    item={item}
-                  />
-                );
-              })}
-          </motion.div>
-        )}
-        {/* arrivals section */}
-        {arrivals && (
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 30 }}
-            transition={{ type: "tween", duration: 0.6 }}
-            className="row"
-          >
-            {menItems &&
-              menItems.map((item, index) => {
-                if (index < 8) {
+        <AnimatePresence mode="wait">
+          {bestSeller && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              key={bestSeller}
+              className="row"
+            >
+              {trendItems &&
+                trendItems.map((item, index) => {
                   return (
                     <TrendCollectionItem
                       index={index}
@@ -289,37 +283,59 @@ export default function TrendCollection() {
                       item={item}
                     />
                   );
-                } else {
-                  return null;
-                }
-              })}
-          </motion.div>
-        )}
-        {/* top trending section */}
-        {topTrebding && (
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 30 }}
-            transition={{ type: "tween", duration: 0.6 }}
-            className="row"
-          >
-            {womenItems &&
-              womenItems.map((item, index) => {
-                if (index < 8) {
-                  return (
-                    <TrendCollectionItem
-                      index={index}
-                      key={item.id}
-                      item={item}
-                    />
-                  );
-                } else {
-                  return null;
-                }
-              })}
-          </motion.div>
-        )}
+                })}
+            </motion.div>
+          )}
+          {/* arrivals section */}
+          {arrivals && (
+            <motion.div
+              initial={{ opacity: 0, y: 0 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 0 }}
+              className="row"
+            >
+              {menItems &&
+                menItems.map((item, index) => {
+                  if (index < 8) {
+                    return (
+                      <TrendCollectionItem
+                        index={index}
+                        key={item.id}
+                        item={item}
+                      />
+                    );
+                  } else {
+                    return null;
+                  }
+                })}
+            </motion.div>
+          )}
+          {/* top trending section */}
+          {topTrebding && (
+            <motion.div
+              initial={{ opacity: 0, y: 0 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 0 }}
+              key={bestSeller}
+              className="row"
+            >
+              {womenItems &&
+                womenItems.map((item, index) => {
+                  if (index < 8) {
+                    return (
+                      <TrendCollectionItem
+                        index={index}
+                        key={item.id}
+                        item={item}
+                      />
+                    );
+                  } else {
+                    return null;
+                  }
+                })}
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </>
   );

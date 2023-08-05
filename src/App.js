@@ -31,7 +31,6 @@ export default function App() {
       setCartCountShow(cartItems.length);
       dispatch(cartActions.setCartItems(cartItems));
     }
-
     let locoScroll = new LocomotiveScroll();
   }, [show]);
 

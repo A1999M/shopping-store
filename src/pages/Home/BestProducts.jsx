@@ -4,6 +4,8 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import BestProItems from "./BestProItems";
 
+gsap.registerPlugin(ScrollTrigger);
+
 export default function BestProducts() {
   let scopeRef = useRef();
   let titleRef = useRef();
@@ -12,9 +14,8 @@ export default function BestProducts() {
   let { menItems, womenItems } = useContext(items);
 
   useEffect(() => {
+    ScrollTrigger.refresh();
     let ctx = gsap.context(() => {
-      gsap.registerPlugin(ScrollTrigger);
-
       gsap.set(titleRef.current, {
         opacity: 0,
         clipPath: "inset(0% 0% 100% 0%)",
@@ -67,17 +68,19 @@ export default function BestProducts() {
           id: "horizontalTrigger",
           snap: 1 / (horizontalElement.length - 1),
           scrub: 1.5,
-          // markers: {
-          //   startColor: "#ffd000",
-          //   endColor: "#ff0000",
-          //   fontSize: "25px",
-          // },
+          markers: {
+            startColor: "#ffd000",
+            endColor: "#ff0000",
+            fontSize: "25px",
+          },
         },
       });
     }, scopeRef);
 
     return () => {
+      ctx.kill();
       ctx.revert();
+      ScrollTrigger.refresh();
     };
   }, []);
 
