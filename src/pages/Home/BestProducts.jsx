@@ -68,11 +68,11 @@ export default function BestProducts() {
           id: "horizontalTrigger",
           snap: 1 / (horizontalElement.length - 1),
           scrub: 1.5,
-          markers: {
-            startColor: "#ffd000",
-            endColor: "#ff0000",
-            fontSize: "25px",
-          },
+          // markers: {
+          //   startColor: "#ffd000",
+          //   endColor: "#ff0000",
+          //   fontSize: "25px",
+          // },
         },
       });
     }, scopeRef);
