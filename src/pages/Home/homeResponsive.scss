@@ -30,8 +30,158 @@
       }
     }
   }
+  // responsive header of home page
+  .heroHeader {
+    margin-top: 1.5rem !important;
+    .wrapperHeader {
+      background-size: 230% !important;
+      background-position-y: top !important;
+      background-position-x: 85% !important;
+      width: 100vw !important;
+      height: 86vh !important;
+      .wrapperHeroHeaderFeatures {
+        transform: translateX(-4%) translateY(310%) !important;
+        text-align: center !important;
+        padding: 0 !important;
+        .titleHeroHeader {
+          font-size: 5vw !important;
+        }
+        .offerHeroHeader {
+          font-size: 2.5vw !important;
+          margin-top: 14px !important;
+        }
+        .btnHeroHeader {
+          font-size: 3vw !important;
+          padding: 10px 30px !important;
+          margin-top: 20px !important;
+        }
+      }
+    }
+  }
 }
-@media (min-width: 414px) {
+@media (min-width: 375px) {
+  // responsive Navbar
+  .containerNavbar {
+    padding: 0 1rem !important;
+    .navbar {
+      justify-content: center !important;
+      .NavbarLogoSection {
+        margin-right: auto !important;
+        img {
+          width: 72% !important;
+        }
+      }
+      .NavbarLeftSection {
+        display: none !important;
+        #search {
+          padding-right: 2rem !important;
+        }
+      }
+      .NavbarRightSection {
+        margin-right: 2rem !important;
+        .homeIcon {
+          width: 28px !important;
+          height: 28px !important;
+        }
+        .navBasketIcon {
+          width: 32px !important;
+          height: 32px !important;
+          margin-left: 10px !important;
+        }
+      }
+    }
+  }
+  // responsive header of home page
+  .heroHeader {
+    margin-top: 1.5rem !important;
+    .wrapperHeader {
+      background-size: 230% !important;
+      background-position-y: top !important;
+      background-position-x: 85% !important;
+      width: 100vw !important;
+      height: 86vh !important;
+      .wrapperHeroHeaderFeatures {
+        transform: translateX(-4%) translateY(320%) !important;
+        text-align: center !important;
+        padding: 0 !important;
+        .titleHeroHeader {
+          font-size: 5vw !important;
+        }
+        .offerHeroHeader {
+          font-size: 2.5vw !important;
+          margin-top: 14px !important;
+        }
+        .btnHeroHeader {
+          font-size: 3vw !important;
+          padding: 10px 30px !important;
+          margin-top: 20px !important;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 393px) {
+  // responsive Navbar
+  .containerNavbar {
+    padding: 0 1rem !important;
+    .navbar {
+      justify-content: center !important;
+      .NavbarLogoSection {
+        margin-right: auto !important;
+        img {
+          width: 72% !important;
+        }
+      }
+      .NavbarLeftSection {
+        display: none !important;
+        #search {
+          padding-right: 2rem !important;
+        }
+      }
+      .NavbarRightSection {
+        margin-right: 2rem !important;
+        .homeIcon {
+          width: 28px !important;
+          height: 28px !important;
+        }
+        .navBasketIcon {
+          width: 32px !important;
+          height: 32px !important;
+          margin-left: 10px !important;
+        }
+      }
+    }
+  }
+  // responsive header of home page
+  .heroHeader {
+    margin-top: 1.5rem !important;
+    .wrapperHeader {
+      background-size: 230% !important;
+      background-position-y: top !important;
+      background-position-x: 85% !important;
+      width: 100vw !important;
+      height: 86vh !important;
+      .wrapperHeroHeaderFeatures {
+        transform: translateX(-4%) translateY(330%) !important;
+        text-align: center !important;
+        padding: 0 !important;
+        .titleHeroHeader {
+          font-size: 5vw !important;
+        }
+        .offerHeroHeader {
+          font-size: 2.5vw !important;
+          margin-top: 14px !important;
+        }
+        .btnHeroHeader {
+          font-size: 3vw !important;
+          padding: 10px 30px !important;
+          margin-top: 20px !important;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 412px) {
   // responsive Navbar
   .containerNavbar {
     padding: 0 0rem !important;
@@ -59,6 +209,33 @@
         .navBasketIcon {
           width: 32px !important;
           height: 32px !important;
+        }
+      }
+    }
+  }
+  // responsive header of home page
+  .heroHeader {
+    margin-top: 1.5rem !important;
+    .wrapperHeader {
+      background-size: 230% !important;
+      background-position-y: top !important;
+      background-position-x: 85% !important;
+      width: 100vw !important;
+      height: 86vh !important;
+      .wrapperHeroHeaderFeatures {
+        transform: translateX(-4%) translateY(255%) !important;
+        padding: 1rem 2rem !important;
+        .titleHeroHeader {
+          font-size: 5vw !important;
+        }
+        .offerHeroHeader {
+          font-size: 2.5vw !important;
+          margin-top: 14px !important;
+        }
+        .btnHeroHeader {
+          font-size: 3vw !important;
+          padding: 10px 30px !important;
+          margin-top: 20px !important;
         }
       }
     }
@@ -96,6 +273,32 @@
       }
     }
   }
+  // responsive header of home page
+  .heroHeader {
+    margin-top: 1.5rem !important;
+    .wrapperHeader {
+      background-size: 200% !important;
+      background-position-y: top !important;
+      background-position-x: 85% !important;
+      width: 100vw !important;
+      height: 90vh !important;
+      .wrapperHeroHeaderFeatures {
+        transform: translateX(-4%) translateY(332%) !important;
+        .titleHeroHeader {
+          font-size: 4.8vw !important;
+        }
+        .offerHeroHeader {
+          font-size: 2vw !important;
+          margin-top: 14px !important;
+        }
+        .btnHeroHeader {
+          font-size: 2.5vw !important;
+          padding: 10px 30px !important;
+          margin-top: 20px !important;
+        }
+      }
+    }
+  }
 }
 @media (min-width: 768px) {
   // responsive Navbar
@@ -125,6 +328,34 @@
           width: 33px !important;
           height: 33px !important;
           margin-left: 5px !important;
+        }
+      }
+    }
+  }
+  // responsive header of home page
+  .heroHeader {
+    margin-top: 1.5rem !important;
+    .wrapperHeader {
+      background-size: 100% !important;
+      background-position-y: top !important;
+      background-position-x: center !important;
+      width: 100vw !important;
+      height: 100vh !important;
+      .wrapperHeroHeaderFeatures {
+        transform: translateX(-68%) translateY(60%) !important;
+        text-align: left !important;
+        padding: 1.5rem 1.8rem !important;
+        .titleHeroHeader {
+          font-size: 3vw !important;
+        }
+        .offerHeroHeader {
+          font-size: 1.2vw !important;
+          margin-top: 17px !important;
+        }
+        .btnHeroHeader {
+          font-size: 1.5vw !important;
+          padding: 10px 30px !important;
+          margin-top: 20px !important;
         }
       }
     }
@@ -162,6 +393,31 @@
       }
     }
   }
+  // responsive header of home page
+  .heroHeader {
+    margin-top: 1.5rem !important;
+    .wrapperHeader {
+      background-size: 100% !important;
+      width: 100vw !important;
+      height: 100vh !important;
+      .wrapperHeroHeaderFeatures {
+        transform: translateX(-85%) translateY(78%) !important;
+        padding: 2rem !important;
+        .titleHeroHeader {
+          font-size: 2.8vw !important;
+        }
+        .offerHeroHeader {
+          font-size: 1.2vw !important;
+          margin-top: 16px !important;
+        }
+        .btnHeroHeader {
+          font-size: 1.4vw !important;
+          padding: 10px 33px !important;
+          margin-top: 20px !important;
+        }
+      }
+    }
+  }
 }
 @media (min-width: 1200px) {
   // responsive Navbar
@@ -188,6 +444,30 @@
       }
     }
   }
+  // responsive header of home page
+  .heroHeader {
+    margin-top: 1.5rem !important;
+    .wrapperHeader {
+      background-size: 100% !important;
+      width: 100vw !important;
+      height: 100vh !important;
+      .wrapperHeroHeaderFeatures {
+        transform: translateX(-85%) translateY(90%) !important;
+        .titleHeroHeader {
+          font-size: 2.7vw !important;
+        }
+        .offerHeroHeader {
+          font-size: 1.1vw !important;
+          margin-top: 18px !important;
+        }
+        .btnHeroHeader {
+          font-size: 1.1vw !important;
+          padding: 15px 40px !important;
+          margin-top: 23px !important;
+        }
+      }
+    }
+  }
 }
 @media (min-width: 1400px) {
   // responsive Navbar
@@ -211,6 +491,31 @@
       .navBasketIcon {
         width: 35px !important;
         height: 35px !important;
+      }
+    }
+  }
+  // responsive header of home page
+  .heroHeader {
+    margin-top: 1.5rem !important;
+    .wrapperHeader {
+      background-size: 100% !important;
+      width: 100vw !important;
+      height: 100vh !important;
+      .wrapperHeroHeaderFeatures {
+        transform: translateX(-100%) translateY(105%) !important;
+        padding: 2rem !important;
+        .titleHeroHeader {
+          font-size: 2.6vw !important;
+        }
+        .offerHeroHeader {
+          font-size: 1vw !important;
+          margin-top: 25px !important;
+        }
+        .btnHeroHeader {
+          font-size: 1.1vw !important;
+          padding: 15px 40px !important;
+          margin-top: 30px !important;
+        }
       }
     }
   }
