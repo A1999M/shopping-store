@@ -179,36 +179,38 @@ $btn-color: #fff;
     text-align: center;
     opacity: 0.7;
   }
-  .wrapperLeftOffer {
+  .wrapperOfferItem {
+    margin-top: 2rem;
     width: 100%;
-    height: 50vh;
+    object-fit: cover;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-position: center;
-    background-image: url(https://pandora-fashi.myshopify.com/cdn/shop/files/offer-bg-1.png?v=1681792772&width=750);
-    .titleLeftOffer {
+    background-position: top;
+    .titleOfferItem {
       color: #000;
       text-transform: capitalize;
-      font-size: 40px;
+      font-size: 2.5vw;
       margin-left: 3vw;
       padding-top: 25%;
+      width: fit-content;
       opacity: 0;
       clip-path: inset(100% 0% 0% 0%);
       transform: translateY(40px);
     }
-    .descLeftOffer {
+    .descOfferItem {
       color: #000;
       text-transform: capitalize;
       margin-left: 3vw;
       opacity: 0.7;
-      font-size: 17px;
+      width: fit-content;
+      font-size: 1.1vw;
       margin-top: 20px;
       font-family: sans-serif;
       opacity: 0;
       clip-path: inset(100% 0% 0% 0%);
       transform: translateY(40px);
     }
-    .shopLeftOffer {
+    .shopBtnOfferItem {
       transform-origin: 0% 0%;
       color: #fff;
       text-transform: uppercase;
@@ -216,7 +218,7 @@ $btn-color: #fff;
       border: none;
       outline: none;
       margin-left: 3vw;
-      font-size: 15px;
+      font-size: 1vw;
       margin-top: 12px;
       display: inline-block;
       padding: 15px 25px;
@@ -224,49 +226,6 @@ $btn-color: #fff;
       font-weight: 500;
       clip-path: inset(100% 0% 0% 0%);
       opacity: 0;
-    }
-  }
-  .wrapperRightOffer {
-    @extend .wrapperLeftOffer;
-    background-image: url(https://pandora-fashi.myshopify.com/cdn/shop/files/offer-bg-2.png?v=1681792780&width=750);
-    .titleRightOffer {
-      color: #000;
-      text-transform: capitalize;
-      font-size: 40px;
-      margin-left: 3vw;
-      padding-top: 25%;
-      opacity: 0;
-      clip-path: inset(100% 0% 0% 0%);
-      transform: translateY(20px);
-    }
-    .descRightOffer {
-      color: #000;
-      text-transform: capitalize;
-      margin-left: 3vw;
-      opacity: 0.7;
-      font-size: 17px;
-      margin-top: 20px;
-      font-family: sans-serif;
-      opacity: 0;
-      clip-path: inset(100% 0% 0% 0%);
-      transform: translateY(20px);
-    }
-    .shopRightOffer {
-      transform-origin: 0% 0%;
-      color: #fff;
-      text-transform: uppercase;
-      background-color: #000;
-      border: none;
-      outline: none;
-      margin-left: 3vw;
-      font-size: 15px;
-      margin-top: 12px;
-      display: inline-block;
-      padding: 15px 25px;
-      font-family: sans-serif;
-      font-weight: 500;
-      opacity: 0;
-      clip-path: inset(100% 0% 0% 0%);
     }
   }
 }
