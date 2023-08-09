@@ -1,3 +1,128 @@
+@media (max-width: 360px) {
+  // responsive Navbar
+  .containerNavbar {
+    padding: 0 1rem !important;
+    .navbar {
+      justify-content: center !important;
+      .NavbarLogoSection {
+        margin-right: auto !important;
+        img {
+          width: 72% !important;
+        }
+      }
+      .NavbarLeftSection {
+        display: none !important;
+        #search {
+          padding-right: 2rem !important;
+        }
+      }
+      .NavbarRightSection {
+        margin-right: 2rem !important;
+        .homeIcon {
+          width: 28px !important;
+          height: 28px !important;
+        }
+        .navBasketIcon {
+          width: 32px !important;
+          height: 32px !important;
+          margin-left: 10px !important;
+        }
+      }
+    }
+  }
+  // responsive header of home page
+  .heroHeader {
+    margin-top: 1.5rem !important;
+    .wrapperHeader {
+      background-size: 230% !important;
+      background-position-y: top !important;
+      background-position-x: 85% !important;
+      width: 100vw !important;
+      height: 33vh !important;
+      .wrapperHeroHeaderFeatures {
+        display: none !important;
+        .titleHeroHeader {
+          font-size: 5vw !important;
+        }
+        .offerHeroHeader {
+          font-size: 2.5vw !important;
+          margin-top: 14px !important;
+        }
+        .btnHeroHeader {
+          font-size: 3vw !important;
+          padding: 10px 30px !important;
+          margin-top: 20px !important;
+        }
+      }
+    }
+  }
+  // responsive trend collection
+  .trendCollection {
+    padding: 0 2rem !important;
+    margin-top: 2rem !important;
+    .titleTrendCollection {
+      font-size: 23px !important;
+    }
+    .descCollection {
+      font-size: 14px !important;
+      margin-top: 17px !important;
+    }
+    .wrapperTrendCollectionCategory {
+      margin-top: 2.5rem !important;
+      .sellerTCollection {
+        font-size: 10px !important;
+        padding: 10px 10px !important;
+        margin: 0 0.1rem !important;
+        font-weight: 700;
+      }
+      .arrivalsTCollection {
+        font-size: 10px !important;
+        padding: 10px 10px !important;
+        margin: 0 0.1rem !important;
+        font-weight: 700;
+      }
+      .topTCollection {
+        font-size: 10px !important;
+        padding: 10px 10px !important;
+        margin: 0 0.1rem !important;
+        font-weight: 700;
+      }
+    }
+    .collectionCol {
+      margin-top: 2rem !important;
+      .wrapperCartCollection {
+        background-size: 100% !important;
+        min-height: 27vh !important;
+        .wrapperInfoCart {
+          padding: 0 15px !important;
+          .proCollectionName {
+            font-size: 14px !important;
+            margin-top: 15px !important;
+          }
+          .priceAndRate {
+            margin-top: 7px !important;
+            .proCollectionPrice {
+              font-size: 11px !important;
+            }
+            .ratesCollection {
+              .rateStar {
+                width: 11px !important;
+                height: 11px !important;
+              }
+            }
+          }
+          .wrapperCollectionBtns {
+            margin-top: 10px !important;
+            .addTocartCollection {
+              padding: 5px 0px !important;
+              font-size: 11px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 @media (min-width: 360px) {
   // responsive Navbar
   .containerNavbar {
@@ -38,11 +163,9 @@
       background-position-y: top !important;
       background-position-x: 85% !important;
       width: 100vw !important;
-      height: 86vh !important;
+      height: 33vh !important;
       .wrapperHeroHeaderFeatures {
-        transform: translateX(-4%) translateY(310%) !important;
-        text-align: center !important;
-        padding: 0 !important;
+        display: none !important;
         .titleHeroHeader {
           font-size: 5vw !important;
         }
@@ -54,6 +177,72 @@
           font-size: 3vw !important;
           padding: 10px 30px !important;
           margin-top: 20px !important;
+        }
+      }
+    }
+  }
+  // responsive trend collection
+  .trendCollection {
+    padding: 0 2rem !important;
+    margin-top: 3rem !important;
+    .titleTrendCollection {
+      font-size: 25px !important;
+    }
+    .descCollection {
+      font-size: 15px !important;
+      margin-top: 17px !important;
+    }
+    .wrapperTrendCollectionCategory {
+      margin-top: 2.5rem !important;
+      .sellerTCollection {
+        font-size: 10px !important;
+        padding: 10px 10px !important;
+        margin: 0 0.1rem !important;
+        font-weight: 700;
+      }
+      .arrivalsTCollection {
+        font-size: 10px !important;
+        padding: 10px 10px !important;
+        margin: 0 0.1rem !important;
+        font-weight: 700;
+      }
+      .topTCollection {
+        font-size: 10px !important;
+        padding: 10px 10px !important;
+        margin: 0 0.1rem !important;
+        font-weight: 700;
+      }
+    }
+    .collectionCol {
+      margin-top: 2rem !important;
+      .wrapperCartCollection {
+        background-size: 100% !important;
+        min-height: 27vh !important;
+        .wrapperInfoCart {
+          padding: 0 15px !important;
+          .proCollectionName {
+            font-size: 14px !important;
+            margin-top: 15px !important;
+          }
+          .priceAndRate {
+            margin-top: 7px !important;
+            .proCollectionPrice {
+              font-size: 11px !important;
+            }
+            .ratesCollection {
+              .rateStar {
+                width: 11px !important;
+                height: 11px !important;
+              }
+            }
+          }
+          .wrapperCollectionBtns {
+            margin-top: 10px !important;
+            .addTocartCollection {
+              padding: 5px 0px !important;
+              font-size: 11px !important;
+            }
+          }
         }
       }
     }
@@ -99,7 +288,7 @@
       background-position-y: top !important;
       background-position-x: 85% !important;
       width: 100vw !important;
-      height: 86vh !important;
+      height: 33vh !important;
       .wrapperHeroHeaderFeatures {
         transform: translateX(-4%) translateY(320%) !important;
         text-align: center !important;
@@ -115,6 +304,66 @@
           font-size: 3vw !important;
           padding: 10px 30px !important;
           margin-top: 20px !important;
+        }
+      }
+    }
+  }
+  // responsive trend collection
+  .trendCollection {
+    padding: 0 2rem !important;
+    margin-top: 3rem !important;
+    .titleTrendCollection {
+      font-size: 25px !important;
+    }
+    .descCollection {
+      font-size: 15px !important;
+      margin-top: 17px !important;
+    }
+    .wrapperTrendCollectionCategory {
+      margin-top: 2.5rem !important;
+      .sellerTCollection {
+        font-size: 10px !important;
+        padding: 10px 10px !important;
+        margin: 0 0.1rem !important;
+        font-weight: 700;
+      }
+      .arrivalsTCollection {
+        font-size: 10px !important;
+        padding: 10px 10px !important;
+        margin: 0 0.1rem !important;
+        font-weight: 700;
+      }
+      .topTCollection {
+        font-size: 10px !important;
+        padding: 10px 10px !important;
+        margin: 0 0.1rem !important;
+        font-weight: 700;
+      }
+    }
+    .collectionCol {
+      margin-top: 2rem !important;
+      .wrapperCartCollection {
+        background-size: 100% !important;
+        min-height: 26vh !important;
+        .wrapperInfoCart {
+          padding: 0 15px !important;
+          .proCollectionName {
+            font-size: 14px !important;
+            margin-top: 15px !important;
+          }
+          .priceAndRate {
+            margin-top: 7px !important;
+            .proCollectionPrice {
+              font-size: 12px !important;
+            }
+          }
+          .wrapperCollectionBtns {
+            margin-top: 12px !important;
+            .addTocartCollection {
+              padding: 5px 0px !important;
+              font-size: 11px !important;
+            }
+          }
         }
       }
     }
@@ -160,11 +409,8 @@
       background-position-y: top !important;
       background-position-x: 85% !important;
       width: 100vw !important;
-      height: 86vh !important;
+      height: 40vh !important;
       .wrapperHeroHeaderFeatures {
-        transform: translateX(-4%) translateY(330%) !important;
-        text-align: center !important;
-        padding: 0 !important;
         .titleHeroHeader {
           font-size: 5vw !important;
         }
@@ -176,6 +422,66 @@
           font-size: 3vw !important;
           padding: 10px 30px !important;
           margin-top: 20px !important;
+        }
+      }
+    }
+  }
+  // responsive trend collection
+  .trendCollection {
+    padding: 0 2rem !important;
+    margin-top: 3rem !important;
+    .titleTrendCollection {
+      font-size: 26px !important;
+    }
+    .descCollection {
+      font-size: 15px !important;
+      margin-top: 17px !important;
+    }
+    .wrapperTrendCollectionCategory {
+      margin-top: 2.5rem !important;
+      .sellerTCollection {
+        font-size: 10px !important;
+        padding: 10px 10px !important;
+        margin: 0 0.1rem !important;
+        font-weight: 700;
+      }
+      .arrivalsTCollection {
+        font-size: 10px !important;
+        padding: 10px 10px !important;
+        margin: 0 0.1rem !important;
+        font-weight: 700;
+      }
+      .topTCollection {
+        font-size: 10px !important;
+        padding: 10px 10px !important;
+        margin: 0 0.1rem !important;
+        font-weight: 700;
+      }
+    }
+    .collectionCol {
+      margin-top: 2rem !important;
+      .wrapperCartCollection {
+        background-size: 100% !important;
+        min-height: 27vh !important;
+        .wrapperInfoCart {
+          padding: 0 15px !important;
+          .proCollectionName {
+            font-size: 14px !important;
+            margin-top: 15px !important;
+          }
+          .priceAndRate {
+            margin-top: 7px !important;
+            .proCollectionPrice {
+              font-size: 12px !important;
+            }
+          }
+          .wrapperCollectionBtns {
+            margin-top: 10px !important;
+            .addTocartCollection {
+              padding: 5px 0px !important;
+              font-size: 11px !important;
+            }
+          }
         }
       }
     }
@@ -221,10 +527,9 @@
       background-position-y: top !important;
       background-position-x: 85% !important;
       width: 100vw !important;
-      height: 86vh !important;
+      height: 65vh !important;
       .wrapperHeroHeaderFeatures {
-        transform: translateX(-4%) translateY(255%) !important;
-        padding: 1rem 2rem !important;
+        display: none !important;
         .titleHeroHeader {
           font-size: 5vw !important;
         }
@@ -236,6 +541,66 @@
           font-size: 3vw !important;
           padding: 10px 30px !important;
           margin-top: 20px !important;
+        }
+      }
+    }
+  }
+  // responsive trend collection
+  .trendCollection {
+    padding: 0 2rem !important;
+    margin-top: 3rem !important;
+    .titleTrendCollection {
+      font-size: 26px !important;
+    }
+    .descCollection {
+      font-size: 15px !important;
+      margin-top: 17px !important;
+    }
+    .wrapperTrendCollectionCategory {
+      margin-top: 2.5rem !important;
+      .sellerTCollection {
+        font-size: 12px !important;
+        padding: 10px 15px !important;
+        margin: 0 0.2rem !important;
+        font-weight: 700;
+      }
+      .arrivalsTCollection {
+        font-size: 12px !important;
+        padding: 10px 15px !important;
+        margin: 0 0.2rem !important;
+        font-weight: 700;
+      }
+      .topTCollection {
+        font-size: 12px !important;
+        padding: 10px 15px !important;
+        margin: 0 0.2rem !important;
+        font-weight: 700;
+      }
+    }
+    .collectionCol {
+      margin-top: 2rem !important;
+      .wrapperCartCollection {
+        background-size: 100% !important;
+        min-height: 27vh !important;
+        .wrapperInfoCart {
+          padding: 0 15px !important;
+          .proCollectionName {
+            font-size: 14px !important;
+            margin-top: 15px !important;
+          }
+          .priceAndRate {
+            margin-top: 7px !important;
+            .proCollectionPrice {
+              font-size: 12px !important;
+            }
+          }
+          .wrapperCollectionBtns {
+            margin-top: 12px !important;
+            .addTocartCollection {
+              padding: 5px 0px !important;
+              font-size: 11px !important;
+            }
+          }
         }
       }
     }
@@ -281,9 +646,11 @@
       background-position-y: top !important;
       background-position-x: 85% !important;
       width: 100vw !important;
-      height: 90vh !important;
+      height: 88vh !important;
       .wrapperHeroHeaderFeatures {
-        transform: translateX(-4%) translateY(332%) !important;
+        transform: translateX(-4%) translateY(220%) !important;
+        padding: 2rem !important;
+        display: block !important;
         .titleHeroHeader {
           font-size: 4.8vw !important;
         }
@@ -295,6 +662,72 @@
           font-size: 2.5vw !important;
           padding: 10px 30px !important;
           margin-top: 20px !important;
+        }
+      }
+    }
+  }
+  // responsive trend collection
+  .trendCollection {
+    padding: 0 3rem !important;
+    margin-top: 5rem !important;
+    .titleTrendCollection {
+      font-size: 30px !important;
+    }
+    .descCollection {
+      font-size: 15px !important;
+      margin-top: 15px !important;
+    }
+    .wrapperTrendCollectionCategory {
+      margin-top: 2rem !important;
+      .sellerTCollection {
+        font-size: 15px !important;
+        padding: 10px 30px !important;
+        margin: 0 1rem !important;
+        font-weight: normal;
+      }
+      .arrivalsTCollection {
+        font-size: 15px !important;
+        padding: 10px 30px !important;
+        margin: 0 1rem !important;
+        font-weight: normal;
+      }
+      .topTCollection {
+        font-size: 15px !important;
+        padding: 10px 30px !important;
+        margin: 0 1rem !important;
+        font-weight: normal;
+      }
+    }
+    .collectionCol {
+      margin-top: 3rem !important;
+      .wrapperCartCollection {
+        background-size: 100% !important;
+        min-height: 26vh !important;
+        .wrapperInfoCart {
+          padding: 0 15px !important;
+          .proCollectionName {
+            font-size: 14px !important;
+            margin-top: 15px !important;
+          }
+          .priceAndRate {
+            margin-top: 15px !important;
+            .proCollectionPrice {
+              font-size: 14px !important;
+            }
+            .ratesCollection {
+              .rateStar {
+                width: 13px !important;
+                height: 13px !important;
+              }
+            }
+          }
+          .wrapperCollectionBtns {
+            margin-top: 25px !important;
+            .addTocartCollection {
+              padding: 7px 0px !important;
+              font-size: 12px !important;
+            }
+          }
         }
       }
     }
@@ -340,7 +773,7 @@
       background-position-y: top !important;
       background-position-x: center !important;
       width: 100vw !important;
-      height: 100vh !important;
+      height: 57vh !important;
       .wrapperHeroHeaderFeatures {
         transform: translateX(-68%) translateY(60%) !important;
         text-align: left !important;
@@ -356,6 +789,69 @@
           font-size: 1.5vw !important;
           padding: 10px 30px !important;
           margin-top: 20px !important;
+        }
+      }
+    }
+  }
+  // responsive trend collection
+  .trendCollection {
+    padding: 0 3rem !important;
+    margin-top: 0rem !important;
+    .titleTrendCollection {
+      font-size: 34px !important;
+    }
+    .descCollection {
+      font-size: 15px !important;
+      margin-top: 15px !important;
+    }
+    .wrapperTrendCollectionCategory {
+      margin-top: 2.5rem !important;
+      .sellerTCollection {
+        font-size: 16px !important;
+        padding: 10px 30px !important;
+        margin: 0 1rem !important;
+      }
+      .arrivalsTCollection {
+        font-size: 16px !important;
+        padding: 10px 30px !important;
+        margin: 0 1rem !important;
+      }
+      .topTCollection {
+        font-size: 16px !important;
+        padding: 10px 30px !important;
+        margin: 0 1rem !important;
+      }
+    }
+    .collectionCol {
+      margin-top: 3rem !important;
+      .wrapperCartCollection {
+        background-size: 100% !important;
+        min-height: 41vh !important;
+        .wrapperInfoCart {
+          padding: 0 15px !important;
+          .proCollectionName {
+            font-size: 14px !important;
+            margin-top: 15px !important;
+          }
+          .priceAndRate {
+            margin-top: 15px !important;
+            .proCollectionPrice {
+              font-size: 15px !important;
+            }
+            .ratesCollection {
+              .rateStar {
+                width: 14px !important;
+                height: 14px !important;
+              }
+            }
+          }
+          .wrapperCollectionBtns {
+            margin-top: 25px !important;
+            .addTocartCollection {
+              padding: 7px 0px !important;
+              font-size: 11px !important;
+            }
+          }
         }
       }
     }
@@ -399,7 +895,7 @@
     .wrapperHeader {
       background-size: 100% !important;
       width: 100vw !important;
-      height: 100vh !important;
+      height: 68vh !important;
       .wrapperHeroHeaderFeatures {
         transform: translateX(-85%) translateY(78%) !important;
         padding: 2rem !important;
@@ -414,6 +910,68 @@
           font-size: 1.4vw !important;
           padding: 10px 33px !important;
           margin-top: 20px !important;
+        }
+      }
+    }
+  }
+  // responsive trend collection
+  .trendCollection {
+    padding: 0 3rem !important;
+    .titleTrendCollection {
+      font-size: 36px !important;
+    }
+    .descCollection {
+      font-size: 16px !important;
+      margin-top: 20px !important;
+    }
+    .wrapperTrendCollectionCategory {
+      margin-top: 2.5rem !important;
+      .sellerTCollection {
+        font-size: 18px !important;
+        padding: 10px 30px !important;
+        margin: 0 1rem !important;
+      }
+      .arrivalsTCollection {
+        font-size: 18px !important;
+        padding: 10px 30px !important;
+        margin: 0 1rem !important;
+      }
+      .topTCollection {
+        font-size: 18px !important;
+        padding: 10px 30px !important;
+        margin: 0 1rem !important;
+      }
+    }
+    .collectionCol {
+      margin-top: 3rem !important;
+      .wrapperCartCollection {
+        background-size: 100% !important;
+        min-height: 40vh !important;
+        .wrapperInfoCart {
+          padding: 0 15px !important;
+          .proCollectionName {
+            font-size: 16px !important;
+            margin-top: 15px !important;
+          }
+          .priceAndRate {
+            margin-top: 15px !important;
+            .proCollectionPrice {
+              font-size: 18px !important;
+            }
+            .ratesCollection {
+              .rateStar {
+                width: 16px !important;
+                height: 16px !important;
+              }
+            }
+          }
+          .wrapperCollectionBtns {
+            margin-top: 25px !important;
+            .addTocartCollection {
+              padding: 7px 0px !important;
+              font-size: 13px !important;
+            }
+          }
         }
       }
     }
@@ -450,7 +1008,7 @@
     .wrapperHeader {
       background-size: 100% !important;
       width: 100vw !important;
-      height: 100vh !important;
+      height: 80vh !important;
       .wrapperHeroHeaderFeatures {
         transform: translateX(-85%) translateY(90%) !important;
         .titleHeroHeader {
@@ -464,6 +1022,42 @@
           font-size: 1.1vw !important;
           padding: 15px 40px !important;
           margin-top: 23px !important;
+        }
+      }
+    }
+  }
+  // responsive trend collection
+  .trendCollection {
+    padding: 0 3rem !important;
+    margin-top: 3rem !important;
+    .titleTrendCollection {
+      font-size: 42px !important;
+    }
+    .descCollection {
+      font-size: 15px !important;
+      margin-top: 20px !important;
+    }
+    .collectionCol {
+      margin-top: 3rem !important;
+      .wrapperCartCollection {
+        background-size: 100% !important;
+        min-height: 50vh !important;
+        .wrapperInfoCart {
+          padding: 0 15px !important;
+          .proCollectionName {
+            font-size: 17px !important;
+            margin-top: 15px !important;
+          }
+          .priceAndRate {
+            margin-top: 16px !important;
+          }
+          .wrapperCollectionBtns {
+            margin-top: 30px !important;
+            .addTocartCollection {
+              padding: 10px 0px !important;
+              font-size: 13px !important;
+            }
+          }
         }
       }
     }
@@ -500,7 +1094,7 @@
     .wrapperHeader {
       background-size: 100% !important;
       width: 100vw !important;
-      height: 100vh !important;
+      height: 78vh !important;
       .wrapperHeroHeaderFeatures {
         transform: translateX(-100%) translateY(105%) !important;
         padding: 2rem !important;
@@ -515,6 +1109,42 @@
           font-size: 1.1vw !important;
           padding: 15px 40px !important;
           margin-top: 30px !important;
+        }
+      }
+    }
+  }
+  // responsive trend collection
+  .trendCollection {
+    padding: 0 3rem !important;
+    margin-top: 5rem !important;
+    .titleTrendCollection {
+      font-size: 45px !important;
+    }
+    .descCollection {
+      font-size: 16px !important;
+      margin-top: 20px !important;
+    }
+    .collectionCol {
+      margin-top: 3rem !important;
+      .wrapperCartCollection {
+        background-size: 100% !important;
+        min-height: 50vh !important;
+        .wrapperInfoCart {
+          padding: 0 15px !important;
+          .proCollectionName {
+            font-size: 19px !important;
+            margin-top: 23px !important;
+          }
+          .priceAndRate {
+            margin-top: 23px !important;
+          }
+          .wrapperCollectionBtns {
+            margin-top: 30px !important;
+            .addTocartCollection {
+              padding: 10px 0px !important;
+              font-size: 18px !important;
+            }
+          }
         }
       }
     }
