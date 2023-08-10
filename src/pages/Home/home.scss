@@ -3,7 +3,6 @@ $ff: "Philosopher", sans-serif;
 $btn-bgc: #000;
 $text-color: #000;
 $btn-color: #fff;
-
 // trends collection styles
 .trendCollection {
   padding: 0 3rem;
@@ -148,7 +147,6 @@ $btn-color: #fff;
     }
   }
 }
-
 // special price section styles
 .specialPriceContainer {
   margin-top: 10rem;
@@ -161,7 +159,6 @@ $btn-color: #fff;
     height: 85vh;
   }
 }
-
 // offers section styles
 .offersContainer {
   margin-top: 7rem;
@@ -229,12 +226,10 @@ $btn-color: #fff;
     }
   }
 }
-
 // video offer styles
 .videoOffer {
   height: 760px;
 }
-
 // blog items section styles
 .latestBlogs {
   margin-top: 6rem;
@@ -299,7 +294,6 @@ $btn-color: #fff;
     }
   }
 }
-
 // features section styles
 .wrapperFeatureItem {
   display: flex;
@@ -331,7 +325,6 @@ $btn-color: #fff;
     }
   }
 }
-
 // start best products section style
 .bestProducts {
   margin-top: 7rem;
@@ -419,14 +412,13 @@ $btn-color: #fff;
     }
   }
 }
-
 // start customer reviews section styles
 .custoremReview {
   margin-top: 7rem;
   padding: 0;
   .bgCustomerReview {
     background-image: url(https://pandora-fashi.myshopify.com/cdn/shop/files/review-bg.png?v=1681792909&width=1780);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     padding-top: 2rem;
@@ -446,7 +438,7 @@ $btn-color: #fff;
         margin-top: 25px;
         text-align: center;
         opacity: 0.6;
-        margin-bottom: 3rem;
+        margin-bottom: 0rem;
       }
     }
     .cWrapperSlider {
@@ -490,7 +482,6 @@ $btn-color: #fff;
     }
   }
 }
-
 // faqs section styles
 .faqs {
   margin-top: 5rem;

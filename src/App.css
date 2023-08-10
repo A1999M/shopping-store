@@ -47,9 +47,6 @@ body {
 .swiper-slide {
   padding-bottom: 4rem !important;
 }
-.swiper-pagination {
-  top: 14.5rem !important;
-}
 .swiper-pagination-bullet-active {
   background: #000 !important;
 }
