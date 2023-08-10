@@ -79,7 +79,7 @@ export default function BlogItems({ blogItems, index }) {
         viewport={{ once: true, amount: 0.5 }}
         initial="initial"
         animate={onView ? "animate" : "initial"}
-        className="col-4"
+        className="col-10 col-lg-4 blogItem"
       >
         <div
           onMouseEnter={hover}

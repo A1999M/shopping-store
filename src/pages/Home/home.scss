@@ -236,57 +236,66 @@ $btn-color: #fff;
 }
 
 // blog items section styles
-.titleBlog {
-  text-align: center;
-  font-size: 45px;
-}
-.descBlog {
-  text-align: center;
-  font-size: 16px;
-  opacity: 0.7;
-  margin-top: 20px;
-  text-transform: capitalize;
-}
-.wrapperBlogItem {
-  overflow: hidden;
-  border-radius: 30px;
-  position: relative;
-  height: fit-content;
-  padding-bottom: 2rem;
-  box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-  .wrpperBlogImg {
-    overflow: hidden;
-    img {
-      width: 100%;
-    }
+.latestBlogs {
+  margin-top: 6rem;
+  .titleBlog {
+    text-align: center;
+    font-size: 45px;
   }
-  .wrapperBodyBlog {
-    padding: 0 1rem;
-    .titleBlogItem {
-      font-size: 23px;
-      text-transform: capitalize;
-      margin-top: 22px;
-    }
-    .descBlogItem {
-      font-size: 16px;
-      text-transform: capitalize;
-      margin-top: 16px;
-      line-height: 24px;
-      opacity: 0.7;
-    }
-    .blogReadMore {
-      font-size: 14px;
-      text-decoration: none;
-      color: #fff;
-      background-color: #000;
-      text-transform: uppercase;
-      display: block;
-      margin-left: auto;
-      padding: 10px 20px;
-      margin-top: 20px;
-      width: fit-content;
-      transform-origin: 0% 0%;
+  .descBlog {
+    text-align: center;
+    font-size: 16px;
+    opacity: 0.7;
+    margin-top: 20px;
+    text-transform: capitalize;
+  }
+  .blogItem {
+    .wrapperBlogItem {
+      overflow: hidden;
+      border-radius: 30px;
+      position: relative;
+      height: fit-content;
+      padding-bottom: 2rem;
+      box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      .wrpperBlogImg {
+        overflow: hidden;
+        img {
+          width: 100%;
+        }
+      }
+      .wrapperBodyBlog {
+        padding: 0 1rem;
+        .titleBlogItem {
+          font-size: 24px;
+          text-transform: capitalize;
+          margin-top: 22px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        .descBlogItem {
+          font-size: 14px;
+          text-transform: capitalize;
+          margin-top: 20px;
+          line-height: 24px;
+          opacity: 0.7;
+          font-family: sans-serif;
+        }
+        .blogReadMore {
+          font-size: 14px;
+          text-decoration: none;
+          color: #fff;
+          background-color: #000;
+          text-transform: uppercase;
+          display: block;
+          margin-left: auto;
+          padding: 10px 20px;
+          margin-top: 20px;
+          width: fit-content;
+          transform-origin: 0% 0%;
+        }
+      }
     }
   }
 }
