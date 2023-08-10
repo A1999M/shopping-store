@@ -37,7 +37,7 @@ export default function Faqs() {
           <div className="col-12">
             <p className="faqsTitle">Faqs</p>
           </div>
-          <div className="col-6 mt-4">
+          <div className="col-12 col-lg-10 col-xl-8 col-xxl-6 mt-4">
             <Accordion>
               <Accordion.Item eventKey="0">
                 <Accordion.Header>

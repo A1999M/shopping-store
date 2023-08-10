@@ -61,13 +61,9 @@ body {
     border: 0 !important;
     outline: none !important;
     box-shadow: 0 0 0 0 #00000000 !important;
-    font-size: 18px;
-    font-weight: 700;
   }
 }
 .accordion-body {
-  font-size: 14px;
-  line-height: 22px;
   opacity: 0.8;
   font-family: sans-serif;
 }

@@ -241,6 +241,25 @@
   .swiper-pagination {
     top: 86% !important;
   }
+  // responsive fags home page
+  .faqs {
+    margin-top: 2rem;
+    padding: 0 1rem;
+    .faqsTitle {
+      font-size: 31px;
+    }
+  }
+  .accordion-item {
+    .accordion-button {
+      font-size: 12px !important;
+      font-weight: 700 !important;
+      line-height: 18px;
+    }
+  }
+  .accordion-body {
+    font-size: 11px !important;
+    line-height: 18px !important;
+  }
 }
 @media (min-width: 360px) {
   // responsive Navbar
@@ -485,6 +504,25 @@
   .swiper-pagination {
     top: 86% !important;
   }
+  // responsive fags home page
+  .faqs {
+    margin-top: 2rem;
+    padding: 0 1rem;
+    .faqsTitle {
+      font-size: 33px;
+    }
+  }
+  .accordion-item {
+    .accordion-button {
+      font-size: 13px !important;
+      font-weight: 700 !important;
+      line-height: 18px !important;
+    }
+  }
+  .accordion-body {
+    font-size: 11px !important;
+    line-height: 18px !important;
+  }
 }
 @media (min-width: 375px) {
   // responsive Navbar
@@ -725,6 +763,24 @@
   .swiper-pagination {
     top: 86% !important;
   }
+  // responsive fags home page
+  .faqs {
+    margin-top: 2rem;
+    padding: 0 1rem;
+    .faqsTitle {
+      font-size: 33px;
+    }
+  }
+  .accordion-item {
+    .accordion-button {
+      font-size: 13px !important;
+      font-weight: 700 !important;
+    }
+  }
+  .accordion-body {
+    font-size: 11px !important;
+    line-height: 18px !important;
+  }
 }
 @media (min-width: 393px) {
   // responsive Navbar
@@ -961,6 +1017,24 @@
   }
   .swiper-pagination {
     top: 86% !important;
+  }
+  // responsive fags home page
+  .faqs {
+    margin-top: 2rem;
+    padding: 0 1rem;
+    .faqsTitle {
+      font-size: 33px;
+    }
+  }
+  .accordion-item {
+    .accordion-button {
+      font-size: 13px !important;
+      font-weight: 700 !important;
+    }
+  }
+  .accordion-body {
+    font-size: 11px !important;
+    line-height: 18px !important;
   }
 }
 @media (min-width: 412px) {
@@ -1199,6 +1273,24 @@
   }
   .swiper-pagination {
     top: 86% !important;
+  }
+  // responsive fags home page
+  .faqs {
+    margin-top: 3rem;
+    padding: 0 1rem;
+    .faqsTitle {
+      font-size: 34px;
+    }
+  }
+  .accordion-item {
+    .accordion-button {
+      font-size: 14px !important;
+      font-weight: 700 !important;
+    }
+  }
+  .accordion-body {
+    font-size: 12px !important;
+    line-height: 20px !important;
   }
 }
 @media (min-width: 576px) {
@@ -1445,6 +1537,24 @@
   .swiper-pagination {
     top: 15rem !important;
   }
+  // responsive fags home page
+  .faqs {
+    margin-top: 2rem;
+    padding: 0 5rem;
+    .faqsTitle {
+      font-size: 40px;
+    }
+  }
+  .accordion-item {
+    .accordion-button {
+      font-size: 15px !important;
+      font-weight: 700 !important;
+    }
+  }
+  .accordion-body {
+    font-size: 12px !important;
+    line-height: 20px !important;
+  }
 }
 @media (min-width: 768px) {
   // responsive Navbar
@@ -1688,6 +1798,24 @@
   .swiper-pagination {
     top: 16.5rem !important;
   }
+  // responsive fags home page
+  .faqs {
+    margin-top: 3rem;
+    padding: 0 5rem;
+    .faqsTitle {
+      font-size: 40px;
+    }
+  }
+  .accordion-item {
+    .accordion-button {
+      font-size: 16px !important;
+      font-weight: 700 !important;
+    }
+  }
+  .accordion-body {
+    font-size: 13px !important;
+    line-height: 22px !important;
+  }
 }
 @media (min-width: 992px) {
   // responsive Navbar
@@ -1929,6 +2057,24 @@
   .swiper-pagination {
     top: 15.5rem !important;
   }
+  // responsive fags home page
+  .faqs {
+    margin-top: 4rem;
+    padding: 0 5rem;
+    .faqsTitle {
+      font-size: 42px;
+    }
+  }
+  .accordion-item {
+    .accordion-button {
+      font-size: 16px !important;
+      font-weight: 700 !important;
+    }
+  }
+  .accordion-body {
+    font-size: 13px !important;
+    line-height: 22px !important;
+  }
 }
 @media (min-width: 1200px) {
   // responsive Navbar
@@ -2135,6 +2281,24 @@
   .swiper-pagination {
     top: 14.5rem !important;
   }
+  // responsive fags home page
+  .faqs {
+    margin-top: 5rem;
+    padding: 0 5rem;
+    .faqsTitle {
+      font-size: 45px;
+    }
+  }
+  .accordion-item {
+    .accordion-button {
+      font-size: 18px !important;
+      font-weight: 700 !important;
+    }
+  }
+  .accordion-body {
+    font-size: 14px !important;
+    line-height: 22px !important;
+  }
 }
 @media (min-width: 1400px) {
   // responsive Navbar
@@ -2332,5 +2496,23 @@
   }
   .swiper-pagination {
     top: 14.5rem !important;
+  }
+  // responsive fags home page
+  .faqs {
+    margin-top: 5rem;
+    padding: 0 5rem;
+    .faqsTitle {
+      font-size: 45px;
+    }
+  }
+  .accordion-item {
+    .accordion-button {
+      font-size: 18px !important;
+      font-weight: 700 !important;
+    }
+  }
+  .accordion-body {
+    font-size: 14px !important;
+    line-height: 22px !important;
   }
 }
