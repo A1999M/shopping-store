@@ -105,7 +105,7 @@ export default function BestProducts() {
         ref={scopeRef}
         className="container-fluid bestProducts overflow-hidden px-5"
       >
-        <div className="row mb3rem">
+        <div className="row bestProTitleRow">
           <div className="col-12">
             <p ref={titleRef} className="titleBestProducts">
               BEST PRODUCTS
