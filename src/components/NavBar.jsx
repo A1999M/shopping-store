@@ -24,7 +24,7 @@ export default function NavBar() {
 
   return (
     <>
-      <div className="container-fluid px-5">
+      <div className="container-fluid containerNavbar">
         <div className="row">
           <motion.div
             initial={{ opacity: 0 }}

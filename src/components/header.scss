@@ -5,16 +5,17 @@
     background-image: url("https://pandora-fashi.myshopify.com/cdn/shop/files/banner-1.png?v=1681792583&width=1780");
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: top;
+    background-position-y: top;
+    background-position-x: center;
     width: 100vw;
     height: 100vh;
     position: relative;
     .wrapperHeroHeaderFeatures {
-      position: absolute;
-      top: 25%;
+      transform: translateX(-85%) translateY(122%);
+      margin: 0 auto;
       background-color: #fff;
       padding: 2rem;
-      left: 8%;
+      width: fit-content;
       .titleHeroHeader {
         color: #000;
         text-transform: capitalize;

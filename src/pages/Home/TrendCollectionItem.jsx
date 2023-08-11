@@ -1,5 +1,5 @@
-import { useLayoutEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { cartActions } from "../../store/cartSlice";
 import { toast } from "react-toastify";
@@ -8,11 +8,12 @@ import Star from "../../components/Star";
 import { motion } from "framer-motion";
 
 export default function TrendCollectionItem({ item, index }) {
+  let navigate = useNavigate();
   let dispatch = useDispatch();
   let targetHover = useRef(null);
   let [show, setShow] = useState(false);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     let allWrappers = gsap.utils.toArray(".wrapperCartCollection");
 
     allWrappers.forEach((wrapper) => {
@@ -127,17 +128,6 @@ export default function TrendCollectionItem({ item, index }) {
       "<0.1"
     );
     tl.to(
-      targetWrapper.querySelector(".moreDetailsCollection"),
-      {
-        opacity: 1,
-        y: 0,
-        clipPath: "inset(0% 0% 0% 0%)",
-        duration: 1.5,
-        ease: "Expo.easeOut",
-      },
-      "<0.1"
-    );
-    tl.to(
       targetWrapper.querySelector(".ratesCollection"),
       {
         opacity: 1,
@@ -151,24 +141,13 @@ export default function TrendCollectionItem({ item, index }) {
   let handlerMouseLeave = () => {
     let tl = gsap.timeline();
 
-    tl.to(targetHover.current.querySelector(".moreDetailsCollection"), {
+    tl.to(targetHover.current.querySelector(".addTocartCollection"), {
       opacity: 0,
       y: 20,
       clipPath: "inset(100% 0% 0% 0%)",
       duration: 1.5,
       ease: "Expo.easeOut",
     });
-    tl.to(
-      targetHover.current.querySelector(".addTocartCollection"),
-      {
-        opacity: 0,
-        y: 20,
-        clipPath: "inset(100% 0% 0% 0%)",
-        duration: 1.5,
-        ease: "Expo.easeOut",
-      },
-      "<0.1"
-    );
     tl.to(
       targetHover.current.querySelector(".ratesCollection"),
       {
@@ -259,6 +238,9 @@ export default function TrendCollectionItem({ item, index }) {
       }
     }
   };
+  let handleNavigate = (proId) => {
+    navigate(`/posts/${proId}`);
+  };
 
   return (
     <>
@@ -268,13 +250,14 @@ export default function TrendCollectionItem({ item, index }) {
         viewport={{ once: true, amount: 0.5 }}
         initial="initial"
         animate={show ? "animate" : "initial"}
-        className="col-3 mt-5"
+        className="col-6 col-md-4 col-lg-3 collectionCol"
       >
         <div
           onMouseEnter={handlerHoverCart}
           onMouseLeave={handlerMouseLeave}
           className="wrapperCartCollection"
           style={{ backgroundImage: `url(${item.image1})` }}
+          onClick={() => handleNavigate(item.id)}
         >
           <div className="wrapperInfoCart">
             <p className="proCollectionName">{item.name}</p>
@@ -297,9 +280,6 @@ export default function TrendCollectionItem({ item, index }) {
               >
                 add to card
               </button>
-              <Link to={`/posts/${item.id}`} className="moreDetailsCollection">
-                more details
-              </Link>
             </div>
           </div>
           <div data-index={index} className="overLayCollection"></div>

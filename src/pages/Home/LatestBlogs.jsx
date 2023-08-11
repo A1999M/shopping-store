@@ -65,12 +65,15 @@ export default function LatestBlogs() {
       );
     });
 
-    return () => ctx.revert();
+    return () => {
+      ctx.revert();
+      ScrollTrigger.refresh();
+    };
   }, []);
 
   return (
     <>
-      <div ref={scopeRef} className="container-fluid mt-6rem px-5">
+      <div ref={scopeRef} className="container-fluid latestBlogs">
         <div className="row">
           <div className="col-12">
             <p ref={titleRef} className="titleBlog">
@@ -81,7 +84,7 @@ export default function LatestBlogs() {
             </p>
           </div>
         </div>
-        <div className="row mt-3rem">
+        <div className="row justify-content-center blogRow">
           {bItems && (
             <>
               <BlogItems index="0" blogItems={bItems[0]} />

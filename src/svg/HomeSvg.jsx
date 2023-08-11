@@ -14,6 +14,7 @@ export default function HomeSvg() {
         width="34px"
         height="34px"
         viewBox="0 0 24 24"
+        className="homeIcon"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         style={{ cursor: "pointer" }}

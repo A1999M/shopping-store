@@ -14,10 +14,7 @@ export default function BestProItems({ item }) {
   };
 
   return (
-    <div
-      style={{ width: "20vw", marginRight: "4.5rem" }}
-      className="horizontalElement"
-    >
+    <div className="horizontalElement">
       <div className="wrapperBestProItem">
         <div className="wrapperImgBestProItem">
           <motion.img

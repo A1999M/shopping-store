@@ -5,7 +5,6 @@ import { AnimatePresence, motion } from "framer-motion";
 import { gsap } from "gsap";
 import { ToastContainer } from "react-toastify";
 import { ScrollTrigger } from "gsap/all";
-import "./home.scss";
 
 export default function TrendCollection() {
   let sellerRef = useRef();
@@ -209,7 +208,7 @@ export default function TrendCollection() {
         pauseOnHover
         theme="light"
       />
-      <div className="container-fluid px-5">
+      <div className="container-fluid trendCollection">
         <div className="row">
           <div className="col-12">
             <p className="titleTrendCollection">TRENDY COLLECTION</p>

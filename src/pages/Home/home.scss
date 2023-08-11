@@ -3,135 +3,150 @@ $ff: "Philosopher", sans-serif;
 $btn-bgc: #000;
 $text-color: #000;
 $btn-color: #fff;
-
 // trends collection styles
-.titleTrendCollection {
-  color: $text-color;
-  font-size: 45px;
-  font-family: $ff;
-  text-transform: uppercase;
-  text-align: center;
-}
-.descCollection {
-  color: $text-color;
-  font-size: 16px;
-  font-family: $ff;
-  text-transform: capitalize;
-  margin-top: 20px;
-  opacity: 0.7;
-  text-align: center;
-}
-.wrapperTrendCollectionCategory {
-  margin-top: 2.5rem;
-  text-align: center;
-  .sellerTCollection {
-    display: inline-block;
-    border: 1px solid rgba(0, 0, 0, 0);
-    text-transform: uppercase;
-    font-size: 18px;
-    padding: 10px 30px;
-    background-color: #fff;
-    margin: 0 1rem;
-  }
-  .arrivalsTCollection {
-    display: inline-block;
-    border: 1px solid rgba(0, 0, 0, 0);
-    text-transform: uppercase;
-    font-size: 18px;
-    padding: 10px 30px;
-    background-color: #fff;
-    margin: 0 1rem;
-  }
-  .topTCollection {
-    display: inline-block;
-    border: 1px solid rgba(0, 0, 0, 0);
-    text-transform: uppercase;
-    font-size: 18px;
-    padding: 10px 30px;
-    background-color: #fff;
-    margin: 0 1rem;
-  }
-}
-
-.wrapperCartCollection {
-  background-repeat: no-repeat;
-  background-size: 100%;
-  position: relative;
-  background-position: inherit;
-  min-width: 339px;
-  min-height: 50vh;
-  cursor: pointer;
+.trendCollection {
+  padding: 0 3rem;
   overflow: hidden;
-  filter: grayscale(0);
-  .wrapperInfoCart {
-    position: absolute;
-    bottom: 0rem;
-    background-color: #fff;
-    left: 0;
-    width: 100%;
-    z-index: 3;
-    padding: 0 15px;
-    height: 0%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    .proCollectionName {
-      color: $text-color;
-      font-size: 19px;
-      margin-top: 23px;
-      font-family: $ff;
-      text-transform: capitalize;
+  .titleTrendCollection {
+    color: $text-color;
+    font-size: 45px;
+    font-family: $ff;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .descCollection {
+    color: $text-color;
+    font-size: 16px;
+    font-family: $ff;
+    text-transform: capitalize;
+    margin-top: 20px;
+    opacity: 0.7;
+    text-align: center;
+  }
+
+  .wrapperTrendCollectionCategory {
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .sellerTCollection {
+      display: inline-block;
+      border: 1px solid rgba(0, 0, 0, 0);
+      text-transform: uppercase;
+      font-size: 18px;
+      padding: 10px 30px;
+      background-color: #fff;
+      margin: 0 1rem;
+      white-space: nowrap;
     }
-    .priceAndRate {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-top: 23px;
-      .proCollectionPrice {
-        font-weight: 700;
-        color: $text-color;
-        font-family: sans-serif;
-      }
-      .ratesCollection {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
+    .arrivalsTCollection {
+      display: inline-block;
+      border: 1px solid rgba(0, 0, 0, 0);
+      text-transform: uppercase;
+      font-size: 18px;
+      padding: 10px 30px;
+      background-color: #fff;
+      margin: 0 1rem;
+      white-space: nowrap;
     }
-    .wrapperCollectionBtns {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-top: 30px;
-      .addTocartCollection {
-        border: 0px;
-        background-color: $btn-bgc;
-        color: $btn-color;
-        display: inline-block;
-        padding: 10px 20px;
-        font-size: 15px;
-        font-family: $ff;
-        text-transform: uppercase;
-        transform-origin: 0% 0%;
-      }
-      .moreDetailsCollection {
-        @extend .addTocartCollection;
-        text-decoration: none;
-      }
+    .topTCollection {
+      display: inline-block;
+      border: 1px solid rgba(0, 0, 0, 0);
+      text-transform: uppercase;
+      font-size: 18px;
+      padding: 10px 30px;
+      background-color: #fff;
+      margin: 0 1rem;
+      white-space: nowrap;
     }
   }
-  .overLayCollection {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-    background-color: #ffffff8d;
-    mix-blend-mode: color;
-    opacity: 0;
+
+  .collectionCol {
+    margin-top: 3rem;
+    .wrapperCartCollection {
+      background-repeat: no-repeat;
+      background-size: 100%;
+      position: relative;
+      background-position: inherit;
+      min-height: 50vh;
+      cursor: pointer;
+      overflow: hidden;
+      filter: grayscale(0);
+      .wrapperInfoCart {
+        position: absolute;
+        bottom: 0rem;
+        background-color: #fff;
+        left: 0;
+        width: 100%;
+        z-index: 3;
+        padding: 0 15px;
+        height: 0%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        .proCollectionName {
+          color: $text-color;
+          font-size: 19px;
+          margin-top: 23px;
+          font-family: $ff;
+          text-transform: capitalize;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
+        .priceAndRate {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 23px;
+          .proCollectionPrice {
+            font-weight: 700;
+            color: $text-color;
+            font-family: sans-serif;
+          }
+          .ratesCollection {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+        .wrapperCollectionBtns {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 30px;
+          .addTocartCollection {
+            border: 0px;
+            background-color: $btn-bgc;
+            color: $btn-color;
+            display: inline-block;
+            padding: 10px 0;
+            font-size: 15px;
+            font-family: $ff;
+            text-transform: uppercase;
+            transform-origin: 0% 0%;
+            white-space: nowrap;
+            width: 100%;
+          }
+          .moreDetailsCollection {
+            @extend .addTocartCollection;
+            text-decoration: none;
+          }
+        }
+      }
+      .overLayCollection {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        background-color: #ffffff8d;
+        mix-blend-mode: color;
+        opacity: 0;
+      }
+    }
   }
 }
-
 // special price section styles
 .specialPriceContainer {
   margin-top: 10rem;
@@ -144,7 +159,6 @@ $btn-color: #fff;
     height: 85vh;
   }
 }
-
 // offers section styles
 .offersContainer {
   margin-top: 7rem;
@@ -162,189 +176,163 @@ $btn-color: #fff;
     text-align: center;
     opacity: 0.7;
   }
-  .wrapperLeftOffer {
+  .wrapperOfferItem {
+    margin-top: 2rem;
     width: 100%;
-    height: 50vh;
+    object-fit: cover;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-position: center;
-    background-image: url(https://pandora-fashi.myshopify.com/cdn/shop/files/offer-bg-1.png?v=1681792772&width=750);
-    .titleLeftOffer {
+    background-position: top;
+    .titleOfferItem {
       color: #000;
       text-transform: capitalize;
-      font-size: 40px;
+      font-size: 2.5vw;
       margin-left: 3vw;
       padding-top: 25%;
-      opacity: 0;
-      clip-path: inset(100% 0% 0% 0%);
-      transform: translateY(40px);
-    }
-    .descLeftOffer {
-      color: #000;
-      text-transform: capitalize;
-      margin-left: 3vw;
-      opacity: 0.7;
-      font-size: 17px;
-      margin-top: 20px;
-      font-family: sans-serif;
-      opacity: 0;
-      clip-path: inset(100% 0% 0% 0%);
-      transform: translateY(40px);
-    }
-    .shopLeftOffer {
-      transform-origin: 0% 0%;
-      color: #fff;
-      text-transform: uppercase;
-      background-color: #000;
-      border: none;
-      outline: none;
-      margin-left: 3vw;
-      font-size: 15px;
-      margin-top: 12px;
-      display: inline-block;
-      padding: 15px 25px;
-      font-family: sans-serif;
-      font-weight: 500;
-      clip-path: inset(100% 0% 0% 0%);
-      opacity: 0;
-    }
-  }
-  .wrapperRightOffer {
-    @extend .wrapperLeftOffer;
-    background-image: url(https://pandora-fashi.myshopify.com/cdn/shop/files/offer-bg-2.png?v=1681792780&width=750);
-    .titleRightOffer {
-      color: #000;
-      text-transform: capitalize;
-      font-size: 40px;
-      margin-left: 3vw;
-      padding-top: 25%;
-      opacity: 0;
-      clip-path: inset(100% 0% 0% 0%);
-      transform: translateY(20px);
-    }
-    .descRightOffer {
-      color: #000;
-      text-transform: capitalize;
-      margin-left: 3vw;
-      opacity: 0.7;
-      font-size: 17px;
-      margin-top: 20px;
-      font-family: sans-serif;
-      opacity: 0;
-      clip-path: inset(100% 0% 0% 0%);
-      transform: translateY(20px);
-    }
-    .shopRightOffer {
-      transform-origin: 0% 0%;
-      color: #fff;
-      text-transform: uppercase;
-      background-color: #000;
-      border: none;
-      outline: none;
-      margin-left: 3vw;
-      font-size: 15px;
-      margin-top: 12px;
-      display: inline-block;
-      padding: 15px 25px;
-      font-family: sans-serif;
-      font-weight: 500;
-      opacity: 0;
-      clip-path: inset(100% 0% 0% 0%);
-    }
-  }
-}
-
-// blog items section styles
-.titleBlog {
-  text-align: center;
-  font-size: 45px;
-}
-.descBlog {
-  text-align: center;
-  font-size: 16px;
-  opacity: 0.7;
-  margin-top: 20px;
-  text-transform: capitalize;
-}
-.wrapperBlogItem {
-  overflow: hidden;
-  border-radius: 30px;
-  position: relative;
-  height: fit-content;
-  padding-bottom: 2rem;
-  box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-  .wrpperBlogImg {
-    overflow: hidden;
-    img {
-      width: 100%;
-    }
-  }
-  .wrapperBodyBlog {
-    padding: 0 1rem;
-    .titleBlogItem {
-      font-size: 23px;
-      text-transform: capitalize;
-      margin-top: 22px;
-    }
-    .descBlogItem {
-      font-size: 16px;
-      text-transform: capitalize;
-      margin-top: 16px;
-      line-height: 24px;
-      opacity: 0.7;
-    }
-    .blogReadMore {
-      font-size: 14px;
-      text-decoration: none;
-      color: #fff;
-      background-color: #000;
-      text-transform: uppercase;
-      display: block;
-      margin-left: auto;
-      padding: 10px 20px;
-      margin-top: 20px;
       width: fit-content;
+      opacity: 0;
+      clip-path: inset(100% 0% 0% 0%);
+      transform: translateY(40px);
+    }
+    .descOfferItem {
+      color: #000;
+      text-transform: capitalize;
+      margin-left: 3vw;
+      opacity: 0.7;
+      width: fit-content;
+      font-size: 1.1vw;
+      margin-top: 20px;
+      font-family: sans-serif;
+      opacity: 0;
+      clip-path: inset(100% 0% 0% 0%);
+      transform: translateY(40px);
+    }
+    .shopBtnOfferItem {
       transform-origin: 0% 0%;
+      color: #fff;
+      text-transform: uppercase;
+      background-color: #000;
+      border: none;
+      outline: none;
+      margin-left: 3vw;
+      font-size: 1vw;
+      margin-top: 12px;
+      display: inline-block;
+      padding: 15px 25px;
+      font-family: sans-serif;
+      font-weight: 500;
+      clip-path: inset(100% 0% 0% 0%);
+      opacity: 0;
     }
   }
 }
-
-// features section styles
-.wrapperFeatureItem {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  .wrapperImg {
-    img {
-      display: block;
-      margin: auto;
+// video offer styles
+.videoOffer {
+  height: 760px;
+}
+// blog items section styles
+.latestBlogs {
+  margin-top: 6rem;
+  .titleBlog {
+    text-align: center;
+    font-size: 45px;
+  }
+  .descBlog {
+    text-align: center;
+    font-size: 16px;
+    opacity: 0.7;
+    margin-top: 20px;
+    text-transform: capitalize;
+  }
+  .blogItem {
+    .wrapperBlogItem {
+      overflow: hidden;
+      border-radius: 30px;
+      position: relative;
+      height: fit-content;
+      padding-bottom: 2rem;
+      box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      .wrpperBlogImg {
+        overflow: hidden;
+        img {
+          width: 100%;
+        }
+      }
+      .wrapperBodyBlog {
+        padding: 0 1rem;
+        .titleBlogItem {
+          font-size: 24px;
+          text-transform: capitalize;
+          margin-top: 22px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        .descBlogItem {
+          font-size: 14px;
+          text-transform: capitalize;
+          margin-top: 20px;
+          line-height: 24px;
+          opacity: 0.7;
+          font-family: sans-serif;
+        }
+        .blogReadMore {
+          font-size: 14px;
+          text-decoration: none;
+          color: #fff;
+          background-color: #000;
+          text-transform: uppercase;
+          display: block;
+          margin-left: auto;
+          padding: 10px 20px;
+          margin-top: 20px;
+          width: fit-content;
+          transform-origin: 0% 0%;
+        }
+      }
     }
   }
-  .wrapperDescFItems {
-    margin-left: 4px;
-    .featureItemTitle {
-      font-size: 18px;
-      color: #000;
-      font-weight: bold;
-      text-transform: capitalize;
+}
+// features section styles
+.features {
+  margin-top: 5rem;
+  padding: 0 3rem;
+  .wrapperFeatureItem {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 2rem;
+    .wrapperImg {
+      img {
+        display: block;
+        margin: auto;
+      }
     }
-    .featureItemDesc {
-      font-size: 14px;
-      color: #000;
-      opacity: 0.7;
-      text-transform: capitalize;
-      font-family: sans-serif;
-      width: 80%;
-      margin-top: 12px;
-      line-height: 20px;
+    .wrapperDescFItems {
+      margin-left: 4px;
+      .featureItemTitle {
+        font-size: 18px;
+        color: #000;
+        font-weight: bold;
+        text-transform: capitalize;
+      }
+      .featureItemDesc {
+        font-size: 14px;
+        color: #000;
+        opacity: 0.7;
+        text-transform: capitalize;
+        font-family: sans-serif;
+        width: 80%;
+        margin-top: 12px;
+        line-height: 20px;
+      }
     }
   }
 }
 
 // start best products section style
 .bestProducts {
-  margin-top: 7rem;
   .titleBestProducts {
     font-size: 45px;
     color: #000;
@@ -357,7 +345,6 @@ $btn-color: #fff;
     margin-top: 20px;
     text-transform: capitalize;
   }
-
   .wrapperBestProducts {
     white-space: nowrap;
     display: flex;
@@ -376,7 +363,7 @@ $btn-color: #fff;
       .wrapperImgBestProItem {
         overflow: hidden;
         width: 100%;
-        height: 380px;
+        // height: 380px;
         img.imgBestProItem {
           width: 100%;
           transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
@@ -429,14 +416,13 @@ $btn-color: #fff;
     }
   }
 }
-
 // start customer reviews section styles
 .custoremReview {
   margin-top: 7rem;
   padding: 0;
   .bgCustomerReview {
     background-image: url(https://pandora-fashi.myshopify.com/cdn/shop/files/review-bg.png?v=1681792909&width=1780);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     padding-top: 2rem;
@@ -456,7 +442,7 @@ $btn-color: #fff;
         margin-top: 25px;
         text-align: center;
         opacity: 0.6;
-        margin-bottom: 3rem;
+        margin-bottom: 0rem;
       }
     }
     .cWrapperSlider {
@@ -500,7 +486,6 @@ $btn-color: #fff;
     }
   }
 }
-
 // faqs section styles
 .faqs {
   margin-top: 5rem;

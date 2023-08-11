@@ -68,11 +68,11 @@ export default function BestProducts() {
           id: "horizontalTrigger",
           snap: 1 / (horizontalElement.length - 1),
           scrub: 1.5,
-          markers: {
-            startColor: "#ffd000",
-            endColor: "#ff0000",
-            fontSize: "25px",
-          },
+          // markers: {
+          //   startColor: "#ffd000",
+          //   endColor: "#ff0000",
+          //   fontSize: "25px",
+          // },
         },
       });
     }, scopeRef);
@@ -105,7 +105,7 @@ export default function BestProducts() {
         ref={scopeRef}
         className="container-fluid bestProducts overflow-hidden px-5"
       >
-        <div className="row mb3rem">
+        <div className="row bestProTitleRow">
           <div className="col-12">
             <p ref={titleRef} className="titleBestProducts">
               BEST PRODUCTS

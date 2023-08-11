@@ -11,6 +11,7 @@ import Footer from "../../components/Footer";
 import CustomerReview from "./CustomerReview";
 import { motion } from "framer-motion";
 import "./home.scss";
+import "./homeResponsive.scss";
 
 export default function Home() {
   useLayoutEffect(() => {
