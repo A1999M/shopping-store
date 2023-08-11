@@ -31,7 +31,7 @@ export default function Features() {
 
   return (
     <>
-      <div className="container-fluid features px-5 mt-7rem">
+      <div className="container-fluid features">
         <div className="row">
           {featureItemsArray.map((item, index) => {
             return (
@@ -41,6 +41,18 @@ export default function Features() {
                   (index === 1 && "85%") ||
                   (index === 2 && "70%") ||
                   (index === 3 && "80%")
+                }
+                customMarginTop={
+                  (index === 0 && "15px") ||
+                  (index === 1 && "0") ||
+                  (index === 2 && "0") ||
+                  (index === 3 && "0")
+                }
+                customMarginRight={
+                  (index === 0 && "0") ||
+                  (index === 1 && "0") ||
+                  (index === 2 && "3rem") ||
+                  (index === 3 && "0")
                 }
                 key={index}
                 item={item}

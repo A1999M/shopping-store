@@ -260,6 +260,10 @@
     font-size: 11px !important;
     line-height: 18px !important;
   }
+  // responsive features of home page
+  .features {
+    display: none;
+  }
 }
 @media (min-width: 360px) {
   // responsive Navbar
@@ -1036,6 +1040,10 @@
     font-size: 11px !important;
     line-height: 18px !important;
   }
+  // responsive features of home page
+  .features {
+    display: none;
+  }
 }
 @media (min-width: 412px) {
   // responsive Navbar
@@ -1291,6 +1299,29 @@
   .accordion-body {
     font-size: 12px !important;
     line-height: 20px !important;
+  }
+  // responsive features of home page
+  .features {
+    margin-top: 3rem;
+    padding: 0 0rem !important;
+    .wrapperFeatureItem {
+      margin-top: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .wrapperDescFItems {
+        margin-left: 4px;
+        .featureItemTitle {
+          font-size: 12px;
+        }
+        .featureItemDesc {
+          font-size: 10px;
+          width: 85%;
+          margin-top: 9px;
+          line-height: 12px;
+        }
+      }
+    }
   }
 }
 @media (min-width: 576px) {
@@ -1555,6 +1586,30 @@
     font-size: 12px !important;
     line-height: 20px !important;
   }
+  // responsive features of home page
+  .features {
+    display: block;
+    margin-top: 3rem;
+    padding: 0 2rem !important;
+    .wrapperFeatureItem {
+      margin-top: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .wrapperDescFItems {
+        margin-left: 4px;
+        .featureItemTitle {
+          font-size: 14px;
+        }
+        .featureItemDesc {
+          font-size: 10px;
+          width: 85%;
+          margin-top: 13px;
+          line-height: 15px;
+        }
+      }
+    }
+  }
 }
 @media (min-width: 768px) {
   // responsive Navbar
@@ -1816,6 +1871,29 @@
     font-size: 13px !important;
     line-height: 22px !important;
   }
+  // responsive features of home page
+  .features {
+    margin-top: 3rem;
+    padding: 0 3rem !important;
+    .wrapperFeatureItem {
+      margin-top: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .wrapperDescFItems {
+        margin-left: 4px;
+        .featureItemTitle {
+          font-size: 14px;
+        }
+        .featureItemDesc {
+          font-size: 11px;
+          width: 85%;
+          margin-top: 10px;
+          line-height: 15px;
+        }
+      }
+    }
+  }
 }
 @media (min-width: 992px) {
   // responsive Navbar
@@ -2075,6 +2153,30 @@
     font-size: 13px !important;
     line-height: 22px !important;
   }
+  // responsive features of home page
+  .features {
+    margin-top: 5rem;
+    padding: 0 3rem !important;
+    .wrapperFeatureItem {
+      margin-top: 2rem;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      .wrapperDescFItems {
+        margin-left: 4px;
+        .featureItemTitle {
+          font-size: 15px;
+          line-height: 18px;
+        }
+        .featureItemDesc {
+          font-size: 11px;
+          width: 83%;
+          margin-top: 8px;
+          line-height: 16px;
+        }
+      }
+    }
+  }
 }
 @media (min-width: 1200px) {
   // responsive Navbar
@@ -2299,6 +2401,27 @@
     font-size: 14px !important;
     line-height: 22px !important;
   }
+  // responsive features of home page
+  .features {
+    margin-top: 5rem;
+    padding: 0 3rem !important;
+    .wrapperFeatureItem {
+      margin-top: 2rem;
+      .wrapperDescFItems {
+        margin-left: 4px;
+        .featureItemTitle {
+          font-size: 16px;
+          line-height: 19px;
+        }
+        .featureItemDesc {
+          font-size: 11px;
+          width: 80%;
+          margin-top: 12px;
+          line-height: 15px;
+        }
+      }
+    }
+  }
 }
 @media (min-width: 1400px) {
   // responsive Navbar
@@ -2514,5 +2637,25 @@
   .accordion-body {
     font-size: 14px !important;
     line-height: 22px !important;
+  }
+  // responsive features of home page
+  .features {
+    margin-top: 5rem;
+    padding: 0 3rem !important;
+    .wrapperFeatureItem {
+      margin-top: 2rem;
+      .wrapperDescFItems {
+        margin-left: 4px;
+        .featureItemTitle {
+          font-size: 18px;
+        }
+        .featureItemDesc {
+          font-size: 13px;
+          width: 80%;
+          margin-top: 12px;
+          line-height: 18px;
+        }
+      }
+    }
   }
 }
