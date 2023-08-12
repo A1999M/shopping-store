@@ -87,6 +87,52 @@
       text-align: end;
     }
   }
+  // responsive checked out box
+  .checkOutRow {
+    margin-top: 2rem !important;
+    padding: 0 1rem;
+    .checkOutBox {
+      margin-left: auto;
+      .checkOutShoppingCart {
+        padding: 20px 0;
+        margin-right: 0%;
+        .wrapperSubTotalPrice {
+          .shoppingCartTotalPriceTitle {
+            font-size: 14px;
+          }
+          .shoppingCartTotalPrice {
+            font-size: 13px;
+            margin-left: 2rem;
+          }
+        }
+        .taxesShippingTitle {
+          text-align: end;
+          font-size: 13px;
+          margin-top: 15px;
+          line-height: 17px;
+        }
+        .shoppingCartCheckOutBtn {
+          padding: 13px 0;
+          font-size: 12px;
+          margin-top: 15px;
+          width: 100%;
+        }
+      }
+    }
+    .orderBox {
+      margin-right: auto;
+      .orderSpecialTitle {
+        margin-bottom: 12px;
+        font-size: 13px;
+        margin-top: 0px;
+      }
+      .orderSpecial {
+        padding: 7px 10px;
+        font-size: 13px;
+        line-height: 17px;
+      }
+    }
+  }
 }
 @media (min-width: 360px) {
   .cartDetailTitles {
@@ -177,6 +223,52 @@
       text-align: end;
     }
   }
+  // responsive checked out box
+  .checkOutRow {
+    margin-top: 2rem !important;
+    padding: 0 1rem;
+    .checkOutBox {
+      margin-left: auto;
+      .checkOutShoppingCart {
+        padding: 20px 0;
+        margin-right: 0%;
+        .wrapperSubTotalPrice {
+          .shoppingCartTotalPriceTitle {
+            font-size: 14px;
+          }
+          .shoppingCartTotalPrice {
+            font-size: 13px;
+            margin-left: 2rem;
+          }
+        }
+        .taxesShippingTitle {
+          text-align: end;
+          font-size: 13px;
+          margin-top: 15px;
+          line-height: 17px;
+        }
+        .shoppingCartCheckOutBtn {
+          padding: 13px 0;
+          font-size: 12px;
+          margin-top: 15px;
+          width: 100%;
+        }
+      }
+    }
+    .orderBox {
+      margin-right: auto;
+      .orderSpecialTitle {
+        margin-bottom: 12px;
+        font-size: 13px;
+        margin-top: 0px;
+      }
+      .orderSpecial {
+        padding: 7px 10px;
+        font-size: 13px;
+        line-height: 17px;
+      }
+    }
+  }
 }
 @media (min-width: 375px) {
   .cartDetailTitles {
@@ -265,6 +357,52 @@
     .totalPriceCart {
       font-size: 11px;
       text-align: end;
+    }
+  }
+  // responsive checked out box
+  .checkOutRow {
+    margin-top: 2rem !important;
+    padding: 0 1rem;
+    .checkOutBox {
+      margin-left: auto;
+      .checkOutShoppingCart {
+        padding: 20px 0;
+        margin-right: 0%;
+        .wrapperSubTotalPrice {
+          .shoppingCartTotalPriceTitle {
+            font-size: 14px;
+          }
+          .shoppingCartTotalPrice {
+            font-size: 13px;
+            margin-left: 2rem;
+          }
+        }
+        .taxesShippingTitle {
+          text-align: end;
+          font-size: 13px;
+          margin-top: 15px;
+          line-height: 17px;
+        }
+        .shoppingCartCheckOutBtn {
+          padding: 13px 0;
+          font-size: 12px;
+          margin-top: 15px;
+          width: 100%;
+        }
+      }
+    }
+    .orderBox {
+      margin-right: auto;
+      .orderSpecialTitle {
+        margin-bottom: 12px;
+        font-size: 13px;
+        margin-top: 0px;
+      }
+      .orderSpecial {
+        padding: 7px 10px;
+        font-size: 13px;
+        line-height: 17px;
+      }
     }
   }
 }
@@ -358,6 +496,52 @@
       text-align: end;
     }
   }
+  // responsive checked out box
+  .checkOutRow {
+    margin-top: 2rem !important;
+    padding: 0 1rem;
+    .checkOutBox {
+      margin-left: auto;
+      .checkOutShoppingCart {
+        padding: 20px 0;
+        margin-right: 0%;
+        .wrapperSubTotalPrice {
+          .shoppingCartTotalPriceTitle {
+            font-size: 14px;
+          }
+          .shoppingCartTotalPrice {
+            font-size: 13px;
+            margin-left: 2rem;
+          }
+        }
+        .taxesShippingTitle {
+          text-align: end;
+          font-size: 13px;
+          margin-top: 15px;
+          line-height: 17px;
+        }
+        .shoppingCartCheckOutBtn {
+          padding: 13px 0;
+          font-size: 12px;
+          margin-top: 15px;
+          width: 100%;
+        }
+      }
+    }
+    .orderBox {
+      margin-right: auto;
+      .orderSpecialTitle {
+        margin-bottom: 12px;
+        font-size: 13px;
+        margin-top: 0px;
+      }
+      .orderSpecial {
+        padding: 7px 10px;
+        font-size: 13px;
+        line-height: 17px;
+      }
+    }
+  }
 }
 @media (min-width: 412px) {
   .cartDetailTitles {
@@ -448,6 +632,52 @@
       text-align: end;
     }
   }
+  // responsive checked out box
+  .checkOutRow {
+    margin-top: 2rem !important;
+    padding: 0 2rem;
+    .checkOutBox {
+      margin-left: auto;
+      .checkOutShoppingCart {
+        padding: 20px 0;
+        margin-right: 0%;
+        .wrapperSubTotalPrice {
+          .shoppingCartTotalPriceTitle {
+            font-size: 14px;
+          }
+          .shoppingCartTotalPrice {
+            font-size: 13px;
+            margin-left: 2rem;
+          }
+        }
+        .taxesShippingTitle {
+          text-align: end;
+          font-size: 13px;
+          margin-top: 20px;
+          line-height: 17px;
+        }
+        .shoppingCartCheckOutBtn {
+          padding: 13px 0;
+          font-size: 12px;
+          margin-top: 20px;
+          width: 100%;
+        }
+      }
+    }
+    .orderBox {
+      margin-right: auto;
+      .orderSpecialTitle {
+        margin-bottom: 15px;
+        font-size: 14px;
+        margin-top: 0px;
+      }
+      .orderSpecial {
+        padding: 7px 10px;
+        font-size: 13px;
+        line-height: 17px;
+      }
+    }
+  }
 }
 @media (min-width: 576px) {
   .cartDetailTitles {
@@ -535,6 +765,52 @@
       text-align: start;
     }
   }
+  // responsive checked out box
+  .checkOutRow {
+    margin-top: 3rem !important;
+    padding: 0 3rem;
+    .checkOutBox {
+      margin-left: auto;
+      .checkOutShoppingCart {
+        padding: 20px;
+        margin-right: 4%;
+        .wrapperSubTotalPrice {
+          .shoppingCartTotalPriceTitle {
+            font-size: 14px;
+          }
+          .shoppingCartTotalPrice {
+            font-size: 13px;
+            margin-left: 2rem;
+          }
+        }
+        .taxesShippingTitle {
+          text-align: end;
+          font-size: 13px;
+          margin-top: 10px;
+          line-height: 17px;
+        }
+        .shoppingCartCheckOutBtn {
+          padding: 10px 0;
+          font-size: 12px;
+          margin-top: 20px;
+          width: 100%;
+        }
+      }
+    }
+    .orderBox {
+      margin-right: auto;
+      .orderSpecialTitle {
+        margin-bottom: 10px;
+        font-size: 13px;
+        margin-top: 0px;
+      }
+      .orderSpecial {
+        padding: 7px 10px;
+        font-size: 13px;
+        line-height: 17px;
+      }
+    }
+  }
 }
 @media (min-width: 768px) {
   .cartDetailTitles {
@@ -617,6 +893,51 @@
     }
     .totalPriceCart {
       font-size: 13px;
+    }
+  }
+  // responsive checked out box
+  .checkOutRow {
+    margin-top: 3rem !important;
+    padding: 0 1rem;
+    .checkOutBox {
+      margin-left: auto;
+      .checkOutShoppingCart {
+        padding: 20px;
+        margin-right: 4%;
+        .wrapperSubTotalPrice {
+          .shoppingCartTotalPriceTitle {
+            font-size: 16px;
+          }
+          .shoppingCartTotalPrice {
+            font-size: 16px;
+            margin-left: 2rem;
+          }
+        }
+        .taxesShippingTitle {
+          text-align: end;
+          font-size: 14px;
+          margin-top: 20px;
+        }
+        .shoppingCartCheckOutBtn {
+          padding: 15px 0;
+          font-size: 12px;
+          margin-top: 25px;
+          width: 100%;
+        }
+      }
+    }
+    .orderBox {
+      margin-right: auto;
+      .orderSpecialTitle {
+        margin-bottom: 10px;
+        font-size: 14px;
+        margin-top: 0px;
+      }
+      .orderSpecial {
+        padding: 7px 10px;
+        font-size: 15px;
+        line-height: 17px;
+      }
     }
   }
 }
@@ -703,6 +1024,51 @@
       font-size: 14px;
     }
   }
+  // responsive checked out box
+  .checkOutRow {
+    margin-top: 3rem;
+    padding: 0 3rem;
+    .checkOutBox {
+      margin-left: auto;
+      .checkOutShoppingCart {
+        padding: 20px;
+        margin-right: 13%;
+        .wrapperSubTotalPrice {
+          .shoppingCartTotalPriceTitle {
+            font-size: 18px;
+          }
+          .shoppingCartTotalPrice {
+            font-size: 18px;
+            margin-left: 3rem;
+          }
+        }
+        .taxesShippingTitle {
+          text-align: end;
+          font-size: 14px;
+          margin-top: 30px;
+        }
+        .shoppingCartCheckOutBtn {
+          padding: 15px 0;
+          font-size: 13px;
+          margin-top: 30px;
+          width: 100%;
+        }
+      }
+    }
+    .orderBox {
+      margin-right: auto;
+      .orderSpecialTitle {
+        margin-bottom: 10px;
+        font-size: 15px;
+        margin-top: 0px;
+      }
+      .orderSpecial {
+        padding: 7px 10px;
+        font-size: 15px;
+        line-height: 17px;
+      }
+    }
+  }
 }
 @media (min-width: 1200px) {
   .cartDetailTitles {
@@ -785,6 +1151,51 @@
       font-size: 16px;
     }
   }
+  // responsive checked out box
+  .checkOutRow {
+    margin-top: 2rem !important;
+    padding: 0 3rem;
+    .checkOutBox {
+      margin-left: auto;
+      .checkOutShoppingCart {
+        padding: 20px;
+        margin-right: 16%;
+        .wrapperSubTotalPrice {
+          .shoppingCartTotalPriceTitle {
+            font-size: 20px;
+          }
+          .shoppingCartTotalPrice {
+            font-size: 19px;
+            margin-left: 3rem;
+          }
+        }
+        .taxesShippingTitle {
+          text-align: end;
+          font-size: 15px;
+          margin-top: 35px;
+        }
+        .shoppingCartCheckOutBtn {
+          padding: 15px 0;
+          font-size: 14px;
+          margin-top: 35px;
+          width: 100%;
+        }
+      }
+    }
+    .orderBox {
+      margin-right: auto;
+      .orderSpecialTitle {
+        margin-bottom: 10px;
+        font-size: 16px;
+        margin-top: 0px;
+      }
+      .orderSpecial {
+        padding: 7px 10px;
+        font-size: 17px;
+        line-height: 22px;
+      }
+    }
+  }
 }
 @media (min-width: 1400px) {
   .cartDetailTitles {
@@ -865,6 +1276,51 @@
     }
     .totalPriceCart {
       font-size: 18px;
+    }
+  }
+  // responsive checked out box
+  .checkOutRow {
+    margin-top: 2rem !important;
+    padding: 0 3rem;
+    .checkOutBox {
+      margin-left: auto;
+      .checkOutShoppingCart {
+        padding: 20px;
+        margin-right: 16%;
+        .wrapperSubTotalPrice {
+          .shoppingCartTotalPriceTitle {
+            font-size: 20px;
+          }
+          .shoppingCartTotalPrice {
+            font-size: 19px;
+            margin-left: 3rem;
+          }
+        }
+        .taxesShippingTitle {
+          text-align: end;
+          font-size: 15px;
+          margin-top: 35px;
+        }
+        .shoppingCartCheckOutBtn {
+          padding: 16px 0;
+          font-size: 18px;
+          margin-top: 30px;
+          width: 100%;
+        }
+      }
+    }
+    .orderBox {
+      margin-right: auto;
+      .orderSpecialTitle {
+        margin-bottom: 10px;
+        font-size: 16px;
+        margin-top: 0px;
+      }
+      .orderSpecial {
+        padding: 7px 10px;
+        font-size: 17px;
+        line-height: 22px;
+      }
     }
   }
 }

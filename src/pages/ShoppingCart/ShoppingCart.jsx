@@ -152,8 +152,8 @@ function ShoppingCart() {
               return <CartItems size={size} key={index} item={item} />;
             })}
             {/* footer of cart  */}
-            <div className="row mt-5 px-5">
-              <div className="col-4 mr-auto">
+            <div className="row checkOutRow">
+              <div className="col-12 col-sm-6 orderBox">
                 <p className="orderSpecialTitle">order special instructions</p>
                 <textarea
                   className="orderSpecial"
@@ -164,7 +164,7 @@ function ShoppingCart() {
                   draggable="false"
                 ></textarea>
               </div>
-              <div className="col-6 ms-auto">
+              <div className="col-12 col-sm-6 checkOutBox">
                 <div className="checkOutShoppingCart">
                   <div className="wrapperSubTotalPrice">
                     <p className="shoppingCartTotalPriceTitle">total Price</p>
