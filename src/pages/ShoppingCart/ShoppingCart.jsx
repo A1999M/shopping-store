@@ -9,9 +9,11 @@ import Lottie from "lottie-react";
 import SplitText from "../../plugins/SplitText";
 import Footer from "../../components/Footer";
 import "./ShoppingCart.scss";
+import "./responsiveShoppingCart.scss";
 
 function ShoppingCart() {
   let allBasketItems = useSelector((state) => state.shoppingCart.basket);
+  let [size, setSize] = useState(window.innerWidth);
   let scopeRef = useRef();
 
   var productTotalPrice = 0;
@@ -70,7 +72,12 @@ function ShoppingCart() {
     };
   }, []);
 
+  let handleResize = () => {
+    setSize(window.innerWidth);
+  };
+
   useEffect(() => {
+    window.addEventListener("resize", handleResize);
     let ctx = gsap.context(() => {
       gsap.registerPlugin(SplitText);
 
@@ -106,6 +113,7 @@ function ShoppingCart() {
       ctx.revert();
       localStorage.removeItem("userCart");
       localStorage.setItem("userCart", JSON.stringify(allBasketItems));
+      window.removeEventListener("resize", handleResize);
     };
   });
 
@@ -120,37 +128,32 @@ function ShoppingCart() {
       >
         {allBasketItems.length > 0 ? (
           <div ref={scopeRef} className="container-fluid">
-            {/* header  */}
-            {/* <div className="row px-5">
-              <div className="col-12 px-0">
-                <div className="shoppingCartContainer">
-                  <div className="headerShoppingCart">
-                    <p className="titleHeaderCart">cart</p>
-                  </div>
-                </div>
-              </div>
-            </div> */}
-            {/* cart items  */}
-            <div className="row px-5 cartDetailTitles">
-              <div className="col-5">
+            {/*  */}
+            <div className="row cartDetailTitles">
+              <div className="col-9 col-sm-5">
                 <div className="titleProCartDetails">product</div>
               </div>
-              <div className="col-2">
-                <p className="titlePrice2">price</p>
-              </div>
-              <div className="col-3">
-                <p className="titleQuantity">quantity</p>
-              </div>
-              <div className="col-2">
+              {size >= 768 && (
+                <div className="col-1 col-md-2">
+                  <p className="titlePrice2">price</p>
+                </div>
+              )}
+              {size > 576 && (
+                <div className="col-4 col-md-3">
+                  <p className="titleQuantity">quantity</p>
+                </div>
+              )}
+              <div className="col-3 col-sm-2">
                 <p className="titleTotalPrice">total</p>
               </div>
             </div>
+            {/*  */}
             {allBasketItems.map((item, index) => {
-              return <CartItems key={index} item={item} />;
+              return <CartItems size={size} key={index} item={item} />;
             })}
             {/* footer of cart  */}
-            <div className="row mt-5 px-5">
-              <div className="col-4 mr-auto">
+            <div className="row checkOutRow">
+              <div className="col-12 col-sm-6 orderBox">
                 <p className="orderSpecialTitle">order special instructions</p>
                 <textarea
                   className="orderSpecial"
@@ -161,7 +164,7 @@ function ShoppingCart() {
                   draggable="false"
                 ></textarea>
               </div>
-              <div className="col-6 ms-auto">
+              <div className="col-12 col-sm-6 checkOutBox">
                 <div className="checkOutShoppingCart">
                   <div className="wrapperSubTotalPrice">
                     <p className="shoppingCartTotalPriceTitle">total Price</p>
