@@ -186,12 +186,18 @@ function ShoppingCart() {
           <>
             <div className="container emptyCart">
               <div className="row">
-                <div className="col-6 ps-5">
+                <div className="col-12 text-center text-md-start col-md-6 ps-0 ps-md-5 ">
                   <p className="titleEmptyCart">your shopping cart is empty</p>
-                  <p className="descEmptyCart">
-                    You have not chosen a product for your cart yet. Return to
-                    the home page and pick a product.
-                  </p>
+                  {size < 768 ? (
+                    <p className="descEmptyCart">
+                      looks like you haven't added anything to your cart yet
+                    </p>
+                  ) : (
+                    <p className="descEmptyCart">
+                      You have not chosen a product for your cart yet. Return to
+                      the home page and pick a product
+                    </p>
+                  )}
                   <motion.button
                     initial={{ opacity: 0, y: 25 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -201,13 +207,15 @@ function ShoppingCart() {
                     back to home
                   </motion.button>
                 </div>
-                <div className="col-6">
-                  <Lottie
-                    style={{ width: "100%", margin: "0 auto" }}
-                    animationData={EmpityCart}
-                    loop={true}
-                    autoPlay={true}
-                  />
+                <div className="col-12 order-first order-md-last col-md-6">
+                  <div className="wrapperLottie">
+                    <Lottie
+                      style={{ width: "100%", margin: "0 auto" }}
+                      animationData={EmpityCart}
+                      loop={true}
+                      autoPlay={true}
+                    />
+                  </div>
                 </div>
               </div>
             </div>
