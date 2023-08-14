@@ -1,22 +1,36 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useSelector } from "react-redux";
 import PaymentStepper from "./PaymentStepper";
 import AllPayForms from "./AllPayForms";
 import Lottie from "lottie-react";
 import { Link } from "react-router-dom";
 import PaymentItems from "./PaymentItems";
+import Footer from "../../components/Footer";
 import { AnimatePresence, motion } from "framer-motion";
 import Check from "../../svg/Check.json";
 import Error from "../../svg/Error.json";
 import MuiBreadCrumb from "./MuiBreadCrumb";
 import "./Payment.scss";
+import "./responsivePayment.scss";
 
 export default function AddInformation() {
   let cartItems = useSelector((state) => state.shoppingCart.basket);
+  let [size, setSize] = useState(window.innerWidth);
   let [activeNumber, setActiveNumber] = useState(0);
   let [showModal, setShowModal] = useState(false);
   let [hasOrder, setHasOrder] = useState(false);
   let totalPrice = useRef(0);
+
+  let handleResize = () => {
+    setSize(window.innerWidth);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  });
 
   if (cartItems) {
     cartItems.forEach((item) => {
@@ -71,7 +85,11 @@ export default function AddInformation() {
               loop={false}
             />
             <motion.p
-              initial={{ opacity: 0, y: 35, clipPath: "inset(0% 0% 100% 0%)" }}
+              initial={{
+                opacity: 0,
+                y: 35,
+                clipPath: "inset(0% 0% 100% 0%)",
+              }}
               animate={{ opacity: 1, y: 0, clipPath: "inset(0% 0% 0% 0%)" }}
               transition={{ type: "spring", delay: 0.3 }}
               className="titlePayModal"
@@ -79,7 +97,11 @@ export default function AddInformation() {
               Thanks For your order
             </motion.p>
             <motion.p
-              initial={{ opacity: 0, y: 35, clipPath: "inset(0% 0% 100% 0%)" }}
+              initial={{
+                opacity: 0,
+                y: 35,
+                clipPath: "inset(0% 0% 100% 0%)",
+              }}
               animate={{ opacity: 1, y: 0, clipPath: "inset(0% 0% 0% 0%)" }}
               transition={{ type: "spring", delay: 0.4 }}
               className="descPayModal"
@@ -146,7 +168,7 @@ export default function AddInformation() {
               initial={{ opacity: 0, y: 35, clipPath: "inset(0% 0% 100% 0%)" }}
               animate={{ opacity: 1, y: 0, clipPath: "inset(0% 0% 0% 0%)" }}
               transition={{ type: "spring", delay: 0.3 }}
-              className="titlePayModal"
+              className="titlePayErrorModal"
             >
               Your order has already been registered
             </motion.p>
@@ -181,11 +203,17 @@ export default function AddInformation() {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        exit={{ opacity: 0, x: -150 }}
-        className="container-fluid px-5 mb6rem"
+        exit={{ opacity: 0 }}
+        className="container-fluid paymentContainer"
       >
-        <div className="row mt-3">
-          <div className="col-12 mb-4 mt-3 ms-3">
+        <div className="row paymentRow">
+          <div
+            className={
+              size > 1060
+                ? "col-12 mb-4 mt-3 ms-3"
+                : "col-12 col-md-10 mb-4 mt-3 ms-3"
+            }
+          >
             <MuiBreadCrumb
               setActiveNumber={setActiveNumber}
               activeNumber={activeNumber}
@@ -194,7 +222,7 @@ export default function AddInformation() {
               setPayment={setPayment}
             />
           </div>
-          <div className="col-7">
+          <div className={size > 1060 ? "col-7" : "col-12 col-md-10"}>
             <PaymentStepper activeNumber={activeNumber} />
             <AllPayForms
               activeNumber={activeNumber}
@@ -206,28 +234,32 @@ export default function AddInformation() {
               payment={payment}
               setPayment={setPayment}
               setShowModal={setShowModal}
+              size={size}
             />
           </div>
-          <div className="col-5 bgCartItemPayment">
-            {cartItems &&
-              cartItems.map((item, index) => {
-                return <PaymentItems index={index} item={item} />;
-              })}
-            <div className="wrapperPaymentSubtotal">
-              <p className="paymentSubtotalTitle">Subtotal</p>
-              <p className="paymentSubtotalPrice">${totalPrice.current}</p>
+          {size >= 1060 && (
+            <div className="col-5 d-none d-lg-block bgCartItemPayment">
+              {cartItems &&
+                cartItems.map((item, index) => {
+                  return <PaymentItems index={index} item={item} />;
+                })}
+              <div className="wrapperPaymentSubtotal">
+                <p className="paymentSubtotalTitle">Subtotal</p>
+                <p className="paymentSubtotalPrice">${totalPrice.current}</p>
+              </div>
+              <div className="wrapperPaymentShipping">
+                <p className="paymentShippingTitle">Shipping</p>
+                <p className="paymentShippingPrice">Free</p>
+              </div>
+              <div className="wrapperPaymentTotalPrice">
+                <p className="paymentTotalPriceTitle">total</p>
+                <p className="paymentTotalPricePrice">${totalPrice.current}</p>
+              </div>
             </div>
-            <div className="wrapperPaymentShipping">
-              <p className="paymentShippingTitle">Shipping</p>
-              <p className="paymentShippingPrice">Free</p>
-            </div>
-            <div className="wrapperPaymentTotalPrice">
-              <p className="paymentTotalPriceTitle">total</p>
-              <p className="paymentTotalPricePrice">${totalPrice.current}</p>
-            </div>
-          </div>
+          )}
         </div>
       </motion.div>
+      {/* <Footer /> */}
     </>
   );
 }

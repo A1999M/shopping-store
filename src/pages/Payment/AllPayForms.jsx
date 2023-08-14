@@ -11,6 +11,7 @@ export default function AllPayForms({
   payment,
   setPayment,
   setShowModal,
+  size,
 }) {
   let handleSubmitBilling = (e) => {
     e.preventDefault();
@@ -149,12 +150,20 @@ export default function AllPayForms({
                 initial={{ opacity: 0, x: 150 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ type: "spring", delay: 0.5 }}
-                style={{
-                  display: "inline-block",
-                  width: "47%",
-                  marginTop: "20px",
-                  marginRight: "2%",
-                }}
+                style={
+                  size > 576
+                    ? {
+                        display: "inline-block",
+                        width: "47%",
+                        marginTop: "20px",
+                        marginRight: "2%",
+                      }
+                    : {
+                        display: "inline-block",
+                        width: "96%",
+                        marginTop: "20px",
+                      }
+                }
               >
                 <TextField
                   required
@@ -170,12 +179,21 @@ export default function AllPayForms({
                 initial={{ opacity: 0, x: 150 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ type: "spring", delay: 0.6 }}
-                style={{
-                  display: "inline-block",
-                  width: "23%",
-                  marginTop: "20px",
-                  marginRight: "1%",
-                }}
+                style={
+                  size > 576
+                    ? {
+                        display: "inline-block",
+                        width: "23%",
+                        marginTop: "20px",
+                        marginRight: "1%",
+                      }
+                    : {
+                        display: "inline-block",
+                        width: "47%",
+                        marginTop: "20px",
+                        marginRight: "2%",
+                      }
+                }
               >
                 <TextField
                   required
@@ -191,11 +209,19 @@ export default function AllPayForms({
                 initial={{ opacity: 0, x: 150 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ type: "spring", delay: 0.7 }}
-                style={{
-                  display: "inline-block",
-                  width: "23%",
-                  marginTop: "20px",
-                }}
+                style={
+                  size > 576
+                    ? {
+                        display: "inline-block",
+                        width: "23%",
+                        marginTop: "20px",
+                      }
+                    : {
+                        display: "inline-block",
+                        width: "47%",
+                        marginTop: "20px",
+                      }
+                }
               >
                 <TextField
                   required
