@@ -153,7 +153,12 @@ function ShoppingCart() {
             })}
             {/* footer of cart  */}
             <div className="row checkOutRow">
-              <div className="col-12 col-sm-6 orderBox">
+              <motion.div
+                initial={{ opacity: 0, y: 100 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ type: "spring", delay: 0.4 }}
+                className="col-12 col-sm-6 orderBox"
+              >
                 <p className="orderSpecialTitle">order special instructions</p>
                 <textarea
                   className="orderSpecial"
@@ -163,8 +168,13 @@ function ShoppingCart() {
                   rows="6"
                   draggable="false"
                 ></textarea>
-              </div>
-              <div className="col-12 col-sm-6 checkOutBox">
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ type: "spring", delay: 0.3 }}
+                className="col-12 col-sm-6 checkOutBox"
+              >
                 <div className="checkOutShoppingCart">
                   <div className="wrapperSubTotalPrice">
                     <p className="shoppingCartTotalPriceTitle">total Price</p>
@@ -179,7 +189,7 @@ function ShoppingCart() {
                     check out
                   </Link>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
         ) : (
@@ -222,7 +232,7 @@ function ShoppingCart() {
           </>
         )}
       </motion.div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

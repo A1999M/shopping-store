@@ -6,7 +6,7 @@
     .paymentRow {
       margin-top: 1rem;
       .billingInfoForm {
-        margin-top: 10px;
+        margin-top: 25px;
         .submitBillingBtn {
           letter-spacing: 1px;
           font-size: 17px;
@@ -30,7 +30,7 @@
         margin-left: 10px;
       }
       .contactInfoForm {
-        margin-top: 0rem;
+        margin-top: 0px;
         .submitContactBtn {
           font-size: 18px;
           padding: 7px 0;
@@ -75,10 +75,12 @@
   }
   .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
     padding: 10px !important;
+    font-size: 12px !important;
   }
   .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
     font-size: 13px !important;
     line-height: 13px !important;
+    transform: translate(14px, 12px) scale(1) !important;
   }
   .css-1wuw8dw-MuiBreadcrumbs-separator {
     margin-right: 0px !important;
@@ -90,6 +92,43 @@
   .css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root {
     font-size: 20px !important;
   }
+  // responsive success modal
+  .wrapperPayModal {
+    left: 14%;
+    padding: 2.5rem 1.5rem;
+    width: 70vw;
+    top: 22%;
+    padding-top: 20px;
+    .titlePayModal {
+      font-size: 15px;
+      margin-top: 10px;
+    }
+    .titlePayErrorModal {
+      font-size: 12px;
+      line-height: 17px;
+      margin-top: 10px;
+    }
+    .descPayModal {
+      font-size: 11px;
+      margin-top: 13px;
+      line-height: 16px;
+    }
+
+    .backPayBtn {
+      .backPayLink {
+        font-size: 13px;
+        padding: 5px 15px;
+        margin-top: 5px;
+        margin-right: 0px;
+      }
+    }
+    .payModalCloseBtn {
+      font-size: 13px;
+      padding: 5px 20px;
+      margin-top: 15px;
+      margin-right: 0px;
+    }
+  }
 }
 @media (min-width: 360px) {
   // responsive billing info form
@@ -99,7 +138,7 @@
     .paymentRow {
       margin-top: 1rem;
       .billingInfoForm {
-        margin-top: 10px;
+        margin-top: 25px;
         .submitBillingBtn {
           letter-spacing: 1px;
           font-size: 18px;
@@ -168,10 +207,12 @@
   }
   .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
     padding: 10px !important;
+    font-size: 12px !important;
   }
   .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
     font-size: 13px !important;
     line-height: 13px !important;
+    transform: translate(14px, 12px) scale(1) !important;
   }
   .css-1wuw8dw-MuiBreadcrumbs-separator {
     margin-right: 5px !important;
@@ -182,6 +223,43 @@
   }
   .css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root {
     font-size: 20px !important;
+  }
+  // responsive success modal
+  .wrapperPayModal {
+    left: 17.5%;
+    padding: 2.5rem 2rem;
+    width: 65vw;
+    top: 22%;
+    padding-top: 20px;
+    .titlePayModal {
+      font-size: 15px;
+      margin-top: 10px;
+    }
+    .titlePayErrorModal {
+      font-size: 12px;
+      line-height: 17px;
+      margin-top: 10px;
+    }
+    .descPayModal {
+      font-size: 11px;
+      margin-top: 13px;
+      line-height: 16px;
+    }
+
+    .backPayBtn {
+      .backPayLink {
+        font-size: 13px;
+        padding: 5px 15px;
+        margin-top: 5px;
+        margin-right: 0px;
+      }
+    }
+    .payModalCloseBtn {
+      font-size: 13px;
+      padding: 5px 20px;
+      margin-top: 15px;
+      margin-right: 0px;
+    }
   }
 }
 @media (min-width: 375px) {
@@ -261,10 +339,12 @@
   }
   .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
     padding: 10px !important;
+    font-size: 13px !important;
   }
   .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
-    font-size: 13px !important;
+    font-size: 12px !important;
     line-height: 13px !important;
+    transform: translate(14px, 13px) scale(1) !important;
   }
   .css-1wuw8dw-MuiBreadcrumbs-separator {
     margin-right: 5px !important;
@@ -275,6 +355,43 @@
   }
   .css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root {
     font-size: 20px !important;
+  }
+  // responsive success modal
+  .wrapperPayModal {
+    left: 20.5%;
+    padding: 2.5rem 1.5rem;
+    width: 60vw;
+    top: 22%;
+    padding-top: 20px;
+    .titlePayModal {
+      font-size: 15px;
+      margin-top: 10px;
+    }
+    .titlePayErrorModal {
+      font-size: 13px;
+      line-height: 19px;
+      margin-top: 10px;
+    }
+    .descPayModal {
+      font-size: 11px;
+      margin-top: 13px;
+      line-height: 16px;
+    }
+
+    .backPayBtn {
+      .backPayLink {
+        font-size: 13px;
+        padding: 5px 15px;
+        margin-top: 5px;
+        margin-right: 0px;
+      }
+    }
+    .payModalCloseBtn {
+      font-size: 13px;
+      padding: 5px 20px;
+      margin-top: 15px;
+      margin-right: 0px;
+    }
   }
 }
 @media (min-width: 393px) {
@@ -354,6 +471,7 @@
   }
   .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
     padding: 10px !important;
+    font-size: 14px !important;
   }
   .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
     font-size: 13px !important;
@@ -365,6 +483,43 @@
   }
   .css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root {
     font-size: 22px !important;
+  }
+  // responsive success modal
+  .wrapperPayModal {
+    left: 20.5%;
+    padding: 2.5rem 2rem;
+    width: 63vw;
+    top: 22%;
+    padding-top: 15px;
+    .titlePayModal {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+    .titlePayErrorModal {
+      font-size: 13px;
+      line-height: 20px;
+      margin-top: 10px;
+    }
+    .descPayModal {
+      font-size: 12px;
+      margin-top: 13px;
+      line-height: 18px;
+    }
+
+    .backPayBtn {
+      .backPayLink {
+        font-size: 13px;
+        padding: 5px 15px;
+        margin-top: 5px;
+        margin-right: 0px;
+      }
+    }
+    .payModalCloseBtn {
+      font-size: 13px;
+      padding: 5px 20px;
+      margin-top: 15px;
+      margin-right: 0px;
+    }
   }
 }
 @media (min-width: 412px) {
@@ -444,6 +599,7 @@
   }
   .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
     padding: 10px !important;
+    font-size: 14px !important;
   }
   .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
     font-size: 13px !important;
@@ -454,6 +610,43 @@
   }
   .css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root {
     font-size: 23px !important;
+  }
+  // responsive success modal
+  .wrapperPayModal {
+    left: 20.5%;
+    padding: 2.5rem 2rem;
+    width: 60vw;
+    top: 22%;
+    padding-top: 15px;
+    .titlePayModal {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+    .titlePayErrorModal {
+      font-size: 12px;
+      line-height: 18px;
+      margin-top: 10px;
+    }
+    .descPayModal {
+      font-size: 12px;
+      margin-top: 13px;
+      line-height: 18px;
+    }
+
+    .backPayBtn {
+      .backPayLink {
+        font-size: 13px;
+        padding: 5px 15px;
+        margin-top: 5px;
+        margin-right: 0px;
+      }
+    }
+    .payModalCloseBtn {
+      font-size: 13px;
+      padding: 5px 20px;
+      margin-top: 15px;
+      margin-right: 0px;
+    }
   }
 }
 @media (min-width: 576px) {
@@ -545,6 +738,42 @@
   .css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root {
     font-size: 23px !important;
   }
+  // responsive success modal
+  .wrapperPayModal {
+    left: 21.5%;
+    padding: 2.5rem 3rem;
+    top: 22%;
+    padding-top: 15px;
+    .titlePayModal {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+    .titlePayErrorModal {
+      font-size: 15px;
+      line-height: 22px;
+      margin-top: 12px;
+    }
+    .descPayModal {
+      font-size: 12px;
+      margin-top: 13px;
+      line-height: 18px;
+    }
+
+    .backPayBtn {
+      .backPayLink {
+        font-size: 13px;
+        padding: 5px 15px;
+        margin-top: 5px;
+        margin-right: 0px;
+      }
+    }
+    .payModalCloseBtn {
+      font-size: 13px;
+      padding: 5px 20px;
+      margin-top: 15px;
+      margin-right: 0px;
+    }
+  }
 }
 @media (min-width: 768px) {
   .paymentContainer {
@@ -628,13 +857,50 @@
   .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
     font-size: 12px !important;
     line-height: 12px !important;
+    transform: translate(14px, 14px) scale(1) !important;
   }
   .css-1hv8oq8-MuiStepLabel-label {
     font-size: 0.875rem !important;
   }
-
   .css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root {
     font-size: 23px !important;
+  }
+  // responsive success modal
+  .wrapperPayModal {
+    left: 32%;
+    right: 32%;
+    padding: 2.5rem 1rem;
+    top: 22%;
+    width: fit-content;
+    padding-top: 15px;
+    .titlePayModal {
+      font-size: 19px;
+      margin-top: 10px;
+    }
+    .titlePayErrorModal {
+      font-size: 15px;
+      line-height: 22px;
+      margin-top: 12px;
+    }
+    .descPayModal {
+      font-size: 12px;
+      margin-top: 13px;
+      line-height: 18px;
+    }
+
+    .backPayBtn {
+      .backPayLink {
+        font-size: 14px;
+        padding: 7px 15px;
+        margin-top: 20px;
+      }
+    }
+    .payModalCloseBtn {
+      font-size: 14px;
+      padding: 7px 30px;
+      margin-top: 20px;
+      margin-right: 5px;
+    }
   }
 }
 @media (min-width: 992px) {
@@ -799,6 +1065,42 @@
     font-size: 12px !important;
     line-height: 12px !important;
   }
+  // responsive success modal
+  .wrapperPayModal {
+    left: 32%;
+    right: 32%;
+    top: 22%;
+    padding: 2.5rem 3rem;
+    padding-top: 15px;
+    .titlePayModal {
+      font-size: 22px;
+      margin-top: 15px;
+    }
+    .titlePayErrorModal {
+      font-size: 17px;
+      line-height: 23px;
+      margin-top: 14px;
+    }
+    .descPayModal {
+      font-size: 14px;
+      margin-top: 15px;
+      line-height: 20px;
+    }
+
+    .backPayBtn {
+      .backPayLink {
+        font-size: 14px;
+        padding: 7px 15px;
+        margin-top: 20px;
+      }
+    }
+    .payModalCloseBtn {
+      font-size: 14px;
+      padding: 7px 30px;
+      margin-top: 20px;
+      margin-right: 5px;
+    }
+  }
 }
 @media (min-width: 1200px) {
   // responsive billing info form
@@ -962,6 +1264,43 @@
   .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
     font-size: 14px !important;
     line-height: 14px !important;
+    transform: translate(14px, 14px) scale(1) !important;
+  }
+  // responsive success modal
+  .wrapperPayModal {
+    left: 32%;
+    right: 32%;
+    padding: 2.5rem 5rem;
+    padding-top: 15px;
+    .titlePayModal {
+      font-size: 23px;
+      margin-top: 20px;
+    }
+    .titlePayErrorModal {
+      font-size: 19px;
+      line-height: 27px;
+      margin-top: 15px;
+    }
+    .descPayModal {
+      font-size: 13px;
+      margin-top: 15px;
+      opacity: 0.7;
+      line-height: 18px;
+    }
+
+    .backPayBtn {
+      .backPayLink {
+        font-size: 14px;
+        padding: 7px 15px;
+        margin-top: 25px;
+      }
+    }
+    .payModalCloseBtn {
+      font-size: 14px;
+      padding: 7px 30px;
+      margin-top: 25px;
+      margin-right: 5px;
+    }
   }
 }
 @media (min-width: 1400px) {
@@ -1128,8 +1467,45 @@
   .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
     font-size: 1rem;
     line-height: 1.4375em;
+    transform: translate(14px, 14px) scale(1) !important;
   }
   .css-1hv8oq8-MuiStepLabel-label {
     font-size: 0.875rem;
+  }
+  // responsive success modal
+  .wrapperPayModal {
+    left: 32%;
+    right: 32%;
+    top: 15%;
+    padding: 2.5rem 4rem;
+    padding-top: 15px;
+    .titlePayModal {
+      font-size: 23px;
+      margin-top: 20px;
+    }
+    .titlePayErrorModal {
+      font-size: 21px;
+      line-height: 28px;
+      margin-top: 15px;
+    }
+    .descPayModal {
+      font-size: 14px;
+      margin-top: 15px;
+      opacity: 0.7;
+    }
+
+    .backPayBtn {
+      .backPayLink {
+        font-size: 18px;
+        padding: 10px 25px;
+        margin-top: 25px;
+      }
+    }
+    .payModalCloseBtn {
+      font-size: 18px;
+      padding: 10px 62px;
+      margin-top: 25px;
+      margin-right: 25px;
+    }
   }
 }

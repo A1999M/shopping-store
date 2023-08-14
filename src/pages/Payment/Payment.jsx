@@ -85,7 +85,11 @@ export default function AddInformation() {
               loop={false}
             />
             <motion.p
-              initial={{ opacity: 0, y: 35, clipPath: "inset(0% 0% 100% 0%)" }}
+              initial={{
+                opacity: 0,
+                y: 35,
+                clipPath: "inset(0% 0% 100% 0%)",
+              }}
               animate={{ opacity: 1, y: 0, clipPath: "inset(0% 0% 0% 0%)" }}
               transition={{ type: "spring", delay: 0.3 }}
               className="titlePayModal"
@@ -93,7 +97,11 @@ export default function AddInformation() {
               Thanks For your order
             </motion.p>
             <motion.p
-              initial={{ opacity: 0, y: 35, clipPath: "inset(0% 0% 100% 0%)" }}
+              initial={{
+                opacity: 0,
+                y: 35,
+                clipPath: "inset(0% 0% 100% 0%)",
+              }}
               animate={{ opacity: 1, y: 0, clipPath: "inset(0% 0% 0% 0%)" }}
               transition={{ type: "spring", delay: 0.4 }}
               className="descPayModal"
@@ -160,7 +168,7 @@ export default function AddInformation() {
               initial={{ opacity: 0, y: 35, clipPath: "inset(0% 0% 100% 0%)" }}
               animate={{ opacity: 1, y: 0, clipPath: "inset(0% 0% 0% 0%)" }}
               transition={{ type: "spring", delay: 0.3 }}
-              className="titlePayModal"
+              className="titlePayErrorModal"
             >
               Your order has already been registered
             </motion.p>
@@ -195,7 +203,7 @@ export default function AddInformation() {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        exit={{ opacity: 0, x: -150 }}
+        exit={{ opacity: 0 }}
         className="container-fluid paymentContainer"
       >
         <div className="row paymentRow">
@@ -251,7 +259,7 @@ export default function AddInformation() {
           )}
         </div>
       </motion.div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

@@ -27,7 +27,6 @@ export default function PaymentItems({ item, index }) {
         initial="hidden"
         animate="show"
         custom={index}
-        exit={{ x: 150, opacity: 0 }}
         className="wrapperPaymentCartItem"
       >
         <div className="wrapperPaymentItemImg">

@@ -25,11 +25,7 @@ export default function CartItems({ item, size }) {
 
   return (
     <>
-      <motion.div
-        initial="false"
-        exit={{ opacity: 0, x: -100 }}
-        className="row cartItems"
-      >
+      <motion.div className="row cartItems">
         <div className="col-9 col-sm-5">
           <div className="wrapperCartDetails">
             <div className="wrapperCartImg">
