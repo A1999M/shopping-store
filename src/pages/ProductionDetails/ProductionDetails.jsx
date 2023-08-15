@@ -22,7 +22,7 @@ export default function ProductionDetails() {
   let addBtn = useRef(null);
 
   let [countPro, setCountPro] = useState(1);
-  let [motionKey, setMotionKey] = useState(false);
+  let [motionKey, setMotionKey] = useState(true);
   let [whichImg, setWhichImg] = useState({
     image1: true,
     image2: false,

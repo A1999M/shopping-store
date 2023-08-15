@@ -3,7 +3,6 @@ import Tabs from "react-bootstrap/Tabs";
 import FeatureTable from "./FeatureTable";
 import AddReview from "./AddReview";
 import "./ProTabs.scss";
-import "./responsiveProDetails.scss";
 
 function ProTabs() {
   return (

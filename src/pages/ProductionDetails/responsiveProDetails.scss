@@ -152,6 +152,34 @@
       }
     }
   }
+  // responsive additional information
+  .wrapperTable {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    .leftTable {
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+      .leftTableItems {
+        padding: 10px 0px;
+        padding-left: 10px;
+        padding-right: 1.5rem;
+        font-size: 12px;
+      }
+    }
+    .rightTable {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      .rightTableItems {
+        padding: 10px 0px;
+        padding-left: 15px;
+        font-size: 12px;
+      }
+    }
+  }
 }
 @media (min-width: 360px) {
   .proDetailsContainer {
@@ -304,6 +332,34 @@
       .aboutChoosenPro {
         font-size: 11px;
         line-height: 19px;
+      }
+    }
+  }
+  // responsive additional information
+  .wrapperTable {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    .leftTable {
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+      .leftTableItems {
+        padding: 11px 0px;
+        padding-left: 10px;
+        padding-right: 1.5rem;
+        font-size: 12px;
+      }
+    }
+    .rightTable {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      .rightTableItems {
+        padding: 11px 0px;
+        padding-left: 15px;
+        font-size: 12px;
       }
     }
   }
@@ -462,6 +518,34 @@
       }
     }
   }
+  // responsive additional information
+  .wrapperTable {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    .leftTable {
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+      .leftTableItems {
+        padding: 11px 0px;
+        padding-left: 10px;
+        padding-right: 1.5rem;
+        font-size: 13px;
+      }
+    }
+    .rightTable {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      .rightTableItems {
+        padding: 11px 0px;
+        padding-left: 15px;
+        font-size: 13px;
+      }
+    }
+  }
 }
 @media (min-width: 393px) {
   .proDetailsContainer {
@@ -614,6 +698,34 @@
       .aboutChoosenPro {
         font-size: 12px;
         line-height: 22px;
+      }
+    }
+  }
+  // responsive additional information
+  .wrapperTable {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    .leftTable {
+      display: flex;
+      flex-direction: column;
+      width: 27%;
+      .leftTableItems {
+        padding: 12px 0px;
+        padding-left: 10px;
+        padding-right: 1.5rem;
+        font-size: 13px;
+      }
+    }
+    .rightTable {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      width: 73%;
+      .rightTableItems {
+        padding: 12px 0px;
+        padding-left: 15px;
+        font-size: 13px;
       }
     }
   }
@@ -770,6 +882,34 @@
       }
     }
   }
+  // responsive additional information
+  .wrapperTable {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    .leftTable {
+      display: flex;
+      flex-direction: column;
+      width: 25%;
+      .leftTableItems {
+        padding: 12px 0px;
+        padding-left: 10px;
+        padding-right: 1.5rem;
+        font-size: 13px;
+      }
+    }
+    .rightTable {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      width: 75%;
+      .rightTableItems {
+        padding: 12px 0px;
+        padding-left: 15px;
+        font-size: 13px;
+      }
+    }
+  }
 }
 @media (min-width: 576px) {
   .proDetailsContainer {
@@ -923,6 +1063,34 @@
       }
     }
   }
+  // responsive additional information
+  .wrapperTable {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    .leftTable {
+      display: flex;
+      flex-direction: column;
+      width: 20%;
+      .leftTableItems {
+        padding: 17px 0px;
+        padding-left: 15px;
+        padding-right: 1.5rem;
+        font-size: 15px;
+      }
+    }
+    .rightTable {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      width: 75%;
+      .rightTableItems {
+        padding: 17px 0px;
+        padding-left: 15px;
+        font-size: 15px;
+      }
+    }
+  }
 }
 @media (min-width: 768px) {
   .proDetailsContainer {
@@ -1073,6 +1241,34 @@
       }
     }
   }
+  // responsive additional information
+  .wrapperTable {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    .leftTable {
+      display: flex;
+      flex-direction: column;
+      width: 15%;
+      .leftTableItems {
+        padding: 17px 0px;
+        padding-left: 15px;
+        padding-right: 1.5rem;
+        font-size: 15px;
+      }
+    }
+    .rightTable {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      width: 75%;
+      .rightTableItems {
+        padding: 17px 0px;
+        padding-left: 15px;
+        font-size: 15px;
+      }
+    }
+  }
 }
 @media (min-width: 992px) {
   // responsive images section
@@ -1219,70 +1415,33 @@
         font-size: 13px;
         line-height: 24px;
       }
-      .wrapperReviews {
-        display: flex;
-        align-items: flex-start;
-        .wrapperExistReviews {
-          width: 45vw;
-        }
-        .wrapperAddReview {
-          width: 40%;
-          margin-left: 3rem;
-          .addReviewTitle {
-            margin-top: 2rem;
-            font-size: 26px;
-          }
-          .yourRate {
-            margin-top: 35px;
-            font-size: 15px;
-            margin-bottom: 12px;
-          }
-          .descReviewTitle {
-            margin-top: 2rem;
-            font-size: 15px;
-            margin-bottom: 13px;
-          }
-          .yourReviewTitle {
-            font-size: 14px;
-            margin-bottom: 8px;
-            margin-top: 3rem;
-          }
-          .reviewNameTitle {
-            font-size: 14px;
-            margin-bottom: 8px;
-            margin-top: 30px;
-          }
-          .reviewEmailTitle {
-            font-size: 14px;
-            margin-bottom: 8px;
-            margin-top: 30px;
-          }
-          .yourReviewBox {
-            width: 100%;
-            height: 160px;
-            padding-left: 10px;
-            padding-top: 10px;
-            font-size: 17px;
-            line-height: 24px;
-          }
-          .reviewNameBox {
-            width: 100%;
-            height: 45px;
-            padding-left: 10px;
-            font-size: 17px;
-          }
-          .reviewCommentBox {
-            width: 100%;
-            height: 45px;
-            padding-left: 10px;
-            font-size: 17px;
-          }
-          .submitReview {
-            padding: 12px 30px;
-            margin-top: 35px;
-            letter-spacing: 2px;
-          }
-        }
+    }
+  }
+  // responsive additional information
+  .wrapperTable {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    .leftTable {
+      display: flex;
+      flex-direction: column;
+      width: 15%;
+      .leftTableItems {
+        padding: 20px 0px;
+        padding-left: 15px;
+        padding-right: 1.5rem;
+        font-size: 17px;
+      }
+    }
+    .rightTable {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      width: 75%;
+      .rightTableItems {
+        padding: 20px 0px;
+        padding-left: 15px;
+        font-size: 17px;
       }
     }
   }
@@ -1428,70 +1587,33 @@
         font-size: 14px;
         line-height: 23px;
       }
-      .wrapperReviews {
-        display: flex;
-        align-items: flex-start;
-        .wrapperExistReviews {
-          width: 45vw;
-        }
-        .wrapperAddReview {
-          width: 40%;
-          margin-left: 3rem;
-          .addReviewTitle {
-            margin-top: 2rem;
-            font-size: 26px;
-          }
-          .yourRate {
-            margin-top: 35px;
-            font-size: 15px;
-            margin-bottom: 12px;
-          }
-          .descReviewTitle {
-            margin-top: 2rem;
-            font-size: 15px;
-            margin-bottom: 13px;
-          }
-          .yourReviewTitle {
-            font-size: 14px;
-            margin-bottom: 8px;
-            margin-top: 3rem;
-          }
-          .reviewNameTitle {
-            font-size: 14px;
-            margin-bottom: 8px;
-            margin-top: 30px;
-          }
-          .reviewEmailTitle {
-            font-size: 14px;
-            margin-bottom: 8px;
-            margin-top: 30px;
-          }
-          .yourReviewBox {
-            width: 100%;
-            height: 160px;
-            padding-left: 10px;
-            padding-top: 10px;
-            font-size: 17px;
-            line-height: 24px;
-          }
-          .reviewNameBox {
-            width: 100%;
-            height: 45px;
-            padding-left: 10px;
-            font-size: 17px;
-          }
-          .reviewCommentBox {
-            width: 100%;
-            height: 45px;
-            padding-left: 10px;
-            font-size: 17px;
-          }
-          .submitReview {
-            padding: 12px 30px;
-            margin-top: 35px;
-            letter-spacing: 2px;
-          }
-        }
+    }
+  }
+  // responsive additional information
+  .wrapperTable {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    .leftTable {
+      display: flex;
+      flex-direction: column;
+      width: 15%;
+      .leftTableItems {
+        padding: 20px 0px;
+        padding-left: 15px;
+        padding-right: 1.5rem;
+        font-size: 18px;
+      }
+    }
+    .rightTable {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      width: 75%;
+      .rightTableItems {
+        padding: 20px 0px;
+        padding-left: 15px;
+        font-size: 18px;
       }
     }
   }
@@ -1634,71 +1756,34 @@
           font-size: 16px;
           line-height: 23px;
         }
-        .wrapperReviews {
-          display: flex;
-          align-items: flex-start;
-          .wrapperExistReviews {
-            width: 45vw;
-          }
-          .wrapperAddReview {
-            width: 40%;
-            margin-left: 3rem;
-            .addReviewTitle {
-              margin-top: 2rem;
-              font-size: 26px;
-            }
-            .yourRate {
-              margin-top: 35px;
-              font-size: 15px;
-              margin-bottom: 12px;
-            }
-            .descReviewTitle {
-              margin-top: 2rem;
-              font-size: 15px;
-              margin-bottom: 13px;
-            }
-            .yourReviewTitle {
-              font-size: 14px;
-              margin-bottom: 8px;
-              margin-top: 3rem;
-            }
-            .reviewNameTitle {
-              font-size: 14px;
-              margin-bottom: 8px;
-              margin-top: 30px;
-            }
-            .reviewEmailTitle {
-              font-size: 14px;
-              margin-bottom: 8px;
-              margin-top: 30px;
-            }
-            .yourReviewBox {
-              width: 100%;
-              height: 160px;
-              padding-left: 10px;
-              padding-top: 10px;
-              font-size: 17px;
-              line-height: 24px;
-            }
-            .reviewNameBox {
-              width: 100%;
-              height: 45px;
-              padding-left: 10px;
-              font-size: 17px;
-            }
-            .reviewCommentBox {
-              width: 100%;
-              height: 45px;
-              padding-left: 10px;
-              font-size: 17px;
-            }
-            .submitReview {
-              padding: 12px 30px;
-              margin-top: 35px;
-              letter-spacing: 2px;
-            }
-          }
-        }
+      }
+    }
+  }
+  // responsive additional information
+  .wrapperTable {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    .leftTable {
+      display: flex;
+      flex-direction: column;
+      width: 15%;
+      .leftTableItems {
+        padding: 20px 0px;
+        padding-left: 15px;
+        padding-right: 1.5rem;
+        font-size: 18px;
+      }
+    }
+    .rightTable {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      width: 75%;
+      .rightTableItems {
+        padding: 20px 0px;
+        padding-left: 15px;
+        font-size: 18px;
       }
     }
   }
