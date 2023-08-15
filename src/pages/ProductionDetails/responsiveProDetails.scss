@@ -1,0 +1,1260 @@
+@media (max-width: 360px) {
+  .proDetailsContainer {
+    margin-top: 1rem;
+    .proDetailCol {
+      padding: 0 1.5rem;
+    }
+    // responsive images section
+    .imageSectionProDetails {
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: row;
+      .wrapperAllImagePro {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-left: 0rem;
+        margin-top: 1rem;
+        width: 14%;
+        img {
+          margin: 0 5px;
+          margin-top: 0rem;
+        }
+      }
+      .mainImgProDetail {
+        width: 73%;
+        margin-left: 0rem;
+      }
+    }
+    .wrapperDetailChoosenPro {
+      .nameChoosenPro {
+        font-size: 21px;
+        margin-top: 1.5rem;
+      }
+      .priceChoosenPro {
+        margin-top: 15px;
+        font-size: 13px;
+      }
+    }
+    // product features responsive
+    .featuresProdetails {
+      margin-top: 20px;
+      padding-bottom: 15px;
+      .featuresProdetailItems {
+        margin: 0.5rem 0;
+        font-size: 12px;
+      }
+    }
+    // responsive stock
+    .stockPro {
+      font-size: 13px;
+      margin-top: 15px;
+    }
+    // responsive size of product
+    .sizePro {
+      font-size: 16px;
+      margin-top: 17px;
+    }
+    // responsive different sizes of product
+    .wrapperDifferentSizes {
+      margin-top: 10px;
+      .sizes {
+        font-size: 10px;
+        margin-right: 7px;
+        padding: 6px 12px;
+        // transition: all 0.35s;
+      }
+    }
+    // responsive buttons
+    .wrapperAddToCartProDetails {
+      margin-top: 20px;
+      .wrapperCountBtns {
+        padding: 6px 14px;
+        .increment {
+          font-size: 19px;
+          margin-right: 30px;
+        }
+        .decrement {
+          font-size: 19px;
+          margin-left: 30px;
+        }
+        .choosenProCount {
+          font-family: sans-serif;
+          font-weight: 700;
+          font-size: 14px;
+        }
+      }
+      .choosenProAddToCart {
+        padding: 7px 18px;
+        font-size: 13px;
+        margin-left: 1rem;
+      }
+    }
+    .wrapperGuarantee {
+      margin-top: 1.5rem;
+      padding-top: 1.5rem;
+      display: none;
+      visibility: hidden;
+      .Guarantee {
+        margin-right: 1rem;
+        border: 0;
+        p.GuaranteeDesc {
+          width: 100%;
+          margin-left: 10px;
+          font-size: 11px;
+          line-height: 14px;
+        }
+      }
+      .Warranty {
+        margin-right: 1rem;
+        border: 0;
+        p.WarrantyDesc {
+          width: 100%;
+          margin-left: 10px;
+          font-size: 11px;
+          line-height: 14px;
+        }
+      }
+      .Gift {
+        margin-right: 0rem;
+        border: 0;
+        p.GiftDesc {
+          width: 100%;
+          margin-left: 10px;
+          font-size: 11px;
+          line-height: 14px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 360px) {
+  .proDetailsContainer {
+    margin-top: 1rem;
+    .proDetailCol {
+      padding: 0 2rem;
+    }
+    // responsive images section
+    .imageSectionProDetails {
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: row;
+      .wrapperAllImagePro {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-left: 0rem;
+        margin-top: 1rem;
+        width: 14%;
+        img {
+          margin: 0 5px;
+          margin-top: 0rem;
+        }
+      }
+      .mainImgProDetail {
+        width: 73%;
+        margin-left: 0rem;
+      }
+    }
+    .wrapperDetailChoosenPro {
+      .nameChoosenPro {
+        font-size: 21px;
+        margin-top: 1.5rem;
+      }
+      .priceChoosenPro {
+        margin-top: 15px;
+        font-size: 13px;
+      }
+    }
+    // product features responsive
+    .featuresProdetails {
+      margin-top: 20px;
+      padding-bottom: 15px;
+      .featuresProdetailItems {
+        margin: 0.5rem 0;
+        font-size: 12px;
+      }
+    }
+    // responsive stock
+    .stockPro {
+      font-size: 13px;
+      margin-top: 15px;
+    }
+    // responsive size of product
+    .sizePro {
+      font-size: 16px;
+      margin-top: 17px;
+    }
+    // responsive different sizes of product
+    .wrapperDifferentSizes {
+      margin-top: 10px;
+      .sizes {
+        font-size: 12px;
+        margin-right: 8px;
+        padding: 6px 15px;
+        // transition: all 0.35s;
+      }
+    }
+    // responsive buttons
+    .wrapperAddToCartProDetails {
+      margin-top: 20px;
+      .wrapperCountBtns {
+        padding: 6px 14px;
+        .increment {
+          font-size: 19px;
+          margin-right: 30px;
+        }
+        .decrement {
+          font-size: 19px;
+          margin-left: 30px;
+        }
+        .choosenProCount {
+          font-family: sans-serif;
+          font-weight: 700;
+          font-size: 14px;
+        }
+      }
+      .choosenProAddToCart {
+        padding: 7px 18px;
+        font-size: 13px;
+        margin-left: 1rem;
+      }
+    }
+    .wrapperGuarantee {
+      margin-top: 1.5rem;
+      padding-top: 1.5rem;
+      display: none;
+      visibility: hidden;
+      .Guarantee {
+        margin-right: 1rem;
+        border: 0;
+        p.GuaranteeDesc {
+          width: 100%;
+          margin-left: 10px;
+          font-size: 11px;
+          line-height: 14px;
+        }
+      }
+      .Warranty {
+        margin-right: 1rem;
+        border: 0;
+        p.WarrantyDesc {
+          width: 100%;
+          margin-left: 10px;
+          font-size: 11px;
+          line-height: 14px;
+        }
+      }
+      .Gift {
+        margin-right: 0rem;
+        border: 0;
+        p.GiftDesc {
+          width: 100%;
+          margin-left: 10px;
+          font-size: 11px;
+          line-height: 14px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 375px) {
+  .proDetailsContainer {
+    margin-top: 1rem;
+    .proDetailCol {
+      padding: 0 2rem;
+    }
+    // responsive images section
+    .imageSectionProDetails {
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: row;
+      .wrapperAllImagePro {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-left: 0rem;
+        margin-top: 1rem;
+        width: 14%;
+        img {
+          margin: 0 5px;
+          margin-top: 0rem;
+        }
+      }
+      .mainImgProDetail {
+        width: 73%;
+        margin-left: 0rem;
+      }
+    }
+    .wrapperDetailChoosenPro {
+      .nameChoosenPro {
+        font-size: 21px;
+        margin-top: 1.5rem;
+      }
+      .priceChoosenPro {
+        margin-top: 15px;
+        font-size: 13px;
+      }
+    }
+    // product features responsive
+    .featuresProdetails {
+      margin-top: 20px;
+      padding-bottom: 15px;
+      .featuresProdetailItems {
+        margin: 0.5rem 0;
+        font-size: 12px;
+      }
+    }
+    // responsive stock
+    .stockPro {
+      font-size: 13px;
+      margin-top: 15px;
+    }
+    // responsive size of product
+    .sizePro {
+      font-size: 16px;
+      margin-top: 17px;
+    }
+    // responsive different sizes of product
+    .wrapperDifferentSizes {
+      margin-top: 10px;
+      .sizes {
+        font-size: 12px;
+        margin-right: 8px;
+        padding: 6px 15px;
+        // transition: all 0.35s;
+      }
+    }
+    // responsive buttons
+    .wrapperAddToCartProDetails {
+      margin-top: 20px;
+      .wrapperCountBtns {
+        padding: 6px 14px;
+        .increment {
+          font-size: 19px;
+          margin-right: 30px;
+        }
+        .decrement {
+          font-size: 19px;
+          margin-left: 30px;
+        }
+        .choosenProCount {
+          font-family: sans-serif;
+          font-weight: 700;
+          font-size: 14px;
+        }
+      }
+      .choosenProAddToCart {
+        padding: 7px 18px;
+        font-size: 13px;
+        margin-left: 1rem;
+      }
+    }
+    .wrapperGuarantee {
+      margin-top: 1.5rem;
+      padding-top: 1.5rem;
+      display: none;
+      visibility: hidden;
+      .Guarantee {
+        margin-right: 1rem;
+        border: 0;
+        p.GuaranteeDesc {
+          width: 100%;
+          margin-left: 10px;
+          font-size: 11px;
+          line-height: 14px;
+        }
+      }
+      .Warranty {
+        margin-right: 1rem;
+        border: 0;
+        p.WarrantyDesc {
+          width: 100%;
+          margin-left: 10px;
+          font-size: 11px;
+          line-height: 14px;
+        }
+      }
+      .Gift {
+        margin-right: 0rem;
+        border: 0;
+        p.GiftDesc {
+          width: 100%;
+          margin-left: 10px;
+          font-size: 11px;
+          line-height: 14px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 393px) {
+  .proDetailsContainer {
+    margin-top: 1rem;
+    .proDetailCol {
+      padding: 0 2rem;
+    }
+    // responsive images section
+    .imageSectionProDetails {
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: row;
+      .wrapperAllImagePro {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-left: 0rem;
+        margin-top: 1rem;
+        width: 14%;
+        img {
+          margin: 0 5px;
+          margin-top: 0rem;
+        }
+      }
+      .mainImgProDetail {
+        width: 73%;
+        margin-left: 0rem;
+      }
+    }
+    .wrapperDetailChoosenPro {
+      .nameChoosenPro {
+        font-size: 21px;
+        margin-top: 1.5rem;
+      }
+      .priceChoosenPro {
+        margin-top: 15px;
+        font-size: 13px;
+      }
+    }
+    // product features responsive
+    .featuresProdetails {
+      margin-top: 20px;
+      padding-bottom: 15px;
+      .featuresProdetailItems {
+        margin: 0.5rem 0;
+        font-size: 12px;
+      }
+    }
+    // responsive stock
+    .stockPro {
+      font-size: 13px;
+      margin-top: 15px;
+    }
+    // responsive size of product
+    .sizePro {
+      font-size: 16px;
+      margin-top: 17px;
+    }
+    // responsive different sizes of product
+    .wrapperDifferentSizes {
+      margin-top: 10px;
+      .sizes {
+        font-size: 12px;
+        margin-right: 8px;
+        padding: 6px 15px;
+        // transition: all 0.35s;
+      }
+    }
+    // responsive buttons
+    .wrapperAddToCartProDetails {
+      margin-top: 20px;
+      .wrapperCountBtns {
+        padding: 6px 14px;
+        .increment {
+          font-size: 19px;
+          margin-right: 30px;
+        }
+        .decrement {
+          font-size: 19px;
+          margin-left: 30px;
+        }
+        .choosenProCount {
+          font-family: sans-serif;
+          font-weight: 700;
+          font-size: 14px;
+        }
+      }
+      .choosenProAddToCart {
+        padding: 7px 18px;
+        font-size: 13px;
+        margin-left: 1rem;
+      }
+    }
+    .wrapperGuarantee {
+      margin-top: 1.5rem;
+      padding-top: 1.5rem;
+      display: flex;
+      visibility: visible;
+      .Guarantee {
+        margin-right: 1rem;
+        border: 0;
+        p.GuaranteeDesc {
+          width: 100%;
+          margin-left: 10px;
+          font-size: 11px;
+          line-height: 14px;
+        }
+      }
+      .Warranty {
+        margin-right: 1rem;
+        border: 0;
+        p.WarrantyDesc {
+          width: 100%;
+          margin-left: 10px;
+          font-size: 11px;
+          line-height: 14px;
+        }
+      }
+      .Gift {
+        margin-right: 0rem;
+        border: 0;
+        p.GiftDesc {
+          width: 100%;
+          margin-left: 10px;
+          font-size: 11px;
+          line-height: 14px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 412px) {
+  .proDetailsContainer {
+    margin-top: 1rem;
+    .proDetailCol {
+      padding: 0 2rem;
+    }
+    // responsive images section
+    .imageSectionProDetails {
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: row;
+      .wrapperAllImagePro {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-left: 0rem;
+        margin-top: 1rem;
+        width: 14%;
+        img {
+          margin: 0 5px;
+          margin-top: 0rem;
+        }
+      }
+      .mainImgProDetail {
+        width: 73%;
+        margin-left: 0rem;
+      }
+    }
+    .wrapperDetailChoosenPro {
+      .nameChoosenPro {
+        font-size: 24px;
+        margin-top: 2rem;
+      }
+      .priceChoosenPro {
+        margin-top: 15px;
+        font-size: 15px;
+      }
+    }
+    // product features responsive
+    .featuresProdetails {
+      margin-top: 23px;
+      padding-bottom: 20px;
+      .featuresProdetailItems {
+        margin: 0.7rem 0;
+        font-size: 13px;
+      }
+    }
+    // responsive stock
+    .stockPro {
+      font-size: 14px;
+      margin-top: 15px;
+    }
+    // responsive size of product
+    .sizePro {
+      font-size: 17px;
+      margin-top: 17px;
+    }
+    // responsive different sizes of product
+    .wrapperDifferentSizes {
+      margin-top: 12px;
+      .sizes {
+        font-size: 12px;
+        margin-right: 8px;
+        padding: 6px 15px;
+        // transition: all 0.35s;
+      }
+    }
+    // responsive buttons
+    .wrapperAddToCartProDetails {
+      margin-top: 25px;
+      .wrapperCountBtns {
+        padding: 7px 16px;
+        .increment {
+          font-size: 21px;
+          margin-right: 35px;
+        }
+        .decrement {
+          font-size: 21px;
+          margin-left: 35px;
+        }
+        .choosenProCount {
+          font-family: sans-serif;
+          font-weight: 700;
+          font-size: 15px;
+        }
+      }
+      .choosenProAddToCart {
+        padding: 8px 20px;
+        font-size: 14px;
+        margin-left: 1.5rem;
+      }
+    }
+    .wrapperGuarantee {
+      margin-top: 1.5rem;
+      padding-top: 2rem;
+      .Guarantee {
+        margin-right: 1rem;
+        border: 0;
+        p.GuaranteeDesc {
+          width: 100%;
+          margin-left: 10px;
+          font-size: 12px;
+          line-height: 16px;
+        }
+      }
+      .Warranty {
+        margin-right: 1rem;
+        border: 0;
+        p.WarrantyDesc {
+          width: 100%;
+          margin-left: 10px;
+          font-size: 12px;
+          line-height: 16px;
+        }
+      }
+      .Gift {
+        margin-right: 0rem;
+        border: 0;
+        p.GiftDesc {
+          width: 100%;
+          margin-left: 10px;
+          font-size: 12px;
+          line-height: 16px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 576px) {
+  .proDetailsContainer {
+    margin-top: 1rem;
+    .proDetailCol {
+      padding: 0 2rem;
+    }
+    // responsive images section
+    .imageSectionProDetails {
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: row;
+      .wrapperAllImagePro {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-left: 0rem;
+        margin-top: 1rem;
+        width: 12%;
+        img {
+          margin: 0 5px;
+          margin-top: 0rem;
+        }
+      }
+      .mainImgProDetail {
+        width: 62%;
+        margin-left: 0rem;
+      }
+    }
+    .wrapperDetailChoosenPro {
+      .nameChoosenPro {
+        font-size: 25px;
+        margin-top: 2.5rem;
+      }
+      .priceChoosenPro {
+        margin-top: 15px;
+        font-size: 16px;
+      }
+    }
+    // product features responsive
+    .featuresProdetails {
+      margin-top: 25px;
+      padding-bottom: 20px;
+      .featuresProdetailItems {
+        margin: 0.8rem 0;
+        font-size: 14px;
+      }
+    }
+    // responsive stock
+    .stockPro {
+      font-size: 14px;
+      margin-top: 15px;
+    }
+    // responsive size of product
+    .sizePro {
+      font-size: 17px;
+      margin-top: 20px;
+    }
+    // responsive different sizes of product
+    .wrapperDifferentSizes {
+      margin-top: 17px;
+      .sizes {
+        font-size: 14px;
+        margin-right: 8px;
+        padding: 6px 15px;
+        // transition: all 0.35s;
+      }
+    }
+    // responsive buttons
+    .wrapperAddToCartProDetails {
+      margin-top: 30px;
+      .wrapperCountBtns {
+        padding: 7px 16px;
+        .increment {
+          font-size: 21px;
+          margin-right: 35px;
+        }
+        .decrement {
+          font-size: 21px;
+          margin-left: 35px;
+        }
+        .choosenProCount {
+          font-family: sans-serif;
+          font-weight: 700;
+          font-size: 14px;
+        }
+      }
+      .choosenProAddToCart {
+        padding: 8px 20px;
+        font-size: 15px;
+        margin-left: 1.5rem;
+      }
+    }
+    .wrapperGuarantee {
+      margin-top: 1.5rem;
+      padding-top: 2rem;
+      .Guarantee {
+        margin-right: 1rem;
+        border: 0;
+        p.GuaranteeDesc {
+          width: 100%;
+          font-size: 13px;
+          margin-left: 10px;
+          line-height: 15px;
+        }
+      }
+      .Warranty {
+        margin-right: 1rem;
+        border: 0;
+        p.WarrantyDesc {
+          width: 100%;
+          font-size: 13px;
+          margin-left: 10px;
+          line-height: 15px;
+        }
+      }
+      .Gift {
+        margin-right: 1rem;
+        border: 0;
+        p.GiftDesc {
+          width: 100%;
+          font-size: 13px;
+          margin-left: 10px;
+          line-height: 15px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .proDetailsContainer {
+    margin-top: 0.5rem;
+    .proDetailCol {
+      padding: 0 0rem;
+    }
+    // responsive images section
+    .imageSectionProDetails {
+      align-items: center;
+      justify-content: flex-start;
+      flex-direction: column-reverse;
+      .wrapperAllImagePro {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        margin-left: 0rem;
+        margin-top: 0.5rem;
+        width: 18%;
+        img {
+          margin: 0 5px;
+          margin-top: -0.5rem;
+        }
+      }
+      .mainImgProDetail {
+        width: 80%;
+        margin-left: 0rem;
+      }
+    }
+    .wrapperDetailChoosenPro {
+      .nameChoosenPro {
+        font-size: 21px;
+        margin-top: 1rem;
+      }
+      .priceChoosenPro {
+        margin-top: 12px;
+        font-size: 15px;
+      }
+    }
+    // product features responsive
+    .featuresProdetails {
+      margin-top: 25px;
+      padding-bottom: 20px;
+      .featuresProdetailItems {
+        margin: 0.5rem 0;
+        font-size: 12px;
+      }
+    }
+    // responsive stock
+    .stockPro {
+      font-size: 13px;
+      margin-top: 15px;
+    }
+    // responsive size of product
+    .sizePro {
+      font-size: 15px;
+      margin-top: 14px;
+    }
+    // responsive different sizes of product
+    .wrapperDifferentSizes {
+      margin-top: 10px;
+      .sizes {
+        font-size: 11px;
+        margin-right: 8px;
+        padding: 6px 12px;
+        // transition: all 0.35s;
+      }
+    }
+    // responsive buttons
+    .wrapperAddToCartProDetails {
+      margin-top: 20px;
+      .wrapperCountBtns {
+        padding: 6px 15px;
+        .increment {
+          font-size: 20px;
+          margin-right: 35px;
+        }
+        .decrement {
+          font-size: 20px;
+          margin-left: 35px;
+        }
+        .choosenProCount {
+          font-family: sans-serif;
+          font-weight: 700;
+          font-size: 13px;
+        }
+      }
+      .choosenProAddToCart {
+        padding: 8px 20px;
+        font-size: 13px;
+        margin-left: 1.5rem;
+      }
+    }
+    .wrapperGuarantee {
+      margin-top: 1.5rem;
+      padding-top: 2rem;
+      .Guarantee {
+        margin-right: 1rem;
+        p.GuaranteeDesc {
+          width: 50%;
+          font-size: 11px;
+          margin-left: 10px;
+          line-height: 15px;
+        }
+      }
+      .Warranty {
+        margin-right: 1rem;
+        p.WarrantyDesc {
+          width: 100%;
+          font-size: 11px;
+          margin-left: 10px;
+          line-height: 15px;
+        }
+      }
+      .Gift {
+        margin-right: 1rem;
+        p.GiftDesc {
+          width: 100%;
+          font-size: 11px;
+          margin-left: 10px;
+          line-height: 15px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 992px) {
+  // responsive images section
+  .proDetailsContainer {
+    margin-top: 3rem;
+    .imageSectionProDetails {
+      align-items: center;
+      justify-content: flex-start;
+      flex-direction: row;
+      .wrapperAllImagePro {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 0;
+        margin-left: 1rem;
+        width: 15%;
+        img {
+          margin: 0;
+          margin-top: -0.5rem;
+        }
+      }
+      .mainImgProDetail {
+        width: 75%;
+        margin-left: 1rem;
+      }
+    }
+
+    .wrapperDetailChoosenPro {
+      .nameChoosenPro {
+        font-size: 22px;
+        margin-top: 1rem;
+      }
+      .priceChoosenPro {
+        margin-top: 17px;
+        font-size: 17px;
+      }
+    }
+    // product features responsive
+    .featuresProdetails {
+      margin-top: 32px;
+      padding-bottom: 20px;
+      .featuresProdetailItems {
+        margin: 0.5rem 0;
+        font-size: 13px;
+      }
+    }
+    // responsive stock
+    .stockPro {
+      font-size: 14px;
+      margin-top: 20px;
+    }
+    // responsive size of product
+    .sizePro {
+      font-size: 15px;
+      margin-top: 15px;
+    }
+    //   responsive different sizes of product
+    .wrapperDifferentSizes {
+      margin-top: 13px;
+      .sizes {
+        font-size: 11px;
+        margin-right: 8px;
+        padding: 6px 12px;
+        // transition: all 0.35s;
+      }
+    }
+    //   responsive buttons
+    .wrapperAddToCartProDetails {
+      margin-top: 30px;
+      .wrapperCountBtns {
+        padding: 7px 17px;
+        .increment {
+          font-size: 21px;
+          margin-right: 40px;
+        }
+        .decrement {
+          font-size: 21px;
+          margin-left: 40px;
+        }
+        .choosenProCount {
+          font-family: sans-serif;
+          font-weight: 700;
+          font-size: 14px;
+        }
+      }
+      .choosenProAddToCart {
+        padding: 9px 22px;
+        font-size: 14px;
+        margin-left: 2rem;
+      }
+    }
+    .wrapperGuarantee {
+      margin-top: 1.5rem;
+      padding-top: 2rem;
+      .Guarantee {
+        margin-right: 3rem;
+        p.GuaranteeDesc {
+          width: 50%;
+          font-size: 12px;
+          margin-left: 10px;
+          line-height: 17px;
+        }
+      }
+      .Warranty {
+        margin-right: 3rem;
+        p.WarrantyDesc {
+          width: 50%;
+          font-size: 12px;
+          margin-left: 10px;
+          line-height: 17px;
+        }
+      }
+      .Gift {
+        margin-right: 3rem;
+        p.GiftDesc {
+          width: 50%;
+          font-size: 12px;
+          margin-left: 10px;
+          line-height: 17px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .proDetailsContainer {
+    margin-top: 3rem;
+    // responsive images section
+    .imageSectionProDetails {
+      align-items: center;
+      justify-content: flex-start;
+      .wrapperAllImagePro {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-left: 3rem;
+        width: 15%;
+        img {
+          margin-top: -0.5rem;
+        }
+      }
+      .mainImgProDetail {
+        width: 65%;
+        margin-left: 4rem;
+      }
+    }
+
+    .wrapperDetailChoosenPro {
+      .nameChoosenPro {
+        font-size: 23px;
+        margin-top: 1rem;
+      }
+      .priceChoosenPro {
+        margin-top: 17px;
+        font-size: 18px;
+      }
+    }
+    // product features responsive
+    .featuresProdetails {
+      margin-top: 40px;
+      padding-bottom: 20px;
+      .featuresProdetailItems {
+        margin: 0.6rem 0;
+        font-size: 14px;
+      }
+    }
+    // responsive stock
+    .stockPro {
+      font-size: 14px;
+      margin-top: 20px;
+    }
+    // responsive size of product
+    .sizePro {
+      font-size: 17px;
+      margin-top: 25px;
+    }
+
+    .wrapperDifferentSizes {
+      margin-top: 13px;
+      .sizes {
+        font-size: 13px;
+        margin-right: 8px;
+        padding: 6px 12px;
+        // transition: all 0.35s;
+      }
+    }
+    .wrapperAddToCartProDetails {
+      margin-top: 35px;
+      .wrapperCountBtns {
+        padding: 8px 18px;
+        .increment {
+          font-size: 22px;
+          margin-right: 50px;
+        }
+        .decrement {
+          font-size: 22px;
+          margin-left: 50px;
+        }
+        .choosenProCount {
+          font-family: sans-serif;
+          font-weight: 700;
+          font-size: 14px;
+        }
+      }
+      .choosenProAddToCart {
+        padding: 10px 25px;
+        font-size: 15px;
+        margin-left: 2rem;
+      }
+    }
+    .wrapperGuarantee {
+      margin-top: 1.5rem;
+      padding-top: 2rem;
+      .Guarantee {
+        margin-right: 4rem;
+        p.GuaranteeDesc {
+          width: 50%;
+          font-size: 13px;
+          margin-left: 10px;
+          line-height: 19px;
+        }
+      }
+      .Warranty {
+        margin-right: 4rem;
+        p.WarrantyDesc {
+          width: 50%;
+          font-size: 13px;
+          margin-left: 10px;
+          line-height: 19px;
+        }
+      }
+      .Gift {
+        margin-right: 4rem;
+        p.GiftDesc {
+          width: 50%;
+          font-size: 13px;
+          margin-left: 10px;
+          line-height: 19px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1400px) {
+  .proDetailsContainer {
+    margin-top: 3rem;
+    // responsive images section
+    .imageSectionProDetails {
+      align-items: center;
+      justify-content: flex-start;
+      .wrapperAllImagePro {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-left: 3rem;
+        width: 15%;
+        img {
+          margin-top: -1.5rem;
+        }
+      }
+      .mainImgProDetail {
+        width: 65%;
+        margin-left: 3rem;
+      }
+    }
+    .wrapperDetailChoosenPro {
+      .nameChoosenPro {
+        font-size: 25px;
+        margin-top: 1rem;
+      }
+      .priceChoosenPro {
+        margin-top: 19px;
+        font-size: 19px;
+      }
+    }
+    // product features responsive
+    .featuresProdetails {
+      margin-top: 40px;
+      padding-bottom: 20px;
+      .featuresProdetailItems {
+        margin: 0.6rem 0;
+        font-size: 15px;
+      }
+    }
+    // responsive stock
+    .stockPro {
+      font-size: 15px;
+      margin-top: 20px;
+    }
+    // responsive size of product
+    .sizePro {
+      font-size: 20px;
+      margin-top: 25px;
+    }
+
+    .wrapperDifferentSizes {
+      margin-top: 13px;
+      .sizes {
+        font-size: 15px;
+        margin-right: 10px;
+        padding: 8px 15px;
+        // transition: all 0.35s;
+      }
+    }
+    .wrapperAddToCartProDetails {
+      margin-top: 45px;
+      .wrapperCountBtns {
+        padding: 10px 20px;
+        .increment {
+          font-size: 25px;
+          margin-right: 50px;
+        }
+        .decrement {
+          font-size: 25px;
+          margin-left: 50px;
+        }
+        .choosenProCount {
+          font-family: sans-serif;
+          font-weight: 700;
+        }
+      }
+      .choosenProAddToCart {
+        padding: 15px 30px;
+        font-size: 17px;
+        margin-left: 2rem;
+      }
+    }
+    .wrapperGuarantee {
+      margin-top: 2rem;
+      padding-top: 2rem;
+      .Guarantee {
+        margin-right: 4rem;
+        p.GuaranteeDesc {
+          width: 50%;
+          font-size: 15px;
+          margin-left: 10px;
+          line-height: 19px;
+        }
+      }
+      .Warranty {
+        margin-right: 4rem;
+        p.WarrantyDesc {
+          width: 50%;
+          font-size: 15px;
+          margin-left: 10px;
+          line-height: 19px;
+        }
+      }
+      .Gift {
+        margin-right: 4rem;
+        p.GiftDesc {
+          width: 50%;
+          font-size: 15px;
+          margin-left: 10px;
+          line-height: 19px;
+        }
+      }
+    }
+  }
+}

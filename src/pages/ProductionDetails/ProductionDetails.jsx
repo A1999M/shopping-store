@@ -8,8 +8,9 @@ import { useDispatch } from "react-redux";
 import { cartActions } from "../../store/cartSlice";
 import Footer from "../../components/Footer";
 import { gsap } from "gsap";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import "./ProductionDetails.scss";
+import "./responsiveProDetails.scss";
 
 export default function ProductionDetails() {
   let dispatch = useDispatch();
@@ -21,6 +22,7 @@ export default function ProductionDetails() {
   let addBtn = useRef(null);
 
   let [countPro, setCountPro] = useState(1);
+  let [motionKey, setMotionKey] = useState(false);
   let [whichImg, setWhichImg] = useState({
     image1: true,
     image2: false,
@@ -192,6 +194,7 @@ export default function ProductionDetails() {
   }, [productId]);
 
   let changeImage1 = () => {
+    setMotionKey((motionKey) => (motionKey = !motionKey));
     setWhichImg({
       image1: true,
       image2: false,
@@ -200,6 +203,7 @@ export default function ProductionDetails() {
     });
   };
   let changeImage2 = () => {
+    setMotionKey((motionKey) => (motionKey = !motionKey));
     setWhichImg({
       image1: false,
       image2: true,
@@ -208,6 +212,7 @@ export default function ProductionDetails() {
     });
   };
   let changeImage3 = () => {
+    setMotionKey((motionKey) => (motionKey = !motionKey));
     setWhichImg({
       image1: false,
       image2: false,
@@ -216,6 +221,7 @@ export default function ProductionDetails() {
     });
   };
   let changeImage4 = () => {
+    setMotionKey((motionKey) => (motionKey = !motionKey));
     setWhichImg({
       image1: false,
       image2: false,
@@ -300,10 +306,10 @@ export default function ProductionDetails() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="container-fluid mt-5"
+          className="container-fluid proDetailsContainer"
         >
           <div className="row">
-            <div className="col-5">
+            <div className="col-12 col-md-5">
               <div className="imageSectionProDetails">
                 <div className="wrapperAllImagePro">
                   <motion.img
@@ -363,49 +369,60 @@ export default function ProductionDetails() {
                     alt={choosenProduct.title}
                   />
                 </div>
-                {whichImg.image1 ? (
-                  <motion.img
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    src={choosenProduct.image1}
-                    alt={choosenProduct.title}
-                    className="mainImgProDetail"
-                  />
-                ) : null}
-                {whichImg.image2 ? (
-                  <motion.img
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    src={choosenProduct.image2}
-                    alt={choosenProduct.title}
-                    className="mainImgProDetail"
-                  />
-                ) : null}
-                {whichImg.image3 ? (
-                  <motion.img
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    src={choosenProduct.image3}
-                    alt={choosenProduct.title}
-                    className="mainImgProDetail"
-                  />
-                ) : null}
-                {whichImg.image4 ? (
-                  <motion.img
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    src={choosenProduct.image4}
-                    alt={choosenProduct.title}
-                    className="mainImgProDetail"
-                  />
-                ) : null}
+                <AnimatePresence initial="false" mode="wait">
+                  {whichImg.image1 ? (
+                    <motion.img
+                      initial={{ opacity: 0, clipPath: "inset(0% 0% 0% 100%)" }}
+                      animate={{ opacity: 1, clipPath: "inset(0% 0% 0% 0%)" }}
+                      exit={{ opacity: 0, clipPath: "inset(0% 0% 0% 100%)" }}
+                      key={motionKey}
+                      transition={{
+                        type: "tween",
+                        duration: 1,
+                        ease: "backOut",
+                      }}
+                      src={choosenProduct.image1}
+                      alt={choosenProduct.title}
+                      className="mainImgProDetail"
+                    />
+                  ) : null}
+                  {whichImg.image2 ? (
+                    <motion.img
+                      initial={{ opacity: 0, clipPath: "inset(0% 0% 0% 100%)" }}
+                      animate={{ opacity: 1, clipPath: "inset(0% 0% 0% 0%)" }}
+                      exit={{ opacity: 0, clipPath: "inset(0% 0% 0% 100%)" }}
+                      key={motionKey}
+                      src={choosenProduct.image2}
+                      alt={choosenProduct.title}
+                      className="mainImgProDetail"
+                    />
+                  ) : null}
+                  {whichImg.image3 ? (
+                    <motion.img
+                      initial={{ opacity: 0, clipPath: "inset(0% 0% 0% 100%)" }}
+                      animate={{ opacity: 1, clipPath: "inset(0% 0% 0% 0%)" }}
+                      exit={{ opacity: 0, clipPath: "inset(0% 0% 0% 100%)" }}
+                      key={motionKey}
+                      src={choosenProduct.image3}
+                      alt={choosenProduct.title}
+                      className="mainImgProDetail"
+                    />
+                  ) : null}
+                  {whichImg.image4 ? (
+                    <motion.img
+                      initial={{ opacity: 0, clipPath: "inset(0% 0% 0% 100%)" }}
+                      animate={{ opacity: 1, clipPath: "inset(0% 0% 0% 0%)" }}
+                      exit={{ opacity: 0, clipPath: "inset(0% 0% 0% 100%)" }}
+                      key={motionKey}
+                      src={choosenProduct.image4}
+                      alt={choosenProduct.title}
+                      className="mainImgProDetail"
+                    />
+                  ) : null}
+                </AnimatePresence>
               </div>
             </div>
-            <div className="col-7">
+            <div className="col-12 col-md-7 proDetailCol">
               <div className="wrapperDetailChoosenPro">
                 <p ref={proNameRef} className="nameChoosenPro">
                   {choosenProduct.name}
