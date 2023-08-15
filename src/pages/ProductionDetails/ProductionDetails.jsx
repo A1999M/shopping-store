@@ -614,7 +614,7 @@ export default function ProductionDetails() {
               </div>
             </div>
           </div>
-          <div className="row mt-5rem">
+          <div className="row proTabsRow">
             <div className="col-12">
               <ProTabs />
             </div>

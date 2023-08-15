@@ -3,6 +3,7 @@ import Tabs from "react-bootstrap/Tabs";
 import FeatureTable from "./FeatureTable";
 import AddReview from "./AddReview";
 import "./ProTabs.scss";
+import "./responsiveProDetails.scss";
 
 function ProTabs() {
   return (
@@ -26,7 +27,7 @@ function ProTabs() {
           Est, Ac Consequat Lacus. Nulla Risus Massa, Commodo In
         </p>
       </Tab>
-      <Tab eventKey="Additional Information" title="Additional Information">
+      <Tab eventKey="Additional Information" title="Information">
         <FeatureTable />
       </Tab>
       <Tab eventKey="Reviews" title="Reviews (1)">
