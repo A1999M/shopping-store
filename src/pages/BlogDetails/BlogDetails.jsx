@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import "./BlogDetails.scss";
+import "./responsiveBlog.scss";
 
 export default function BlogDetails() {
   let scopeRef = useRef();
@@ -159,13 +160,8 @@ export default function BlogDetails() {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           ref={scopeRef}
-          className="container-fluid"
+          className="container-fluid blogDetailsContainer"
         >
-          <div className="row">
-            <div className="col-12">
-              <h1 className="newsTitle text-center fs-1 mt-5">NEWS</h1>
-            </div>
-          </div>
           <div className="row blogDetails">
             <div className="col-12">
               {/* header blog */}

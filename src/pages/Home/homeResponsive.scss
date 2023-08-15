@@ -1,13 +1,14 @@
 @media (max-width: 360px) {
   // responsive Navbar
   .containerNavbar {
-    padding: 0 1rem !important;
+    padding: 3px 5px !important;
+    margin-top: 5px !important;
     .navbar {
       justify-content: center !important;
       .NavbarLogoSection {
         margin-right: auto !important;
         img {
-          width: 72% !important;
+          width: 52% !important;
         }
       }
       .NavbarLeftSection {
@@ -19,13 +20,13 @@
       .NavbarRightSection {
         margin-right: 2rem !important;
         .homeIcon {
-          width: 28px !important;
-          height: 28px !important;
+          width: 23px !important;
+          height: 23px !important;
         }
         .navBasketIcon {
-          width: 32px !important;
-          height: 32px !important;
-          margin-left: 10px !important;
+          width: 25px !important;
+          height: 25px !important;
+          margin-left: 0px !important;
         }
       }
     }
@@ -315,13 +316,14 @@
 @media (min-width: 360px) {
   // responsive Navbar
   .containerNavbar {
-    padding: 0 1rem !important;
+    padding: 3px 5px !important;
+    margin-top: 5px !important;
     .navbar {
       justify-content: center !important;
       .NavbarLogoSection {
         margin-right: auto !important;
         img {
-          width: 72% !important;
+          width: 52% !important;
         }
       }
       .NavbarLeftSection {
@@ -333,13 +335,13 @@
       .NavbarRightSection {
         margin-right: 2rem !important;
         .homeIcon {
-          width: 28px !important;
-          height: 28px !important;
+          width: 23px !important;
+          height: 23px !important;
         }
         .navBasketIcon {
-          width: 32px !important;
-          height: 32px !important;
-          margin-left: 10px !important;
+          width: 25px !important;
+          height: 25px !important;
+          margin-left: 0px !important;
         }
       }
     }
@@ -624,13 +626,14 @@
 @media (min-width: 375px) {
   // responsive Navbar
   .containerNavbar {
-    padding: 0 1rem !important;
+    padding: 0 10px !important;
+    margin-top: 5px;
     .navbar {
       justify-content: center !important;
       .NavbarLogoSection {
         margin-right: auto !important;
         img {
-          width: 72% !important;
+          width: 58% !important;
         }
       }
       .NavbarLeftSection {
@@ -642,13 +645,13 @@
       .NavbarRightSection {
         margin-right: 2rem !important;
         .homeIcon {
-          width: 28px !important;
-          height: 28px !important;
+          width: 25px !important;
+          height: 25px !important;
         }
         .navBasketIcon {
-          width: 32px !important;
-          height: 32px !important;
-          margin-left: 10px !important;
+          width: 27px !important;
+          height: 27px !important;
+          margin-left: 0px !important;
         }
       }
     }
@@ -928,13 +931,14 @@
 @media (min-width: 393px) {
   // responsive Navbar
   .containerNavbar {
-    padding: 0 1rem !important;
+    padding: 0 10px !important;
+    margin-top: 5px;
     .navbar {
       justify-content: center !important;
       .NavbarLogoSection {
         margin-right: auto !important;
         img {
-          width: 72% !important;
+          width: 63% !important;
         }
       }
       .NavbarLeftSection {
@@ -946,13 +950,13 @@
       .NavbarRightSection {
         margin-right: 2rem !important;
         .homeIcon {
-          width: 28px !important;
-          height: 28px !important;
+          width: 25px !important;
+          height: 25px !important;
         }
         .navBasketIcon {
-          width: 32px !important;
-          height: 32px !important;
-          margin-left: 10px !important;
+          width: 27px !important;
+          height: 27px !important;
+          margin-left: 0px !important;
         }
       }
     }
@@ -1233,7 +1237,7 @@
 @media (min-width: 412px) {
   // responsive Navbar
   .containerNavbar {
-    padding: 0 0rem !important;
+    padding: 10px 0rem !important;
     margin-top: 10px !important;
     .navbar {
       justify-content: center !important;
@@ -1252,12 +1256,13 @@
       .NavbarRightSection {
         margin-right: 2rem !important;
         .homeIcon {
-          width: 28px !important;
-          height: 28px !important;
+          width: 26px !important;
+          height: 26px !important;
         }
         .navBasketIcon {
-          width: 32px !important;
-          height: 32px !important;
+          width: 29px !important;
+          height: 29px !important;
+          margin-left: 0px;
         }
       }
     }
@@ -1558,14 +1563,14 @@
 @media (min-width: 576px) {
   // responsive Navbar
   .containerNavbar {
-    padding: 0 1rem !important;
+    padding: 5px 1rem !important;
     margin-top: 0 !important;
     .navbar {
       justify-content: center !important;
       .NavbarLogoSection {
         margin-right: auto !important;
         img {
-          width: 72% !important;
+          width: 63% !important;
         }
       }
       .NavbarLeftSection {
@@ -1577,12 +1582,13 @@
       .NavbarRightSection {
         margin-right: 2rem !important;
         .homeIcon {
-          width: 30px !important;
-          height: 30px !important;
+          width: 27px !important;
+          height: 27px !important;
         }
         .navBasketIcon {
-          width: 33px !important;
-          height: 33px !important;
+          width: 30px !important;
+          height: 30px !important;
+          margin-left: 0px !important;
         }
       }
     }
@@ -1892,13 +1898,13 @@
 @media (min-width: 768px) {
   // responsive Navbar
   .containerNavbar {
-    padding: 0 1rem !important;
+    padding: 10px 1rem !important;
     .navbar {
       justify-content: center !important;
       .NavbarLogoSection {
         margin-right: auto !important;
         img {
-          width: 80% !important;
+          width: 70% !important;
         }
       }
       .NavbarLeftSection {
@@ -1910,13 +1916,13 @@
       .NavbarRightSection {
         margin-right: 2rem !important;
         .homeIcon {
-          width: 31px !important;
-          height: 31px !important;
+          width: 27px !important;
+          height: 27px !important;
         }
         .navBasketIcon {
-          width: 33px !important;
-          height: 33px !important;
-          margin-left: 5px !important;
+          width: 30px !important;
+          height: 30px !important;
+          margin-left: 0px !important;
         }
       }
     }
@@ -2226,9 +2232,9 @@
     .navbar {
       justify-content: space-between !important;
       .NavbarLogoSection {
-        margin-right: 8rem !important;
+        margin-right: 7.5rem !important;
         img {
-          width: 95% !important;
+          width: 90% !important;
         }
       }
       .NavbarLeftSection {
@@ -2240,12 +2246,12 @@
       .NavbarRightSection {
         margin-right: 0rem !important;
         .homeIcon {
-          width: 32px !important;
-          height: 32px !important;
+          width: 29px !important;
+          height: 29px !important;
         }
         .navBasketIcon {
-          width: 33px !important;
-          height: 33px !important;
+          width: 32px !important;
+          height: 32px !important;
           margin-left: 0px !important;
         }
       }

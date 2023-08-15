@@ -1,0 +1,688 @@
+@media (max-width: 360px) {
+  .blogDetailsContainer {
+    .blogDetails {
+      padding: 0 1rem;
+      // responsive header of blog
+      .headerBlogDetail {
+        .titleBlogDetail {
+          font-size: 14px;
+          margin-top: 1rem;
+        }
+        .currentData {
+          font-size: 8px;
+          margin-top: 10px;
+        }
+        .imageBlogDetails {
+          margin-top: 0.5rem;
+          width: 100%;
+          clip-path: inset(5% 0% 5% 0%);
+        }
+      }
+      // responsive body of blog
+      .bodyBlogDetail {
+        .descBlogDetail {
+          margin-top: 0rem;
+          font-size: 10px;
+          line-height: 19px;
+        }
+        .unorderedListBlogDetail {
+          margin-top: 30px;
+          .titleUnOrder {
+            font-size: 13px;
+          }
+          ul.unorderBlogDetails {
+            margin-top: 14px;
+            margin-left: 25px;
+            li.unorderBlogDetailsItems {
+              margin: 8px 0;
+              font-size: 10px;
+            }
+          }
+        }
+        .orderedListBlogDetail {
+          margin-top: 25px;
+          .titleOrder {
+            font-size: 13px;
+          }
+          ol.orderBlogDetails {
+            margin-top: 14px;
+            margin-left: 25px;
+            li {
+              margin: 8px 0;
+              font-size: 10px;
+            }
+          }
+        }
+        .blogDetailsBackBtn {
+          font-size: 13px;
+          margin: 2rem auto;
+          padding: 5px 15px;
+          span.backIconBlogDetils {
+            margin-right: 3px;
+            font-size: 14px;
+            vertical-align: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 360px) {
+  .blogDetailsContainer {
+    .blogDetails {
+      padding: 0 1rem;
+      // responsive header of blog
+      .headerBlogDetail {
+        .titleBlogDetail {
+          font-size: 16px;
+          margin-top: 1.5rem;
+        }
+        .currentData {
+          font-size: 9px;
+          margin-top: 10px;
+        }
+        .imageBlogDetails {
+          margin-top: 0.5rem;
+          width: 100%;
+          clip-path: inset(5% 0% 5% 0%);
+        }
+      }
+      // responsive body of blog
+      .bodyBlogDetail {
+        .descBlogDetail {
+          margin-top: 0rem;
+          font-size: 10px;
+          line-height: 19px;
+        }
+        .unorderedListBlogDetail {
+          margin-top: 30px;
+          .titleUnOrder {
+            font-size: 13px;
+          }
+          ul.unorderBlogDetails {
+            margin-top: 14px;
+            margin-left: 25px;
+            li.unorderBlogDetailsItems {
+              margin: 8px 0;
+              font-size: 10px;
+            }
+          }
+        }
+        .orderedListBlogDetail {
+          margin-top: 25px;
+          .titleOrder {
+            font-size: 13px;
+          }
+          ol.orderBlogDetails {
+            margin-top: 14px;
+            margin-left: 25px;
+            li {
+              margin: 8px 0;
+              font-size: 10px;
+            }
+          }
+        }
+        .blogDetailsBackBtn {
+          font-size: 13px;
+          margin: 2rem auto;
+          padding: 5px 15px;
+          span.backIconBlogDetils {
+            margin-right: 3px;
+            font-size: 14px;
+            vertical-align: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 375px) {
+  .blogDetailsContainer {
+    .blogDetails {
+      padding: 0 1rem;
+      // responsive header of blog
+      .headerBlogDetail {
+        .titleBlogDetail {
+          font-size: 18px;
+          margin-top: 2rem;
+        }
+        .currentData {
+          font-size: 9px;
+          margin-top: 12px;
+        }
+        .imageBlogDetails {
+          margin-top: 0.5rem;
+          width: 100%;
+          clip-path: inset(5% 0% 5% 0%);
+        }
+      }
+      // responsive body of blog
+      .bodyBlogDetail {
+        .descBlogDetail {
+          margin-top: 0rem;
+          font-size: 11px;
+          line-height: 21px;
+        }
+        .unorderedListBlogDetail {
+          margin-top: 30px;
+          .titleUnOrder {
+            font-size: 14px;
+          }
+          ul.unorderBlogDetails {
+            margin-top: 17px;
+            margin-left: 25px;
+            li.unorderBlogDetailsItems {
+              margin: 8px 0;
+              font-size: 11px;
+            }
+          }
+        }
+        .orderedListBlogDetail {
+          margin-top: 30px;
+          .titleOrder {
+            font-size: 14px;
+          }
+          ol.orderBlogDetails {
+            margin-top: 17px;
+            margin-left: 25px;
+            li {
+              margin: 8px 0;
+              font-size: 11px;
+            }
+          }
+        }
+        .blogDetailsBackBtn {
+          font-size: 14px;
+          margin: 2rem auto;
+          padding: 5px 15px;
+          span.backIconBlogDetils {
+            margin-right: 3px;
+            font-size: 16px;
+            vertical-align: -1px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 393px) {
+  .blogDetailsContainer {
+    .blogDetails {
+      padding: 0 1rem;
+      // responsive header of blog
+      .headerBlogDetail {
+        .titleBlogDetail {
+          font-size: 18px;
+          margin-top: 2rem;
+        }
+        .currentData {
+          font-size: 9px;
+          margin-top: 12px;
+        }
+        .imageBlogDetails {
+          margin-top: 0.5rem;
+          width: 100%;
+          clip-path: inset(5% 0% 5% 0%);
+        }
+      }
+      // responsive body of blog
+      .bodyBlogDetail {
+        .descBlogDetail {
+          margin-top: 0rem;
+          font-size: 11px;
+          line-height: 21px;
+        }
+        .unorderedListBlogDetail {
+          margin-top: 30px;
+          .titleUnOrder {
+            font-size: 14px;
+          }
+          ul.unorderBlogDetails {
+            margin-top: 17px;
+            margin-left: 25px;
+            li.unorderBlogDetailsItems {
+              margin: 8px 0;
+              font-size: 11px;
+            }
+          }
+        }
+        .orderedListBlogDetail {
+          margin-top: 30px;
+          .titleOrder {
+            font-size: 14px;
+          }
+          ol.orderBlogDetails {
+            margin-top: 17px;
+            margin-left: 25px;
+            li {
+              margin: 8px 0;
+              font-size: 11px;
+            }
+          }
+        }
+        .blogDetailsBackBtn {
+          font-size: 14px;
+          margin: 2rem auto;
+          padding: 5px 15px;
+          span.backIconBlogDetils {
+            margin-right: 3px;
+            font-size: 16px;
+            vertical-align: -1px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 412px) {
+  .blogDetailsContainer {
+    .blogDetails {
+      padding: 0 1rem;
+      // responsive header of blog
+      .headerBlogDetail {
+        .titleBlogDetail {
+          font-size: 20px;
+          margin-top: 2rem;
+        }
+        .currentData {
+          font-size: 10px;
+          margin-top: 12px;
+        }
+        .imageBlogDetails {
+          margin-top: 0.5rem;
+          width: 100%;
+          clip-path: inset(5% 0% 5% 0%);
+        }
+      }
+      // responsive body of blog
+      .bodyBlogDetail {
+        .descBlogDetail {
+          margin-top: 0rem;
+          font-size: 11px;
+          line-height: 21px;
+        }
+        .unorderedListBlogDetail {
+          margin-top: 20px;
+          .titleUnOrder {
+            font-size: 14px;
+          }
+          ul.unorderBlogDetails {
+            margin-top: 17px;
+            margin-left: 25px;
+            li.unorderBlogDetailsItems {
+              margin: 8px 0;
+              font-size: 11px;
+            }
+          }
+        }
+        .orderedListBlogDetail {
+          margin-top: 20px;
+          .titleOrder {
+            font-size: 14px;
+          }
+          ol.orderBlogDetails {
+            margin-top: 17px;
+            margin-left: 25px;
+            li {
+              margin: 8px 0;
+              font-size: 11px;
+            }
+          }
+        }
+        .blogDetailsBackBtn {
+          font-size: 15px;
+          margin: 3rem auto;
+          padding: 5px 15px;
+          span.backIconBlogDetils {
+            margin-right: 3px;
+            font-size: 18px;
+            vertical-align: -1px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 576px) {
+  .blogDetailsContainer {
+    .blogDetails {
+      padding: 0 2rem;
+      // responsive header of blog
+      .headerBlogDetail {
+        .titleBlogDetail {
+          font-size: 22px;
+          margin-top: 1rem;
+        }
+        .currentData {
+          font-size: 10px;
+          margin-top: 10px;
+        }
+        .imageBlogDetails {
+          margin-top: 0.5rem;
+          width: 100%;
+          clip-path: inset(5% 0% 5% 0%);
+        }
+      }
+      // responsive body of blog
+      .bodyBlogDetail {
+        .descBlogDetail {
+          margin-top: 0rem;
+          font-size: 12px;
+          line-height: 21px;
+        }
+        .unorderedListBlogDetail {
+          margin-top: 20px;
+          .titleUnOrder {
+            font-size: 15px;
+          }
+          ul.unorderBlogDetails {
+            margin-top: 15px;
+            margin-left: 25px;
+            li.unorderBlogDetailsItems {
+              margin: 8px 0;
+              font-size: 12px;
+            }
+          }
+        }
+        .orderedListBlogDetail {
+          margin-top: 20px;
+          .titleOrder {
+            font-size: 15px;
+          }
+          ol.orderBlogDetails {
+            margin-top: 15px;
+            margin-left: 25px;
+            li {
+              margin: 8px 0;
+              font-size: 12px;
+            }
+          }
+        }
+        .blogDetailsBackBtn {
+          font-size: 15px;
+          margin: 3rem auto;
+          padding: 5px 15px;
+          span.backIconBlogDetils {
+            margin-right: 3px;
+            font-size: 18px;
+            vertical-align: -1px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .blogDetailsContainer {
+    .blogDetails {
+      padding: 0 3rem;
+      // responsive header of blog
+      .headerBlogDetail {
+        .titleBlogDetail {
+          font-size: 23px;
+          margin-top: 1rem;
+        }
+        .currentData {
+          font-size: 10px;
+          margin-top: 10px;
+        }
+        .imageBlogDetails {
+          margin-top: 0.5rem;
+          width: 100%;
+          clip-path: inset(5% 0% 5% 0%);
+        }
+      }
+      // responsive body of blog
+      .bodyBlogDetail {
+        .descBlogDetail {
+          margin-top: 0rem;
+          font-size: 12px;
+          line-height: 23px;
+        }
+        .unorderedListBlogDetail {
+          margin-top: 25px;
+          .titleUnOrder {
+            font-size: 16px;
+          }
+          ul.unorderBlogDetails {
+            margin-top: 17px;
+            margin-left: 20px;
+            li.unorderBlogDetailsItems {
+              margin: 8px 0;
+              font-size: 12px;
+            }
+          }
+        }
+        .orderedListBlogDetail {
+          margin-top: 25px;
+          .titleOrder {
+            font-size: 16px;
+          }
+          ol.orderBlogDetails {
+            margin-top: 17px;
+            margin-left: 20px;
+            li {
+              margin: 8px 0;
+              font-size: 12px;
+            }
+          }
+        }
+        .blogDetailsBackBtn {
+          font-size: 15px;
+          margin: 3rem auto;
+          padding: 5px 15px;
+          span.backIconBlogDetils {
+            margin-right: 3px;
+            font-size: 18px;
+            vertical-align: -1px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 992px) {
+  .blogDetailsContainer {
+    .blogDetails {
+      padding: 0 3rem;
+      // responsive header of blog
+      .headerBlogDetail {
+        .titleBlogDetail {
+          font-size: 26px;
+          margin-top: 2rem;
+        }
+        .currentData {
+          font-size: 11px;
+          margin-top: 12px;
+        }
+        .imageBlogDetails {
+          margin-top: -1.5rem;
+          clip-path: inset(10% 0% 10% 0%);
+          width: 100%;
+        }
+      }
+      // responsive body of blog
+      .bodyBlogDetail {
+        .descBlogDetail {
+          margin-top: -2rem;
+          font-size: 13px;
+          line-height: 23px;
+        }
+        .unorderedListBlogDetail {
+          margin-top: 30px;
+          .titleUnOrder {
+            font-size: 16px;
+          }
+          ul.unorderBlogDetails {
+            margin-top: 20px;
+            margin-left: 30px;
+            li.unorderBlogDetailsItems {
+              margin: 9px 0;
+              font-size: 13px;
+            }
+          }
+        }
+        .orderedListBlogDetail {
+          margin-top: 30px;
+          .titleOrder {
+            font-size: 16px;
+          }
+          ol.orderBlogDetails {
+            margin-top: 20px;
+            margin-left: 30px;
+            li {
+              margin: 9px 0;
+              font-size: 13px;
+            }
+          }
+        }
+        .blogDetailsBackBtn {
+          font-size: 16px;
+          margin: 3rem auto;
+          padding: 5px 15px;
+          span.backIconBlogDetils {
+            margin-right: -3px;
+            font-size: 20px;
+            vertical-align: -1px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .blogDetailsContainer {
+    .blogDetails {
+      padding: 0 3rem;
+      // responsive header of blog
+      .headerBlogDetail {
+        .titleBlogDetail {
+          font-size: 28px;
+          margin-top: 2.5rem;
+        }
+        .currentData {
+          font-size: 12px;
+          margin-top: 14px;
+        }
+        .imageBlogDetails {
+          margin-top: -2.5rem;
+          width: 100%;
+        }
+      }
+      // responsive body of blog
+      .bodyBlogDetail {
+        .descBlogDetail {
+          margin-top: -2.5rem;
+          font-size: 15px;
+          line-height: 24px;
+        }
+        .unorderedListBlogDetail {
+          margin-top: 30px;
+          .titleUnOrder {
+            font-size: 17px;
+          }
+          ul.unorderBlogDetails {
+            margin-top: 30px;
+            margin-left: 40px;
+            li.unorderBlogDetailsItems {
+              margin: 9px 0;
+              font-size: 14px;
+            }
+          }
+        }
+        .orderedListBlogDetail {
+          margin-top: 30px;
+          .titleOrder {
+            font-size: 17px;
+          }
+          ol.orderBlogDetails {
+            margin-top: 30px;
+            margin-left: 40px;
+            li {
+              margin: 9px 0;
+              font-size: 14px;
+            }
+          }
+        }
+        .blogDetailsBackBtn {
+          font-size: 17px;
+          margin: 3rem auto;
+          padding: 5px 15px;
+          span.backIconBlogDetils {
+            margin-right: -3px;
+            font-size: 22px;
+            vertical-align: -1px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1400px) {
+  .blogDetailsContainer {
+    .blogDetails {
+      padding: 0 3rem;
+      // responsive header of blog
+      .headerBlogDetail {
+        .titleBlogDetail {
+          font-size: 32px;
+          margin-top: 2.5rem;
+        }
+        .currentData {
+          font-size: 14px;
+          margin-top: 14px;
+        }
+        .imageBlogDetails {
+          margin-top: -2.5rem;
+          width: 100%;
+        }
+      }
+      // responsive body of blog
+      .bodyBlogDetail {
+        .descBlogDetail {
+          margin-top: -2rem;
+          font-size: 16px;
+          line-height: 23px;
+        }
+        .unorderedListBlogDetail {
+          margin-top: 45px;
+          .titleUnOrder {
+            font-size: 17px;
+          }
+          ul.unorderBlogDetails {
+            margin-top: 30px;
+            margin-left: 40px;
+            li.unorderBlogDetailsItems {
+              margin: 8px 0;
+              font-size: 15px;
+            }
+          }
+        }
+        .orderedListBlogDetail {
+          margin-top: 30px;
+          .titleOrder {
+            font-size: 17px;
+          }
+          ol.orderBlogDetails {
+            margin-top: 30px;
+            margin-left: 40px;
+            li {
+              margin: 8px 0;
+              font-size: 15px;
+            }
+          }
+        }
+        .blogDetailsBackBtn {
+          font-size: 20px;
+          margin: 3rem auto;
+          padding: 5px 15px;
+          span.backIconBlogDetils {
+            margin-right: -3px;
+            font-size: 22px;
+            vertical-align: -1px;
+          }
+        }
+      }
+    }
+  }
+}
