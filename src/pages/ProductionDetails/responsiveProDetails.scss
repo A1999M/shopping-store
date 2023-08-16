@@ -181,6 +181,67 @@
             }
           }
         }
+        .wrapperAddReview {
+          width: 100%;
+          margin-left: 0rem;
+          padding-right: 0.5rem;
+          .addReviewTitle {
+            margin-top: 3rem;
+            font-size: 19px;
+          }
+          .descReviewTitle {
+            margin-top: 13px;
+            font-size: 11px;
+            margin-bottom: 13px;
+            line-height: 16px;
+          }
+          .yourRate {
+            margin-top: 20px;
+            font-size: 11px;
+            margin-bottom: 4px;
+          }
+          .yourReviewTitle {
+            font-size: 11px;
+            margin-bottom: 8px;
+            margin-top: 1rem;
+          }
+          .reviewNameTitle {
+            font-size: 11px;
+            margin-bottom: 8px;
+            margin-top: 15px;
+          }
+          .reviewEmailTitle {
+            font-size: 11px;
+            margin-bottom: 8px;
+            margin-top: 15px;
+          }
+          .yourReviewBox {
+            width: 100%;
+            height: 100px;
+            padding-left: 10px;
+            padding-top: 5px;
+            font-size: 14px;
+            line-height: 22px;
+          }
+          .reviewNameBox {
+            width: 100%;
+            height: 30px;
+            padding-left: 10px;
+            font-size: 14px;
+          }
+          .reviewCommentBox {
+            width: 100%;
+            height: 30px;
+            padding-left: 10px;
+            font-size: 14px;
+          }
+          .submitReview {
+            padding: 5px 15px;
+            margin-top: 15px;
+            letter-spacing: 1px;
+            font-size: 13px;
+          }
+        }
       }
     }
   }
@@ -218,6 +279,9 @@
   }
   .css-1lauo1g-MuiRating-root {
     font-size: 12px !important;
+  }
+  .css-iljtu2-MuiRating-root {
+    font-size: 19px !important;
   }
 }
 @media (min-width: 360px) {
@@ -403,6 +467,67 @@
             }
           }
         }
+        .wrapperAddReview {
+          width: 100%;
+          margin-left: 0rem;
+          padding-right: 0.5rem;
+          .addReviewTitle {
+            margin-top: 3rem;
+            font-size: 20px;
+          }
+          .descReviewTitle {
+            margin-top: 18px;
+            font-size: 12px;
+            margin-bottom: 13px;
+            line-height: 18px;
+          }
+          .yourRate {
+            margin-top: 22px;
+            font-size: 12px;
+            margin-bottom: 4px;
+          }
+          .yourReviewTitle {
+            font-size: 12px;
+            margin-bottom: 8px;
+            margin-top: 1.2rem;
+          }
+          .reviewNameTitle {
+            font-size: 12px;
+            margin-bottom: 8px;
+            margin-top: 20px;
+          }
+          .reviewEmailTitle {
+            font-size: 12px;
+            margin-bottom: 8px;
+            margin-top: 20px;
+          }
+          .yourReviewBox {
+            width: 100%;
+            height: 120px;
+            padding-left: 10px;
+            padding-top: 5px;
+            font-size: 15px;
+            line-height: 22px;
+          }
+          .reviewNameBox {
+            width: 100%;
+            height: 33px;
+            padding-left: 10px;
+            font-size: 15px;
+          }
+          .reviewCommentBox {
+            width: 100%;
+            height: 33px;
+            padding-left: 10px;
+            font-size: 15px;
+          }
+          .submitReview {
+            padding: 7px 18px;
+            margin-top: 18px;
+            letter-spacing: 1px;
+            font-size: 14px;
+          }
+        }
       }
     }
   }
@@ -440,6 +565,9 @@
   }
   .css-1lauo1g-MuiRating-root {
     font-size: 13px !important;
+  }
+  .css-iljtu2-MuiRating-root {
+    font-size: 19px !important;
   }
 }
 @media (min-width: 375px) {
@@ -576,7 +704,7 @@
     margin-top: 4rem !important;
     .nav.nav-tabs {
       margin-bottom: 2rem;
-      margin-left: 1.5rem;
+      margin-left: 1rem;
       .nav-item {
         margin-right: 20px;
         .nav-link {
@@ -589,7 +717,7 @@
       }
     }
     .tab-content {
-      margin-left: 1.5rem;
+      margin-left: 1rem;
       .aboutChoosenPro {
         font-size: 11px;
         line-height: 19px;
@@ -623,6 +751,67 @@
                 line-height: 15px;
               }
             }
+          }
+        }
+        .wrapperAddReview {
+          width: 100%;
+          margin-left: 0rem;
+          padding-right: 0.5rem;
+          .addReviewTitle {
+            margin-top: 3rem;
+            font-size: 20px;
+          }
+          .descReviewTitle {
+            margin-top: 10px;
+            font-size: 12px;
+            margin-bottom: 13px;
+            line-height: 21px;
+          }
+          .yourRate {
+            margin-top: 24px;
+            font-size: 12px;
+            margin-bottom: 7px;
+          }
+          .yourReviewTitle {
+            font-size: 12px;
+            margin-bottom: 8px;
+            margin-top: 1.2rem;
+          }
+          .reviewNameTitle {
+            font-size: 12px;
+            margin-bottom: 8px;
+            margin-top: 20px;
+          }
+          .reviewEmailTitle {
+            font-size: 12px;
+            margin-bottom: 8px;
+            margin-top: 20px;
+          }
+          .yourReviewBox {
+            width: 100%;
+            height: 120px;
+            padding-left: 10px;
+            padding-top: 5px;
+            font-size: 15px;
+            line-height: 22px;
+          }
+          .reviewNameBox {
+            width: 100%;
+            height: 33px;
+            padding-left: 10px;
+            font-size: 15px;
+          }
+          .reviewCommentBox {
+            width: 100%;
+            height: 33px;
+            padding-left: 10px;
+            font-size: 15px;
+          }
+          .submitReview {
+            padding: 7px 18px;
+            margin-top: 18px;
+            letter-spacing: 1px;
+            font-size: 14px;
           }
         }
       }
@@ -662,6 +851,9 @@
   }
   .css-1lauo1g-MuiRating-root {
     font-size: 14px !important;
+  }
+  .css-iljtu2-MuiRating-root {
+    font-size: 20px !important;
   }
 }
 @media (min-width: 393px) {
@@ -798,7 +990,7 @@
     margin-top: 4rem !important;
     .nav.nav-tabs {
       margin-bottom: 2rem;
-      margin-left: 1.5rem;
+      margin-left: 1rem;
       .nav-item {
         margin-right: 20px;
         .nav-link {
@@ -811,7 +1003,7 @@
       }
     }
     .tab-content {
-      margin-left: 1.5rem;
+      margin-left: 1rem;
       .aboutChoosenPro {
         font-size: 12px;
         line-height: 22px;
@@ -845,6 +1037,67 @@
                 line-height: 17px;
               }
             }
+          }
+        }
+        .wrapperAddReview {
+          width: 100%;
+          margin-left: 0rem;
+          padding-right: 0.5rem;
+          .addReviewTitle {
+            margin-top: 3rem;
+            font-size: 21px;
+          }
+          .yourRate {
+            margin-top: 22px;
+            font-size: 13px;
+            margin-bottom: 7px;
+          }
+          .descReviewTitle {
+            margin-top: 15px;
+            font-size: 13px;
+            margin-bottom: 13px;
+            line-height: 21px;
+          }
+          .yourReviewTitle {
+            font-size: 13px;
+            margin-bottom: 8px;
+            margin-top: 1.2rem;
+          }
+          .reviewNameTitle {
+            font-size: 13px;
+            margin-bottom: 8px;
+            margin-top: 20px;
+          }
+          .reviewEmailTitle {
+            font-size: 13px;
+            margin-bottom: 8px;
+            margin-top: 20px;
+          }
+          .yourReviewBox {
+            width: 100%;
+            height: 140px;
+            padding-left: 10px;
+            padding-top: 5px;
+            font-size: 16px;
+            line-height: 22px;
+          }
+          .reviewNameBox {
+            width: 100%;
+            height: 35px;
+            padding-left: 10px;
+            font-size: 16px;
+          }
+          .reviewCommentBox {
+            width: 100%;
+            height: 35px;
+            padding-left: 10px;
+            font-size: 16px;
+          }
+          .submitReview {
+            padding: 7px 20px;
+            margin-top: 20px;
+            letter-spacing: 1px;
+            font-size: 14px;
           }
         }
       }
@@ -884,6 +1137,9 @@
   }
   .css-1lauo1g-MuiRating-root {
     font-size: 14px !important;
+  }
+  .css-iljtu2-MuiRating-root {
+    font-size: 20px !important;
   }
 }
 @media (min-width: 412px) {
@@ -1018,7 +1274,7 @@
     margin-top: 4rem !important;
     .nav.nav-tabs {
       margin-bottom: 2.5rem;
-      margin-left: 1.5rem;
+      margin-left: 1rem;
       .nav-item {
         margin-right: 20px;
         .nav-link {
@@ -1031,7 +1287,7 @@
       }
     }
     .tab-content {
-      margin-left: 1.5rem;
+      margin-left: 1rem;
       .aboutChoosenPro {
         font-size: 12px;
         line-height: 22px;
@@ -1065,6 +1321,67 @@
                 line-height: 19px;
               }
             }
+          }
+        }
+        .wrapperAddReview {
+          width: 100%;
+          margin-left: 0rem;
+          padding-right: 0.5rem;
+          .addReviewTitle {
+            margin-top: 3rem;
+            font-size: 22px;
+          }
+          .yourRate {
+            margin-top: 22px;
+            font-size: 14px;
+            margin-bottom: 5px;
+          }
+          .descReviewTitle {
+            margin-top: 10px;
+            font-size: 13px;
+            margin-bottom: 13px;
+            line-height: 21px;
+          }
+          .yourReviewTitle {
+            font-size: 13px;
+            margin-bottom: 8px;
+            margin-top: 1.2rem;
+          }
+          .reviewNameTitle {
+            font-size: 13px;
+            margin-bottom: 8px;
+            margin-top: 20px;
+          }
+          .reviewEmailTitle {
+            font-size: 13px;
+            margin-bottom: 8px;
+            margin-top: 20px;
+          }
+          .yourReviewBox {
+            width: 100%;
+            height: 140px;
+            padding-left: 10px;
+            padding-top: 5px;
+            font-size: 16px;
+            line-height: 22px;
+          }
+          .reviewNameBox {
+            width: 100%;
+            height: 35px;
+            padding-left: 10px;
+            font-size: 16px;
+          }
+          .reviewCommentBox {
+            width: 100%;
+            height: 35px;
+            padding-left: 10px;
+            font-size: 16px;
+          }
+          .submitReview {
+            padding: 7px 20px;
+            margin-top: 20px;
+            letter-spacing: 1px;
+            font-size: 14px;
           }
         }
       }
@@ -1104,6 +1421,9 @@
   }
   .css-1lauo1g-MuiRating-root {
     font-size: 14px !important;
+  }
+  .css-iljtu2-MuiRating-root {
+    font-size: 20px !important;
   }
 }
 @media (min-width: 576px) {
@@ -1287,6 +1607,67 @@
             }
           }
         }
+        .wrapperAddReview {
+          width: 100%;
+          margin-left: 0rem;
+          padding-right: 2rem;
+          .addReviewTitle {
+            margin-top: 3rem;
+            font-size: 22px;
+          }
+          .yourRate {
+            margin-top: 25px;
+            font-size: 14px;
+            margin-bottom: 5px;
+          }
+          .descReviewTitle {
+            margin-top: 15px;
+            font-size: 13px;
+            margin-bottom: 13px;
+            line-height: 21px;
+          }
+          .yourReviewTitle {
+            font-size: 14px;
+            margin-bottom: 8px;
+            margin-top: 1.5rem;
+          }
+          .reviewNameTitle {
+            font-size: 14px;
+            margin-bottom: 8px;
+            margin-top: 22px;
+          }
+          .reviewEmailTitle {
+            font-size: 14px;
+            margin-bottom: 8px;
+            margin-top: 22px;
+          }
+          .yourReviewBox {
+            width: 100%;
+            height: 140px;
+            padding-left: 10px;
+            padding-top: 5px;
+            font-size: 17px;
+            line-height: 22px;
+          }
+          .reviewNameBox {
+            width: 100%;
+            height: 35px;
+            padding-left: 10px;
+            font-size: 17px;
+          }
+          .reviewCommentBox {
+            width: 100%;
+            height: 35px;
+            padding-left: 10px;
+            font-size: 17px;
+          }
+          .submitReview {
+            padding: 7px 25px;
+            margin-top: 20px;
+            letter-spacing: 1px;
+            font-size: 14px;
+          }
+        }
       }
     }
   }
@@ -1324,6 +1705,9 @@
   }
   .css-1lauo1g-MuiRating-root {
     font-size: 16px !important;
+  }
+  .css-iljtu2-MuiRating-root {
+    font-size: 21px !important;
   }
 }
 @media (min-width: 768px) {
@@ -1504,6 +1888,67 @@
             }
           }
         }
+        .wrapperAddReview {
+          width: 100%;
+          margin-left: 0rem;
+          padding-right: 2.5rem;
+          .addReviewTitle {
+            margin-top: 2rem;
+            font-size: 24px;
+          }
+          .yourRate {
+            margin-top: 30px;
+            font-size: 15px;
+            margin-bottom: 6px;
+          }
+          .descReviewTitle {
+            margin-top: 1rem;
+            font-size: 14px;
+            margin-bottom: 13px;
+            line-height: 21px;
+          }
+          .yourReviewTitle {
+            font-size: 14px;
+            margin-bottom: 8px;
+            margin-top: 2rem;
+          }
+          .reviewNameTitle {
+            font-size: 14px;
+            margin-bottom: 8px;
+            margin-top: 25px;
+          }
+          .reviewEmailTitle {
+            font-size: 14px;
+            margin-bottom: 8px;
+            margin-top: 25px;
+          }
+          .yourReviewBox {
+            width: 100%;
+            height: 160px;
+            padding-left: 10px;
+            padding-top: 5px;
+            font-size: 17px;
+            line-height: 22px;
+          }
+          .reviewNameBox {
+            width: 100%;
+            height: 40px;
+            padding-left: 10px;
+            font-size: 17px;
+          }
+          .reviewCommentBox {
+            width: 100%;
+            height: 40px;
+            padding-left: 10px;
+            font-size: 17px;
+          }
+          .submitReview {
+            padding: 9px 27px;
+            margin-top: 25px;
+            letter-spacing: 1px;
+            font-size: 15px;
+          }
+        }
       }
     }
   }
@@ -1541,6 +1986,9 @@
   }
   .css-1lauo1g-MuiRating-root {
     font-size: 16px !important;
+  }
+  .css-iljtu2-MuiRating-root {
+    font-size: 22px !important;
   }
 }
 @media (min-width: 992px) {
@@ -1719,6 +2167,67 @@
             }
           }
         }
+        .wrapperAddReview {
+          width: 45%;
+          margin-left: 2rem;
+          padding-right: 0;
+          .addReviewTitle {
+            margin-top: 2rem;
+            font-size: 24px;
+          }
+          .yourRate {
+            margin-top: 30px;
+            font-size: 15px;
+            margin-bottom: 10px;
+          }
+          .descReviewTitle {
+            margin-top: 1rem;
+            font-size: 14px;
+            margin-bottom: 13px;
+            line-height: 21px;
+          }
+          .yourReviewTitle {
+            font-size: 14px;
+            margin-bottom: 8px;
+            margin-top: 2rem;
+          }
+          .reviewNameTitle {
+            font-size: 14px;
+            margin-bottom: 8px;
+            margin-top: 25px;
+          }
+          .reviewEmailTitle {
+            font-size: 14px;
+            margin-bottom: 8px;
+            margin-top: 25px;
+          }
+          .yourReviewBox {
+            width: 100%;
+            height: 160px;
+            padding-left: 10px;
+            padding-top: 5px;
+            font-size: 17px;
+            line-height: 22px;
+          }
+          .reviewNameBox {
+            width: 100%;
+            height: 40px;
+            padding-left: 10px;
+            font-size: 17px;
+          }
+          .reviewCommentBox {
+            width: 100%;
+            height: 40px;
+            padding-left: 10px;
+            font-size: 17px;
+          }
+          .submitReview {
+            padding: 9px 27px;
+            margin-top: 25px;
+            letter-spacing: 1px;
+            font-size: 15px;
+          }
+        }
       }
     }
   }
@@ -1756,6 +2265,9 @@
   }
   .css-1lauo1g-MuiRating-root {
     font-size: 17px !important;
+  }
+  .css-iljtu2-MuiRating-root {
+    font-size: 23px !important;
   }
 }
 @media (min-width: 1200px) {
@@ -1926,6 +2438,66 @@
             }
           }
         }
+        .wrapperAddReview {
+          width: 43%;
+          margin-left: 3rem;
+          .addReviewTitle {
+            margin-top: 2rem;
+            font-size: 25px;
+          }
+          .yourRate {
+            margin-top: 30px;
+            font-size: 15px;
+            margin-bottom: 10px;
+          }
+          .descReviewTitle {
+            margin-top: 1.5rem;
+            font-size: 15px;
+            margin-bottom: 13px;
+            line-height: 23px;
+          }
+          .yourReviewTitle {
+            font-size: 14px;
+            margin-bottom: 8px;
+            margin-top: 2.5rem;
+          }
+          .reviewNameTitle {
+            font-size: 14px;
+            margin-bottom: 8px;
+            margin-top: 25px;
+          }
+          .reviewEmailTitle {
+            font-size: 14px;
+            margin-bottom: 8px;
+            margin-top: 25px;
+          }
+          .yourReviewBox {
+            width: 100%;
+            height: 160px;
+            padding-left: 10px;
+            padding-top: 5px;
+            font-size: 17px;
+            line-height: 22px;
+          }
+          .reviewNameBox {
+            width: 100%;
+            height: 40px;
+            padding-left: 10px;
+            font-size: 17px;
+          }
+          .reviewCommentBox {
+            width: 100%;
+            height: 40px;
+            padding-left: 10px;
+            font-size: 17px;
+          }
+          .submitReview {
+            padding: 11px 28px;
+            margin-top: 25px;
+            letter-spacing: 1px;
+            font-size: 16px;
+          }
+        }
       }
     }
   }
@@ -1963,6 +2535,9 @@
   }
   .css-1lauo1g-MuiRating-root {
     font-size: 18px !important;
+  }
+  .css-iljtu2-MuiRating-root {
+    font-size: 24px !important;
   }
 }
 @media (min-width: 1400px) {
@@ -2131,6 +2706,64 @@
             }
           }
         }
+        .wrapperAddReview {
+          width: 40%;
+          margin-left: 3rem;
+          .addReviewTitle {
+            margin-top: 2rem;
+            font-size: 26px;
+          }
+          .yourRate {
+            margin-top: 35px;
+            font-size: 15px;
+            margin-bottom: 12px;
+          }
+          .descReviewTitle {
+            margin-top: 2rem;
+            font-size: 15px;
+            margin-bottom: 13px;
+          }
+          .yourReviewTitle {
+            font-size: 14px;
+            margin-bottom: 8px;
+            margin-top: 3rem;
+          }
+          .reviewNameTitle {
+            font-size: 14px;
+            margin-bottom: 8px;
+            margin-top: 30px;
+          }
+          .reviewEmailTitle {
+            font-size: 14px;
+            margin-bottom: 8px;
+            margin-top: 30px;
+          }
+          .yourReviewBox {
+            width: 100%;
+            height: 160px;
+            padding-left: 10px;
+            padding-top: 10px;
+            font-size: 17px;
+            line-height: 24px;
+          }
+          .reviewNameBox {
+            width: 100%;
+            height: 45px;
+            padding-left: 10px;
+            font-size: 17px;
+          }
+          .reviewCommentBox {
+            width: 100%;
+            height: 45px;
+            padding-left: 10px;
+            font-size: 17px;
+          }
+          .submitReview {
+            padding: 12px 30px;
+            margin-top: 35px;
+            letter-spacing: 2px;
+          }
+        }
       }
     }
   }
@@ -2168,5 +2801,8 @@
   }
   .css-1lauo1g-MuiRating-root {
     font-size: 18px !important;
+  }
+  .css-iljtu2-MuiRating-root {
+    font-size: 24px !important;
   }
 }
