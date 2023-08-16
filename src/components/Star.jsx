@@ -1,11 +1,23 @@
 import React from "react";
 
-export default function Star() {
+export default function Star({ deviceSize }) {
   return (
     <div>
       <svg
-        height="16px"
-        width="16px"
+        height={
+          (deviceSize > 1200 && "16px") ||
+          (deviceSize > 992 && "14px") ||
+          (deviceSize > 576 && "12px") ||
+          (deviceSize > 412 && "11px") ||
+          (deviceSize < 412 && "10px")
+        }
+        width={
+          (deviceSize > 1200 && "16px") ||
+          (deviceSize > 992 && "14px") ||
+          (deviceSize > 576 && "12px") ||
+          (deviceSize > 412 && "11px") ||
+          (deviceSize < 412 && "10px")
+        }
         version="1.1"
         id="Capa_1"
         xmlns="http://www.w3.org/2000/svg"

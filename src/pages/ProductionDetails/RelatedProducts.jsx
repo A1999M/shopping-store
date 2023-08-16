@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useLayoutEffect } from "react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import RelatedItems from "./RelatedItems";
@@ -9,6 +9,17 @@ import "swiper/css/scrollbar";
 
 export default function RelatedProducts({ productId }) {
   let [relatedPros, setRelatedPros] = useState(null);
+  let [deviceSize, seteviceSize] = useState(window.innerWidth);
+
+  let handleResize = () => {
+    seteviceSize(window.innerWidth);
+  };
+  useLayoutEffect(() => {
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  });
 
   useEffect(() => {
     if (productId <= 13) {
@@ -46,19 +57,24 @@ export default function RelatedProducts({ productId }) {
     <>
       <div className="wrapperRelatedPros">
         <p className="titleRelated">RELATED PRODUCTS</p>
-        <div className="wrapperSliderRelated mt-5rem">
+        <div className="wrapperSliderRelated">
           <Swiper
             // install Swiper modules
             modules={[Navigation, Pagination, Scrollbar, A11y]}
             spaceBetween={0}
-            slidesPerView={4}
+            slidesPerView={
+              (deviceSize > 992 && 4) ||
+              (deviceSize > 768 && 3) ||
+              (deviceSize > 576 && 3) ||
+              (deviceSize < 576 && 2)
+            }
             navigation
           >
             {relatedPros &&
               relatedPros.map((item, index) => {
                 return (
                   <SwiperSlide key={index}>
-                    <RelatedItems item={item} />
+                    <RelatedItems deviceSize={deviceSize} item={item} />
                   </SwiperSlide>
                 );
               })}

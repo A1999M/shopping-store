@@ -2,7 +2,9 @@
 @import url(./locomotive-scroll.css);
 @import url(./pages/Home/homeResponsive.scss);
 @import url("https://fonts.cdnfonts.com/css/philosopher");
-
+a {
+  text-decoration: none;
+}
 body {
   overflow-x: hidden;
   font-family: "Philosopher", sans-serif;
