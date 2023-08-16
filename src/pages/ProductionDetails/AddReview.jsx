@@ -68,7 +68,6 @@ export default function AddReview() {
         <p className="yourRate">Your Rating *</p>
         <Rating
           onChange={(event, newValue) => {
-            console.log(newValue);
             setValueRate(newValue);
           }}
           name="half-rating"

@@ -619,7 +619,7 @@ export default function ProductionDetails() {
               <ProTabs />
             </div>
           </div>
-          <div className="row mt-7rem">
+          <div className="row relatedProsRow">
             <div className="col-12">
               <RelatedProducts productId={productId} />
             </div>

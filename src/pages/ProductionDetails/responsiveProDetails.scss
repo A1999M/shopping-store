@@ -129,26 +129,58 @@
   }
   // responsive pro tabls
   .proTabsRow {
-    margin-top: 4rem !important;
+    margin-top: 3rem !important;
     .nav.nav-tabs {
-      margin-bottom: 2rem;
-      margin-left: 1.5rem;
+      margin-bottom: 1.5rem;
+      margin-left: 1rem;
       .nav-item {
         margin-right: 15px;
         .nav-link {
-          font-size: 13px;
+          font-size: 12px;
           &::after {
-            top: 23px;
-            height: 2px;
+            top: 18px;
+            height: 1px;
           }
         }
       }
     }
     .tab-content {
-      margin-left: 1.5rem;
+      margin-left: 1rem;
       .aboutChoosenPro {
         font-size: 11px;
         line-height: 19px;
+      }
+      // responsive product reviews
+      .wrapperReviews {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        .wrapperExistReviews {
+          width: 100%;
+          .wrapperReviewItem {
+            display: flex;
+            margin-top: 13px;
+            .reviewContent {
+              margin-left: 8px;
+              padding: 5px 5px;
+              padding-left: 10px;
+              padding-bottom: 16px;
+              width: 90%;
+              .reviewerName {
+                font-size: 11px;
+                margin-top: 6px;
+                span {
+                  font-size: 11px;
+                }
+              }
+              .comment {
+                font-size: 10px;
+                margin-top: 8px;
+                line-height: 15px;
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -179,6 +211,13 @@
         font-size: 12px;
       }
     }
+  }
+  .css-1po6ics-MuiAvatar-root {
+    width: 24px !important;
+    height: 24px !important;
+  }
+  .css-1lauo1g-MuiRating-root {
+    font-size: 12px !important;
   }
 }
 @media (min-width: 360px) {
@@ -312,10 +351,10 @@
   }
   // responsive pro tabls
   .proTabsRow {
-    margin-top: 4rem !important;
+    margin-top: 3rem !important;
     .nav.nav-tabs {
       margin-bottom: 2rem;
-      margin-left: 1.5rem;
+      margin-left: 0.5rem;
       .nav-item {
         margin-right: 20px;
         .nav-link {
@@ -328,10 +367,42 @@
       }
     }
     .tab-content {
-      margin-left: 1.5rem;
+      margin-left: 0.5rem;
       .aboutChoosenPro {
         font-size: 11px;
         line-height: 19px;
+      }
+      // responsive product reviews
+      .wrapperReviews {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        .wrapperExistReviews {
+          width: 100%;
+          .wrapperReviewItem {
+            display: flex;
+            margin-top: 13px;
+            .reviewContent {
+              margin-left: 10px;
+              padding: 5px 5px;
+              padding-left: 10px;
+              padding-bottom: 16px;
+              width: 90%;
+              .reviewerName {
+                font-size: 12px;
+                margin-top: 8px;
+                span {
+                  font-size: 12px;
+                }
+              }
+              .comment {
+                font-size: 10px;
+                margin-top: 11px;
+                line-height: 15px;
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -362,6 +433,13 @@
         font-size: 12px;
       }
     }
+  }
+  .css-1po6ics-MuiAvatar-root {
+    width: 26px !important;
+    height: 26px !important;
+  }
+  .css-1lauo1g-MuiRating-root {
+    font-size: 13px !important;
   }
 }
 @media (min-width: 375px) {
@@ -516,6 +594,38 @@
         font-size: 11px;
         line-height: 19px;
       }
+      // responsive product reviews
+      .wrapperReviews {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        .wrapperExistReviews {
+          width: 100%;
+          .wrapperReviewItem {
+            display: flex;
+            margin-top: 13px;
+            .reviewContent {
+              margin-left: 10px;
+              padding: 5px 5px;
+              padding-left: 10px;
+              padding-bottom: 16px;
+              width: 90%;
+              .reviewerName {
+                font-size: 12px;
+                margin-top: 8px;
+                span {
+                  font-size: 12px;
+                }
+              }
+              .comment {
+                font-size: 10px;
+                margin-top: 11px;
+                line-height: 15px;
+              }
+            }
+          }
+        }
+      }
     }
   }
   // responsive additional information
@@ -545,6 +655,13 @@
         font-size: 13px;
       }
     }
+  }
+  .css-1po6ics-MuiAvatar-root {
+    width: 26px !important;
+    height: 26px !important;
+  }
+  .css-1lauo1g-MuiRating-root {
+    font-size: 14px !important;
   }
 }
 @media (min-width: 393px) {
@@ -699,6 +816,38 @@
         font-size: 12px;
         line-height: 22px;
       }
+      // responsive product reviews
+      .wrapperReviews {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        .wrapperExistReviews {
+          width: 100%;
+          .wrapperReviewItem {
+            display: flex;
+            margin-top: 13px;
+            .reviewContent {
+              margin-left: 10px;
+              padding: 5px 0;
+              padding-left: 10px;
+              padding-bottom: 16px;
+              width: 90%;
+              .reviewerName {
+                font-size: 12px;
+                margin-top: 8px;
+                span {
+                  font-size: 12px;
+                }
+              }
+              .comment {
+                font-size: 11px;
+                margin-top: 11px;
+                line-height: 17px;
+              }
+            }
+          }
+        }
+      }
     }
   }
   // responsive additional information
@@ -728,6 +877,13 @@
         font-size: 13px;
       }
     }
+  }
+  .css-1po6ics-MuiAvatar-root {
+    width: 29px !important;
+    height: 29px !important;
+  }
+  .css-1lauo1g-MuiRating-root {
+    font-size: 14px !important;
   }
 }
 @media (min-width: 412px) {
@@ -880,6 +1036,38 @@
         font-size: 12px;
         line-height: 22px;
       }
+      // responsive product reviews
+      .wrapperReviews {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        .wrapperExistReviews {
+          width: 100%;
+          .wrapperReviewItem {
+            display: flex;
+            margin-top: 13px;
+            .reviewContent {
+              margin-left: 15px;
+              padding: 5px 0;
+              padding-left: 15px;
+              padding-bottom: 16px;
+              width: 90%;
+              .reviewerName {
+                font-size: 12px;
+                margin-top: 8px;
+                span {
+                  font-size: 12px;
+                }
+              }
+              .comment {
+                font-size: 11px;
+                margin-top: 11px;
+                line-height: 19px;
+              }
+            }
+          }
+        }
+      }
     }
   }
   // responsive additional information
@@ -909,6 +1097,13 @@
         font-size: 13px;
       }
     }
+  }
+  .css-1po6ics-MuiAvatar-root {
+    width: 29px !important;
+    height: 29px !important;
+  }
+  .css-1lauo1g-MuiRating-root {
+    font-size: 14px !important;
   }
 }
 @media (min-width: 576px) {
@@ -1061,6 +1256,38 @@
         font-size: 12px;
         line-height: 22px;
       }
+      // responsive product reviews
+      .wrapperReviews {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        .wrapperExistReviews {
+          width: 100%;
+          .wrapperReviewItem {
+            display: flex;
+            margin-top: 15px;
+            .reviewContent {
+              margin-left: 15px;
+              padding: 6px 0;
+              padding-left: 15px;
+              padding-bottom: 16px;
+              width: 90%;
+              .reviewerName {
+                font-size: 13px;
+                margin-top: 8px;
+                span {
+                  font-size: 12px;
+                }
+              }
+              .comment {
+                font-size: 12px;
+                margin-top: 12px;
+                line-height: 19px;
+              }
+            }
+          }
+        }
+      }
     }
   }
   // responsive additional information
@@ -1090,6 +1317,13 @@
         font-size: 15px;
       }
     }
+  }
+  .css-1po6ics-MuiAvatar-root {
+    width: 32px !important;
+    height: 32px !important;
+  }
+  .css-1lauo1g-MuiRating-root {
+    font-size: 16px !important;
   }
 }
 @media (min-width: 768px) {
@@ -1239,6 +1473,38 @@
         font-size: 13px;
         line-height: 24px;
       }
+      // responsive product reviews
+      .wrapperReviews {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        .wrapperExistReviews {
+          width: 100%;
+          .wrapperReviewItem {
+            display: flex;
+            margin-top: 17px;
+            .reviewContent {
+              margin-left: 15px;
+              padding: 7px 0;
+              padding-left: 15px;
+              padding-bottom: 16px;
+              width: 90%;
+              .reviewerName {
+                font-size: 14px;
+                margin-top: 10px;
+                span {
+                  font-size: 13px;
+                }
+              }
+              .comment {
+                font-size: 13px;
+                margin-top: 15px;
+                line-height: 19px;
+              }
+            }
+          }
+        }
+      }
     }
   }
   // responsive additional information
@@ -1268,6 +1534,13 @@
         font-size: 15px;
       }
     }
+  }
+  .css-1po6ics-MuiAvatar-root {
+    width: 34px !important;
+    height: 34px !important;
+  }
+  .css-1lauo1g-MuiRating-root {
+    font-size: 16px !important;
   }
 }
 @media (min-width: 992px) {
@@ -1415,6 +1688,38 @@
         font-size: 13px;
         line-height: 24px;
       }
+      // responsive product reviews
+      .wrapperReviews {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        .wrapperExistReviews {
+          width: 45vw;
+          .wrapperReviewItem {
+            display: flex;
+            margin-top: 17px;
+            .reviewContent {
+              margin-left: 15px;
+              padding: 7px 0;
+              padding-left: 15px;
+              padding-bottom: 16px;
+              width: 90%;
+              .reviewerName {
+                font-size: 14px;
+                margin-top: 12px;
+                span {
+                  font-size: 13px;
+                }
+              }
+              .comment {
+                font-size: 12px;
+                margin-top: 14px;
+                line-height: 20px;
+              }
+            }
+          }
+        }
+      }
     }
   }
   // responsive additional information
@@ -1444,6 +1749,13 @@
         font-size: 17px;
       }
     }
+  }
+  .css-1po6ics-MuiAvatar-root {
+    width: 35px !important;
+    height: 35px !important;
+  }
+  .css-1lauo1g-MuiRating-root {
+    font-size: 17px !important;
   }
 }
 @media (min-width: 1200px) {
@@ -1587,6 +1899,34 @@
         font-size: 14px;
         line-height: 23px;
       }
+      // responsive product reviews
+      .wrapperReviews {
+        .wrapperExistReviews {
+          .wrapperReviewItem {
+            display: flex;
+            margin-top: 19px;
+            .reviewContent {
+              margin-left: 15px;
+              padding: 10px 0;
+              padding-left: 15px;
+              padding-bottom: 16px;
+              width: 90%;
+              .reviewerName {
+                font-size: 15px;
+                margin-top: 20px;
+                span {
+                  font-size: 14px;
+                }
+              }
+              .comment {
+                font-size: 13px;
+                margin-top: 17px;
+                line-height: 22px;
+              }
+            }
+          }
+        }
+      }
     }
   }
   // responsive additional information
@@ -1616,6 +1956,13 @@
         font-size: 18px;
       }
     }
+  }
+  .css-1po6ics-MuiAvatar-root {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  .css-1lauo1g-MuiRating-root {
+    font-size: 18px !important;
   }
 }
 @media (min-width: 1400px) {
@@ -1750,11 +2097,39 @@
           }
         }
       }
-      .tab-content {
-        margin-left: 3rem;
-        .aboutChoosenPro {
-          font-size: 16px;
-          line-height: 23px;
+    }
+    .tab-content {
+      margin-left: 3rem;
+      .aboutChoosenPro {
+        font-size: 16px;
+        line-height: 23px;
+      }
+      // responsive product reviews
+      .wrapperReviews {
+        .wrapperExistReviews {
+          .wrapperReviewItem {
+            display: flex;
+            margin-top: 22px;
+            .reviewContent {
+              margin-left: 15px;
+              padding: 10px 0;
+              padding-left: 15px;
+              padding-bottom: 16px;
+              width: 90%;
+              .reviewerName {
+                font-size: 15px;
+                margin-top: 20px;
+                span {
+                  font-size: 14px;
+                }
+              }
+              .comment {
+                font-size: 13.5px;
+                margin-top: 20px;
+                line-height: 22px;
+              }
+            }
+          }
         }
       }
     }
@@ -1786,5 +2161,12 @@
         font-size: 18px;
       }
     }
+  }
+  .css-1po6ics-MuiAvatar-root {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  .css-1lauo1g-MuiRating-root {
+    font-size: 18px !important;
   }
 }
