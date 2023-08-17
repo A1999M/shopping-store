@@ -8,7 +8,7 @@ function FeatureTable() {
         <li className="leftTableItems">Fit</li>
         <li className="leftTableItems">Composition</li>
         <li className="leftTableItems">Concept</li>
-        <li className="leftTableItems">Date of manufacture</li>
+        <li className="leftTableItems">manufacture</li>
       </ul>
       <ul className="rightTable">
         <li className="rightTableItems">Regular length</li>

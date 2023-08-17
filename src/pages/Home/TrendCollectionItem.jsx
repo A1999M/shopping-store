@@ -250,6 +250,7 @@ export default function TrendCollectionItem({ item, index }) {
         viewport={{ once: true, amount: 0.5 }}
         initial="initial"
         animate={show ? "animate" : "initial"}
+        data-index={index}
         className="col-6 col-md-4 col-lg-3 collectionCol"
       >
         <div
@@ -258,13 +259,18 @@ export default function TrendCollectionItem({ item, index }) {
           className="wrapperCartCollection"
           style={{ backgroundImage: `url(${item.image1})` }}
           onClick={() => handleNavigate(item.id)}
+          data-index={index}
         >
-          <div className="wrapperInfoCart">
-            <p className="proCollectionName">{item.name}</p>
+          <div data-index={index} className="wrapperInfoCart">
+            <p data-index={index} className="proCollectionName">
+              {item.name}
+            </p>
             {/*  */}
-            <div className="priceAndRate">
-              <p className="proCollectionPrice">${item.price}</p>
-              <div className="ratesCollection">
+            <div data-index={index} className="priceAndRate">
+              <p data-index={index} className="proCollectionPrice">
+                ${item.price}
+              </p>
+              <div data-index={index} className="ratesCollection">
                 <Star />
                 <Star />
                 <Star />
@@ -273,10 +279,11 @@ export default function TrendCollectionItem({ item, index }) {
               </div>
             </div>
             {/*  */}
-            <div className="wrapperCollectionBtns">
+            <div data-index={index} className="wrapperCollectionBtns">
               <button
                 onClick={() => handleAddToCart(item)}
                 className="addTocartCollection"
+                data-index={index}
               >
                 add to card
               </button>

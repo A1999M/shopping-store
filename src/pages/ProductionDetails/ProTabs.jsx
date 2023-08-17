@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 import FeatureTable from "./FeatureTable";
@@ -5,6 +6,8 @@ import AddReview from "./AddReview";
 import "./ProTabs.scss";
 
 function ProTabs() {
+  let [reviewCount, setReviewCount] = useState(3);
+
   return (
     <Tabs defaultActiveKey="Description" id="justify-tab-example">
       <Tab eventKey="Description" title="Description">
@@ -26,11 +29,11 @@ function ProTabs() {
           Est, Ac Consequat Lacus. Nulla Risus Massa, Commodo In
         </p>
       </Tab>
-      <Tab eventKey="Additional Information" title="Additional Information">
+      <Tab eventKey="Additional Information" title="Information">
         <FeatureTable />
       </Tab>
-      <Tab eventKey="Reviews" title="Reviews (1)">
-        <AddReview />
+      <Tab eventKey="Reviews" title={`Reviews (${reviewCount})`}>
+        <AddReview setReviewCount={setReviewCount} />
       </Tab>
     </Tabs>
   );

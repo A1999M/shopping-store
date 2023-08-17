@@ -2,12 +2,12 @@ import Rating from "@mui/material/Rating";
 import ReviewItem from "./ReviewItem";
 import { useRef, useState } from "react";
 
-export default function AddReview() {
+export default function AddReview({ setReviewCount }) {
   let nameRef = useRef();
   let commentRef = useRef();
   let emailRef = useRef();
   let wrapperReviewsRef = useRef();
-  let [ValueRate, setValueRate] = useState();
+  let [ValueRate, setValueRate] = useState(2.5);
   let [reviews, setReviews] = useState([
     {
       reviewer: "Admin",
@@ -32,7 +32,7 @@ export default function AddReview() {
 
   let handleAddReview = (e) => {
     e.preventDefault();
-
+    setReviewCount((reviewCount) => (reviewCount += 1));
     setReviews([
       ...reviews,
       {
@@ -68,7 +68,6 @@ export default function AddReview() {
         <p className="yourRate">Your Rating *</p>
         <Rating
           onChange={(event, newValue) => {
-            console.log(newValue);
             setValueRate(newValue);
           }}
           name="half-rating"

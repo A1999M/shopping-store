@@ -23,6 +23,8 @@ export default function App() {
   let location = useLocation();
 
   useLayoutEffect(() => {
+    let locoScroll = new LocomotiveScroll();
+
     let cartItems = JSON.parse(localStorage.getItem("userCart"));
 
     if (!cartItems) {
@@ -31,8 +33,11 @@ export default function App() {
       setCartCountShow(cartItems.length);
       dispatch(cartActions.setCartItems(cartItems));
     }
-    let locoScroll = new LocomotiveScroll();
-  }, [show]);
+
+    return () => {
+      locoScroll.stop();
+    };
+  });
 
   useEffect(() => {
     fetch("http://localhost:8000/men")

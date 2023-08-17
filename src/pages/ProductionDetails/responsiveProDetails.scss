@@ -1,0 +1,3211 @@
+@media (max-width: 360px) {
+  .proDetailsContainer {
+    margin-top: 1rem;
+    .proDetailCol {
+      padding: 0 1.5rem;
+    }
+    // responsive images section
+    .imageSectionProDetails {
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: row;
+      .wrapperAllImagePro {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-left: 0rem;
+        margin-top: 1rem;
+        width: 14%;
+        img {
+          margin: 0 5px;
+          margin-top: 0rem;
+        }
+      }
+      .mainImgProDetail {
+        width: 73%;
+        margin-left: 0rem;
+      }
+    }
+    .wrapperDetailChoosenPro {
+      .nameChoosenPro {
+        font-size: 16px;
+        margin-top: 1rem;
+      }
+      .priceChoosenPro {
+        margin-top: 15px;
+        font-size: 12px;
+      }
+    }
+    // product features responsive
+    .featuresProdetails {
+      margin-top: 20px;
+      padding-bottom: 15px;
+      .featuresProdetailItems {
+        margin: 0.5rem 0;
+        font-size: 12px;
+      }
+    }
+    // responsive stock
+    .stockPro {
+      font-size: 12px;
+      margin-top: 15px;
+    }
+    // responsive size of product
+    .sizePro {
+      font-size: 15px;
+      margin-top: 17px;
+    }
+    // responsive different sizes of product
+    .wrapperDifferentSizes {
+      margin-top: 10px;
+      .sizes {
+        font-size: 10px;
+        margin-right: 7px;
+        padding: 6px 12px;
+        // transition: all 0.35s;
+      }
+    }
+    // responsive buttons
+    .wrapperAddToCartProDetails {
+      margin-top: 20px;
+      .wrapperCountBtns {
+        padding: 6px 14px;
+        .increment {
+          font-size: 19px;
+          margin-right: 30px;
+        }
+        .decrement {
+          font-size: 19px;
+          margin-left: 30px;
+        }
+        .choosenProCount {
+          font-family: sans-serif;
+          font-weight: 700;
+          font-size: 14px;
+        }
+      }
+      .choosenProAddToCart {
+        padding: 7px 18px;
+        font-size: 12px;
+        margin-left: 1rem;
+      }
+    }
+    .wrapperGuarantee {
+      margin-top: 1.5rem;
+      padding-top: 1.5rem;
+      display: none;
+      visibility: hidden;
+      .Guarantee {
+        margin-right: 1rem;
+        border: 0;
+        p.GuaranteeDesc {
+          width: 100%;
+          margin-left: 10px;
+          font-size: 11px;
+          line-height: 14px;
+        }
+      }
+      .Warranty {
+        margin-right: 1rem;
+        border: 0;
+        p.WarrantyDesc {
+          width: 100%;
+          margin-left: 10px;
+          font-size: 11px;
+          line-height: 14px;
+        }
+      }
+      .Gift {
+        margin-right: 0rem;
+        border: 0;
+        p.GiftDesc {
+          width: 100%;
+          margin-left: 10px;
+          font-size: 11px;
+          line-height: 14px;
+        }
+      }
+    }
+  }
+  // responsive pro tabls
+  .proTabsRow {
+    margin-top: 3rem !important;
+    .nav.nav-tabs {
+      margin-bottom: 1.5rem;
+      margin-left: 1rem;
+      .nav-item {
+        margin-right: 15px;
+        .nav-link {
+          font-size: 12px;
+          &::after {
+            top: 18px;
+            height: 1px;
+          }
+        }
+      }
+    }
+    .tab-content {
+      margin-left: 1rem;
+      .aboutChoosenPro {
+        font-size: 11px;
+        line-height: 19px;
+      }
+      // responsive product reviews
+      .wrapperReviews {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        .wrapperExistReviews {
+          width: 100%;
+          .wrapperReviewItem {
+            display: flex;
+            margin-top: 13px;
+            .reviewContent {
+              margin-left: 8px;
+              padding: 5px 5px;
+              padding-left: 10px;
+              padding-bottom: 16px;
+              width: 90%;
+              .reviewerName {
+                font-size: 11px;
+                margin-top: 6px;
+                span {
+                  font-size: 11px;
+                }
+              }
+              .comment {
+                font-size: 10px;
+                margin-top: 8px;
+                line-height: 15px;
+              }
+            }
+          }
+        }
+        .wrapperAddReview {
+          width: 100%;
+          margin-left: 0rem;
+          padding-right: 0.5rem;
+          .addReviewTitle {
+            margin-top: 2rem;
+            font-size: 19px;
+          }
+          .descReviewTitle {
+            margin-top: 13px;
+            font-size: 11px;
+            margin-bottom: 13px;
+            line-height: 16px;
+          }
+          .yourRate {
+            margin-top: 20px;
+            font-size: 11px;
+            margin-bottom: 4px;
+          }
+          .yourReviewTitle {
+            font-size: 11px;
+            margin-bottom: 8px;
+            margin-top: 1rem;
+          }
+          .reviewNameTitle {
+            font-size: 11px;
+            margin-bottom: 8px;
+            margin-top: 15px;
+          }
+          .reviewEmailTitle {
+            font-size: 11px;
+            margin-bottom: 8px;
+            margin-top: 15px;
+          }
+          .yourReviewBox {
+            width: 100%;
+            height: 100px;
+            padding-left: 10px;
+            padding-top: 5px;
+            font-size: 14px;
+            line-height: 22px;
+          }
+          .reviewNameBox {
+            width: 100%;
+            height: 30px;
+            padding-left: 10px;
+            font-size: 14px;
+          }
+          .reviewCommentBox {
+            width: 100%;
+            height: 30px;
+            padding-left: 10px;
+            font-size: 14px;
+          }
+          .submitReview {
+            padding: 5px 15px;
+            margin-top: 15px;
+            letter-spacing: 1px;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+  // responsive additional information
+  .wrapperTable {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    .leftTable {
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+      .leftTableItems {
+        padding: 10px 0px;
+        padding-left: 10px;
+        padding-right: 1.5rem;
+        font-size: 12px;
+      }
+    }
+    .rightTable {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      .rightTableItems {
+        padding: 10px 0px;
+        padding-left: 15px;
+        font-size: 12px;
+      }
+    }
+  }
+  // responsive related products section
+  .relatedProsRow {
+    margin-top: 3rem !important;
+    .wrapperRelatedProItem {
+      margin-top: 1.5rem;
+      width: 75%;
+      padding-bottom: 20px;
+      .wrapperImgRelatedProItem {
+        width: 100%;
+        img.imgBestProItem {
+          width: 100%;
+        }
+      }
+      .rateRelatedProItem {
+        margin-top: 5px;
+      }
+      .nameRelatedProItem {
+        font-size: 11px;
+        margin-top: 5px;
+        line-height: 15px;
+      }
+      .priceRelatedProItem {
+        font-size: 10px;
+        margin-top: 6px;
+      }
+      .RelatedProItemBtn {
+        padding: 6px 15px;
+        font-size: 8px;
+        margin-top: 10px;
+      }
+    }
+    .wrapperRelatedPros {
+      .titleRelated {
+        font-size: 20px;
+      }
+      .wrapperSliderRelated {
+        margin-top: 0rem;
+      }
+    }
+  }
+  .css-1po6ics-MuiAvatar-root {
+    width: 24px !important;
+    height: 24px !important;
+  }
+  .css-1lauo1g-MuiRating-root {
+    font-size: 12px !important;
+  }
+  .css-iljtu2-MuiRating-root {
+    font-size: 19px !important;
+  }
+}
+@media (min-width: 360px) {
+  .proDetailsContainer {
+    margin-top: 1rem;
+    .proDetailCol {
+      padding: 0 2rem;
+    }
+    // responsive images section
+    .imageSectionProDetails {
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: row;
+      .wrapperAllImagePro {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-left: 0rem;
+        margin-top: 1rem;
+        width: 14%;
+        img {
+          margin: 0 5px;
+          margin-top: 0rem;
+        }
+      }
+      .mainImgProDetail {
+        width: 73%;
+        margin-left: 0rem;
+      }
+    }
+    .wrapperDetailChoosenPro {
+      .nameChoosenPro {
+        font-size: 21px;
+        margin-top: 1.5rem;
+      }
+      .priceChoosenPro {
+        margin-top: 15px;
+        font-size: 13px;
+      }
+    }
+    // product features responsive
+    .featuresProdetails {
+      margin-top: 20px;
+      padding-bottom: 15px;
+      .featuresProdetailItems {
+        margin: 0.5rem 0;
+        font-size: 12px;
+      }
+    }
+    // responsive stock
+    .stockPro {
+      font-size: 13px;
+      margin-top: 15px;
+    }
+    // responsive size of product
+    .sizePro {
+      font-size: 16px;
+      margin-top: 17px;
+    }
+    // responsive different sizes of product
+    .wrapperDifferentSizes {
+      margin-top: 10px;
+      .sizes {
+        font-size: 12px;
+        margin-right: 8px;
+        padding: 6px 15px;
+        // transition: all 0.35s;
+      }
+    }
+    // responsive buttons
+    .wrapperAddToCartProDetails {
+      margin-top: 20px;
+      .wrapperCountBtns {
+        padding: 6px 14px;
+        .increment {
+          font-size: 19px;
+          margin-right: 30px;
+        }
+        .decrement {
+          font-size: 19px;
+          margin-left: 30px;
+        }
+        .choosenProCount {
+          font-family: sans-serif;
+          font-weight: 700;
+          font-size: 14px;
+        }
+      }
+      .choosenProAddToCart {
+        padding: 7px 18px;
+        font-size: 13px;
+        margin-left: 1rem;
+      }
+    }
+    .wrapperGuarantee {
+      margin-top: 1.5rem;
+      padding-top: 1.5rem;
+      display: none;
+      visibility: hidden;
+      .Guarantee {
+        margin-right: 1rem;
+        border: 0;
+        p.GuaranteeDesc {
+          width: 100%;
+          margin-left: 10px;
+          font-size: 11px;
+          line-height: 14px;
+        }
+      }
+      .Warranty {
+        margin-right: 1rem;
+        border: 0;
+        p.WarrantyDesc {
+          width: 100%;
+          margin-left: 10px;
+          font-size: 11px;
+          line-height: 14px;
+        }
+      }
+      .Gift {
+        margin-right: 0rem;
+        border: 0;
+        p.GiftDesc {
+          width: 100%;
+          margin-left: 10px;
+          font-size: 11px;
+          line-height: 14px;
+        }
+      }
+    }
+  }
+  // responsive pro tabls
+  .proTabsRow {
+    margin-top: 3rem !important;
+    .nav.nav-tabs {
+      margin-bottom: 2rem;
+      margin-left: 0.5rem;
+      .nav-item {
+        margin-right: 20px;
+        .nav-link {
+          font-size: 13px;
+          &::after {
+            top: 23px;
+            height: 2px;
+          }
+        }
+      }
+    }
+    .tab-content {
+      margin-left: 0.5rem;
+      .aboutChoosenPro {
+        font-size: 11px;
+        line-height: 19px;
+      }
+      // responsive product reviews
+      .wrapperReviews {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        .wrapperExistReviews {
+          width: 100%;
+          .wrapperReviewItem {
+            display: flex;
+            margin-top: 13px;
+            .reviewContent {
+              margin-left: 10px;
+              padding: 5px 5px;
+              padding-left: 10px;
+              padding-bottom: 16px;
+              width: 90%;
+              .reviewerName {
+                font-size: 12px;
+                margin-top: 8px;
+                span {
+                  font-size: 12px;
+                }
+              }
+              .comment {
+                font-size: 10px;
+                margin-top: 11px;
+                line-height: 15px;
+              }
+            }
+          }
+        }
+        .wrapperAddReview {
+          width: 100%;
+          margin-left: 0rem;
+          padding-right: 0.5rem;
+          .addReviewTitle {
+            margin-top: 3rem;
+            font-size: 20px;
+          }
+          .descReviewTitle {
+            margin-top: 18px;
+            font-size: 12px;
+            margin-bottom: 13px;
+            line-height: 18px;
+          }
+          .yourRate {
+            margin-top: 22px;
+            font-size: 12px;
+            margin-bottom: 4px;
+          }
+          .yourReviewTitle {
+            font-size: 12px;
+            margin-bottom: 8px;
+            margin-top: 1.2rem;
+          }
+          .reviewNameTitle {
+            font-size: 12px;
+            margin-bottom: 8px;
+            margin-top: 20px;
+          }
+          .reviewEmailTitle {
+            font-size: 12px;
+            margin-bottom: 8px;
+            margin-top: 20px;
+          }
+          .yourReviewBox {
+            width: 100%;
+            height: 120px;
+            padding-left: 10px;
+            padding-top: 5px;
+            font-size: 15px;
+            line-height: 22px;
+          }
+          .reviewNameBox {
+            width: 100%;
+            height: 33px;
+            padding-left: 10px;
+            font-size: 15px;
+          }
+          .reviewCommentBox {
+            width: 100%;
+            height: 33px;
+            padding-left: 10px;
+            font-size: 15px;
+          }
+          .submitReview {
+            padding: 7px 18px;
+            margin-top: 18px;
+            letter-spacing: 1px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  // responsive additional information
+  .wrapperTable {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    .leftTable {
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+      .leftTableItems {
+        padding: 11px 0px;
+        padding-left: 10px;
+        padding-right: 1.5rem;
+        font-size: 12px;
+      }
+    }
+    .rightTable {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      .rightTableItems {
+        padding: 11px 0px;
+        padding-left: 15px;
+        font-size: 12px;
+      }
+    }
+  }
+  // responsive related products section
+  .relatedProsRow {
+    margin-top: 3rem !important;
+    .wrapperRelatedProItem {
+      margin-top: 2.5rem;
+      width: 75%;
+      padding-bottom: 20px;
+      .wrapperImgRelatedProItem {
+        width: 100%;
+        img.imgBestProItem {
+          width: 100%;
+        }
+      }
+      .rateRelatedProItem {
+        margin-top: 5px;
+      }
+      .nameRelatedProItem {
+        font-size: 12px;
+        margin-top: 7px;
+        line-height: 18px;
+      }
+      .priceRelatedProItem {
+        font-size: 11px;
+        margin-top: 6px;
+      }
+      .RelatedProItemBtn {
+        padding: 9px 18px;
+        font-size: 11px;
+        margin-top: 13px;
+      }
+    }
+    .wrapperRelatedPros {
+      .titleRelated {
+        font-size: 24px;
+      }
+      .wrapperSliderRelated {
+        margin-top: 0rem;
+      }
+    }
+  }
+  .css-1po6ics-MuiAvatar-root {
+    width: 26px !important;
+    height: 26px !important;
+  }
+  .css-1lauo1g-MuiRating-root {
+    font-size: 13px !important;
+  }
+  .css-iljtu2-MuiRating-root {
+    font-size: 19px !important;
+  }
+}
+@media (min-width: 375px) {
+  .proDetailsContainer {
+    margin-top: 1rem;
+    .proDetailCol {
+      padding: 0 2rem;
+    }
+    // responsive images section
+    .imageSectionProDetails {
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: row;
+      .wrapperAllImagePro {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-left: 0rem;
+        margin-top: 1rem;
+        width: 14%;
+        img {
+          margin: 0 5px;
+          margin-top: 0rem;
+        }
+      }
+      .mainImgProDetail {
+        width: 73%;
+        margin-left: 0rem;
+      }
+    }
+    .wrapperDetailChoosenPro {
+      .nameChoosenPro {
+        font-size: 21px;
+        margin-top: 1.5rem;
+      }
+      .priceChoosenPro {
+        margin-top: 15px;
+        font-size: 13px;
+      }
+    }
+    // product features responsive
+    .featuresProdetails {
+      margin-top: 20px;
+      padding-bottom: 15px;
+      .featuresProdetailItems {
+        margin: 0.5rem 0;
+        font-size: 12px;
+      }
+    }
+    // responsive stock
+    .stockPro {
+      font-size: 13px;
+      margin-top: 15px;
+    }
+    // responsive size of product
+    .sizePro {
+      font-size: 16px;
+      margin-top: 17px;
+    }
+    // responsive different sizes of product
+    .wrapperDifferentSizes {
+      margin-top: 10px;
+      .sizes {
+        font-size: 12px;
+        margin-right: 8px;
+        padding: 6px 15px;
+        // transition: all 0.35s;
+      }
+    }
+    // responsive buttons
+    .wrapperAddToCartProDetails {
+      margin-top: 20px;
+      .wrapperCountBtns {
+        padding: 6px 14px;
+        .increment {
+          font-size: 19px;
+          margin-right: 30px;
+        }
+        .decrement {
+          font-size: 19px;
+          margin-left: 30px;
+        }
+        .choosenProCount {
+          font-family: sans-serif;
+          font-weight: 700;
+          font-size: 14px;
+        }
+      }
+      .choosenProAddToCart {
+        padding: 7px 18px;
+        font-size: 13px;
+        margin-left: 1rem;
+      }
+    }
+    .wrapperGuarantee {
+      margin-top: 1.5rem;
+      padding-top: 1.5rem;
+      display: none;
+      visibility: hidden;
+      .Guarantee {
+        margin-right: 1rem;
+        border: 0;
+        p.GuaranteeDesc {
+          width: 100%;
+          margin-left: 10px;
+          font-size: 11px;
+          line-height: 14px;
+        }
+      }
+      .Warranty {
+        margin-right: 1rem;
+        border: 0;
+        p.WarrantyDesc {
+          width: 100%;
+          margin-left: 10px;
+          font-size: 11px;
+          line-height: 14px;
+        }
+      }
+      .Gift {
+        margin-right: 0rem;
+        border: 0;
+        p.GiftDesc {
+          width: 100%;
+          margin-left: 10px;
+          font-size: 11px;
+          line-height: 14px;
+        }
+      }
+    }
+  }
+  // responsive pro tabls
+  .proTabsRow {
+    margin-top: 4rem !important;
+    .nav.nav-tabs {
+      margin-bottom: 2rem;
+      margin-left: 1rem;
+      .nav-item {
+        margin-right: 20px;
+        .nav-link {
+          font-size: 13px;
+          &::after {
+            top: 23px;
+            height: 2px;
+          }
+        }
+      }
+    }
+    .tab-content {
+      margin-left: 1rem;
+      .aboutChoosenPro {
+        font-size: 11px;
+        line-height: 19px;
+      }
+      // responsive product reviews
+      .wrapperReviews {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        .wrapperExistReviews {
+          width: 100%;
+          .wrapperReviewItem {
+            display: flex;
+            margin-top: 13px;
+            .reviewContent {
+              margin-left: 10px;
+              padding: 5px 5px;
+              padding-left: 10px;
+              padding-bottom: 16px;
+              width: 90%;
+              .reviewerName {
+                font-size: 12px;
+                margin-top: 8px;
+                span {
+                  font-size: 12px;
+                }
+              }
+              .comment {
+                font-size: 10px;
+                margin-top: 11px;
+                line-height: 15px;
+              }
+            }
+          }
+        }
+        .wrapperAddReview {
+          width: 100%;
+          margin-left: 0rem;
+          padding-right: 0.5rem;
+          .addReviewTitle {
+            margin-top: 3rem;
+            font-size: 20px;
+          }
+          .descReviewTitle {
+            margin-top: 10px;
+            font-size: 12px;
+            margin-bottom: 13px;
+            line-height: 21px;
+          }
+          .yourRate {
+            margin-top: 24px;
+            font-size: 12px;
+            margin-bottom: 7px;
+          }
+          .yourReviewTitle {
+            font-size: 12px;
+            margin-bottom: 8px;
+            margin-top: 1.2rem;
+          }
+          .reviewNameTitle {
+            font-size: 12px;
+            margin-bottom: 8px;
+            margin-top: 20px;
+          }
+          .reviewEmailTitle {
+            font-size: 12px;
+            margin-bottom: 8px;
+            margin-top: 20px;
+          }
+          .yourReviewBox {
+            width: 100%;
+            height: 120px;
+            padding-left: 10px;
+            padding-top: 5px;
+            font-size: 15px;
+            line-height: 22px;
+          }
+          .reviewNameBox {
+            width: 100%;
+            height: 33px;
+            padding-left: 10px;
+            font-size: 15px;
+          }
+          .reviewCommentBox {
+            width: 100%;
+            height: 33px;
+            padding-left: 10px;
+            font-size: 15px;
+          }
+          .submitReview {
+            padding: 7px 18px;
+            margin-top: 18px;
+            letter-spacing: 1px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  // responsive additional information
+  .wrapperTable {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    .leftTable {
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+      .leftTableItems {
+        padding: 11px 0px;
+        padding-left: 10px;
+        padding-right: 1.5rem;
+        font-size: 13px;
+      }
+    }
+    .rightTable {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      .rightTableItems {
+        padding: 11px 0px;
+        padding-left: 15px;
+        font-size: 13px;
+      }
+    }
+  }
+  // responsive related products section
+  .relatedProsRow {
+    margin-top: 3rem !important;
+    .wrapperRelatedProItem {
+      margin-top: 2.5rem;
+      width: 75%;
+      padding-bottom: 20px;
+      .wrapperImgRelatedProItem {
+        width: 100%;
+        img.imgBestProItem {
+          width: 100%;
+        }
+      }
+      .rateRelatedProItem {
+        margin-top: 8px;
+      }
+      .nameRelatedProItem {
+        font-size: 12px;
+        margin-top: 10px;
+        line-height: 16px;
+      }
+      .priceRelatedProItem {
+        font-size: 13px;
+        margin-top: 12px;
+      }
+      .RelatedProItemBtn {
+        padding: 9px 18px;
+        font-size: 11px;
+        margin-top: 13px;
+      }
+    }
+    .wrapperRelatedPros {
+      .titleRelated {
+        font-size: 25px;
+      }
+      .wrapperSliderRelated {
+        margin-top: 0rem;
+      }
+    }
+  }
+  .css-1po6ics-MuiAvatar-root {
+    width: 26px !important;
+    height: 26px !important;
+  }
+  .css-1lauo1g-MuiRating-root {
+    font-size: 14px !important;
+  }
+  .css-iljtu2-MuiRating-root {
+    font-size: 20px !important;
+  }
+}
+@media (min-width: 393px) {
+  .proDetailsContainer {
+    margin-top: 1rem;
+    .proDetailCol {
+      padding: 0 2rem;
+    }
+    // responsive images section
+    .imageSectionProDetails {
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: row;
+      .wrapperAllImagePro {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-left: 0rem;
+        margin-top: 1rem;
+        width: 14%;
+        img {
+          margin: 0 5px;
+          margin-top: 0rem;
+        }
+      }
+      .mainImgProDetail {
+        width: 73%;
+        margin-left: 0rem;
+      }
+    }
+    .wrapperDetailChoosenPro {
+      .nameChoosenPro {
+        font-size: 21px;
+        margin-top: 1.5rem;
+      }
+      .priceChoosenPro {
+        margin-top: 15px;
+        font-size: 13px;
+      }
+    }
+    // product features responsive
+    .featuresProdetails {
+      margin-top: 20px;
+      padding-bottom: 15px;
+      .featuresProdetailItems {
+        margin: 0.5rem 0;
+        font-size: 12px;
+      }
+    }
+    // responsive stock
+    .stockPro {
+      font-size: 13px;
+      margin-top: 15px;
+    }
+    // responsive size of product
+    .sizePro {
+      font-size: 16px;
+      margin-top: 17px;
+    }
+    // responsive different sizes of product
+    .wrapperDifferentSizes {
+      margin-top: 10px;
+      .sizes {
+        font-size: 12px;
+        margin-right: 8px;
+        padding: 6px 15px;
+        // transition: all 0.35s;
+      }
+    }
+    // responsive buttons
+    .wrapperAddToCartProDetails {
+      margin-top: 20px;
+      .wrapperCountBtns {
+        padding: 6px 14px;
+        .increment {
+          font-size: 19px;
+          margin-right: 30px;
+        }
+        .decrement {
+          font-size: 19px;
+          margin-left: 30px;
+        }
+        .choosenProCount {
+          font-family: sans-serif;
+          font-weight: 700;
+          font-size: 14px;
+        }
+      }
+      .choosenProAddToCart {
+        padding: 7px 18px;
+        font-size: 13px;
+        margin-left: 1rem;
+      }
+    }
+    .wrapperGuarantee {
+      margin-top: 1.5rem;
+      padding-top: 1.5rem;
+      display: flex;
+      visibility: visible;
+      .Guarantee {
+        margin-right: 1rem;
+        border: 0;
+        p.GuaranteeDesc {
+          width: 100%;
+          margin-left: 10px;
+          font-size: 11px;
+          line-height: 14px;
+        }
+      }
+      .Warranty {
+        margin-right: 1rem;
+        border: 0;
+        p.WarrantyDesc {
+          width: 100%;
+          margin-left: 10px;
+          font-size: 11px;
+          line-height: 14px;
+        }
+      }
+      .Gift {
+        margin-right: 0rem;
+        border: 0;
+        p.GiftDesc {
+          width: 100%;
+          margin-left: 10px;
+          font-size: 11px;
+          line-height: 14px;
+        }
+      }
+    }
+  }
+  // responsive pro tabls
+  .proTabsRow {
+    margin-top: 4rem !important;
+    .nav.nav-tabs {
+      margin-bottom: 2rem;
+      margin-left: 1rem;
+      .nav-item {
+        margin-right: 20px;
+        .nav-link {
+          font-size: 14px;
+          &::after {
+            top: 23px;
+            height: 2px;
+          }
+        }
+      }
+    }
+    .tab-content {
+      margin-left: 1rem;
+      .aboutChoosenPro {
+        font-size: 12px;
+        line-height: 22px;
+      }
+      // responsive product reviews
+      .wrapperReviews {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        .wrapperExistReviews {
+          width: 100%;
+          .wrapperReviewItem {
+            display: flex;
+            margin-top: 13px;
+            .reviewContent {
+              margin-left: 10px;
+              padding: 5px 0;
+              padding-left: 10px;
+              padding-bottom: 16px;
+              width: 90%;
+              .reviewerName {
+                font-size: 12px;
+                margin-top: 8px;
+                span {
+                  font-size: 12px;
+                }
+              }
+              .comment {
+                font-size: 11px;
+                margin-top: 11px;
+                line-height: 17px;
+              }
+            }
+          }
+        }
+        .wrapperAddReview {
+          width: 100%;
+          margin-left: 0rem;
+          padding-right: 0.5rem;
+          .addReviewTitle {
+            margin-top: 3rem;
+            font-size: 21px;
+          }
+          .yourRate {
+            margin-top: 22px;
+            font-size: 13px;
+            margin-bottom: 7px;
+          }
+          .descReviewTitle {
+            margin-top: 15px;
+            font-size: 13px;
+            margin-bottom: 13px;
+            line-height: 21px;
+          }
+          .yourReviewTitle {
+            font-size: 13px;
+            margin-bottom: 8px;
+            margin-top: 1.2rem;
+          }
+          .reviewNameTitle {
+            font-size: 13px;
+            margin-bottom: 8px;
+            margin-top: 20px;
+          }
+          .reviewEmailTitle {
+            font-size: 13px;
+            margin-bottom: 8px;
+            margin-top: 20px;
+          }
+          .yourReviewBox {
+            width: 100%;
+            height: 140px;
+            padding-left: 10px;
+            padding-top: 5px;
+            font-size: 16px;
+            line-height: 22px;
+          }
+          .reviewNameBox {
+            width: 100%;
+            height: 35px;
+            padding-left: 10px;
+            font-size: 16px;
+          }
+          .reviewCommentBox {
+            width: 100%;
+            height: 35px;
+            padding-left: 10px;
+            font-size: 16px;
+          }
+          .submitReview {
+            padding: 7px 20px;
+            margin-top: 20px;
+            letter-spacing: 1px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  // responsive additional information
+  .wrapperTable {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    .leftTable {
+      display: flex;
+      flex-direction: column;
+      width: 27%;
+      .leftTableItems {
+        padding: 12px 0px;
+        padding-left: 10px;
+        padding-right: 1.5rem;
+        font-size: 13px;
+      }
+    }
+    .rightTable {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      width: 73%;
+      .rightTableItems {
+        padding: 12px 0px;
+        padding-left: 15px;
+        font-size: 13px;
+      }
+    }
+  }
+  // responsive related products section
+  .relatedProsRow {
+    margin-top: 3rem !important;
+    .wrapperRelatedProItem {
+      margin-top: 2.5rem;
+      width: 75%;
+      padding-bottom: 20px;
+      .wrapperImgRelatedProItem {
+        width: 100%;
+        img.imgBestProItem {
+          width: 100%;
+        }
+      }
+      .rateRelatedProItem {
+        margin-top: 8px;
+      }
+      .nameRelatedProItem {
+        font-size: 13px;
+        margin-top: 10px;
+        line-height: 18px;
+      }
+      .priceRelatedProItem {
+        font-size: 13px;
+        margin-top: 12px;
+      }
+      .RelatedProItemBtn {
+        padding: 9px 18px;
+        font-size: 11px;
+        margin-top: 13px;
+      }
+    }
+    .wrapperRelatedPros {
+      .titleRelated {
+        font-size: 25px;
+      }
+      .wrapperSliderRelated {
+        margin-top: 0rem;
+      }
+    }
+  }
+  .css-1po6ics-MuiAvatar-root {
+    width: 29px !important;
+    height: 29px !important;
+  }
+  .css-1lauo1g-MuiRating-root {
+    font-size: 14px !important;
+  }
+  .css-iljtu2-MuiRating-root {
+    font-size: 20px !important;
+  }
+}
+@media (min-width: 412px) {
+  .proDetailsContainer {
+    margin-top: 1rem;
+    .proDetailCol {
+      padding: 0 2rem;
+    }
+    // responsive images section
+    .imageSectionProDetails {
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: row;
+      .wrapperAllImagePro {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-left: 0rem;
+        margin-top: 1rem;
+        width: 14%;
+        img {
+          margin: 0 5px;
+          margin-top: 0rem;
+        }
+      }
+      .mainImgProDetail {
+        width: 73%;
+        margin-left: 0rem;
+      }
+    }
+    .wrapperDetailChoosenPro {
+      .nameChoosenPro {
+        font-size: 24px;
+        margin-top: 2rem;
+      }
+      .priceChoosenPro {
+        margin-top: 15px;
+        font-size: 15px;
+      }
+    }
+    // product features responsive
+    .featuresProdetails {
+      margin-top: 23px;
+      padding-bottom: 20px;
+      .featuresProdetailItems {
+        margin: 0.7rem 0;
+        font-size: 13px;
+      }
+    }
+    // responsive stock
+    .stockPro {
+      font-size: 14px;
+      margin-top: 15px;
+    }
+    // responsive size of product
+    .sizePro {
+      font-size: 17px;
+      margin-top: 17px;
+    }
+    // responsive different sizes of product
+    .wrapperDifferentSizes {
+      margin-top: 12px;
+      .sizes {
+        font-size: 12px;
+        margin-right: 8px;
+        padding: 6px 15px;
+        // transition: all 0.35s;
+      }
+    }
+    // responsive buttons
+    .wrapperAddToCartProDetails {
+      margin-top: 25px;
+      .wrapperCountBtns {
+        padding: 7px 16px;
+        .increment {
+          font-size: 21px;
+          margin-right: 35px;
+        }
+        .decrement {
+          font-size: 21px;
+          margin-left: 35px;
+        }
+        .choosenProCount {
+          font-family: sans-serif;
+          font-weight: 700;
+          font-size: 15px;
+        }
+      }
+      .choosenProAddToCart {
+        padding: 8px 20px;
+        font-size: 14px;
+        margin-left: 1.5rem;
+      }
+    }
+    .wrapperGuarantee {
+      margin-top: 1.5rem;
+      padding-top: 2rem;
+      .Guarantee {
+        margin-right: 1rem;
+        border: 0;
+        p.GuaranteeDesc {
+          width: 100%;
+          margin-left: 10px;
+          font-size: 12px;
+          line-height: 16px;
+        }
+      }
+      .Warranty {
+        margin-right: 1rem;
+        border: 0;
+        p.WarrantyDesc {
+          width: 100%;
+          margin-left: 10px;
+          font-size: 12px;
+          line-height: 16px;
+        }
+      }
+      .Gift {
+        margin-right: 0rem;
+        border: 0;
+        p.GiftDesc {
+          width: 100%;
+          margin-left: 10px;
+          font-size: 12px;
+          line-height: 16px;
+        }
+      }
+    }
+  }
+  // responsive pro tabls
+  .proTabsRow {
+    margin-top: 4rem !important;
+    .nav.nav-tabs {
+      margin-bottom: 2.5rem;
+      margin-left: 1rem;
+      .nav-item {
+        margin-right: 20px;
+        .nav-link {
+          font-size: 13px;
+          &::after {
+            top: 23px;
+            height: 2px;
+          }
+        }
+      }
+    }
+    .tab-content {
+      margin-left: 1rem;
+      .aboutChoosenPro {
+        font-size: 12px;
+        line-height: 22px;
+      }
+      // responsive product reviews
+      .wrapperReviews {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        .wrapperExistReviews {
+          width: 100%;
+          .wrapperReviewItem {
+            display: flex;
+            margin-top: 13px;
+            .reviewContent {
+              margin-left: 15px;
+              padding: 5px 0;
+              padding-left: 15px;
+              padding-bottom: 16px;
+              width: 90%;
+              .reviewerName {
+                font-size: 12px;
+                margin-top: 8px;
+                span {
+                  font-size: 12px;
+                }
+              }
+              .comment {
+                font-size: 11px;
+                margin-top: 11px;
+                line-height: 19px;
+              }
+            }
+          }
+        }
+        .wrapperAddReview {
+          width: 100%;
+          margin-left: 0rem;
+          padding-right: 0.5rem;
+          .addReviewTitle {
+            margin-top: 3rem;
+            font-size: 22px;
+          }
+          .yourRate {
+            margin-top: 22px;
+            font-size: 14px;
+            margin-bottom: 5px;
+          }
+          .descReviewTitle {
+            margin-top: 10px;
+            font-size: 13px;
+            margin-bottom: 13px;
+            line-height: 21px;
+          }
+          .yourReviewTitle {
+            font-size: 13px;
+            margin-bottom: 8px;
+            margin-top: 1.2rem;
+          }
+          .reviewNameTitle {
+            font-size: 13px;
+            margin-bottom: 8px;
+            margin-top: 20px;
+          }
+          .reviewEmailTitle {
+            font-size: 13px;
+            margin-bottom: 8px;
+            margin-top: 20px;
+          }
+          .yourReviewBox {
+            width: 100%;
+            height: 140px;
+            padding-left: 10px;
+            padding-top: 5px;
+            font-size: 16px;
+            line-height: 22px;
+          }
+          .reviewNameBox {
+            width: 100%;
+            height: 35px;
+            padding-left: 10px;
+            font-size: 16px;
+          }
+          .reviewCommentBox {
+            width: 100%;
+            height: 35px;
+            padding-left: 10px;
+            font-size: 16px;
+          }
+          .submitReview {
+            padding: 7px 20px;
+            margin-top: 20px;
+            letter-spacing: 1px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  // responsive additional information
+  .wrapperTable {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    .leftTable {
+      display: flex;
+      flex-direction: column;
+      width: 25%;
+      .leftTableItems {
+        padding: 12px 0px;
+        padding-left: 10px;
+        padding-right: 1.5rem;
+        font-size: 13px;
+      }
+    }
+    .rightTable {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      width: 75%;
+      .rightTableItems {
+        padding: 12px 0px;
+        padding-left: 15px;
+        font-size: 13px;
+      }
+    }
+  }
+  // responsive related products section
+  .relatedProsRow {
+    margin-top: 3rem !important;
+    .wrapperRelatedProItem {
+      margin-top: 3rem;
+      width: 75%;
+      padding-bottom: 20px;
+      .wrapperImgRelatedProItem {
+        width: 100%;
+        img.imgBestProItem {
+          width: 100%;
+        }
+      }
+      .rateRelatedProItem {
+        margin-top: 7px;
+      }
+      .nameRelatedProItem {
+        font-size: 13px;
+        margin-top: 5px;
+        line-height: 20px;
+      }
+      .priceRelatedProItem {
+        font-size: 12px;
+        margin-top: 7px;
+      }
+      .RelatedProItemBtn {
+        padding: 9px 18px;
+        font-size: 10px;
+        margin-top: 13px;
+      }
+    }
+    .wrapperRelatedPros {
+      .titleRelated {
+        font-size: 28px;
+      }
+      .wrapperSliderRelated {
+        margin-top: 0rem;
+      }
+    }
+  }
+  .css-1po6ics-MuiAvatar-root {
+    width: 29px !important;
+    height: 29px !important;
+  }
+  .css-1lauo1g-MuiRating-root {
+    font-size: 14px !important;
+  }
+  .css-iljtu2-MuiRating-root {
+    font-size: 20px !important;
+  }
+}
+@media (min-width: 576px) {
+  .proDetailsContainer {
+    margin-top: 1rem;
+    .proDetailCol {
+      padding: 0 2rem;
+    }
+    // responsive images section
+    .imageSectionProDetails {
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: row;
+      .wrapperAllImagePro {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-left: 0rem;
+        margin-top: 1rem;
+        width: 12%;
+        img {
+          margin: 0 5px;
+          margin-top: 0rem;
+        }
+      }
+      .mainImgProDetail {
+        width: 62%;
+        margin-left: 0rem;
+      }
+    }
+    .wrapperDetailChoosenPro {
+      .nameChoosenPro {
+        font-size: 25px;
+        margin-top: 2.5rem;
+      }
+      .priceChoosenPro {
+        margin-top: 15px;
+        font-size: 16px;
+      }
+    }
+    // product features responsive
+    .featuresProdetails {
+      margin-top: 25px;
+      padding-bottom: 20px;
+      .featuresProdetailItems {
+        margin: 0.8rem 0;
+        font-size: 14px;
+      }
+    }
+    // responsive stock
+    .stockPro {
+      font-size: 14px;
+      margin-top: 15px;
+    }
+    // responsive size of product
+    .sizePro {
+      font-size: 17px;
+      margin-top: 20px;
+    }
+    // responsive different sizes of product
+    .wrapperDifferentSizes {
+      margin-top: 17px;
+      .sizes {
+        font-size: 14px;
+        margin-right: 8px;
+        padding: 6px 15px;
+        // transition: all 0.35s;
+      }
+    }
+    // responsive buttons
+    .wrapperAddToCartProDetails {
+      margin-top: 30px;
+      .wrapperCountBtns {
+        padding: 7px 16px;
+        .increment {
+          font-size: 21px;
+          margin-right: 35px;
+        }
+        .decrement {
+          font-size: 21px;
+          margin-left: 35px;
+        }
+        .choosenProCount {
+          font-family: sans-serif;
+          font-weight: 700;
+          font-size: 14px;
+        }
+      }
+      .choosenProAddToCart {
+        padding: 8px 20px;
+        font-size: 15px;
+        margin-left: 1.5rem;
+      }
+    }
+    .wrapperGuarantee {
+      margin-top: 1.5rem;
+      padding-top: 2rem;
+      .Guarantee {
+        margin-right: 1rem;
+        border: 0;
+        p.GuaranteeDesc {
+          width: 100%;
+          font-size: 13px;
+          margin-left: 10px;
+          line-height: 15px;
+        }
+      }
+      .Warranty {
+        margin-right: 1rem;
+        border: 0;
+        p.WarrantyDesc {
+          width: 100%;
+          font-size: 13px;
+          margin-left: 10px;
+          line-height: 15px;
+        }
+      }
+      .Gift {
+        margin-right: 1rem;
+        border: 0;
+        p.GiftDesc {
+          width: 100%;
+          font-size: 13px;
+          margin-left: 10px;
+          line-height: 15px;
+        }
+      }
+    }
+  }
+  // responsive pro tabls
+  .proTabsRow {
+    margin-top: 4rem !important;
+    .nav.nav-tabs {
+      margin-bottom: 2.5rem;
+      margin-left: 1.5rem;
+      .nav-item {
+        margin-right: 4rem;
+        .nav-link {
+          font-size: 14px;
+          &::after {
+            top: 23px;
+            height: 2px;
+          }
+        }
+      }
+    }
+    .tab-content {
+      margin-left: 1.5rem;
+      .aboutChoosenPro {
+        font-size: 12px;
+        line-height: 22px;
+      }
+      // responsive product reviews
+      .wrapperReviews {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        .wrapperExistReviews {
+          width: 100%;
+          .wrapperReviewItem {
+            display: flex;
+            margin-top: 15px;
+            .reviewContent {
+              margin-left: 15px;
+              padding: 6px 0;
+              padding-left: 15px;
+              padding-bottom: 16px;
+              width: 90%;
+              .reviewerName {
+                font-size: 13px;
+                margin-top: 8px;
+                span {
+                  font-size: 12px;
+                }
+              }
+              .comment {
+                font-size: 12px;
+                margin-top: 12px;
+                line-height: 19px;
+              }
+            }
+          }
+        }
+        .wrapperAddReview {
+          width: 100%;
+          margin-left: 0rem;
+          padding-right: 2rem;
+          .addReviewTitle {
+            margin-top: 3rem;
+            font-size: 22px;
+          }
+          .yourRate {
+            margin-top: 25px;
+            font-size: 14px;
+            margin-bottom: 5px;
+          }
+          .descReviewTitle {
+            margin-top: 15px;
+            font-size: 13px;
+            margin-bottom: 13px;
+            line-height: 21px;
+          }
+          .yourReviewTitle {
+            font-size: 14px;
+            margin-bottom: 8px;
+            margin-top: 1.5rem;
+          }
+          .reviewNameTitle {
+            font-size: 14px;
+            margin-bottom: 8px;
+            margin-top: 22px;
+          }
+          .reviewEmailTitle {
+            font-size: 14px;
+            margin-bottom: 8px;
+            margin-top: 22px;
+          }
+          .yourReviewBox {
+            width: 100%;
+            height: 140px;
+            padding-left: 10px;
+            padding-top: 5px;
+            font-size: 17px;
+            line-height: 22px;
+          }
+          .reviewNameBox {
+            width: 100%;
+            height: 35px;
+            padding-left: 10px;
+            font-size: 17px;
+          }
+          .reviewCommentBox {
+            width: 100%;
+            height: 35px;
+            padding-left: 10px;
+            font-size: 17px;
+          }
+          .submitReview {
+            padding: 7px 25px;
+            margin-top: 20px;
+            letter-spacing: 1px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  // responsive additional information
+  .wrapperTable {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    .leftTable {
+      display: flex;
+      flex-direction: column;
+      width: 20%;
+      .leftTableItems {
+        padding: 17px 0px;
+        padding-left: 15px;
+        padding-right: 1.5rem;
+        font-size: 15px;
+      }
+    }
+    .rightTable {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      width: 75%;
+      .rightTableItems {
+        padding: 17px 0px;
+        padding-left: 15px;
+        font-size: 15px;
+      }
+    }
+  }
+  // responsive related products section
+  .relatedProsRow {
+    margin-top: 5rem !important;
+    .wrapperRelatedProItem {
+      margin-top: 3rem;
+      width: 78%;
+      padding-bottom: 20px;
+      .wrapperImgRelatedProItem {
+        width: 100%;
+        img.imgBestProItem {
+          width: 100%;
+        }
+      }
+      .rateRelatedProItem {
+        margin-top: 10px;
+      }
+      .nameRelatedProItem {
+        font-size: 14px;
+        margin-top: 8px;
+        line-height: 20px;
+      }
+      .priceRelatedProItem {
+        font-size: 13px;
+        margin-top: 12px;
+      }
+      .RelatedProItemBtn {
+        padding: 9px 18px;
+        font-size: 10px;
+        margin-top: 13px;
+      }
+    }
+    .wrapperRelatedPros {
+      .titleRelated {
+        font-size: 32px;
+      }
+      .wrapperSliderRelated {
+        margin-top: 0rem;
+      }
+    }
+  }
+  .css-1po6ics-MuiAvatar-root {
+    width: 32px !important;
+    height: 32px !important;
+  }
+  .css-1lauo1g-MuiRating-root {
+    font-size: 16px !important;
+  }
+  .css-iljtu2-MuiRating-root {
+    font-size: 21px !important;
+  }
+}
+@media (min-width: 768px) {
+  .proDetailsContainer {
+    margin-top: 0.5rem;
+    .proDetailCol {
+      padding: 0 0rem;
+    }
+    // responsive images section
+    .imageSectionProDetails {
+      align-items: center;
+      justify-content: flex-start;
+      flex-direction: column-reverse;
+      .wrapperAllImagePro {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        margin-left: 0rem;
+        margin-top: 0.5rem;
+        width: 18%;
+        img {
+          margin: 0 5px;
+          margin-top: -0.5rem;
+        }
+      }
+      .mainImgProDetail {
+        width: 80%;
+        margin-left: 0rem;
+      }
+    }
+    .wrapperDetailChoosenPro {
+      .nameChoosenPro {
+        font-size: 21px;
+        margin-top: 1rem;
+      }
+      .priceChoosenPro {
+        margin-top: 12px;
+        font-size: 15px;
+      }
+    }
+    // product features responsive
+    .featuresProdetails {
+      margin-top: 25px;
+      padding-bottom: 20px;
+      .featuresProdetailItems {
+        margin: 0.5rem 0;
+        font-size: 12px;
+      }
+    }
+    // responsive stock
+    .stockPro {
+      font-size: 13px;
+      margin-top: 15px;
+    }
+    // responsive size of product
+    .sizePro {
+      font-size: 15px;
+      margin-top: 14px;
+    }
+    // responsive different sizes of product
+    .wrapperDifferentSizes {
+      margin-top: 10px;
+      .sizes {
+        font-size: 11px;
+        margin-right: 8px;
+        padding: 6px 12px;
+        // transition: all 0.35s;
+      }
+    }
+    // responsive buttons
+    .wrapperAddToCartProDetails {
+      margin-top: 20px;
+      .wrapperCountBtns {
+        padding: 6px 15px;
+        .increment {
+          font-size: 20px;
+          margin-right: 35px;
+        }
+        .decrement {
+          font-size: 20px;
+          margin-left: 35px;
+        }
+        .choosenProCount {
+          font-family: sans-serif;
+          font-weight: 700;
+          font-size: 13px;
+        }
+      }
+      .choosenProAddToCart {
+        padding: 8px 20px;
+        font-size: 13px;
+        margin-left: 1.5rem;
+      }
+    }
+    .wrapperGuarantee {
+      margin-top: 1.5rem;
+      padding-top: 2rem;
+      .Guarantee {
+        margin-right: 1rem;
+        p.GuaranteeDesc {
+          width: 50%;
+          font-size: 11px;
+          margin-left: 10px;
+          line-height: 15px;
+        }
+      }
+      .Warranty {
+        margin-right: 1rem;
+        p.WarrantyDesc {
+          width: 100%;
+          font-size: 11px;
+          margin-left: 10px;
+          line-height: 15px;
+        }
+      }
+      .Gift {
+        margin-right: 1rem;
+        p.GiftDesc {
+          width: 100%;
+          font-size: 11px;
+          margin-left: 10px;
+          line-height: 15px;
+        }
+      }
+    }
+  }
+  // responsive pro tabls
+  .proTabsRow {
+    margin-top: 4rem !important;
+    .nav.nav-tabs {
+      margin-bottom: 3rem;
+      margin-left: 3rem;
+      .nav-item {
+        margin-right: 4rem;
+        .nav-link {
+          font-size: 15px;
+          &::after {
+            top: 23px;
+            height: 2px;
+          }
+        }
+      }
+    }
+    .tab-content {
+      margin-left: 3rem;
+      .aboutChoosenPro {
+        font-size: 13px;
+        line-height: 24px;
+      }
+      // responsive product reviews
+      .wrapperReviews {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        .wrapperExistReviews {
+          width: 100%;
+          .wrapperReviewItem {
+            display: flex;
+            margin-top: 17px;
+            .reviewContent {
+              margin-left: 15px;
+              padding: 7px 0;
+              padding-left: 15px;
+              padding-bottom: 16px;
+              width: 90%;
+              .reviewerName {
+                font-size: 14px;
+                margin-top: 10px;
+                span {
+                  font-size: 13px;
+                }
+              }
+              .comment {
+                font-size: 13px;
+                margin-top: 15px;
+                line-height: 19px;
+              }
+            }
+          }
+        }
+        .wrapperAddReview {
+          width: 100%;
+          margin-left: 0rem;
+          padding-right: 2.5rem;
+          .addReviewTitle {
+            margin-top: 2rem;
+            font-size: 24px;
+          }
+          .yourRate {
+            margin-top: 30px;
+            font-size: 15px;
+            margin-bottom: 6px;
+          }
+          .descReviewTitle {
+            margin-top: 1rem;
+            font-size: 14px;
+            margin-bottom: 13px;
+            line-height: 21px;
+          }
+          .yourReviewTitle {
+            font-size: 14px;
+            margin-bottom: 8px;
+            margin-top: 2rem;
+          }
+          .reviewNameTitle {
+            font-size: 14px;
+            margin-bottom: 8px;
+            margin-top: 25px;
+          }
+          .reviewEmailTitle {
+            font-size: 14px;
+            margin-bottom: 8px;
+            margin-top: 25px;
+          }
+          .yourReviewBox {
+            width: 100%;
+            height: 160px;
+            padding-left: 10px;
+            padding-top: 5px;
+            font-size: 17px;
+            line-height: 22px;
+          }
+          .reviewNameBox {
+            width: 100%;
+            height: 40px;
+            padding-left: 10px;
+            font-size: 17px;
+          }
+          .reviewCommentBox {
+            width: 100%;
+            height: 40px;
+            padding-left: 10px;
+            font-size: 17px;
+          }
+          .submitReview {
+            padding: 9px 27px;
+            margin-top: 25px;
+            letter-spacing: 1px;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+  // responsive additional information
+  .wrapperTable {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    .leftTable {
+      display: flex;
+      flex-direction: column;
+      width: 15%;
+      .leftTableItems {
+        padding: 17px 0px;
+        padding-left: 15px;
+        padding-right: 1.5rem;
+        font-size: 15px;
+      }
+    }
+    .rightTable {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      width: 75%;
+      .rightTableItems {
+        padding: 17px 0px;
+        padding-left: 15px;
+        font-size: 15px;
+      }
+    }
+  }
+  // responsive related products section
+  .relatedProsRow {
+    margin-top: 6rem !important;
+    .wrapperRelatedProItem {
+      margin-top: 4rem;
+      width: 78%;
+      padding-bottom: 20px;
+      .wrapperImgRelatedProItem {
+        width: 100%;
+        img.imgBestProItem {
+          width: 100%;
+        }
+      }
+      .rateRelatedProItem {
+        margin-top: 10px;
+      }
+      .nameRelatedProItem {
+        font-size: 15px;
+        margin-top: 10px;
+        line-height: 20px;
+      }
+      .priceRelatedProItem {
+        font-size: 14px;
+        margin-top: 12px;
+      }
+      .RelatedProItemBtn {
+        padding: 9px 18px;
+        font-size: 11px;
+        margin-top: 13px;
+      }
+    }
+    .wrapperRelatedPros {
+      .titleRelated {
+        font-size: 35px;
+      }
+      .wrapperSliderRelated {
+        margin-top: 0rem;
+      }
+    }
+  }
+  .css-1po6ics-MuiAvatar-root {
+    width: 34px !important;
+    height: 34px !important;
+  }
+  .css-1lauo1g-MuiRating-root {
+    font-size: 16px !important;
+  }
+  .css-iljtu2-MuiRating-root {
+    font-size: 22px !important;
+  }
+}
+@media (min-width: 992px) {
+  // responsive images section
+  .proDetailsContainer {
+    margin-top: 3rem;
+    .imageSectionProDetails {
+      align-items: center;
+      justify-content: flex-start;
+      flex-direction: row;
+      .wrapperAllImagePro {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 0;
+        margin-left: 1rem;
+        width: 15%;
+        img {
+          margin: 0;
+          margin-top: -0.5rem;
+        }
+      }
+      .mainImgProDetail {
+        width: 75%;
+        margin-left: 1rem;
+      }
+    }
+
+    .wrapperDetailChoosenPro {
+      .nameChoosenPro {
+        font-size: 22px;
+        margin-top: 1rem;
+      }
+      .priceChoosenPro {
+        margin-top: 17px;
+        font-size: 17px;
+      }
+    }
+    // product features responsive
+    .featuresProdetails {
+      margin-top: 32px;
+      padding-bottom: 20px;
+      .featuresProdetailItems {
+        margin: 0.5rem 0;
+        font-size: 13px;
+      }
+    }
+    // responsive stock
+    .stockPro {
+      font-size: 14px;
+      margin-top: 20px;
+    }
+    // responsive size of product
+    .sizePro {
+      font-size: 15px;
+      margin-top: 15px;
+    }
+    //   responsive different sizes of product
+    .wrapperDifferentSizes {
+      margin-top: 13px;
+      .sizes {
+        font-size: 11px;
+        margin-right: 8px;
+        padding: 6px 12px;
+        // transition: all 0.35s;
+      }
+    }
+    //   responsive buttons
+    .wrapperAddToCartProDetails {
+      margin-top: 30px;
+      .wrapperCountBtns {
+        padding: 7px 17px;
+        .increment {
+          font-size: 21px;
+          margin-right: 40px;
+        }
+        .decrement {
+          font-size: 21px;
+          margin-left: 40px;
+        }
+        .choosenProCount {
+          font-family: sans-serif;
+          font-weight: 700;
+          font-size: 14px;
+        }
+      }
+      .choosenProAddToCart {
+        padding: 9px 22px;
+        font-size: 14px;
+        margin-left: 2rem;
+      }
+    }
+    .wrapperGuarantee {
+      margin-top: 1.5rem;
+      padding-top: 2rem;
+      .Guarantee {
+        margin-right: 3rem;
+        p.GuaranteeDesc {
+          width: 50%;
+          font-size: 12px;
+          margin-left: 10px;
+          line-height: 17px;
+        }
+      }
+      .Warranty {
+        margin-right: 3rem;
+        p.WarrantyDesc {
+          width: 50%;
+          font-size: 12px;
+          margin-left: 10px;
+          line-height: 17px;
+        }
+      }
+      .Gift {
+        margin-right: 3rem;
+        p.GiftDesc {
+          width: 50%;
+          font-size: 12px;
+          margin-left: 10px;
+          line-height: 17px;
+        }
+      }
+    }
+  }
+  // responsive pro tabls
+  .proTabsRow {
+    margin-top: 5rem !important;
+    .nav.nav-tabs {
+      margin-bottom: 3rem;
+      margin-left: 3rem;
+      .nav-item {
+        margin-right: 4rem;
+        .nav-link {
+          font-size: 15px;
+          &::after {
+            top: 23px;
+            height: 2px;
+          }
+        }
+      }
+    }
+    .tab-content {
+      margin-left: 3rem;
+      .aboutChoosenPro {
+        font-size: 13px;
+        line-height: 24px;
+      }
+      // responsive product reviews
+      .wrapperReviews {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        .wrapperExistReviews {
+          width: 45vw;
+          .wrapperReviewItem {
+            display: flex;
+            margin-top: 17px;
+            .reviewContent {
+              margin-left: 15px;
+              padding: 7px 0;
+              padding-left: 15px;
+              padding-bottom: 16px;
+              width: 90%;
+              .reviewerName {
+                font-size: 14px;
+                margin-top: 12px;
+                span {
+                  font-size: 13px;
+                }
+              }
+              .comment {
+                font-size: 12px;
+                margin-top: 14px;
+                line-height: 20px;
+              }
+            }
+          }
+        }
+        .wrapperAddReview {
+          width: 45%;
+          margin-left: 2rem;
+          padding-right: 0;
+          .addReviewTitle {
+            margin-top: 2rem;
+            font-size: 24px;
+          }
+          .yourRate {
+            margin-top: 30px;
+            font-size: 15px;
+            margin-bottom: 10px;
+          }
+          .descReviewTitle {
+            margin-top: 1rem;
+            font-size: 14px;
+            margin-bottom: 13px;
+            line-height: 21px;
+          }
+          .yourReviewTitle {
+            font-size: 14px;
+            margin-bottom: 8px;
+            margin-top: 2rem;
+          }
+          .reviewNameTitle {
+            font-size: 14px;
+            margin-bottom: 8px;
+            margin-top: 25px;
+          }
+          .reviewEmailTitle {
+            font-size: 14px;
+            margin-bottom: 8px;
+            margin-top: 25px;
+          }
+          .yourReviewBox {
+            width: 100%;
+            height: 160px;
+            padding-left: 10px;
+            padding-top: 5px;
+            font-size: 17px;
+            line-height: 22px;
+          }
+          .reviewNameBox {
+            width: 100%;
+            height: 40px;
+            padding-left: 10px;
+            font-size: 17px;
+          }
+          .reviewCommentBox {
+            width: 100%;
+            height: 40px;
+            padding-left: 10px;
+            font-size: 17px;
+          }
+          .submitReview {
+            padding: 9px 27px;
+            margin-top: 25px;
+            letter-spacing: 1px;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+  // responsive additional information
+  .wrapperTable {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    .leftTable {
+      display: flex;
+      flex-direction: column;
+      width: 15%;
+      .leftTableItems {
+        padding: 20px 0px;
+        padding-left: 15px;
+        padding-right: 1.5rem;
+        font-size: 17px;
+      }
+    }
+    .rightTable {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      width: 75%;
+      .rightTableItems {
+        padding: 20px 0px;
+        padding-left: 15px;
+        font-size: 17px;
+      }
+    }
+  }
+  // responsive related products section
+  .relatedProsRow {
+    margin-top: 6rem !important;
+    .wrapperRelatedProItem {
+      margin-top: 3rem;
+      width: 78%;
+      padding-bottom: 20px;
+      .wrapperImgRelatedProItem {
+        width: 100%;
+        img.imgBestProItem {
+          width: 100%;
+        }
+      }
+      .rateRelatedProItem {
+        margin-top: 15px;
+      }
+      .nameRelatedProItem {
+        font-size: 15px;
+        margin-top: 10px;
+        line-height: 20px;
+      }
+      .priceRelatedProItem {
+        font-size: 15px;
+        margin-top: 12px;
+      }
+      .RelatedProItemBtn {
+        padding: 9px 18px;
+        font-size: 12px;
+        margin-top: 15px;
+      }
+    }
+    .wrapperRelatedPros {
+      .titleRelated {
+        font-size: 38px;
+      }
+      .wrapperSliderRelated {
+        margin-top: 0rem;
+      }
+    }
+  }
+  .css-1po6ics-MuiAvatar-root {
+    width: 35px !important;
+    height: 35px !important;
+  }
+  .css-1lauo1g-MuiRating-root {
+    font-size: 17px !important;
+  }
+  .css-iljtu2-MuiRating-root {
+    font-size: 23px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .proDetailsContainer {
+    margin-top: 3rem;
+    // responsive images section
+    .imageSectionProDetails {
+      align-items: center;
+      justify-content: flex-start;
+      .wrapperAllImagePro {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-left: 3rem;
+        width: 15%;
+        img {
+          margin-top: -0.5rem;
+        }
+      }
+      .mainImgProDetail {
+        width: 65%;
+        margin-left: 2rem;
+      }
+    }
+
+    .wrapperDetailChoosenPro {
+      .nameChoosenPro {
+        font-size: 23px;
+        margin-top: 1rem;
+      }
+      .priceChoosenPro {
+        margin-top: 17px;
+        font-size: 18px;
+      }
+    }
+    // product features responsive
+    .featuresProdetails {
+      margin-top: 40px;
+      padding-bottom: 20px;
+      .featuresProdetailItems {
+        margin: 0.6rem 0;
+        font-size: 14px;
+      }
+    }
+    // responsive stock
+    .stockPro {
+      font-size: 14px;
+      margin-top: 20px;
+    }
+    // responsive size of product
+    .sizePro {
+      font-size: 17px;
+      margin-top: 25px;
+    }
+
+    .wrapperDifferentSizes {
+      margin-top: 13px;
+      .sizes {
+        font-size: 13px;
+        margin-right: 8px;
+        padding: 6px 12px;
+        // transition: all 0.35s;
+      }
+    }
+    .wrapperAddToCartProDetails {
+      margin-top: 35px;
+      .wrapperCountBtns {
+        padding: 8px 18px;
+        .increment {
+          font-size: 22px;
+          margin-right: 50px;
+        }
+        .decrement {
+          font-size: 22px;
+          margin-left: 50px;
+        }
+        .choosenProCount {
+          font-family: sans-serif;
+          font-weight: 700;
+          font-size: 14px;
+        }
+      }
+      .choosenProAddToCart {
+        padding: 10px 25px;
+        font-size: 15px;
+        margin-left: 2rem;
+      }
+    }
+    .wrapperGuarantee {
+      margin-top: 1.5rem;
+      padding-top: 2rem;
+      .Guarantee {
+        margin-right: 4rem;
+        p.GuaranteeDesc {
+          width: 50%;
+          font-size: 13px;
+          margin-left: 10px;
+          line-height: 19px;
+        }
+      }
+      .Warranty {
+        margin-right: 4rem;
+        p.WarrantyDesc {
+          width: 50%;
+          font-size: 13px;
+          margin-left: 10px;
+          line-height: 19px;
+        }
+      }
+      .Gift {
+        margin-right: 4rem;
+        p.GiftDesc {
+          width: 50%;
+          font-size: 13px;
+          margin-left: 10px;
+          line-height: 19px;
+        }
+      }
+    }
+  }
+  // responsive pro tabls
+  .proTabsRow {
+    margin-top: 5rem !important;
+    .nav.nav-tabs {
+      margin-bottom: 3rem;
+      margin-left: 3rem;
+      .nav-item {
+        margin-right: 4rem;
+        .nav-link {
+          font-size: 16px;
+          &::after {
+            top: 25px;
+            height: 2px;
+          }
+        }
+      }
+    }
+    .tab-content {
+      margin-left: 3rem;
+      .aboutChoosenPro {
+        font-size: 14px;
+        line-height: 23px;
+      }
+      // responsive product reviews
+      .wrapperReviews {
+        .wrapperExistReviews {
+          .wrapperReviewItem {
+            display: flex;
+            margin-top: 19px;
+            .reviewContent {
+              margin-left: 15px;
+              padding: 10px 0;
+              padding-left: 15px;
+              padding-bottom: 16px;
+              width: 90%;
+              .reviewerName {
+                font-size: 15px;
+                margin-top: 20px;
+                span {
+                  font-size: 14px;
+                }
+              }
+              .comment {
+                font-size: 13px;
+                margin-top: 17px;
+                line-height: 22px;
+              }
+            }
+          }
+        }
+        .wrapperAddReview {
+          width: 43%;
+          margin-left: 3rem;
+          .addReviewTitle {
+            margin-top: 2rem;
+            font-size: 25px;
+          }
+          .yourRate {
+            margin-top: 30px;
+            font-size: 15px;
+            margin-bottom: 10px;
+          }
+          .descReviewTitle {
+            margin-top: 1.5rem;
+            font-size: 15px;
+            margin-bottom: 13px;
+            line-height: 23px;
+          }
+          .yourReviewTitle {
+            font-size: 14px;
+            margin-bottom: 8px;
+            margin-top: 2.5rem;
+          }
+          .reviewNameTitle {
+            font-size: 14px;
+            margin-bottom: 8px;
+            margin-top: 25px;
+          }
+          .reviewEmailTitle {
+            font-size: 14px;
+            margin-bottom: 8px;
+            margin-top: 25px;
+          }
+          .yourReviewBox {
+            width: 100%;
+            height: 160px;
+            padding-left: 10px;
+            padding-top: 5px;
+            font-size: 17px;
+            line-height: 22px;
+          }
+          .reviewNameBox {
+            width: 100%;
+            height: 40px;
+            padding-left: 10px;
+            font-size: 17px;
+          }
+          .reviewCommentBox {
+            width: 100%;
+            height: 40px;
+            padding-left: 10px;
+            font-size: 17px;
+          }
+          .submitReview {
+            padding: 11px 28px;
+            margin-top: 25px;
+            letter-spacing: 1px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+  // responsive additional information
+  .wrapperTable {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    .leftTable {
+      display: flex;
+      flex-direction: column;
+      width: 15%;
+      .leftTableItems {
+        padding: 20px 0px;
+        padding-left: 15px;
+        padding-right: 1.5rem;
+        font-size: 18px;
+      }
+    }
+    .rightTable {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      width: 75%;
+      .rightTableItems {
+        padding: 20px 0px;
+        padding-left: 15px;
+        font-size: 18px;
+      }
+    }
+  }
+  // responsive related products section
+  .relatedProsRow {
+    margin-top: 8rem !important;
+    .wrapperRelatedProItem {
+      margin-top: 5rem;
+      width: 75%;
+      padding-bottom: 20px;
+      .wrapperImgRelatedProItem {
+        width: 100%;
+        img.imgBestProItem {
+          width: 100%;
+        }
+      }
+      .rateRelatedProItem {
+        margin-top: 15px;
+      }
+      .nameRelatedProItem {
+        font-size: 15px;
+        margin-top: 10px;
+        line-height: 20px;
+      }
+      .priceRelatedProItem {
+        font-size: 15px;
+        margin-top: 12px;
+      }
+      .RelatedProItemBtn {
+        padding: 9px 18px;
+        font-size: 12px;
+        margin-top: 15px;
+      }
+    }
+    .wrapperRelatedPros {
+      .titleRelated {
+        font-size: 40px;
+      }
+      .wrapperSliderRelated {
+        margin-top: 0rem;
+      }
+    }
+  }
+  .css-1po6ics-MuiAvatar-root {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  .css-1lauo1g-MuiRating-root {
+    font-size: 18px !important;
+  }
+  .css-iljtu2-MuiRating-root {
+    font-size: 24px !important;
+  }
+}
+@media (min-width: 1400px) {
+  .proDetailsContainer {
+    margin-top: 3rem;
+    // responsive images section
+    .imageSectionProDetails {
+      align-items: center;
+      justify-content: flex-start;
+      .wrapperAllImagePro {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-left: 3rem;
+        width: 15%;
+        img {
+          margin-top: -1.5rem;
+        }
+      }
+      .mainImgProDetail {
+        width: 65%;
+        margin-left: 3rem;
+      }
+    }
+    .wrapperDetailChoosenPro {
+      .nameChoosenPro {
+        font-size: 25px;
+        margin-top: 1rem;
+      }
+      .priceChoosenPro {
+        margin-top: 19px;
+        font-size: 19px;
+      }
+    }
+    // product features responsive
+    .featuresProdetails {
+      margin-top: 40px;
+      padding-bottom: 20px;
+      .featuresProdetailItems {
+        margin: 0.6rem 0;
+        font-size: 15px;
+      }
+    }
+    // responsive stock
+    .stockPro {
+      font-size: 15px;
+      margin-top: 20px;
+    }
+    // responsive size of product
+    .sizePro {
+      font-size: 20px;
+      margin-top: 25px;
+    }
+
+    .wrapperDifferentSizes {
+      margin-top: 13px;
+      .sizes {
+        font-size: 15px;
+        margin-right: 10px;
+        padding: 8px 15px;
+        // transition: all 0.35s;
+      }
+    }
+    .wrapperAddToCartProDetails {
+      margin-top: 45px;
+      .wrapperCountBtns {
+        padding: 10px 20px;
+        .increment {
+          font-size: 25px;
+          margin-right: 50px;
+        }
+        .decrement {
+          font-size: 25px;
+          margin-left: 50px;
+        }
+        .choosenProCount {
+          font-family: sans-serif;
+          font-weight: 700;
+        }
+      }
+      .choosenProAddToCart {
+        padding: 15px 30px;
+        font-size: 17px;
+        margin-left: 2rem;
+      }
+    }
+    .wrapperGuarantee {
+      margin-top: 2rem;
+      padding-top: 2rem;
+      .Guarantee {
+        margin-right: 4rem;
+        p.GuaranteeDesc {
+          width: 50%;
+          font-size: 15px;
+          margin-left: 10px;
+          line-height: 19px;
+        }
+      }
+      .Warranty {
+        margin-right: 4rem;
+        p.WarrantyDesc {
+          width: 50%;
+          font-size: 15px;
+          margin-left: 10px;
+          line-height: 19px;
+        }
+      }
+      .Gift {
+        margin-right: 4rem;
+        p.GiftDesc {
+          width: 50%;
+          font-size: 15px;
+          margin-left: 10px;
+          line-height: 19px;
+        }
+      }
+    }
+  }
+  // responsive pro tabls
+  .proTabsRow {
+    margin-top: 5rem !important;
+    .nav.nav-tabs {
+      margin-bottom: 3rem;
+      margin-left: 3rem;
+      .nav-item {
+        margin-right: 4rem;
+        .nav-link {
+          font-size: 18px;
+          &::after {
+            top: 30px;
+            height: 2px;
+          }
+        }
+      }
+    }
+    .tab-content {
+      margin-left: 3rem;
+      .aboutChoosenPro {
+        font-size: 16px;
+        line-height: 23px;
+      }
+      // responsive product reviews
+      .wrapperReviews {
+        .wrapperExistReviews {
+          .wrapperReviewItem {
+            display: flex;
+            margin-top: 22px;
+            .reviewContent {
+              margin-left: 15px;
+              padding: 10px 0;
+              padding-left: 15px;
+              padding-bottom: 16px;
+              width: 90%;
+              .reviewerName {
+                font-size: 15px;
+                margin-top: 20px;
+                span {
+                  font-size: 14px;
+                }
+              }
+              .comment {
+                font-size: 13.5px;
+                margin-top: 20px;
+                line-height: 22px;
+              }
+            }
+          }
+        }
+        .wrapperAddReview {
+          width: 40%;
+          margin-left: 3rem;
+          .addReviewTitle {
+            margin-top: 2rem;
+            font-size: 26px;
+          }
+          .yourRate {
+            margin-top: 35px;
+            font-size: 15px;
+            margin-bottom: 12px;
+          }
+          .descReviewTitle {
+            margin-top: 2rem;
+            font-size: 15px;
+            margin-bottom: 13px;
+          }
+          .yourReviewTitle {
+            font-size: 14px;
+            margin-bottom: 8px;
+            margin-top: 3rem;
+          }
+          .reviewNameTitle {
+            font-size: 14px;
+            margin-bottom: 8px;
+            margin-top: 30px;
+          }
+          .reviewEmailTitle {
+            font-size: 14px;
+            margin-bottom: 8px;
+            margin-top: 30px;
+          }
+          .yourReviewBox {
+            width: 100%;
+            height: 160px;
+            padding-left: 10px;
+            padding-top: 10px;
+            font-size: 17px;
+            line-height: 24px;
+          }
+          .reviewNameBox {
+            width: 100%;
+            height: 45px;
+            padding-left: 10px;
+            font-size: 17px;
+          }
+          .reviewCommentBox {
+            width: 100%;
+            height: 45px;
+            padding-left: 10px;
+            font-size: 17px;
+          }
+          .submitReview {
+            padding: 12px 30px;
+            margin-top: 35px;
+            letter-spacing: 2px;
+          }
+        }
+      }
+    }
+  }
+  // responsive additional information
+  .wrapperTable {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    .leftTable {
+      display: flex;
+      flex-direction: column;
+      width: 15%;
+      .leftTableItems {
+        padding: 20px 0px;
+        padding-left: 15px;
+        padding-right: 1.5rem;
+        font-size: 18px;
+      }
+    }
+    .rightTable {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      width: 75%;
+      .rightTableItems {
+        padding: 20px 0px;
+        padding-left: 15px;
+        font-size: 18px;
+      }
+    }
+  }
+
+  // responsive related products section
+  .relatedProsRow {
+    margin-top: 8rem !important;
+    .wrapperRelatedProItem {
+      margin-top: 5rem;
+      width: 75%;
+      padding-bottom: 20px;
+      .wrapperImgRelatedProItem {
+        width: 100%;
+        img.imgBestProItem {
+          width: 100%;
+        }
+      }
+
+      .rateRelatedProItem {
+        margin-top: 20px;
+      }
+      .nameRelatedProItem {
+        font-size: 17px;
+        margin-top: 12px;
+        line-height: 20px;
+      }
+      .priceRelatedProItem {
+        font-size: 16px;
+        margin-top: 14px;
+      }
+      .RelatedProItemBtn {
+        padding: 10px 20px;
+        font-size: 14px;
+        margin-top: 25px;
+      }
+    }
+    .wrapperRelatedPros {
+      .titleRelated {
+        font-size: 42px;
+      }
+      .wrapperSliderRelated {
+        margin-top: 0rem;
+      }
+    }
+  }
+
+  .css-1po6ics-MuiAvatar-root {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  .css-1lauo1g-MuiRating-root {
+    font-size: 18px !important;
+  }
+  .css-iljtu2-MuiRating-root {
+    font-size: 24px !important;
+  }
+}

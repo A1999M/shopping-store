@@ -5,7 +5,6 @@ import AllPayForms from "./AllPayForms";
 import Lottie from "lottie-react";
 import { Link } from "react-router-dom";
 import PaymentItems from "./PaymentItems";
-import Footer from "../../components/Footer";
 import { AnimatePresence, motion } from "framer-motion";
 import Check from "../../svg/Check.json";
 import Error from "../../svg/Error.json";
@@ -259,7 +258,6 @@ export default function AddInformation() {
           )}
         </div>
       </motion.div>
-      {/* <Footer /> */}
     </>
   );
 }

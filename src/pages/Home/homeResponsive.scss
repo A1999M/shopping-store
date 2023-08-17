@@ -268,8 +268,7 @@
   // responsive best products section
   .bestProducts {
     .bestProTitleRow {
-      margin-bottom: 7rem;
-
+      margin-bottom: 2rem;
       .titleBestProducts {
         font-size: 26px;
       }
@@ -278,37 +277,31 @@
         margin-top: 6px;
       }
     }
-    .wrapperBestProducts {
-      .horizontalElement {
-        width: 40vw;
-        margin-right: 3rem;
-        .wrapperBestProItem {
+    .wrapperBestProItem {
+      width: 83%;
+      padding-bottom: 20px;
+      .wrapperImgBestProItem {
+        width: 100%;
+        img.imgBestProItem {
           width: 100%;
-          padding-bottom: 20px;
-          .wrapperImgBestProItem {
-            width: 100%;
-            img.imgBestProItem {
-              width: 100%;
-            }
-          }
-          .rateBestProItem {
-            margin-top: 7px;
-          }
-          .namePro {
-            font-size: 11px;
-            margin-top: 3px;
-            line-height: 20px;
-          }
-          .pricePro {
-            font-size: 11px;
-            margin-top: 4px;
-          }
-          .bestProBtn {
-            padding: 5px 10px;
-            font-size: 8px;
-            margin-top: 8px;
-          }
         }
+      }
+      .rateBestProItem {
+        margin-top: 6px;
+      }
+      .namePro {
+        font-size: 11px;
+        margin-top: 2px;
+        line-height: 20px;
+      }
+      .pricePro {
+        font-size: 11px;
+        margin-top: 3px;
+      }
+      .bestProBtn {
+        padding: 5px 10px;
+        font-size: 8px;
+        margin-top: 8px;
       }
     }
   }
@@ -579,46 +572,40 @@
   // responsive best products section
   .bestProducts {
     .bestProTitleRow {
-      margin-bottom: 7rem;
+      margin-bottom: 1.5rem;
       .titleBestProducts {
-        font-size: 26px;
+        font-size: 24px;
       }
       .descBestProducts {
         font-size: 11px;
-        margin-top: 6px;
+        margin-top: 9px;
       }
     }
-    .wrapperBestProducts {
-      .horizontalElement {
-        width: 40vw;
-        margin-right: 3rem;
-        .wrapperBestProItem {
+    .wrapperBestProItem {
+      width: 75%;
+      padding-bottom: 20px;
+      .wrapperImgBestProItem {
+        width: 100%;
+        img.imgBestProItem {
           width: 100%;
-          padding-bottom: 20px;
-          .wrapperImgBestProItem {
-            width: 100%;
-            img.imgBestProItem {
-              width: 100%;
-            }
-          }
-          .rateBestProItem {
-            margin-top: 7px;
-          }
-          .namePro {
-            font-size: 11px;
-            margin-top: 3px;
-            line-height: 20px;
-          }
-          .pricePro {
-            font-size: 11px;
-            margin-top: 4px;
-          }
-          .bestProBtn {
-            padding: 5px 10px;
-            font-size: 8px;
-            margin-top: 8px;
-          }
         }
+      }
+      .rateBestProItem {
+        margin-top: 5px;
+      }
+      .namePro {
+        font-size: 11px;
+        margin-top: 4px;
+        line-height: 20px;
+      }
+      .pricePro {
+        font-size: 11px;
+        margin-top: 5px;
+      }
+      .bestProBtn {
+        padding: 5px 10px;
+        font-size: 8px;
+        margin-top: 8px;
       }
     }
   }
@@ -884,46 +871,40 @@
   // responsive best products section
   .bestProducts {
     .bestProTitleRow {
-      margin-bottom: 7rem;
+      margin-bottom: 2rem;
       .titleBestProducts {
-        font-size: 33px;
+        font-size: 25px;
       }
       .descBestProducts {
-        font-size: 12px;
+        font-size: 11px;
         margin-top: 8px;
       }
     }
-    .wrapperBestProducts {
-      .horizontalElement {
-        width: 40vw;
-        margin-right: 3.5rem;
-        .wrapperBestProItem {
+    .wrapperBestProItem {
+      width: 75%;
+      padding-bottom: 20px;
+      .wrapperImgBestProItem {
+        width: 100%;
+        img.imgBestProItem {
           width: 100%;
-          padding-bottom: 20px;
-          .wrapperImgBestProItem {
-            width: 100%;
-            img.imgBestProItem {
-              width: 100%;
-            }
-          }
-          .rateBestProItem {
-            margin-top: 10px;
-          }
-          .namePro {
-            font-size: 12px;
-            margin-top: 5px;
-            line-height: 20px;
-          }
-          .pricePro {
-            font-size: 12px;
-            margin-top: 5px;
-          }
-          .bestProBtn {
-            padding: 6px 12px;
-            font-size: 9px;
-            margin-top: 8px;
-          }
         }
+      }
+      .rateBestProItem {
+        margin-top: 5px;
+      }
+      .namePro {
+        font-size: 12px;
+        margin-top: 3px;
+        line-height: 20px;
+      }
+      .pricePro {
+        font-size: 11px;
+        margin-top: 4px;
+      }
+      .bestProBtn {
+        padding: 6px 12px;
+        font-size: 9px;
+        margin-top: 8px;
       }
     }
   }
@@ -1190,46 +1171,40 @@
   // responsive best products section
   .bestProducts {
     .bestProTitleRow {
-      margin-bottom: 7rem;
+      margin-bottom: 1.5rem;
       .titleBestProducts {
-        font-size: 33px;
+        font-size: 29px;
       }
       .descBestProducts {
-        font-size: 12px;
-        margin-top: 8px;
+        font-size: 11px;
+        margin-top: 10px;
       }
     }
-    .wrapperBestProducts {
-      .horizontalElement {
-        width: 40vw;
-        margin-right: 3.5rem;
-        .wrapperBestProItem {
+    .wrapperBestProItem {
+      width: 80%;
+      padding-bottom: 20px;
+      .wrapperImgBestProItem {
+        width: 100%;
+        img.imgBestProItem {
           width: 100%;
-          padding-bottom: 20px;
-          .wrapperImgBestProItem {
-            width: 100%;
-            img.imgBestProItem {
-              width: 100%;
-            }
-          }
-          .rateBestProItem {
-            margin-top: 10px;
-          }
-          .namePro {
-            font-size: 12px;
-            margin-top: 7px;
-            line-height: 20px;
-          }
-          .pricePro {
-            font-size: 12px;
-            margin-top: 5px;
-          }
-          .bestProBtn {
-            padding: 6px 12px;
-            font-size: 9px;
-            margin-top: 8px;
-          }
         }
+      }
+      .rateBestProItem {
+        margin-top: 5px;
+      }
+      .namePro {
+        font-size: 12px;
+        margin-top: 3px;
+        line-height: 20px;
+      }
+      .pricePro {
+        font-size: 11px;
+        margin-top: 5px;
+      }
+      .bestProBtn {
+        padding: 6px 12px;
+        font-size: 9px;
+        margin-top: 8px;
       }
     }
   }
@@ -1516,7 +1491,7 @@
   // responsive best products section
   .bestProducts {
     .bestProTitleRow {
-      margin-bottom: 10rem;
+      margin-bottom: 3rem;
       .titleBestProducts {
         font-size: 33px;
       }
@@ -1525,37 +1500,31 @@
         margin-top: 8px;
       }
     }
-    .wrapperBestProducts {
-      .horizontalElement {
-        width: 40vw;
-        margin-right: 3.5rem;
-        .wrapperBestProItem {
+    .wrapperBestProItem {
+      width: 80%;
+      padding-bottom: 20px;
+      .wrapperImgBestProItem {
+        width: 100%;
+        img.imgBestProItem {
           width: 100%;
-          padding-bottom: 20px;
-          .wrapperImgBestProItem {
-            width: 100%;
-            img.imgBestProItem {
-              width: 100%;
-            }
-          }
-          .rateBestProItem {
-            margin-top: 13px;
-          }
-          .namePro {
-            font-size: 13px;
-            margin-top: 7px;
-            line-height: 20px;
-          }
-          .pricePro {
-            font-size: 13px;
-            margin-top: 8px;
-          }
-          .bestProBtn {
-            padding: 7px 14px;
-            font-size: 10px;
-            margin-top: 8px;
-          }
         }
+      }
+      .rateBestProItem {
+        margin-top: 7px;
+      }
+      .namePro {
+        font-size: 14px;
+        margin-top: 7px;
+        line-height: 20px;
+      }
+      .pricePro {
+        font-size: 12px;
+        margin-top: 8px;
+      }
+      .bestProBtn {
+        padding: 7px 14px;
+        font-size: 10px;
+        margin-top: 12px;
       }
     }
   }
@@ -1850,47 +1819,40 @@
   // responsive best products section
   .bestProducts {
     .bestProTitleRow {
-      margin-bottom: 5rem;
-
+      margin-bottom: 3rem;
       .titleBestProducts {
-        font-size: 35px;
+        font-size: 34px;
       }
       .descBestProducts {
         font-size: 13px;
         margin-top: 7px;
       }
     }
-    .wrapperBestProducts {
-      .horizontalElement {
-        width: 30vw;
-        margin-right: 4.5rem;
-        .wrapperBestProItem {
+    .wrapperBestProItem {
+      width: 85%;
+      padding-bottom: 20px;
+      .wrapperImgBestProItem {
+        width: 100%;
+        img.imgBestProItem {
           width: 100%;
-          padding-bottom: 20px;
-          .wrapperImgBestProItem {
-            width: 100%;
-            img.imgBestProItem {
-              width: 100%;
-            }
-          }
-          .rateBestProItem {
-            margin-top: 10px;
-          }
-          .namePro {
-            font-size: 13px;
-            margin-top: 7px;
-            line-height: 20px;
-          }
-          .pricePro {
-            font-size: 13px;
-            margin-top: 8px;
-          }
-          .bestProBtn {
-            padding: 7px 14px;
-            font-size: 10px;
-            margin-top: 8px;
-          }
         }
+      }
+      .rateBestProItem {
+        margin-top: 7px;
+      }
+      .namePro {
+        font-size: 13px;
+        margin-top: 7px;
+        line-height: 20px;
+      }
+      .pricePro {
+        font-size: 12px;
+        margin-top: 5px;
+      }
+      .bestProBtn {
+        padding: 7px 14px;
+        font-size: 10px;
+        margin-top: 10px;
       }
     }
   }
@@ -2181,46 +2143,40 @@
   // responsive best products section
   .bestProducts {
     .bestProTitleRow {
-      margin-bottom: 5rem;
+      margin-bottom: 3rem;
       .titleBestProducts {
-        font-size: 38px;
+        font-size: 35px;
       }
       .descBestProducts {
         font-size: 14px;
         margin-top: 10px;
       }
     }
-    .wrapperBestProducts {
-      .horizontalElement {
-        margin-right: 4.5rem;
-        width: 20vw;
-        .wrapperBestProItem {
+    .wrapperBestProItem {
+      width: 74%;
+      padding-bottom: 20px;
+      .wrapperImgBestProItem {
+        width: 100%;
+        img.imgBestProItem {
           width: 100%;
-          padding-bottom: 20px;
-          .wrapperImgBestProItem {
-            width: 100%;
-            img.imgBestProItem {
-              width: 100%;
-            }
-          }
-          .rateBestProItem {
-            margin-top: 10px;
-          }
-          .namePro {
-            font-size: 13px;
-            margin-top: 7px;
-            line-height: 20px;
-          }
-          .pricePro {
-            font-size: 13px;
-            margin-top: 8px;
-          }
-          .bestProBtn {
-            padding: 7px 14px;
-            font-size: 10px;
-            margin-top: 8px;
-          }
         }
+      }
+      .rateBestProItem {
+        margin-top: 6px;
+      }
+      .namePro {
+        font-size: 15px;
+        margin-top: 8px;
+        line-height: 20px;
+      }
+      .pricePro {
+        font-size: 13px;
+        margin-top: 10px;
+      }
+      .bestProBtn {
+        padding: 8px 19px;
+        font-size: 11px;
+        margin-top: 12px;
       }
     }
   }
@@ -2509,47 +2465,41 @@
   }
   // responsive best products section
   .bestProducts {
-    bestProTitleRow {
+    .bestProTitleRow {
       margin-bottom: 3rem;
       .titleBestProducts {
-        font-size: 40px;
+        font-size: 36px;
       }
       .descBestProducts {
-        font-size: 16px;
-        margin-top: 15px;
+        font-size: 15px;
+        margin-top: 8px;
       }
     }
-    .wrapperBestProducts {
-      .horizontalElement {
-        width: 20vw;
-        margin-right: 4.5rem;
-        .wrapperBestProItem {
+    .wrapperBestProItem {
+      width: 70%;
+      padding-bottom: 20px;
+      .wrapperImgBestProItem {
+        width: 100%;
+        img.imgBestProItem {
           width: 100%;
-          padding-bottom: 20px;
-          .wrapperImgBestProItem {
-            width: 100%;
-            img.imgBestProItem {
-              width: 100%;
-            }
-          }
-          .rateBestProItem {
-            margin-top: 15px;
-          }
-          .namePro {
-            font-size: 15px;
-            margin-top: 10px;
-            line-height: 20px;
-          }
-          .pricePro {
-            font-size: 14px;
-            margin-top: 10px;
-          }
-          .bestProBtn {
-            padding: 10px 20px;
-            font-size: 12px;
-            margin-top: 12px;
-          }
         }
+      }
+      .rateBestProItem {
+        margin-top: 6px;
+      }
+      .namePro {
+        font-size: 15px;
+        margin-top: 8px;
+        line-height: 20px;
+      }
+      .pricePro {
+        font-size: 13px;
+        margin-top: 10px;
+      }
+      .bestProBtn {
+        padding: 8px 19px;
+        font-size: 11px;
+        margin-top: 12px;
       }
     }
   }
@@ -2800,47 +2750,41 @@
   }
   // responsive best products section
   .bestProducts {
-    bestProTitleRow {
-      margin-bottom: 3rem;
+    .bestProTitleRow {
+      margin-bottom: 4rem;
       .titleBestProducts {
-        font-size: 45px;
+        font-size: 40px;
       }
       .descBestProducts {
-        font-size: 18px;
-        margin-top: 20px;
+        font-size: 16px;
+        margin-top: 12px;
       }
     }
-    .wrapperBestProducts {
-      .horizontalElement {
-        width: 20vw;
-        margin-right: 4.5rem;
-        .wrapperBestProItem {
+    .wrapperBestProItem {
+      width: 70%;
+      padding-bottom: 20px;
+      .wrapperImgBestProItem {
+        width: 100%;
+        img.imgBestProItem {
           width: 100%;
-          padding-bottom: 20px;
-          .wrapperImgBestProItem {
-            width: 100%;
-            img.imgBestProItem {
-              width: 100%;
-            }
-          }
-          .rateBestProItem {
-            margin-top: 20px;
-          }
-          .namePro {
-            font-size: 17px;
-            margin-top: 12px;
-            line-height: 20px;
-          }
-          .pricePro {
-            font-size: 16px;
-            margin-top: 14px;
-          }
-          .bestProBtn {
-            padding: 10px 20px;
-            font-size: 15px;
-            margin-top: 15px;
-          }
         }
+      }
+      .rateBestProItem {
+        margin-top: 15px;
+      }
+      .namePro {
+        font-size: 15px;
+        margin-top: 8px;
+        line-height: 20px;
+      }
+      .pricePro {
+        font-size: 15px;
+        margin-top: 12px;
+      }
+      .bestProBtn {
+        padding: 8px 19px;
+        font-size: 12px;
+        margin-top: 12px;
       }
     }
   }
@@ -2943,18 +2887,18 @@
     .wrapperOfferItem {
       margin-top: 2rem !important;
       .titleOfferItem {
-        font-size: 2.5vw !important;
+        font-size: 2.2vw !important;
         margin-left: 3vw !important;
         padding-top: 25% !important;
       }
       .descOfferItem {
         margin-left: 3vw !important;
-        font-size: 1.1vw !important;
+        font-size: 1vw !important;
         margin-top: 20px !important;
       }
       .shopBtnOfferItem {
         margin-left: 3vw !important;
-        font-size: 1vw !important;
+        font-size: 0.8vw !important;
         margin-top: 12px !important;
         padding: 15px 25px !important;
       }
@@ -2964,6 +2908,8 @@
   .videoOffer {
     height: 680px !important;
   }
+  // responsive best products section
+
   // responsive latest blog posts section
   .latestBlogs {
     padding: 0 3rem !important;
@@ -3092,37 +3038,31 @@
         margin-top: 20px;
       }
     }
-    .wrapperBestProducts {
-      .horizontalElement {
-        width: 20vw;
-        margin-right: 4.5rem;
-        .wrapperBestProItem {
+    .wrapperBestProItem {
+      width: 73%;
+      padding-bottom: 20px;
+      .wrapperImgBestProItem {
+        width: 100%;
+        img.imgBestProItem {
           width: 100%;
-          padding-bottom: 20px;
-          .wrapperImgBestProItem {
-            width: 100%;
-            img.imgBestProItem {
-              width: 100%;
-            }
-          }
-          .rateBestProItem {
-            margin-top: 20px;
-          }
-          .namePro {
-            font-size: 17px;
-            margin-top: 12px;
-            line-height: 20px;
-          }
-          .pricePro {
-            font-size: 16px;
-            margin-top: 14px;
-          }
-          .bestProBtn {
-            padding: 10px 20px;
-            font-size: 15px;
-            margin-top: 15px;
-          }
         }
+      }
+      .rateBestProItem {
+        margin-top: 20px;
+      }
+      .namePro {
+        font-size: 17px;
+        margin-top: 12px;
+        line-height: 20px;
+      }
+      .pricePro {
+        font-size: 16px;
+        margin-top: 14px;
+      }
+      .bestProBtn {
+        padding: 10px 20px;
+        font-size: 15px;
+        margin-top: 15px;
       }
     }
   }

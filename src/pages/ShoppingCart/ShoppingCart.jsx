@@ -7,7 +7,6 @@ import { motion } from "framer-motion";
 import EmpityCart from "../../svg/EmpityCart.json";
 import Lottie from "lottie-react";
 import SplitText from "../../plugins/SplitText";
-import Footer from "../../components/Footer";
 import "./ShoppingCart.scss";
 import "./responsiveShoppingCart.scss";
 
@@ -232,7 +231,6 @@ function ShoppingCart() {
           </>
         )}
       </motion.div>
-      {/* <Footer /> */}
     </>
   );
 }

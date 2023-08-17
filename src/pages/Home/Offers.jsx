@@ -5,8 +5,6 @@ import OfferItems from "./OfferItems";
 
 export default function Offers() {
   let scopeRef = useRef();
-  let leftOfferRef = useRef();
-  let rightOfferRef = useRef();
   let titleRef = useRef();
   let descRef = useRef();
 

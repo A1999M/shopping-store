@@ -1,4 +1,4 @@
-import { useLayoutEffect } from "react";
+import { useEffect } from "react";
 import Header from "../../components/Header";
 import VideoOffer from "./VideoOffer";
 import LatestBlogs from "./LatestBlogs";
@@ -14,20 +14,13 @@ import "./home.scss";
 import "./homeResponsive.scss";
 
 export default function Home() {
-  useLayoutEffect(() => {
+  useEffect(() => {
     document.documentElement.scrollTo({
       top: 0,
       left: 0,
       behavior: "instant",
     });
-    return () => {
-      document.documentElement.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: "instant",
-      });
-    };
-  }, []);
+  });
 
   return (
     <motion.div
