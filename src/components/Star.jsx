@@ -6,14 +6,14 @@ export default function Star({ deviceSize }) {
       <svg
         height={
           (deviceSize > 1200 && "16px") ||
-          (deviceSize > 992 && "14px") ||
+          (deviceSize > 992 && "13px") ||
           (deviceSize > 576 && "12px") ||
           (deviceSize > 412 && "11px") ||
           (deviceSize < 412 && "10px")
         }
         width={
           (deviceSize > 1200 && "16px") ||
-          (deviceSize > 992 && "14px") ||
+          (deviceSize > 992 && "13px") ||
           (deviceSize > 576 && "12px") ||
           (deviceSize > 412 && "11px") ||
           (deviceSize < 412 && "10px")

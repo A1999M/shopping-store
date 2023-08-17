@@ -1,10 +1,12 @@
-import { useContext, useEffect, useRef } from "react";
+import { useContext, useState, useRef, useEffect } from "react";
 import items from "../../context/items";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/all";
 import BestProItems from "./BestProItems";
-
-gsap.registerPlugin(ScrollTrigger);
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 
 export default function BestProducts() {
   let scopeRef = useRef();
@@ -12,77 +14,18 @@ export default function BestProducts() {
   let descRef = useRef();
   let wrapperBestPro = useRef();
   let { menItems, womenItems } = useContext(items);
+  let [deviceSize, setDeviceSize] = useState(window.innerWidth);
+
+  let handleResize = () => {
+    setDeviceSize(window.innerWidth);
+  };
 
   useEffect(() => {
-    ScrollTrigger.refresh();
-    let ctx = gsap.context(() => {
-      gsap.set(titleRef.current, {
-        opacity: 0,
-        clipPath: "inset(0% 0% 100% 0%)",
-        y: 30,
-      });
-      gsap.set(descRef.current, {
-        opacity: 0,
-        clipPath: "inset(0% 0% 100% 0%)",
-        y: 30,
-      });
-
-      let horizontalElement = gsap.utils.toArray(".horizontalElement");
-
-      let tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: titleRef.current,
-          endTrigger: descRef.current,
-          start: "center 80%",
-          end: "bottom 0%",
-        },
-      });
-
-      tl.to(titleRef.current, {
-        opacity: 1,
-        clipPath: "inset(0% 0% 0% 0%)",
-        y: 0,
-        duration: 1,
-        ease: "Expo.easeOut",
-      });
-      tl.to(
-        descRef.current,
-        {
-          opacity: 1,
-          clipPath: "inset(0% 0% 0% 0%)",
-          y: 0,
-          duration: 1,
-          ease: "Expo.easeOut",
-        },
-        "<0.2"
-      );
-
-      let scrollTween = gsap.to(horizontalElement, {
-        xPercent: -90 * (horizontalElement.length - 1),
-        ease: "none",
-        scrollTrigger: {
-          trigger: wrapperBestPro.current,
-          start: "center 55%",
-          end: "+=1500",
-          pin: true,
-          id: "horizontalTrigger",
-          snap: 1 / (horizontalElement.length - 1),
-          scrub: 1.5,
-          // markers: {
-          //   startColor: "#ffd000",
-          //   endColor: "#ff0000",
-          //   fontSize: "25px",
-          // },
-        },
-      });
-    }, scopeRef);
-
+    window.addEventListener("resize", handleResize);
     return () => {
-      ctx.kill();
-      ctx.revert();
-      ScrollTrigger.refresh();
+      window.removeEventListener("resize", handleResize);
     };
-  }, []);
+  });
 
   let bestProducts = [
     menItems[5],
@@ -101,10 +44,7 @@ export default function BestProducts() {
 
   return (
     <>
-      <div
-        ref={scopeRef}
-        className="container-fluid bestProducts overflow-hidden px-5"
-      >
+      <div ref={scopeRef} className="container-fluid bestProducts">
         <div className="row bestProTitleRow">
           <div className="col-12">
             <p ref={titleRef} className="titleBestProducts">
@@ -115,11 +55,32 @@ export default function BestProducts() {
             </p>
           </div>
         </div>
-        <div ref={wrapperBestPro} className="wrapperBestProducts">
-          {bestProducts &&
-            bestProducts.map((pro, index) => {
-              return <BestProItems key={index} item={pro} />;
-            })}
+        <div ref={wrapperBestPro} className="row">
+          <Swiper
+            // install Swiper modules
+            modules={[Navigation, Pagination, Scrollbar, A11y]}
+            spaceBetween={0}
+            slidesPerView={
+              (deviceSize > 1200 && 4) ||
+              (deviceSize > 992 && 4) ||
+              (deviceSize > 576 && 3) ||
+              (deviceSize > 412 && 2) ||
+              (deviceSize < 412 && 2)
+            }
+            navigation
+          >
+            {bestProducts &&
+              bestProducts.map((item) => {
+                return (
+                  <div className="col-4">
+                    <SwiperSlide>
+                      <BestProItems item={item} />
+                    </SwiperSlide>
+                  </div>
+                );
+              })}
+            ...
+          </Swiper>
         </div>
       </div>
     </>
