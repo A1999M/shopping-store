@@ -25,7 +25,8 @@ export default function BestProItems({ item }) {
   };
   let handlerLeaveView = () => {
     setInView(false);
-    wrapperProRef.current.style.visibility = "hidden";
+    wrapperProRef.current &&
+      (wrapperProRef.current.style.visibility = "hidden");
   };
 
   return (

@@ -10,18 +10,28 @@ $btn-color: #fff;
     .titleBlogDetail {
       font-size: 32px;
       margin-top: 2.5rem;
+      perspective: 200;
+      opacity: 0;
+      clip-path: inset(0% 0% 100% 0%);
+      transform: translateX(-5px) translateY(100px);
     }
     .currentData {
       font-size: 14px;
       font-family: sans-serif;
       margin-top: 14px;
       font-weight: 500;
+      display: block;
+      clip-path: inset(0% 0% 100% 0%);
+      opacity: 0;
+      transform: translateY(50px) translateX(-5px);
     }
     .imageBlogDetails {
       margin-top: -2.5rem;
       width: 100%;
-      clip-path: inset(10% 0% 10% 0%);
+      clip-path: inset(100% 0% 100% 0%);
       display: block;
+      opacity: 0;
+      transform: scale(1.2);
     }
   }
   .bodyBlogDetail {
@@ -96,76 +106,6 @@ $btn-color: #fff;
     }
   }
 }
-
-// .wrapperRelatedProItem {
-//   margin-top: 5rem;
-//   width: 75%;
-//   overflow: hidden;
-//   text-align: center;
-//   margin: 0 auto;
-//   padding-bottom: 20px;
-//   box-shadow: 0 0 0px 0px #00000040;
-//   transition: all 0.35s;
-//   .wrapperImgRelatedProItem {
-//     overflow: hidden;
-//     width: 100%;
-//     height: 380px;
-//     img.imgBestProItem {
-//       width: 100%;
-//       transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
-//       filter: grayscale(0) brightness(1);
-//     }
-//   }
-
-//   .rateRelatedProItem {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     margin-top: 20px;
-//   }
-//   .nameRelatedProItem {
-//     font-size: 17px;
-//     font-weight: bold;
-//     text-transform: capitalize;
-//     margin-top: 12px;
-//     line-height: 20px;
-//   }
-//   .priceRelatedProItem {
-//     font-size: 16px;
-//     text-transform: capitalize;
-//     margin-top: 14px;
-//     font-family: sans-serif;
-//   }
-//   .RelatedProItemBtn {
-//     color: #fff;
-//     background-color: #000;
-//     text-transform: uppercase;
-//     display: block;
-//     padding: 10px 20px;
-//     font-size: 14px;
-//     font-family: sans-serif;
-//     width: fit-content;
-//     margin: 0 auto;
-//     margin-top: 25px;
-//     transition: all 0.3s;
-//     opacity: 0;
-//   }
-//   &:hover {
-//     box-shadow: 0 0 20px 1px #00000040;
-//     .RelatedProItemBtn {
-//       opacity: 1;
-//     }
-//     .imgBestProItem {
-//       filter: grayscale(1) brightness(0.9);
-//     }
-//   }
-// }
-
-// .wrapperRelatedPros {
-//   .titleRelated {
-//     font-size: 45px;
-//     text-transform: uppercase;
-//     font-weight: bold;
-//     text-align: center;
-//   }
-// }
+.blogDetailsContainer {
+  margin-top: 6rem !important;
+}

@@ -21,6 +21,11 @@ function ShoppingCart() {
   });
 
   useLayoutEffect(() => {
+    document.documentElement.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant",
+    });
     let ctx = gsap.context(() => {
       let tl = gsap.timeline();
 
@@ -65,7 +70,7 @@ function ShoppingCart() {
         },
         "<0.2"
       );
-    }, scopeRef);
+    }, scopeRef.current);
     return () => {
       ctx.revert();
     };

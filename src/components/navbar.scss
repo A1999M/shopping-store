@@ -1,5 +1,11 @@
 .containerNavbar {
   padding: 0 3rem;
+  position: fixed;
+  top: 0%;
+  width: 100vw;
+  height: 15%;
+  z-index: 1000;
+  background-color: #fff;
   .navbar {
     display: flex;
     align-items: center;
