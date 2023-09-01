@@ -1,0 +1,348 @@
+.billingInfoForm {
+  margin-top: 3rem;
+  text-align: center;
+  .submitBillingBtn {
+    background-color: #000;
+    color: #fff;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 25px;
+    display: block;
+    padding: 10px 0;
+    width: 96%;
+    margin: 0 auto;
+    margin-top: 2.5rem;
+  }
+  .wrapperForm2 {
+    margin-top: 2rem;
+    .field2 {
+      opacity: 0;
+      transform: translateX(150px);
+      border: 1px solid #000;
+      outline: 0;
+    }
+  }
+}
+
+.contactInfoForm {
+  margin-top: 2rem;
+  text-align: center;
+  .submitContactBtn {
+    background-color: #000;
+    color: #fff;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 25px;
+    display: block;
+    padding: 10px 0;
+    width: 96%;
+    margin: 0 auto;
+    margin-top: 2.5rem;
+  }
+}
+.wrapperPaymentForm {
+  text-align: center;
+  margin-top: 3rem;
+  .titlePayment {
+    text-align: start;
+    margin-left: 20px;
+    font-size: 22px;
+    font-family: sans-serif;
+  }
+  .descPayment {
+    text-align: start;
+    margin-left: 20px;
+    font-size: 14px;
+    font-family: sans-serif;
+    margin-top: 15px;
+    color: #444444;
+  }
+  .paymentForm {
+    margin-top: 40px;
+    .payFormBtn {
+      margin: 0 auto;
+      background-color: #000;
+      color: #fff;
+      text-transform: capitalize;
+      font-size: 23px;
+      display: block;
+      padding: 10px 0;
+      width: 96%;
+      margin-top: 2.5rem;
+    }
+  }
+}
+
+.shipingAddress {
+  width: fit-content;
+  position: relative;
+  font-size: 22px;
+  text-transform: capitalize;
+  font-family: sans-serif;
+  margin-top: 3rem;
+  text-align: start;
+  margin-left: 18px;
+  opacity: 0;
+  clip-path: inset(0% 0% 100% 0%);
+  transform: translateY(50px);
+}
+.contactInfoTitle {
+  width: fit-content;
+  position: relative;
+  font-size: 22px;
+  text-transform: capitalize;
+  font-family: sans-serif;
+  margin-top: 3rem;
+  text-align: start;
+  margin-left: 18px;
+}
+.paymentRow {
+  justify-content: center;
+}
+.wrapperChackBox {
+  text-align: start;
+  margin-top: 2rem;
+  padding: 0 32px;
+  label {
+    margin-left: 7px;
+    font-size: 15px;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    vertical-align: 2px;
+  }
+  #checkbox {
+    transform: scale(1.2);
+  }
+}
+
+.wrapperPaymentCartItem {
+  margin-top: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  .wrapperPaymentItemImg {
+    width: 13%;
+    img {
+      width: 100%;
+    }
+  }
+  .wrapperPaymentItemDetails {
+    margin-left: 15px;
+    margin-top: 1rem;
+    .PaymentItemName {
+      font-weight: bold;
+      font-size: 14px;
+      font-family: sans-serif;
+      text-transform: capitalize;
+    }
+    .PaymentItemCount {
+      font-size: 14px;
+      font-family: sans-serif;
+      text-transform: capitalize;
+      margin-top: 15px;
+      span {
+        background-color: #dddd;
+        display: inline-block;
+        padding: 3px 15px;
+        border-radius: 20px;
+        margin-left: 5px;
+        font-size: 13px;
+      }
+    }
+    .deliveryPaymentItem {
+      background: #fff7d7;
+      width: fit-content;
+      margin-top: 20px;
+      padding: 0px 10px;
+      .zeroCost {
+        margin-left: 6px;
+        font-weight: bold;
+        font-size: 13px;
+        vertical-align: 0px;
+      }
+    }
+  }
+  .wrapperPaymentItemPrice {
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: 2rem;
+    .pricePaymentItem {
+      font-family: sans-serif;
+      text-transform: capitalize;
+      font-size: 15px;
+      span {
+        font-weight: bold;
+        background-color: #ddd;
+        padding: 5px 15px;
+        display: inline-block;
+        font-size: 15px;
+        font-family: sans-serif;
+        border-radius: 20px;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.wrapperPaymentSubtotal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 22px;
+  border-top: 1px solid #000;
+  padding-top: 22px;
+  .paymentSubtotalTitle {
+    font-family: sans-serif;
+    font-size: 17px;
+    text-transform: capitalize;
+  }
+  .paymentSubtotalPrice {
+    font-family: sans-serif;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 700;
+    opacity: 0.6;
+  }
+}
+.wrapperPaymentShipping {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+  .paymentShippingTitle {
+    font-family: sans-serif;
+    font-size: 17px;
+    text-transform: capitalize;
+  }
+  .paymentShippingPrice {
+    font-family: sans-serif;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 700;
+    opacity: 0.6;
+  }
+}
+.wrapperPaymentTotalPrice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+  .paymentTotalPriceTitle {
+    font-family: sans-serif;
+    font-size: 17px;
+    text-transform: capitalize;
+  }
+  .paymentTotalPricePrice {
+    font-family: sans-serif;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 700;
+    // opacity: 0.6;
+  }
+}
+
+// pay modal
+.paymentOverlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0;
+  display: none;
+  z-index: 10;
+  transition: all 0.3s;
+}
+.wrapperPayModal {
+  text-align: center;
+  background-color: #fff;
+  position: fixed;
+  border-radius: 50px;
+  padding: 2.5rem 6rem;
+  padding-top: 15px;
+  z-index: 20;
+  .titlePayModal {
+    font-size: 23px;
+    font-weight: 600;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    margin-top: 20px;
+  }
+  .titlePayErrorModal {
+    font-size: 23px;
+    font-weight: 600;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    margin-top: 20px;
+  }
+  .descPayModal {
+    font-size: 17px;
+    font-family: sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: 18px;
+    opacity: 0.7;
+  }
+
+  .backPayBtn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    .backPayLink {
+      background-color: #000;
+      color: #fff;
+      text-transform: capitalize;
+      font-size: 18px;
+      padding: 10px 25px;
+      margin-top: 30px;
+      text-decoration: none;
+      display: inline-block;
+      border: 1px solid #000;
+    }
+  }
+  .payModalCloseBtn {
+    background-color: #000;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 18px;
+    padding: 10px 62px;
+    margin-top: 30px;
+    display: inline-block;
+    border: 1px solid #000;
+    margin-right: 25px;
+  }
+}
+
+.cartBreadCrumb {
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: all 0.3s;
+  &:hover {
+    color: #006aff;
+  }
+}
+.billingBreadCrumb {
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: all 0.3s;
+  &:hover {
+    color: #006aff;
+  }
+}
+.contactBreadCrumb {
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: all 0.3s;
+  &:hover {
+    color: #006aff;
+  }
+}
+.paymentBreadCrumb {
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: all 0.3s;
+  &:hover {
+    color: #006aff;
+  }
+}

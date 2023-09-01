@@ -1,0 +1,33 @@
+.wrapperTable {
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  .leftTable {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    .leftTableItems {
+      padding: 20px 0px;
+      padding-left: 15px;
+      padding-right: 1.5rem;
+      border: 1px solid #dddddd;
+      color: #797979;
+      border-right: 0;
+      font-weight: bold;
+      font-size: 18px;
+    }
+  }
+  .rightTable {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    .rightTableItems {
+      padding: 20px 0px;
+      padding-left: 15px;
+      border: 1px solid #dddddd;
+      font-size: 18px;
+    }
+  }
+}

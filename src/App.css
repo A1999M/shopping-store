@@ -1,1 +1,124 @@
 @import url(./reset.css);
+@import url(./locomotive-scroll.css);
+@import url(./pages/Home/homeResponsive.scss);
+@import url("https://fonts.cdnfonts.com/css/philosopher");
+a {
+  text-decoration: none;
+}
+body {
+  overflow-x: hidden;
+  font-family: "Philosopher", sans-serif;
+  user-select: none;
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #484848;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: #48484800;
+  }
+}
+.mt-2rem {
+  margin-top: 2rem;
+}
+.mt-3rem {
+  margin-top: 3rem;
+}
+.mt-4rem {
+  margin-top: 4rem;
+}
+.mt-5rem {
+  margin-top: 5rem;
+}
+.mt-6rem {
+  margin-top: 6rem;
+}
+.mt-7rem {
+  margin-top: 7rem;
+}
+.mt-8rem {
+  margin-top: 8rem;
+}
+.mb3rem {
+  margin-bottom: 3rem;
+}
+.mb6rem {
+  margin-bottom: 6rem;
+}
+.mb7rem {
+  margin-bottom: 7rem;
+}
+.swiper-slide {
+  padding-bottom: 4rem !important;
+}
+.swiper-pagination-bullet-active {
+  background: #000 !important;
+}
+
+.accordion-item {
+  background-color: transparent;
+  outline: none;
+  border-left: 0;
+  border-right: 0;
+  .accordion-button {
+    background-color: transparent !important;
+    border: 0 !important;
+    outline: none !important;
+    box-shadow: 0 0 0 0 #00000000 !important;
+  }
+}
+.accordion-body {
+  opacity: 0.8;
+  font-family: sans-serif;
+}
+/*  */
+.wrapperSliderRelated {
+  .swiper-button-prev {
+    left: -1.5rem;
+    padding: 41px;
+    top: 46%;
+    border: 2px solid #000;
+    transform: scale(0.4);
+    color: #000;
+    border-radius: 50%;
+    font-weight: bold;
+  }
+  .swiper-button-next {
+    right: -1.5rem;
+    font-weight: bold;
+    top: 46%;
+    padding: 41px;
+    border: 2px solid #000;
+    transform: scale(0.4);
+    border-radius: 50%;
+    color: #000;
+  }
+}
+/*  */
+.bestProducts {
+  .swiper-button-prev {
+    left: -0.5rem;
+    padding: 41px;
+    top: 40%;
+    border: 2px solid #000;
+    transform: scale(0.4);
+    color: #000;
+    border-radius: 50%;
+    font-weight: bold;
+  }
+  .swiper-button-next {
+    right: -0.5rem;
+    font-weight: bold;
+    top: 40%;
+    padding: 41px;
+    border: 2px solid #000;
+    transform: scale(0.4);
+    border-radius: 50%;
+    color: #000;
+  }
+}
+.offcanvas.offcanvas-start.show {
+  right: 0 !important;
+  left: 100% !important;
+}

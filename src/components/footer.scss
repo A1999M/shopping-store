@@ -1,0 +1,126 @@
+// footer section styles
+.footer {
+  background-color: #000;
+  padding: 0 3rem;
+  padding-top: 6rem;
+  margin-top: 5rem;
+  padding-bottom: 3rem;
+  .wrapperFooterSocials {
+    img {
+      width: 40%;
+    }
+    .socialLists {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-top: 20px;
+      .socials {
+        cursor: pointer;
+        display: inline-block;
+        margin: 0 5px;
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 50%;
+      }
+    }
+  }
+  // categury section styles
+  .wrapperCateguryFooter {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .categuryItemsFooter {
+      font-size: 17px;
+      color: #ebebeb;
+      text-transform: capitalize;
+      font-family: sans-serif;
+      display: inline-block;
+      margin: 10px 0;
+      cursor: pointer;
+      font-weight: normal;
+      &:nth-child(1) {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 23px;
+        color: #fff;
+        font-family: "Philosopher", sans-serif;
+        margin-bottom: 15px;
+      }
+      transition: all 0.3s;
+      &:hover {
+        color: #a9a4a4;
+      }
+    }
+  }
+  // quick section styles
+  .wrapperQuickLinks {
+    @extend .wrapperCateguryFooter;
+    .quickLinkItems {
+      @extend .categuryItemsFooter;
+    }
+  }
+
+  //   get newsleter section styles
+  .wrapperNewsLeter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .titleNewsLeter {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 23px;
+      color: #fff;
+      font-family: "Philosopher", sans-serif;
+      margin-bottom: 15px;
+    }
+    #newsLeterEmil {
+      margin-top: 1rem;
+      background-color: #333333;
+      outline: none;
+      border: 1px solid #555555;
+      padding: 15px 10px;
+      padding-right: 5rem;
+      font-size: 15px;
+      font-family: sans-serif;
+      text-transform: capitalize;
+      color: #ebebeb;
+      display: inline-block;
+      &::placeholder {
+        color: #ebebeb;
+        font-size: 15px;
+        font-family: sans-serif;
+      }
+    }
+    #btnNewsLeter {
+      outline: none;
+      border: none;
+      display: inline-block;
+      padding: 13px 4rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 17px;
+      font-family: sans-serif;
+      margin-top: 15px;
+      transition: all 0.3s;
+      &:hover {
+        background-color: #a9a4a4;
+      }
+    }
+  }
+}
+
+.footer2 {
+  .css-1elwnq4-MuiPaper-root-MuiAccordion-root {
+    background-color: #000;
+    .css-ahj2mt-MuiTypography-root {
+      color: #fff;
+      font-size: 16px;
+      font-family: "Philosopher", sans-serif;
+    }
+  }
+  .css-i4bv87-MuiSvgIcon-root {
+    fill: #fff;
+  }
+}

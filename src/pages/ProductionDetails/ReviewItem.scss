@@ -1,0 +1,32 @@
+.wrapperReviewItem {
+  display: flex;
+  margin-top: 22px;
+  .avatarReview {
+  }
+  .reviewContent {
+    margin-left: 15px;
+    border: 1px solid #d8d8d8;
+    padding: 10px 0;
+    padding-left: 15px;
+    padding-bottom: 16px;
+    width: 90%;
+    .reviewerName {
+      font-size: 15px;
+      text-transform: capitalize;
+      font-family: sans-serif;
+      margin-top: 20px;
+      font-weight: bold;
+      span {
+        font-weight: normal;
+        font-size: 14px;
+      }
+    }
+    .comment {
+      font-size: 13.5px;
+      text-transform: capitalize;
+      font-family: sans-serif;
+      margin-top: 20px;
+      line-height: 22px;
+    }
+  }
+}
