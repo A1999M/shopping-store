@@ -19,6 +19,7 @@ export default function ProductionDetails() {
   let sizeProRef = useRef(null);
   let proPriceRef = useRef(null);
   let countBtnRef = useRef(null);
+  let scopeRef = useRef(null);
   let addBtn = useRef(null);
 
   let [countPro, setCountPro] = useState(1);
@@ -160,7 +161,7 @@ export default function ProductionDetails() {
       );
 
       //
-    });
+    }, scopeRef.current);
 
     return () => {
       ctx.kill();
@@ -168,6 +169,11 @@ export default function ProductionDetails() {
   });
 
   useEffect(() => {
+    document.documentElement.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant",
+    });
     if (productId <= 13) {
       fetch(`http://localhost:8000/men/?id=${productId}`)
         .then((res) => {
@@ -191,6 +197,13 @@ export default function ProductionDetails() {
           console.warn(err);
         });
     }
+    return () => {
+      document.documentElement.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "instant",
+      });
+    };
   }, [productId]);
 
   let changeImage1 = () => {
@@ -306,6 +319,7 @@ export default function ProductionDetails() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
+          ref={scopeRef}
           className="container-fluid proDetailsContainer"
         >
           <div className="row">

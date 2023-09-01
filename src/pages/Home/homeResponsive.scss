@@ -3,12 +3,14 @@
   .containerNavbar {
     padding: 3px 5px !important;
     margin-top: 5px !important;
+    height: 12% !important;
     .navbar {
       justify-content: center !important;
       .NavbarLogoSection {
         margin-right: auto !important;
+        width: 45vw !important;
         img {
-          width: 52% !important;
+          width: 70% !important;
         }
       }
       .NavbarLeftSection {
@@ -18,14 +20,14 @@
         }
       }
       .NavbarRightSection {
-        margin-right: 2rem !important;
+        margin-right: 1.5rem !important;
         .homeIcon {
-          width: 23px !important;
-          height: 23px !important;
+          width: 20px !important;
+          height: 20px !important;
         }
         .navBasketIcon {
-          width: 25px !important;
-          height: 25px !important;
+          width: 22px !important;
+          height: 22px !important;
           margin-left: 0px !important;
         }
       }
@@ -311,6 +313,7 @@
   .containerNavbar {
     padding: 3px 5px !important;
     margin-top: 5px !important;
+    height: 12% !important;
     .navbar {
       justify-content: center !important;
       .NavbarLogoSection {
@@ -1534,6 +1537,7 @@
   .containerNavbar {
     padding: 5px 1rem !important;
     margin-top: 0 !important;
+    height: 13% !important;
     .navbar {
       justify-content: center !important;
       .NavbarLogoSection {
@@ -1861,6 +1865,7 @@
   // responsive Navbar
   .containerNavbar {
     padding: 10px 1rem !important;
+    height: 10% !important;
     .navbar {
       justify-content: center !important;
       .NavbarLogoSection {
@@ -1891,7 +1896,7 @@
   }
   // responsive header of home page
   .heroHeader {
-    margin-top: 1.5rem !important;
+    margin-top: 7.5rem !important;
     .wrapperHeader {
       background-size: 100% !important;
       background-position-y: top !important;
@@ -2185,12 +2190,13 @@
   // responsive Navbar
   .containerNavbar {
     padding: 0 3rem !important;
+    height: 13% !important;
     .navbar {
       justify-content: space-between !important;
       .NavbarLogoSection {
-        margin-right: 7.5rem !important;
+        margin-right: 4.5rem !important;
         img {
-          width: 90% !important;
+          width: 85% !important;
         }
       }
       .NavbarLeftSection {
@@ -2215,7 +2221,7 @@
   }
   // responsive header of home page
   .heroHeader {
-    margin-top: 1.5rem !important;
+    margin-top: 8.5rem !important;
     .wrapperHeader {
       background-size: 100% !important;
       width: 100vw !important;
@@ -2506,32 +2512,35 @@
 }
 @media (min-width: 1200px) {
   // responsive Navbar
-  .navbar {
-    .NavbarLogoSection {
-      margin-right: 12rem !important;
-      img {
-        width: 110% !important;
+  .containerNavbar {
+    height: 14% !important;
+    .navbar {
+      .NavbarLogoSection {
+        margin-right: 10rem !important;
+        img {
+          width: 95% !important;
+        }
       }
-    }
-    .NavbarLeftSection {
-      #search {
-        padding-right: 4rem !important;
+      .NavbarLeftSection {
+        #search {
+          padding-right: 4rem !important;
+        }
       }
-    }
-    .NavbarRightSection {
-      .homeIcon {
-        width: 34px !important;
-        height: 34px !important;
-      }
-      .navBasketIcon {
-        width: 35px !important;
-        height: 35px !important;
+      .NavbarRightSection {
+        .homeIcon {
+          width: 29px !important;
+          height: 29px !important;
+        }
+        .navBasketIcon {
+          width: 30px !important;
+          height: 30px !important;
+        }
       }
     }
   }
   // responsive header of home page
   .heroHeader {
-    margin-top: 1.5rem !important;
+    margin-top: 7.5rem !important;
     .wrapperHeader {
       background-size: 100% !important;
       width: 100vw !important;
@@ -2791,32 +2800,35 @@
 }
 @media (min-width: 1400px) {
   // responsive Navbar
-  .navbar {
-    .NavbarLogoSection {
-      margin-right: 17rem !important;
-      img {
-        width: 120% !important;
+  .containerNavbar {
+    height: 15% !important;
+    .navbar {
+      .NavbarLogoSection {
+        margin-right: 13rem !important;
+        img {
+          width: 100% !important;
+        }
       }
-    }
-    .NavbarLeftSection {
-      #search {
-        padding-right: 4rem !important;
+      .NavbarLeftSection {
+        #search {
+          padding-right: 4rem !important;
+        }
       }
-    }
-    .NavbarRightSection {
-      .homeIcon {
-        width: 34px !important;
-        height: 34px !important;
-      }
-      .navBasketIcon {
-        width: 35px !important;
-        height: 35px !important;
+      .NavbarRightSection {
+        .homeIcon {
+          width: 30px !important;
+          height: 30px !important;
+        }
+        .navBasketIcon {
+          width: 31px !important;
+          height: 31px !important;
+        }
       }
     }
   }
   // responsive header of home page
   .heroHeader {
-    margin-top: 1.5rem !important;
+    margin-top: 8rem !important;
     .wrapperHeader {
       background-size: 100% !important;
       width: 100vw !important;
@@ -3031,15 +3043,15 @@
     .bestProTitleRow {
       margin-bottom: 3rem;
       .titleBestProducts {
-        font-size: 45px;
+        font-size: 42px;
       }
       .descBestProducts {
-        font-size: 18px;
-        margin-top: 20px;
+        font-size: 16px;
+        margin-top: 15px;
       }
     }
     .wrapperBestProItem {
-      width: 73%;
+      width: 70%;
       padding-bottom: 20px;
       .wrapperImgBestProItem {
         width: 100%;

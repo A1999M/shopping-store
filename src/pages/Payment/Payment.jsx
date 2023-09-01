@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { useSelector } from "react-redux";
 import PaymentStepper from "./PaymentStepper";
 import AllPayForms from "./AllPayForms";
@@ -24,6 +24,13 @@ export default function AddInformation() {
     setSize(window.innerWidth);
   };
 
+  useLayoutEffect(() => {
+    document.documentElement.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant",
+    });
+  });
   useEffect(() => {
     window.addEventListener("resize", handleResize);
     return () => {
@@ -209,8 +216,8 @@ export default function AddInformation() {
           <div
             className={
               size > 1060
-                ? "col-12 mb-4 mt-3 ms-3"
-                : "col-12 col-md-10 mb-4 mt-3 ms-3"
+                ? "col-12 mb-4 mb-md-3 mt-3 ms-3"
+                : "col-12 col-md-10 mb-4 mb-md-3 mt-3 ms-3"
             }
           >
             <MuiBreadCrumb

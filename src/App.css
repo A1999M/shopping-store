@@ -72,26 +72,51 @@ body {
   opacity: 0.8;
   font-family: sans-serif;
 }
-
-.swiper-button-prev {
-  left: -1.5rem;
-  padding: 41px;
-  top: 13rem;
-  border: 2px solid #000;
-  transform: scale(0.4);
-  color: #000;
-  border-radius: 50%;
-  font-weight: bold;
+/*  */
+.wrapperSliderRelated {
+  .swiper-button-prev {
+    left: -1.5rem;
+    padding: 41px;
+    top: 46%;
+    border: 2px solid #000;
+    transform: scale(0.4);
+    color: #000;
+    border-radius: 50%;
+    font-weight: bold;
+  }
+  .swiper-button-next {
+    right: -1.5rem;
+    font-weight: bold;
+    top: 46%;
+    padding: 41px;
+    border: 2px solid #000;
+    transform: scale(0.4);
+    border-radius: 50%;
+    color: #000;
+  }
 }
-.swiper-button-next {
-  right: -1.5rem;
-  font-weight: bold;
-  top: 13rem;
-  padding: 41px;
-  border: 2px solid #000;
-  transform: scale(0.4);
-  border-radius: 50%;
-  color: #000;
+/*  */
+.bestProducts {
+  .swiper-button-prev {
+    left: -0.5rem;
+    padding: 41px;
+    top: 40%;
+    border: 2px solid #000;
+    transform: scale(0.4);
+    color: #000;
+    border-radius: 50%;
+    font-weight: bold;
+  }
+  .swiper-button-next {
+    right: -0.5rem;
+    font-weight: bold;
+    top: 40%;
+    padding: 41px;
+    border: 2px solid #000;
+    transform: scale(0.4);
+    border-radius: 50%;
+    color: #000;
+  }
 }
 .offcanvas.offcanvas-start.show {
   right: 0 !important;

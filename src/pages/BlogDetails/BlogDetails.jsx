@@ -1,17 +1,24 @@
 import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { useParams } from "react-router";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/all";
+import SplitText from "../../plugins/SplitText";
 import "./BlogDetails.scss";
 import "./responsiveBlog.scss";
 
 export default function BlogDetails() {
   let scopeRef = useRef();
+  let titleRef = useRef();
+  let dataRef = useRef();
+  let imageRef = useRef();
+  let titleUnOrderRef = useRef();
+  let titleOrderRef = useRef();
+  let blogDetailsBackBtnRef = useRef();
   let [inViewDesc, setInViewDesc] = useState(false);
   let { blogId } = useParams();
   let [currentBlog, setCurrenBlog] = useState();
+  let location = useLocation();
 
   useLayoutEffect(() => {
     document.documentElement.scrollTo({
@@ -19,116 +26,37 @@ export default function BlogDetails() {
       left: 0,
       behavior: "instant",
     });
+    gsap.registerPlugin(SplitText);
+    let splitTitle = new SplitText(titleRef.current, { type: "words" });
 
-    let ctx = gsap.context(() => {
-      gsap.registerPlugin(ScrollTrigger);
-      let unOrderItems = gsap.utils.toArray(".unorderBlogDetailsItems");
-      let orderItems = gsap.utils.toArray(".orderBlogDetailsItems");
-
-      unOrderItems.forEach((item) => {
-        gsap.set(item, {
-          opacity: 0,
-          clipPath: "inset(0% 0% 100% 0%)",
-          y: 30,
-        });
-      });
-      orderItems.forEach((item) => {
-        gsap.set(item, {
-          opacity: 0,
-          clipPath: "inset(0% 0% 100% 0%)",
-          y: 30,
-        });
-      });
-      gsap.set(".titleUnOrder", {
-        opacity: 0,
-        clipPath: "inset(0% 0% 100% 0%)",
-        y: 30,
-      });
-      gsap.set(".titleOrder", {
-        opacity: 0,
-        clipPath: "inset(0% 0% 100% 0%)",
-        y: 30,
-      });
-      gsap.set(".blogDetailsBackBtn", {
-        opacity: 0,
-        clipPath: "inset(0% 0% 100% 0%)",
-        y: 30,
-      });
-
-      let tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".titleUnOrder",
-          start: "center 70%",
-          end: "bottom 0%",
-        },
-      });
-      let tl2 = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".titleOrder",
-          start: "center 75%",
-          end: "bottom 0%",
-        },
-      });
-
-      tl.to(".titleUnOrder", {
-        opacity: 1,
-        clipPath: "inset(0% 0% 0% 0%)",
-        y: 0,
-        duration: 1,
-        ease: "Expo.easeOut",
-      });
-      unOrderItems.forEach((item) => {
-        tl.to(
-          item,
-          {
-            opacity: 1,
-            clipPath: "inset(0% 0% 0% 0%)",
-            y: 0,
-            duration: 1,
-            ease: "Expo.easeOut",
-          },
-          "<0.1"
-        );
-      });
-
-      tl2.to(".titleOrder", {
-        opacity: 1,
-        clipPath: "inset(0% 0% 0% 0%)",
-        y: 0,
-        duration: 1,
-        ease: "Expo.easeOut",
-        delay: 0.3,
-      });
-      orderItems.forEach((item) => {
-        tl2.to(
-          item,
-          {
-            opacity: 1,
-            clipPath: "inset(0% 0% 0% 0%)",
-            y: 0,
-            duration: 1,
-            ease: "Expo.easeOut",
-          },
-          "<0.1"
-        );
-      });
-      tl2.to(
-        ".blogDetailsBackBtn",
-        {
-          opacity: 1,
-          clipPath: "inset(0% 0% 0% 0%)",
-          y: 0,
-          duration: 1,
-          ease: "Expo.easeOut",
-        },
-        "<0.2"
-      );
-    }, scopeRef);
-
-    return () => {
-      ctx.revert();
-    };
-  }, []);
+    gsap.to(splitTitle.words, {
+      opacity: 1,
+      y: 0,
+      clipPath: "inset(0% 0% 0% 0%)",
+      stagger: 0.05,
+      perspective: 0,
+      x: 0,
+      duration: 1.2,
+      ease: "Expo.easeOut",
+    });
+    gsap.to(dataRef.current, {
+      opacity: 1,
+      y: 0,
+      clipPath: "inset(0% 0% 0% 0%)",
+      x: 0,
+      duration: 1,
+      ease: "Expo.easeOut",
+      delay: 0.35,
+    });
+    gsap.to(imageRef.current, {
+      clipPath: "inset(10% 0% 10% 0%)",
+      opacity: 1,
+      scale: 1,
+      duration: 1.2,
+      ease: "Expo.easeOut",
+      delay: 0.2,
+    });
+  });
 
   useEffect(() => {
     fetch(`http://localhost:8000/blogItems/?id=${blogId}`)
@@ -147,6 +75,70 @@ export default function BlogDetails() {
     setInViewDesc(true);
   };
 
+  let unOrderVariants = {
+    initial: {
+      opacity: 0,
+      y: 30,
+    },
+    animate: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "tween",
+        when: "beforeChildren",
+        staggerChildren: 0.15,
+        delayChildren: 0,
+      },
+    },
+  };
+  let unOrderCHilds = {
+    initial: {
+      opacity: 0,
+      y: 30,
+      clipPath: "inset(0% 0% 100% 0%)",
+    },
+    animate: {
+      opacity: 1,
+      y: 0,
+      clipPath: "inset(0% 0% 0% 0%)",
+      transition: {
+        type: "spring",
+      },
+    },
+  };
+  let orderVariants = {
+    initial: {
+      opacity: 0,
+      y: 30,
+    },
+    animate: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "tween",
+        when: "beforeChildren",
+        delay: 0.5,
+        staggerChildren: 0.15,
+        delayChildren: 0,
+      },
+    },
+  };
+  let orderCHilds = {
+    initial: {
+      opacity: 0,
+      y: 30,
+      clipPath: "inset(0% 0% 100% 0%)",
+    },
+    animate: {
+      opacity: 1,
+      y: 0,
+      clipPath: "inset(0% 0% 0% 0%)",
+      transition: {
+        type: "spring",
+      },
+    },
+  };
+
   return (
     <>
       {currentBlog && (
@@ -161,12 +153,17 @@ export default function BlogDetails() {
             <div className="col-12">
               {/* header blog */}
               <div className="headerBlogDetail">
-                <p className="titleBlogDetail">{currentBlog.title}</p>
-                <p className="currentData">AUGUST 12, 2022</p>
+                <p ref={titleRef} className="titleBlogDetail">
+                  {currentBlog.title}
+                </p>
+                <p ref={dataRef} className="currentData">
+                  AUGUST 12, 2022
+                </p>
                 <img
                   className="imageBlogDetails"
                   src={currentBlog.src}
                   alt={currentBlog.title}
+                  ref={imageRef}
                 />
               </div>
               {/* body blog */}
@@ -183,41 +180,85 @@ export default function BlogDetails() {
                 >
                   {currentBlog.description}
                 </motion.p>
-                <div className="unorderedListBlogDetail">
-                  <p className="titleUnOrder">Sample Unordered List</p>
+                <motion.div
+                  variants={unOrderVariants}
+                  initial="initial"
+                  whileInView="animate"
+                  viewport={{ once: true, amount: 0.3 }}
+                  className="unorderedListBlogDetail"
+                >
+                  <motion.p ref={titleUnOrderRef} className="titleUnOrder">
+                    Sample Unordered List
+                  </motion.p>
                   <ul className="unorderBlogDetails">
-                    <li className="unorderBlogDetailsItems">
+                    <motion.li
+                      variants={unOrderCHilds}
+                      className="unorderBlogDetailsItems"
+                    >
                       Loremous tempor ullamcorper iaculis.
-                    </li>
-                    <li className="unorderBlogDetailsItems">
+                    </motion.li>
+                    <motion.li
+                      variants={unOrderCHilds}
+                      className="unorderBlogDetailsItems"
+                    >
                       Pellentesque vitae neque mollis urna mattis laoreet.
-                    </li>
-                    <li className="unorderBlogDetailsItems">
+                    </motion.li>
+                    <motion.li
+                      variants={unOrderCHilds}
+                      className="unorderBlogDetailsItems"
+                    >
                       Divamus sit amet purus justo.
-                    </li>
-                    <li className="unorderBlogDetailsItems">
+                    </motion.li>
+                    <motion.li
+                      variants={unOrderCHilds}
+                      className="unorderBlogDetailsItems"
+                    >
                       Proin molestie egestas orci ac suscipit risus posuere.
-                    </li>
+                    </motion.li>
                   </ul>
-                </div>
-                <div className="orderedListBlogDetail">
-                  <p className="titleOrder">Sample Ordered List</p>
+                </motion.div>
+                <motion.div
+                  variants={orderVariants}
+                  initial="initial"
+                  whileInView="animate"
+                  viewport={{ once: true, amount: 0.3 }}
+                  className="orderedListBlogDetail"
+                >
+                  <p ref={titleOrderRef} className="titleOrder">
+                    Sample Ordered List
+                  </p>
                   <ol type="1" className="orderBlogDetails">
-                    <li className="orderBlogDetailsItems">
+                    <motion.li
+                      variants={orderCHilds}
+                      className="orderBlogDetailsItems"
+                    >
                       Loremous tempor ullamcorper iaculis.
-                    </li>
-                    <li className="orderBlogDetailsItems">
+                    </motion.li>
+                    <motion.li
+                      variants={orderCHilds}
+                      className="orderBlogDetailsItems"
+                    >
                       Pellentesque vitae neque mollis urna mattis laoreet.
-                    </li>
-                    <li className="orderBlogDetailsItems">
+                    </motion.li>
+                    <motion.li
+                      variants={orderCHilds}
+                      className="orderBlogDetailsItems"
+                    >
                       Divamus sit amet purus justo.
-                    </li>
-                    <li className="orderBlogDetailsItems">
+                    </motion.li>
+                    <motion.li
+                      variants={orderCHilds}
+                      className="orderBlogDetailsItems"
+                    >
                       Proin molestie egestas orci ac suscipit risus posuere.
-                    </li>
+                    </motion.li>
                   </ol>
-                </div>
-                <Link className="blogDetailsBackBtn" to="/">
+                </motion.div>
+                <Link
+                  ref={blogDetailsBackBtnRef}
+                  className="blogDetailsBackBtn"
+                  to="/"
+                >
                   <span className="backIconBlogDetils">&#8592;</span>
                   Back to home
                 </Link>
