@@ -1,7 +1,7 @@
 import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { useParams } from "react-router";
 import { motion } from "framer-motion";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { gsap } from "gsap";
 import SplitText from "../../plugins/SplitText";
 import "./BlogDetails.scss";
@@ -18,7 +18,6 @@ export default function BlogDetails() {
   let [inViewDesc, setInViewDesc] = useState(false);
   let { blogId } = useParams();
   let [currentBlog, setCurrenBlog] = useState();
-  let location = useLocation();
 
   useLayoutEffect(() => {
     document.documentElement.scrollTo({
@@ -56,7 +55,7 @@ export default function BlogDetails() {
       ease: "Expo.easeOut",
       delay: 0.2,
     });
-  });
+  }, []);
 
   useEffect(() => {
     fetch(`http://localhost:8000/blogItems/?id=${blogId}`)

@@ -7,11 +7,12 @@ import { ToastContainer } from "react-toastify";
 import { ScrollTrigger } from "gsap/all";
 
 export default function TrendCollection() {
-  let sellerRef = useRef();
-  let arrivalsRef = useRef();
-  let topTRef = useRef();
+  let scopeRef = useRef(null);
+  let sellerRef = useRef(null);
+  let arrivalsRef = useRef(null);
+  let topTRef = useRef(null);
   let { menItems, womenItems } = useContext(items);
-  let [trendItems, setTrendItems] = useState();
+  let [trendItems, setTrendItems] = useState([]);
   const [bestSeller, setBestSeller] = useState(true);
   const [arrivals, setArrivals] = useState(false);
   const [topTrebding, setTopTrending] = useState(false);
@@ -105,7 +106,7 @@ export default function TrendCollection() {
         },
         "<0.1"
       );
-    });
+    }, scopeRef.current);
 
     if (menItems && womenItems) {
       let trends = [
@@ -208,7 +209,7 @@ export default function TrendCollection() {
         pauseOnHover
         theme="light"
       />
-      <div className="container-fluid trendCollection">
+      <div ref={scopeRef} className="container-fluid trendCollection">
         <div className="row">
           <div className="col-12">
             <p className="titleTrendCollection">TRENDY COLLECTION</p>

@@ -19,7 +19,7 @@
     @extend .titleQuantity;
   }
 }
-// cart items style
+/* cart items style */
 .cartItems {
   margin-top: 2rem !important;
   border-top: 1px solid #dddd;
@@ -29,7 +29,7 @@
   opacity: 0;
   transform: translateX(100px);
 
-  // product details
+  /* product details */
   .wrapperCartDetails {
     display: flex;
     flex-direction: row;
@@ -49,7 +49,6 @@
       .cartItemName {
         font-size: 17px;
         font-family: sans-serif;
-        // margin-top: 25px;
       }
       .shoppingCartItemBtns2 {
         display: flex;
@@ -112,7 +111,7 @@
       }
     }
   }
-  // quantity styles
+  /* quantity styles */
   .wrapperQuantityBtns {
     display: flex;
     align-items: center;
@@ -153,7 +152,7 @@
       }
     }
   }
-  // total price
+  /* total price */
   .totalPriceCart {
     font-weight: bold;
     font-size: 18px;
@@ -168,7 +167,7 @@
   }
 }
 
-// chack out shopping cart
+/* chack out shopping cart */
 .checkOutRow {
   margin-top: 3rem;
   padding: 0 3rem;

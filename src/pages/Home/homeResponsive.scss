@@ -1,5 +1,5 @@
 @media (max-width: 360px) {
-  // responsive Navbar
+  /* responsive Navbar */
   .containerNavbar {
     padding: 3px 5px !important;
     margin-top: 5px !important;
@@ -33,9 +33,9 @@
       }
     }
   }
-  // responsive header of home page
+  /* responsive header of home page */
   .heroHeader {
-    margin-top: 1.5rem !important;
+    margin-top: 5rem !important;
     .wrapperHeader {
       background-size: 230% !important;
       background-position-y: top !important;
@@ -59,7 +59,7 @@
       }
     }
   }
-  // responsive trend collection
+  /* responsive trend collection */
   .trendCollection {
     padding: 0 2rem !important;
     margin-top: 2rem !important;
@@ -125,7 +125,7 @@
       }
     }
   }
-  // responsive offer section
+  /* responsive offer section */
   .offersContainer {
     .titleOffers {
       font-size: 5.8vw !important;
@@ -155,11 +155,11 @@
       }
     }
   }
-  // responsive video offer section
+  /* responsive video offer section */
   .videoOffer {
     height: 250px !important;
   }
-  // responsive latest blog posts section
+  /* responsive latest blog posts section */
   .latestBlogs {
     .titleBlog {
       font-size: 5.1vw;
@@ -206,7 +206,7 @@
       }
     }
   }
-  // responsive customer reviews section
+  /* responsive customer reviews section */
   .custoremReview {
     margin-top: 4rem;
     .bgCustomerReview {
@@ -244,7 +244,7 @@
   .swiper-pagination {
     top: 86% !important;
   }
-  // responsive fags home page
+  /* responsive fags home page */
   .faqs {
     margin-top: 2rem;
     padding: 0 1rem;
@@ -263,11 +263,11 @@
     font-size: 11px !important;
     line-height: 18px !important;
   }
-  // responsive features of home page
+  /* responsive features of home page */
   .features {
     display: none;
   }
-  // responsive best products section
+  /* responsive best products section */
   .bestProducts {
     .bestProTitleRow {
       margin-bottom: 2rem;
@@ -309,7 +309,7 @@
   }
 }
 @media (min-width: 360px) {
-  // responsive Navbar
+  /* responsive Navbar */
   .containerNavbar {
     padding: 3px 5px !important;
     margin-top: 5px !important;
@@ -342,9 +342,9 @@
       }
     }
   }
-  // responsive header of home page
+  /* responsive header of home page */
   .heroHeader {
-    margin-top: 1.5rem !important;
+    margin-top: 3rem !important;
     .wrapperHeader {
       background-size: 230% !important;
       background-position-y: top !important;
@@ -368,7 +368,7 @@
       }
     }
   }
-  // responsive trend collection
+  /* responsive trend collection */
   .trendCollection {
     padding: 0 2rem !important;
     margin-top: 3rem !important;
@@ -404,7 +404,7 @@
       margin-top: 2rem !important;
       .wrapperCartCollection {
         background-size: 100% !important;
-        min-height: 27vh !important;
+        min-height: 30vh !important;
         .wrapperInfoCart {
           padding: 0 15px !important;
           .proCollectionName {
@@ -434,7 +434,7 @@
       }
     }
   }
-  // responsive offer section
+  /* responsive offer section */
   .offersContainer {
     .titleOffers {
       font-size: 5.7vw !important;
@@ -464,11 +464,11 @@
       }
     }
   }
-  // responsive video offer section
+  /* responsive video offer section */
   .videoOffer {
     height: 275px !important;
   }
-  // responsive latest blog posts section
+  /* responsive latest blog posts section */
   .latestBlogs {
     .titleBlog {
       font-size: 5.1vw;
@@ -515,7 +515,7 @@
       }
     }
   }
-  // responsive customer reviews section
+  /* responsive customer reviews section */
   .custoremReview {
     margin-top: 4rem;
     .bgCustomerReview {
@@ -553,7 +553,7 @@
   .swiper-pagination {
     top: 86% !important;
   }
-  // responsive fags home page
+  /* responsive fags home page */
   .faqs {
     margin-top: 2rem;
     padding: 0 1rem;
@@ -572,7 +572,7 @@
     font-size: 11px !important;
     line-height: 18px !important;
   }
-  // responsive best products section
+  /* responsive best products section */
   .bestProducts {
     .bestProTitleRow {
       margin-bottom: 1.5rem;
@@ -614,7 +614,7 @@
   }
 }
 @media (min-width: 375px) {
-  // responsive Navbar
+  /* responsive Navbar */
   .containerNavbar {
     padding: 0 10px !important;
     margin-top: 5px;
@@ -646,7 +646,7 @@
       }
     }
   }
-  // responsive header of home page
+  /* responsive header of home page */
   .heroHeader {
     margin-top: 1.5rem !important;
     .wrapperHeader {
@@ -674,7 +674,7 @@
       }
     }
   }
-  // responsive trend collection
+  /* responsive trend collection */
   .trendCollection {
     padding: 0 2rem !important;
     margin-top: 3rem !important;
@@ -710,7 +710,7 @@
       margin-top: 2rem !important;
       .wrapperCartCollection {
         background-size: 100% !important;
-        min-height: 26vh !important;
+        min-height: 30vh !important;
         .wrapperInfoCart {
           padding: 0 15px !important;
           .proCollectionName {
@@ -734,7 +734,7 @@
       }
     }
   }
-  // responsive offer section
+  /* responsive offer section */
   .offersContainer {
     .titleOffers {
       font-size: 5.5vw !important;
@@ -764,11 +764,11 @@
       }
     }
   }
-  // responsive video offer section
+  /* responsive video offer section */
   .videoOffer {
     height: 290px !important;
   }
-  // responsive latest blog posts section
+  /* responsive latest blog posts section */
   .latestBlogs {
     .titleBlog {
       font-size: 5.1vw;
@@ -815,7 +815,7 @@
       }
     }
   }
-  // responsive customer reviews section
+  /* responsive customer reviews section */
   .custoremReview {
     margin-top: 4rem;
     .bgCustomerReview {
@@ -853,7 +853,7 @@
   .swiper-pagination {
     top: 86% !important;
   }
-  // responsive fags home page
+  /* responsive fags home page */
   .faqs {
     margin-top: 2rem;
     padding: 0 1rem;
@@ -871,7 +871,7 @@
     font-size: 11px !important;
     line-height: 18px !important;
   }
-  // responsive best products section
+  /* responsive best products section */
   .bestProducts {
     .bestProTitleRow {
       margin-bottom: 2rem;
@@ -913,7 +913,7 @@
   }
 }
 @media (min-width: 393px) {
-  // responsive Navbar
+  /* responsive Navbar */
   .containerNavbar {
     padding: 0 10px !important;
     margin-top: 5px;
@@ -945,7 +945,7 @@
       }
     }
   }
-  // responsive header of home page
+  /* responsive header of home page */
   .heroHeader {
     margin-top: 1.5rem !important;
     .wrapperHeader {
@@ -970,7 +970,7 @@
       }
     }
   }
-  // responsive trend collection
+  /* responsive trend collection */
   .trendCollection {
     padding: 0 2rem !important;
     margin-top: 3rem !important;
@@ -1006,7 +1006,7 @@
       margin-top: 2rem !important;
       .wrapperCartCollection {
         background-size: 100% !important;
-        min-height: 27vh !important;
+        min-height: 35vh !important;
         .wrapperInfoCart {
           padding: 0 15px !important;
           .proCollectionName {
@@ -1030,7 +1030,7 @@
       }
     }
   }
-  // responsive offer section
+  /* responsive offer section */
   .offersContainer {
     .titleOffers {
       font-size: 5.4vw !important;
@@ -1060,11 +1060,11 @@
       }
     }
   }
-  // responsive video offer section
+  /* responsive video offer section */
   .videoOffer {
     height: 410px !important;
   }
-  // responsive latest blog posts section
+  /* responsive latest blog posts section */
   .latestBlogs {
     .titleBlog {
       font-size: 5.1vw;
@@ -1111,7 +1111,7 @@
       }
     }
   }
-  // responsive customer reviews section
+  /* responsive customer reviews section */
   .custoremReview {
     margin-top: 4rem;
     .bgCustomerReview {
@@ -1149,7 +1149,7 @@
   .swiper-pagination {
     top: 86% !important;
   }
-  // responsive fags home page
+  /* responsive fags home page */
   .faqs {
     margin-top: 2rem;
     padding: 0 1rem;
@@ -1167,11 +1167,11 @@
     font-size: 11px !important;
     line-height: 18px !important;
   }
-  // responsive features of home page
+  /* responsive features of home page */
   .features {
     display: none;
   }
-  // responsive best products section
+  /* responsive best products section */
   .bestProducts {
     .bestProTitleRow {
       margin-bottom: 1.5rem;
@@ -1213,7 +1213,7 @@
   }
 }
 @media (min-width: 412px) {
-  // responsive Navbar
+  /* responsive Navbar */
   .containerNavbar {
     padding: 10px 0rem !important;
     margin-top: 10px !important;
@@ -1245,7 +1245,7 @@
       }
     }
   }
-  // responsive header of home page
+  /* responsive header of home page */
   .heroHeader {
     margin-top: 1.5rem !important;
     .wrapperHeader {
@@ -1271,7 +1271,7 @@
       }
     }
   }
-  // responsive trend collection
+  /* responsive trend collection */
   .trendCollection {
     padding: 0 2rem !important;
     margin-top: 3rem !important;
@@ -1307,7 +1307,7 @@
       margin-top: 2rem !important;
       .wrapperCartCollection {
         background-size: 100% !important;
-        min-height: 27vh !important;
+        min-height: 35vh !important;
         .wrapperInfoCart {
           padding: 0 15px !important;
           .proCollectionName {
@@ -1331,7 +1331,7 @@
       }
     }
   }
-  // responsive offer section
+  /* responsive offer section */
   .offersContainer {
     .titleOffers {
       font-size: 5.3vw !important;
@@ -1361,11 +1361,11 @@
       }
     }
   }
-  // responsive video offer section
+  /* responsive video offer section */
   .videoOffer {
     height: 410px !important;
   }
-  // responsive latest blog posts section
+  /* responsive latest blog posts section */
   .latestBlogs {
     .titleBlog {
       font-size: 5vw;
@@ -1412,7 +1412,7 @@
       }
     }
   }
-  // responsive customer reviews section
+  /* responsive customer reviews section */
   .custoremReview {
     margin-top: 4rem;
     .bgCustomerReview {
@@ -1450,7 +1450,7 @@
   .swiper-pagination {
     top: 86% !important;
   }
-  // responsive fags home page
+  /* responsive fags home page */
   .faqs {
     margin-top: 3rem;
     padding: 0 1rem;
@@ -1468,7 +1468,7 @@
     font-size: 12px !important;
     line-height: 20px !important;
   }
-  // responsive features of home page
+  /* responsive features of home page */
   .features {
     margin-top: 3rem;
     padding: 0 0rem !important;
@@ -1491,7 +1491,7 @@
       }
     }
   }
-  // responsive best products section
+  /* responsive best products section */
   .bestProducts {
     .bestProTitleRow {
       margin-bottom: 3rem;
@@ -1533,7 +1533,7 @@
   }
 }
 @media (min-width: 576px) {
-  // responsive Navbar
+  /* responsive Navbar */
   .containerNavbar {
     padding: 5px 1rem !important;
     margin-top: 0 !important;
@@ -1566,7 +1566,7 @@
       }
     }
   }
-  // responsive header of home page
+  /* responsive header of home page */
   .heroHeader {
     margin-top: 1.5rem !important;
     .wrapperHeader {
@@ -1594,7 +1594,7 @@
       }
     }
   }
-  // responsive trend collection
+  /* responsive trend collection */
   .trendCollection {
     padding: 0 3rem !important;
     margin-top: 3rem !important;
@@ -1630,7 +1630,7 @@
       margin-top: 3rem !important;
       .wrapperCartCollection {
         background-size: 100% !important;
-        min-height: 26vh !important;
+        min-height: 43vh !important;
         .wrapperInfoCart {
           padding: 0 15px !important;
           .proCollectionName {
@@ -1660,7 +1660,7 @@
       }
     }
   }
-  // responsive offer section
+  /* responsive offer section */
   .offersContainer {
     .titleOffers {
       font-size: 5vw !important;
@@ -1690,11 +1690,11 @@
       }
     }
   }
-  // responsive video offer section
+  /* responsive video offer section */
   .videoOffer {
     height: 440px !important;
   }
-  // responsive latest blog posts section
+  /* responsive latest blog posts section */
   .latestBlogs {
     .titleBlog {
       font-size: 4vw;
@@ -1741,7 +1741,7 @@
       }
     }
   }
-  // responsive customer reviews section
+  /* responsive customer reviews section */
   .custoremReview {
     margin-top: 5rem;
     .bgCustomerReview {
@@ -1778,7 +1778,7 @@
   .swiper-pagination {
     top: 15rem !important;
   }
-  // responsive fags home page
+  /* responsive fags home page */
   .faqs {
     margin-top: 2rem;
     padding: 0 5rem;
@@ -1796,7 +1796,7 @@
     font-size: 12px !important;
     line-height: 20px !important;
   }
-  // responsive features of home page
+  /* responsive features of home page */
   .features {
     display: block;
     margin-top: 3rem;
@@ -1820,7 +1820,7 @@
       }
     }
   }
-  // responsive best products section
+  /* responsive best products section */
   .bestProducts {
     .bestProTitleRow {
       margin-bottom: 3rem;
@@ -1862,7 +1862,7 @@
   }
 }
 @media (min-width: 768px) {
-  // responsive Navbar
+  /* responsive Navbar */
   .containerNavbar {
     padding: 10px 1rem !important;
     height: 10% !important;
@@ -1894,7 +1894,7 @@
       }
     }
   }
-  // responsive header of home page
+  /* responsive header of home page */
   .heroHeader {
     margin-top: 7.5rem !important;
     .wrapperHeader {
@@ -1922,7 +1922,7 @@
       }
     }
   }
-  // responsive trend collection
+  /* responsive trend collection */
   .trendCollection {
     padding: 0 3rem !important;
     margin-top: 1rem !important;
@@ -1955,7 +1955,7 @@
       margin-top: 3rem !important;
       .wrapperCartCollection {
         background-size: 100% !important;
-        min-height: 41vh !important;
+        min-height: 45vh !important;
         .wrapperInfoCart {
           padding: 0 15px !important;
           .proCollectionName {
@@ -1985,7 +1985,7 @@
       }
     }
   }
-  // responsive offer section
+  /* responsive offer section */
   .offersContainer {
     .titleOffers {
       font-size: 4vw !important;
@@ -2015,11 +2015,11 @@
       }
     }
   }
-  // responsive video offer section
+  /* responsive video offer section */
   .videoOffer {
     height: 445px !important;
   }
-  // responsive latest blog posts section
+  /* responsive latest blog posts section */
   .latestBlogs {
     .titleBlog {
       font-size: 3.8vw;
@@ -2067,7 +2067,7 @@
       }
     }
   }
-  // responsive customer reviews section
+  /* responsive customer reviews section */
   .custoremReview {
     margin-top: 6rem;
     .bgCustomerReview {
@@ -2104,7 +2104,7 @@
   .swiper-pagination {
     top: 16.5rem !important;
   }
-  // responsive fags home page
+  /* responsive fags home page */
   .faqs {
     margin-top: 3rem;
     padding: 0 5rem;
@@ -2122,7 +2122,7 @@
     font-size: 13px !important;
     line-height: 22px !important;
   }
-  // responsive features of home page
+  /* responsive features of home page */
   .features {
     margin-top: 3rem;
     padding: 0 3rem !important;
@@ -2145,7 +2145,7 @@
       }
     }
   }
-  // responsive best products section
+  /* responsive best products section */
   .bestProducts {
     .bestProTitleRow {
       margin-bottom: 3rem;
@@ -2187,7 +2187,7 @@
   }
 }
 @media (min-width: 992px) {
-  // responsive Navbar
+  /* responsive Navbar */
   .containerNavbar {
     padding: 0 3rem !important;
     height: 13% !important;
@@ -2219,7 +2219,7 @@
       }
     }
   }
-  // responsive header of home page
+  /* responsive header of home page */
   .heroHeader {
     margin-top: 8.5rem !important;
     .wrapperHeader {
@@ -2244,7 +2244,7 @@
       }
     }
   }
-  // responsive trend collection
+  /* responsive trend collection */
   .trendCollection {
     padding: 0 3rem !important;
     .titleTrendCollection {
@@ -2306,7 +2306,7 @@
       }
     }
   }
-  // responsive offer section
+  /* responsive offer section */
   .offersContainer {
     .titleOffers {
       font-size: 3vw !important;
@@ -2336,11 +2336,11 @@
       }
     }
   }
-  // responsive video offer section
+  /* responsive video offer section */
   .videoOffer {
     height: 540px !important;
   }
-  // responsive latest blog posts section
+  /* responsive latest blog posts section */
   .latestBlogs {
     padding: 0 2rem !important;
     .titleBlog {
@@ -2390,7 +2390,7 @@
       }
     }
   }
-  // responsive customer reviews section
+  /* responsive customer reviews section */
   .custoremReview {
     margin-top: 7rem;
     .bgCustomerReview {
@@ -2427,7 +2427,7 @@
   .swiper-pagination {
     top: 15.5rem !important;
   }
-  // responsive fags home page
+  /* responsive fags home page */
   .faqs {
     margin-top: 4rem;
     padding: 0 5rem;
@@ -2445,7 +2445,7 @@
     font-size: 13px !important;
     line-height: 22px !important;
   }
-  // responsive features of home page
+  /* responsive features of home page */
   .features {
     margin-top: 5rem;
     padding: 0 3rem !important;
@@ -2469,7 +2469,7 @@
       }
     }
   }
-  // responsive best products section
+  /* responsive best products section */
   .bestProducts {
     .bestProTitleRow {
       margin-bottom: 3rem;
@@ -2511,7 +2511,7 @@
   }
 }
 @media (min-width: 1200px) {
-  // responsive Navbar
+  /* responsive Navbar */
   .containerNavbar {
     height: 14% !important;
     .navbar {
@@ -2538,7 +2538,7 @@
       }
     }
   }
-  // responsive header of home page
+  /* responsive header of home page */
   .heroHeader {
     margin-top: 7.5rem !important;
     .wrapperHeader {
@@ -2562,7 +2562,7 @@
       }
     }
   }
-  // responsive trend collection
+  /* responsive trend collection */
   .trendCollection {
     padding: 0 3rem !important;
     margin-top: 3rem !important;
@@ -2598,7 +2598,7 @@
       }
     }
   }
-  // responsive offer section
+  /* responsive offer section */
   .offersContainer {
     .titleOffers {
       font-size: 3vw !important;
@@ -2627,11 +2627,11 @@
       }
     }
   }
-  // responsive video offer section
+  /* responsive video offer section */
   .videoOffer {
     height: 590px !important;
   }
-  // responsive latest blog posts section
+  /* responsive latest blog posts section */
   .latestBlogs {
     padding: 0 3rem !important;
     .titleBlog {
@@ -2681,7 +2681,7 @@
       }
     }
   }
-  // responsive customer reviews section
+  /* responsive customer reviews section */
   .custoremReview {
     margin-top: 7rem;
     .bgCustomerReview {
@@ -2718,7 +2718,7 @@
   .swiper-pagination {
     top: 14.5rem !important;
   }
-  // responsive fags home page
+  /* responsive fags home page */
   .faqs {
     margin-top: 5rem;
     padding: 0 5rem;
@@ -2736,7 +2736,7 @@
     font-size: 14px !important;
     line-height: 22px !important;
   }
-  // responsive features of home page
+  /* responsive features of home page */
   .features {
     margin-top: 5rem;
     padding: 0 3rem !important;
@@ -2757,7 +2757,7 @@
       }
     }
   }
-  // responsive best products section
+  /* responsive best products section */
   .bestProducts {
     .bestProTitleRow {
       margin-bottom: 4rem;
@@ -2799,7 +2799,7 @@
   }
 }
 @media (min-width: 1400px) {
-  // responsive Navbar
+  /* responsive Navbar */
   .containerNavbar {
     height: 15% !important;
     .navbar {
@@ -2826,7 +2826,7 @@
       }
     }
   }
-  // responsive header of home page
+  /* responsive header of home page */
   .heroHeader {
     margin-top: 8rem !important;
     .wrapperHeader {
@@ -2851,7 +2851,7 @@
       }
     }
   }
-  // responsive trend collection
+  /* responsive trend collection */
   .trendCollection {
     padding: 0 3rem !important;
     margin-top: 5rem !important;
@@ -2887,7 +2887,7 @@
       }
     }
   }
-  // responsive offer section
+  /* responsive offer section */
   .offersContainer {
     .titleOffers {
       font-size: 3vw !important;
@@ -2916,13 +2916,12 @@
       }
     }
   }
-  // responsive video offer section
+  /* responsive video offer section */
   .videoOffer {
     height: 680px !important;
   }
-  // responsive best products section
 
-  // responsive latest blog posts section
+  /* responsive latest blog posts section */
   .latestBlogs {
     padding: 0 3rem !important;
     .titleBlog {
@@ -2963,7 +2962,7 @@
       }
     }
   }
-  // responsive customer reviews section
+  /* responsive customer reviews section */
   .custoremReview {
     margin-top: 7rem;
     .bgCustomerReview {
@@ -3000,7 +2999,7 @@
   .swiper-pagination {
     top: 14.5rem !important;
   }
-  // responsive fags home page
+  /* responsive fags home page */
   .faqs {
     margin-top: 5rem;
     padding: 0 5rem;
@@ -3018,7 +3017,7 @@
     font-size: 14px !important;
     line-height: 22px !important;
   }
-  // responsive features of home page
+  /* responsive features of home page */
   .features {
     margin-top: 5rem;
     padding: 0 3rem !important;
@@ -3038,7 +3037,7 @@
       }
     }
   }
-  // responsive best products section
+  /* responsive best products section */
   .bestProducts {
     .bestProTitleRow {
       margin-bottom: 3rem;
