@@ -19,7 +19,7 @@ export default function RelatedProducts({ productId }) {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  });
+  }, []);
 
   useEffect(() => {
     if (productId <= 13) {

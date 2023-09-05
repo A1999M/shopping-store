@@ -63,7 +63,7 @@ export default function LatestBlogs() {
         },
         "<0.2"
       );
-    });
+    }, scopeRef.current);
 
     return () => {
       ctx.revert();

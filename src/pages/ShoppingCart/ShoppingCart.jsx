@@ -119,7 +119,7 @@ function ShoppingCart() {
       localStorage.setItem("userCart", JSON.stringify(allBasketItems));
       window.removeEventListener("resize", handleResize);
     };
-  });
+  }, []);
 
   return (
     <>

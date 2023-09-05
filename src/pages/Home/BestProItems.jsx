@@ -17,7 +17,7 @@ export default function BestProItems({ item }) {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  });
+  }, []);
 
   let handlerEnterView = () => {
     setInView(true);
@@ -41,7 +41,7 @@ export default function BestProItems({ item }) {
           }
           onViewportEnter={handlerEnterView}
           onViewportLeave={handlerLeaveView}
-          viewport={{ once: false, amount: "all" }}
+          viewport={{ once: false, amount: "some" }}
           transition={{ type: "tween", duration: 1, ease: "easeOut" }}
           className="imgBestProItem"
           src={item.image1}
@@ -54,7 +54,7 @@ export default function BestProItems({ item }) {
         onViewportEnter={handlerEnterView}
         onViewportLeave={handlerLeaveView}
         scrollbar={{ draggable: true }}
-        viewport={{ once: false, amount: "all" }}
+        viewport={{ once: false, amount: "some" }}
         transition={{
           type: "tween",
           duration: 0.7,
@@ -74,7 +74,7 @@ export default function BestProItems({ item }) {
         animate={inView ? { opacity: 1 } : { opacity: 0 }}
         onViewportEnter={handlerEnterView}
         onViewportLeave={handlerLeaveView}
-        viewport={{ once: false, amount: "all" }}
+        viewport={{ once: false, amount: "some" }}
         transition={{
           type: "tween",
           duration: 0.7,
@@ -90,7 +90,7 @@ export default function BestProItems({ item }) {
         animate={inView ? { opacity: 1 } : { opacity: 0 }}
         onViewportEnter={handlerEnterView}
         onViewportLeave={handlerLeaveView}
-        viewport={{ once: false, amount: "all" }}
+        viewport={{ once: false, amount: "some" }}
         transition={{
           type: "tween",
           duration: 0.7,
@@ -107,7 +107,7 @@ export default function BestProItems({ item }) {
           animate={inView ? { opacity: 1 } : { opacity: 0 }}
           onViewportEnter={handlerEnterView}
           onViewportLeave={handlerLeaveView}
-          viewport={{ once: false, amount: "all" }}
+          viewport={{ once: false, amount: "some" }}
           transition={{
             type: "tween",
             duration: 0.7,

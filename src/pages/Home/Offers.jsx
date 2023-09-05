@@ -50,7 +50,7 @@ export default function Offers() {
         },
         "<0.3"
       );
-    }, scopeRef);
+    }, scopeRef.current);
 
     return () => {
       ctx.revert();
