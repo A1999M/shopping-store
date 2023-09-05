@@ -67,7 +67,7 @@ export default function OfferItems({ title, desc, bgImge, index }) {
           "<0.25"
         );
       });
-    }, OfferItemRef);
+    }, OfferItemRef.current);
 
     return () => {
       ctx.revert();

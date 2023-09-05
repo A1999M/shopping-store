@@ -30,13 +30,13 @@ export default function AddInformation() {
       left: 0,
       behavior: "instant",
     });
-  });
+  }, []);
   useEffect(() => {
     window.addEventListener("resize", handleResize);
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  });
+  }, []);
 
   if (cartItems) {
     cartItems.forEach((item) => {

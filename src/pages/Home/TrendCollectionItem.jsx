@@ -254,8 +254,8 @@ export default function TrendCollectionItem({ item, index }) {
         className="col-6 col-md-4 col-lg-3 collectionCol"
       >
         <div
-          onMouseEnter={handlerHoverCart}
-          onMouseLeave={handlerMouseLeave}
+          onMouseEnter={window.innerWidth > 992 && handlerHoverCart}
+          onMouseLeave={window.innerWidth > 992 && handlerMouseLeave}
           className="wrapperCartCollection"
           style={{ backgroundImage: `url(${item.image1})` }}
           onClick={() => handleNavigate(item.id)}

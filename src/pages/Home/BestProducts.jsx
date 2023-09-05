@@ -25,7 +25,7 @@ export default function BestProducts() {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  });
+  }, []);
 
   let bestProducts = [
     menItems[5],

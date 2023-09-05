@@ -26,7 +26,7 @@ export default function Faqs() {
           end: "bottom 0%",
         },
       });
-    });
+    }, scopeRef.current);
     return () => ctx.revert();
   }, []);
 
