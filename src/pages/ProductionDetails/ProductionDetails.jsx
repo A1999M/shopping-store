@@ -166,7 +166,7 @@ export default function ProductionDetails() {
     return () => {
       ctx.kill();
     };
-  }, []);
+  });
 
   useEffect(() => {
     document.documentElement.scrollTo({
