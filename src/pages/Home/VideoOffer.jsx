@@ -1,4 +1,5 @@
 import React from "react";
+import offerVideo from "../../assets/videos/offerVideo.mp4";
 
 export default function VideoOffer() {
   return (
@@ -9,7 +10,7 @@ export default function VideoOffer() {
             <iframe
               width="100%"
               className="videoOffer"
-              src="https://www.youtube.com/embed/4iVYTQe88b8"
+              src={offerVideo}
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
