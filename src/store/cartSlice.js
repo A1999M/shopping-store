@@ -8,7 +8,7 @@ let cartSlice = createSlice({
   reducers: {
     increment(state, action) {
       let index = state.basket.findIndex((item) => {
-        return item.id == action.payload;
+        return item.id === action.payload;
       });
       let newItem = {
         ...state.basket[+index],
@@ -20,7 +20,7 @@ let cartSlice = createSlice({
     },
     decrement(state, action) {
       let index = state.basket.findIndex((item) => {
-        return item.id == action.payload;
+        return item.id === action.payload;
       });
       let newItem = {
         ...state.basket[+index],
@@ -35,7 +35,7 @@ let cartSlice = createSlice({
     },
     removeCartItems(state, action) {
       let index = state.basket.findIndex((item) => {
-        return item.id == action.payload;
+        return item.id === action.payload;
       });
       state.basket.splice(index, 1);
     },
