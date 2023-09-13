@@ -76,11 +76,10 @@ function ShoppingCart() {
     };
   }, []);
 
-  let handleResize = () => {
-    setSize(window.innerWidth);
-  };
-
   useEffect(() => {
+    let handleResize = () => {
+      setSize(window.innerWidth);
+    };
     window.addEventListener("resize", handleResize);
     let ctx = gsap.context(() => {
       gsap.registerPlugin(SplitText);

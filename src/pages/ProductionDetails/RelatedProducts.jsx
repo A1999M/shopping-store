@@ -23,7 +23,7 @@ export default function RelatedProducts({ productId }) {
 
   useEffect(() => {
     if (productId <= 13) {
-      fetch(`http://localhost:8000/men`)
+      fetch(`https://ecommerce-database-xi.vercel.app/men`)
         .then((res) => {
           return res.json();
         })
@@ -37,7 +37,7 @@ export default function RelatedProducts({ productId }) {
           console.warn(err);
         });
     } else {
-      fetch(`http://localhost:8000/women`)
+      fetch(`https://ecommerce-database-xi.vercel.app/women`)
         .then((res) => {
           return res.json();
         })

@@ -58,7 +58,7 @@ export default function BlogDetails() {
   }, []);
 
   useEffect(() => {
-    fetch(`http://localhost:8000/blogItems/?id=${blogId}`)
+    fetch(`https://ecommerce-database-xi.vercel.app/blogItems/?id=${blogId}`)
       .then((res) => {
         return res.json();
       })
