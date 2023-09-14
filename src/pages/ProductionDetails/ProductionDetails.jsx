@@ -175,7 +175,7 @@ export default function ProductionDetails() {
       behavior: "instant",
     });
     if (productId <= 13) {
-      fetch(`http://localhost:8000/men/?id=${productId}`)
+      fetch(`https://ecommerce-database-xi.vercel.app/men/?id=${productId}`)
         .then((res) => {
           return res.json();
         })
@@ -186,7 +186,7 @@ export default function ProductionDetails() {
           console.warn(err);
         });
     } else {
-      fetch(`http://localhost:8000/women/?id=${productId}`)
+      fetch(`https://ecommerce-database-xi.vercel.app/women/?id=${productId}`)
         .then((res) => {
           return res.json();
         })

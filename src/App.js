@@ -37,10 +37,11 @@ export default function App() {
     return () => {
       locoScroll.stop();
     };
-  });
+  }, []);
+  // change abow dependecy here add []
 
   useEffect(() => {
-    fetch("http://localhost:8000/men")
+    fetch("https://ecommerce-database-xi.vercel.app/men")
       .then((res) => {
         return res.json();
       })
@@ -53,7 +54,7 @@ export default function App() {
 
     // fetch women items
 
-    fetch("http://localhost:8000/women")
+    fetch("https://ecommerce-database-xi.vercel.app/women")
       .then((res) => {
         return res.json();
       })

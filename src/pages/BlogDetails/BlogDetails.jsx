@@ -3,7 +3,7 @@ import { useParams } from "react-router";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { gsap } from "gsap";
-import SplitText from "../../plugins/SplitText";
+import SplitType from "split-type";
 import "./BlogDetails.scss";
 import "./responsiveBlog.scss";
 
@@ -25,40 +25,10 @@ export default function BlogDetails() {
       left: 0,
       behavior: "instant",
     });
-    gsap.registerPlugin(SplitText);
-    let splitTitle = new SplitText(titleRef.current, { type: "words" });
-
-    gsap.to(splitTitle.words, {
-      opacity: 1,
-      y: 0,
-      clipPath: "inset(0% 0% 0% 0%)",
-      stagger: 0.05,
-      perspective: 0,
-      x: 0,
-      duration: 1.2,
-      ease: "Expo.easeOut",
-    });
-    gsap.to(dataRef.current, {
-      opacity: 1,
-      y: 0,
-      clipPath: "inset(0% 0% 0% 0%)",
-      x: 0,
-      duration: 1,
-      ease: "Expo.easeOut",
-      delay: 0.35,
-    });
-    gsap.to(imageRef.current, {
-      clipPath: "inset(10% 0% 10% 0%)",
-      opacity: 1,
-      scale: 1,
-      duration: 1.2,
-      ease: "Expo.easeOut",
-      delay: 0.2,
-    });
   }, []);
 
   useEffect(() => {
-    fetch(`http://localhost:8000/blogItems/?id=${blogId}`)
+    fetch(`https://ecommerce-database-xi.vercel.app/blogItems/?id=${blogId}`)
       .then((res) => {
         return res.json();
       })
@@ -152,13 +122,46 @@ export default function BlogDetails() {
             <div className="col-12">
               {/* header blog */}
               <div className="headerBlogDetail">
-                <p ref={titleRef} className="titleBlogDetail">
-                  {currentBlog.title}
-                </p>
-                <p ref={dataRef} className="currentData">
-                  AUGUST 12, 2022
-                </p>
-                <img
+                <div className="wrapperTitleBlog">
+                  <motion.p
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{
+                      type: "tween",
+                      ease: "easeOut",
+                      duration: 0.5,
+                      delay: 0.1,
+                    }}
+                    ref={titleRef}
+                    className="titleBlogDetail"
+                  >
+                    {currentBlog.title}
+                  </motion.p>
+                </div>
+                <div className="wrapperCurrentData">
+                  <motion.p
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{
+                      type: "tween",
+                      ease: "easeOut",
+                      duration: 0.5,
+                      // delay: 0.3,
+                    }}
+                    ref={dataRef}
+                    className="currentData"
+                  >
+                    AUGUST 12, 2022
+                  </motion.p>
+                </div>
+                <motion.img
+                  initial={{ opacity: 0, clipPath: "inset(10% 0% 100% 0%)" }}
+                  animate={{ opacity: 1, clipPath: "inset(10% 0% 10% 0%)" }}
+                  transition={{
+                    type: "tween",
+                    ease: "easeOut",
+                    duration: 0.7,
+                  }}
                   className="imageBlogDetails"
                   src={currentBlog.src}
                   alt={currentBlog.title}
