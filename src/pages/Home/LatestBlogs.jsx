@@ -10,7 +10,7 @@ export default function LatestBlogs() {
   let scopeRef = useRef(null);
 
   useLayoutEffect(() => {
-    fetch("http://localhost:8000/blogItems")
+    fetch("https://ecommerce-database-xi.vercel.app/blogItems")
       .then((res) => {
         return res.json();
       })
