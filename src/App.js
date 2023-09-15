@@ -21,6 +21,7 @@ export default function App() {
   const [cartCountShow, setCartCountShow] = useState(0);
   let [show, setShow] = useState(false);
   let location = useLocation();
+  let [isLoader, setIsLoader] = useState({ items1: true, items2: true });
 
   useLayoutEffect(() => {
     let locoScroll = new LocomotiveScroll();
@@ -38,7 +39,6 @@ export default function App() {
       locoScroll.stop();
     };
   }, []);
-  // change abow dependecy here add []
 
   useEffect(() => {
     fetch("https://ecommerce-database-xi.vercel.app/men")
@@ -47,6 +47,14 @@ export default function App() {
       })
       .then((data) => {
         setMenItems(data);
+        setTimeout(() => {
+          setIsLoader((prev) => {
+            return {
+              ...prev,
+              items1: false,
+            };
+          });
+        }, 5000);
       })
       .catch((err) => {
         console.warn(err);
@@ -60,6 +68,14 @@ export default function App() {
       })
       .then((data) => {
         setWomenItems(data);
+        setTimeout(() => {
+          setIsLoader((prev) => {
+            return {
+              ...prev,
+              items2: false,
+            };
+          });
+        }, 5000);
       })
       .catch((err) => {
         console.warn(err);
@@ -79,6 +95,7 @@ export default function App() {
             setShow,
             cartCountShow,
             setCartCountShow,
+            isLoader,
           }}
         >
           <NavBar />
